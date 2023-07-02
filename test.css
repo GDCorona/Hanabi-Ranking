@@ -1,0 +1,45 @@
+body{
+    background-image: none;                       
+    background-repeat: no-repeat;
+    background-size: cover;
+    counter-reset: section;
+}
+h1{color: rebeccapurple;}
+.demonlist{
+    text-align: center;
+    margin: 5% 30%;
+}
+.demonlist li{
+    animation: move3 1s ease-out both;
+    overflow:hidden;
+    margin: 0 0 4% 0;
+    border-radius: 30px;
+    mix-blend-mode:multiply;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 7px 22px 0 rgba(22, 22, 22, 0.8);
+}
+.demonlist li:hover{
+    opacity: 0.5;
+    mix-blend-mode: hard-light;
+    cursor: pointer;
+}
+.demonlist p{
+    font-size: 3vw;
+    word-wrap:normal;
+    margin: 0;
+    color: rgb(252, 248, 27);
+    background-color: rgba(65, 61, 54, 0.986);
+    border-radius: 27px 27px 0px 0px;
+    display: block;
+    border-bottom: 0.3vmax solid rgb(243, 165, 199);
+}
+.demonlist p::before{
+    counter-increment: section;
+    content: "#" counter(section) "-";
+}
+.demonlist li img{
+    border-radius: 0px 0px 27px 27px;
+    width:100%;
+    height:25vh;
+    display: block;
+}
