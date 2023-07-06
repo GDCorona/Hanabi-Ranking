@@ -43,7 +43,7 @@ const storedPics = JSON.parse(localStorage.getItem('pics'));
 const storedInfos = JSON.parse(localStorage.getItem('infos'));
 for (var i = 0; i < storedNames.length; i++){
     document.getElementsByTagName("h3")[i].innerHTML = storedNames[i];
-    document.getElementsByTagName("img")[i].src = storedPics[i];
+    document.getElementsByClassName("avt")[i].src = storedPics[i];
     document.getElementsByTagName("p")[i].innerHTML = storedInfos[i];
 }
 //sort type
@@ -62,7 +62,7 @@ function Sort(){
         for (var i = 0; i < 4; i++){
             document.getElementsByTagName("h3")[i].innerHTML = char[i].name;
             names.push(char[i].name);
-            document.getElementsByTagName("img")[i].src = char[i].pic;
+            document.getElementsByClassName("avt")[i].src = char[i].pic;
             pics.push(char[i].pic);
             document.getElementsByTagName("p")[i].innerHTML = char[i].info;
             infos.push(char[i].info);
