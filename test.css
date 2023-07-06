@@ -1,45 +1,91 @@
+:root{
+    --display: none;
+    --color1: aliceblue;
+    --color2: black;
+    --color3: skyblue;
+    --color4: rgb(70, 115, 133);
+    --titlecolor:aquamarine;
+    --cherryblossom: none;
+}
 body{
-    background-image: none;                       
-    background-repeat: no-repeat;
-    background-size: cover;
     counter-reset: section;
+    font-family: 'Cutive Mono', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
-h1{color: rebeccapurple;}
-.demonlist{
-    text-align: center;
-    margin: 5% 30%;
+.loadscreen{
+    display: var(--display);
+    background-color: #aaa;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
 }
-.demonlist li{
-    animation: move3 1s ease-out both;
-    overflow:hidden;
-    margin: 0 0 4% 0;
-    border-radius: 30px;
-    mix-blend-mode:multiply;
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 7px 22px 0 rgba(22, 22, 22, 0.8);
+#wait{position: relative; left: 45%; top: 60%; font-size: 50px; font-weight: bolder;}
+.loader{
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    position: fixed;
+    left: 45%;
+    top: 40%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
 }
-.demonlist li:hover{
-    opacity: 0.5;
-    mix-blend-mode: hard-light;
-    cursor: pointer;
+@keyframes spin {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
 }
-.demonlist p{
-    font-size: 3vw;
-    word-wrap:normal;
-    margin: 0;
-    color: rgb(252, 248, 27);
-    background-color: rgba(65, 61, 54, 0.986);
-    border-radius: 27px 27px 0px 0px;
-    display: block;
-    border-bottom: 0.3vmax solid rgb(243, 165, 199);
+@keyframes leftmove {
+    from {opacity: 0; left: -100%;}
+    to {opacity: 100; left: 0%}
 }
-.demonlist p::before{
+@keyframes rightmove {
+    from {opacity: 0; left: 100%;}
+    to {opacity: 10; left: 0%}
+}
+@media(prefers-reduced-motion: no-preference){
+    .movement{
+        animation: leftmove 0.5s ease-out both;
+    }
+    .movement1{
+        animation: rightmove 0.5s ease-out both;
+    }
+}
+
+.waifulist h3::before{
     counter-increment: section;
     content: "#" counter(section) "-";
 }
-.demonlist li img{
-    border-radius: 0px 0px 27px 27px;
-    width:100%;
-    height:25vh;
+.left, .right{
     display: block;
+    background-color: aliceblue;
+    margin-bottom: 20vw;
+    margin-right: 5vw;
+}
+.left img, .right img{
+    border-radius: 50%;
+    border: 0.3vw solid rgb(0, 0, 0);
+    width: 23vw;
+    height: 23vw;
+    box-shadow: 0 3px 5px 0 rgba(238, 150, 234, 0.733), 2px 2px 15px 0 var(--color2);
+}
+.left h3, .right h3{
+    position: relative;
+    font-size: 4vw;
+    background-color: rgba(142, 222, 253, 0.7);
+    font-weight: bolder;
+    margin: 1vw 0;
+}
+.left div, .right div{
+    display: flex;
+    font-size: 2.5vw;
+}
+.left p, .right p{
+    margin: 0 0 0 3vw;
 }
