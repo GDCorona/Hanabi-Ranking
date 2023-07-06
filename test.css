@@ -60,15 +60,16 @@ body{
 
 .waifulist h3::before{
     counter-increment: section;
-    content: "#" counter(section) "-";
+    content: "#" counter(section);
 }
 .left, .right{
     display: block;
     background-color: aliceblue;
     margin-bottom: 20vw;
     margin-right: 5vw;
+    word-break: break-all;
 }
-.left img, .right img{
+.avt{
     border-radius: 50%;
     border: 0.3vw solid rgb(0, 0, 0);
     width: 23vw;
@@ -80,7 +81,13 @@ body{
     font-size: 4vw;
     background-color: rgba(142, 222, 253, 0.7);
     font-weight: bolder;
-    margin: 1vw 0;
+    margin: 0;
+}
+.left h4, .right h4{
+    background-color: #aaa;
+    font-size: 2vw;
+    font-weight: bolder;
+    margin: 0 0 1vw 0;
 }
 .left div, .right div{
     display: flex;
@@ -88,4 +95,44 @@ body{
 }
 .left p, .right p{
     margin: 0 0 0 3vw;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider.round {
+    border-radius: 34px;
+  }
+  
+.slider.round:before {
+    border-radius: 50%;
 }
