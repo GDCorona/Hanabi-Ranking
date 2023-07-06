@@ -3,34 +3,93 @@
         <meta charset="UTF-8">
         <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
         <title> Hanabi Ranking </title>
-        <link rel= "stylesheet" href = "/test.css">
+        <link rel= "stylesheet" href = "/waifu.css">
         <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/9isItErbbbsOpcyLqNhiwun70kM-JsvBKaw-h5x_2eRNakL11DRuuewIQZEiqGCzjJ91BbJMk3_B04OucYWAG5I4_nV2r9L9gETLFWydjUm9dM1-HKh3OHM_bk_v5eBfMsq1i320anrLugxxICodoN7xUlxkkPAwMEhhhYHolR4buhr1wxuJkXa6TG6JVBbkhV7p1P3qtja5zwGXdtwP6lru8S1HWkb0Dk_91-4bu_zODNKNxSGVxo4ypgngibBU3S4TsBFT2wTjdzYhQ3__cK8l5FtQocrG1Ug5Uzzn-4bqwox6E9UAiFRMLJ8l47icT2wBzzjoXelFlHvIRL81FveKc6ASmNHOgvxLUU4oLJgJKpD1xE7dth74ugQ8WXqNN6d9nSoSQYS7Ef5Hc-aB3rzd9POfaGDakP-UreXNqhynlEXr3bn9bwVKtWZes13ZWX2bg2nayieDw8ncGxZxc-0ytVPylhNbqNzmAyfBu23c264sNHZYLJ9lsaUgXLNDZOkf4nHEDMyUzwiwY2u3IFtQZugInVs--FfpITj7v8oIHB6ITWw3vL1Q5ZU2Tp5SSoB02wzuFOsxUFi3CgAVkyPiPvHrIbzbJ0VlJg0wNeMl5xaLVm2n0M5lLvLqryC9evfvVyNOpyLkTxj_HuoRRVYserB0Jq6_L6sFgY1jsYt743OL0FEe8P5oh9RQlba9ZI1zoQv83oHetliSBUCz2LqA_Yl_iHMWCSkvNrWvYUEaeOVT1GUlYGimKnQTgryW8paIPgD_dYDcCa7L0WJFtQjkOT_QkSi3NXUm1_Y7RWeTrhnjpxmT6hAitF_xXIj5wrfdXC-lLejTeybrYsYj-QrI29gRsDSHEE5c8PEBhJovaZD2fGdAWv3r-NsAlfyq9q9HF5mhlKInoU5DRl13Y3AxHOTtCPbBz-d30zXB4QXO=w560-h560-s-no?authuser=0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+        <link href= "https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel= "stylesheet">
     </head>
     <body>
         <h1>My top 20 favorite characters</h1>
         <h2 id = "date"></h2>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <button onclick = "SortByDif()" style = "height: 50px; width: 30%; font-size: 30px;">Difficulty</button>
-        <button onclick = "SortByDes()" style = "height: 50px; width: 30%; font-size: 30px;">Design</button>
-        <ul class = "demonlist">  
-        <li class = "dif1 des3">
-            <p>MELTDOWN</p>
-            <img src = 'https://i.pinimg.com/564x/4c/68/9f/4c689f71305855c7527db1855d34d0d7.jpg' alt = "Meltdown">
+        <div class = "loadscreen">
+          <div class = "loader"></div>
+          <h2 id = "wait">Wait</h2>
+        </div>
+        <button onclick = "Personality()" style = "height: 50px; width: 30%; font-size: 30px;">Personality</button>
+        <button onclick = "Appearance()" style = "height: 50px; width: 30%; font-size: 30px;">Appearance</button>
+        <button onclick = "Voice()" style = "height: 50px; width: 30%; font-size: 30px;">Voice</button>
+        <ul class = "waifulist">
+        <li class = "top1 left">
+          <h3>Nishimiya Shouko</h3>
+          <div>
+              <img src = 'https://i.pinimg.com/originals/81/c1/c6/81c1c6eaf82af8c8be2e2b27d9370ac2.jpg'>
+              <p>
+                  Koe no Katachi <br>
+                  VA: Hayami Saori
+              </p>
+          </div>
         </li>
-        <li class = "dif2 des1">
-            <p>Novalis</p>
-            <img src = 'https://i.pinimg.com/564x/ca/39/bc/ca39bcd7ef762d3778d478398eb4d883.jpg' alt = "Novalis">
+        <li class = "top2 right">
+          <h3>Nishimori Yusa</h3>
+          <div>
+            <img src = 'https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg'>
+            <p>
+                Charlotte <br>
+                VA: Uchida Maaya
+            </p>
+          </div>
         </li>
-        <li class = "dif3 des2">
-            <p>Marathon</p>
-            <img src = 'https://i.pinimg.com/564x/77/62/54/7762543a460335d4e9c61c75f6d1ca07.jpg' alt = "Marathon">
+        <li class = "top3 left">
+          <h3>Shiina Mashiro</h3>
+          <div>
+            <img src = 'https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg'>
+            <p>
+                Sakurasou no Pet na Kanojo <br>
+                VA: Kayano Ai
+            </p>
+          </div>
+        </li>
+        <li class = "top4 right">
+          <h3>Illyasviel von Eizbern</h3>
+          <div>
+            <img src = 'https://i.pinimg.com/originals/1b/36/8c/1b368c4a5da71c8637cef2e161fdab60.jpg'>
+            <p>
+                Fate/ Stay Night <br>
+                VA: Kadowaki Mai
+            </p>
+          </div>
         </li>
         </ul>
-        <script src = "test.js"></script>
+        <script>
+            const observer = new IntersectionObserver(entries => {
+                // Loop over the entries
+                entries.forEach(entry => {
+                  // If the element is visible
+                  if (entry.isIntersecting) {
+                    // Add the animation class
+                    entry.target.classList.add("movement");
+                    return;
+                  }
+                  entry.classList.remove('movement');
+                });
+              });
+              observer.observe(document.querySelector(".left"));
+              observer.observe(document.querySelector(".left1"));
+              const observer1 = new IntersectionObserver(entries => {
+                // Loop over the entries
+                entries.forEach(entry => {
+                  // If the element is visible
+                  if (entry.isIntersecting) {
+                    // Add the animation class
+                    entry.target.classList.add("movement1");
+                    return;
+                  }
+                  entry.classList.remove('movement1');
+                });
+              });
+              observer1.observe(document.querySelector(".right"));
+        </script> 
+        <script src = "waifu.js"></script>
     </body>
 </html>
