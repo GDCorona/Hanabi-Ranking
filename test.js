@@ -1,3 +1,5 @@
+let d = new Date();
+document.getElementById("date").innerHTML = d;
 //variables
 const char = [
     {
@@ -51,70 +53,50 @@ const char = [
         avt: [
             "url('https://i.pinimg.com/originals/1b/36/8c/1b368c4a5da71c8637cef2e161fdab60.jpg')",
             "url('https://i.pinimg.com/originals/a4/17/17/a41717e430f20a2cdfa05896f99d8906.jpg')",
-            "url('https://i.pinimg.com/originals/1b/79/58/1b79587baaa9870253042eef9f10d9f7.jpg')",
-            "url('https://i.pinimg.com/originals/9f/cb/91/9fcb91a61d72810af6597c9c136022b4.gif')"
+            "url('https://i.pinimg.com/originals/dc/c0/98/dcc0984a5f2f2cb15218317e1ea652cc.jpg')",
+            "url('https://i.pinimg.com/originals/40/5a/af/405aafa6115504126fdcdbd58822bc8b.gif')"
         ],
         info: document.getElementsByTagName("p")[3].innerHTML
     }
 ]
-let d = new Date();
-document.getElementById("date").innerHTML = d;
-const arrPersonality = new Int16Array(30);
-const arrAppearance = new Int16Array(30);
-const arrVoice = new Int16Array(30);
-const arr = new Int16Array(30);
-const names = [];
-const animes = [];
-const avts = [];
-const infos = [];
-var type = 'personality';
+var arr = [
+    new Int16Array(30), //0: personality
+    new Int16Array(30), //1: appearance
+    new Int16Array(30)  //2: voice
+];
+var type = 0; 
 //load current status
-const storedNames = JSON.parse(localStorage.getItem('names'));
-const storedAnimes = JSON.parse(localStorage.getItem('animes'));
-const storedAvts = JSON.parse(localStorage.getItem('avts'));
-const storedInfos = JSON.parse(localStorage.getItem('infos'));
-
-for (var i = 0; i < 4; i++){
-    document.getElementsByTagName("h3")[i].innerHTML = storedNames[i];
-    document.getElementsByTagName("h4")[i].innerHTML = storedAnimes[i];
-    document.getElementsByClassName("avt")[i].style.backgroundImage = storedAvts[i];
-    document.getElementsByTagName("p")[i].innerHTML = storedInfos[i];
-}
 var currentType = localStorage.getItem('type');
-if(currentType == 'personality'){arr = arrPersonality; char.sort(function(a, b){return (a.personality - b.personality)});}
-else if (currentType == 'appearance'){arr = arrAppearance; char.sort(function(a, b){return (a.appearance - b.appearance)});}
-else if (currentType == 'voice'){arr = arrVoice; char.sort(function(a, b){return (a.voice - b.voice)});}
+var currentAvts = JSON.parse(localStorage.getItem('arr'));
+arr = currentAvts;
+if(currentType == 0){type = 0; char.sort(function(a, b){return (a.personality - b.personality)});}
+else if (currentType == 1){type = 1; char.sort(function(a, b){return (a.appearance - b.appearance)});}
+else if (currentType == 2){type = 2; char.sort(function(a, b){return (a.voice - b.voice)});}
+for (var i = 0; i < char.length; i++){
+    document.getElementsByTagName("h3")[i].innerHTML = char[i].name;
+    document.getElementsByTagName("h4")[i].innerHTML = char[i].anime;
+    document.getElementsByClassName("avt")[i].style.backgroundImage = char[i].avt[arr[type][i]];
+    document.getElementsByTagName("p")[i].innerHTML = char[i].info;
+}
 //sort type
-function Personality(){type = 'personality'; localStorage.setItem('type', type); Sort();}
-function Appearance(){type = 'appearance'; localStorage.setItem('type', type); Sort();}
-function Voice(){type = 'voice'; localStorage.setItem('type', type); Sort();}
+function Personality(){type = 0; localStorage.setItem('type', type); Sort();}
+function Appearance(){type = 1; localStorage.setItem('type', type); Sort();}
+function Voice(){type = 2; localStorage.setItem('type', type); Sort();}
 function Sort(){
     document.documentElement.style.setProperty('--display', 'block');
     setInterval(function(){document.getElementById("wait").innerHTML += '.';}, 300);
     setTimeout(function(){
         location.reload();
         document.documentElement.style.setProperty('--display', 'none');
-        if(currentType == 'personality'){arr = arrPersonality; char.sort(function(a, b){return (a.personality - b.personality)});}
-        else if (currentType == 'appearance'){arr = arrAppearance; char.sort(function(a, b){return (a.appearance - b.appearance)});}
-        else if (currentType == 'voice'){arr = arrVoice; char.sort(function(a, b){return (a.voice - b.voice)});}
-        for (var i = 0; i < 4; i++){
+        if(type == 0){char.sort(function(a, b){return (a.personality - b.personality)});}
+        else if (type == 1){char.sort(function(a, b){return (a.appearance - b.appearance)});}
+        else if (type == 2){char.sort(function(a, b){return (a.voice - b.voice)});}
+        for (var i = 0; i < char.length; i++){
             document.getElementsByTagName("h3")[i].innerHTML = char[i].name;
-            names.push(char[i].name);
             document.getElementsByTagName("h4")[i].innerHTML = char[i].anime;
-            animes.push(char[i].anime);
-            document.getElementsByClassName("avt")[i].style.backgroundImage = char[i].avt[i];
-            avts.push(char[i].avt[i]);
-            arrPersonality[char[i].personality] = ;
-
+            document.getElementsByClassName("avt")[i].style.backgroundImage = char[i].avt[arr[type][i]];
             document.getElementsByTagName("p")[i].innerHTML = char[i].info;
-            infos.push(char[i].info);
-
         }
-        localStorage.setItem('names', JSON.stringify(names));
-        localStorage.setItem('animes', JSON.stringify(animes));
-        localStorage.setItem('avts', JSON.stringify(avts));
-        localStorage.setItem('infos', JSON.stringify(infos));
-        
     }, 1000);
 }
 //change avt
@@ -122,8 +104,12 @@ function changeAvt(index){
     document.getElementsByClassName("avt")[index].classList.remove("changeavt");
     void document.getElementsByClassName("avt")[index].offsetWidth; //trigger reflow
     document.getElementsByClassName("avt")[index].classList.add("changeavt");
-    if(arr[index] == 3) {arr[index] = -1;}
-    arr[index]++;
-    setTimeout(function(){document.getElementsByClassName("avt")[index].style.backgroundImage = char[index].avt[arr[index]];}, 900);
+    if(arr[type][index] == 3) {arr[type][index] = -1;}
+    arr[type][index]++;
+    setTimeout(function(){document.getElementsByClassName("avt")[index].style.backgroundImage = char[index].avt[arr[type][index]];}, 900);
+    //update avt array
+    arr[0][char[index].personality - 1] = arr[type][index];
+    arr[1][char[index].appearance - 1] = arr[type][index];
+    arr[2][char[index].voice - 1] = arr[type][index];
     localStorage.setItem('arr', JSON.stringify(arr));
 }
