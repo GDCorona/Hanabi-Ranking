@@ -77,6 +77,7 @@ body{
     margin: 0 0 1vw 1vw;
     box-shadow: 0 3px 5px 0 rgba(238, 150, 234, 0.733), 2px 2px 15px 0 var(--color2);
     background-size: cover;
+    background-position: center;
     cursor: pointer;
 }
 .changeavt{
