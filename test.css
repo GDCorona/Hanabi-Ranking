@@ -38,43 +38,43 @@ body{
     height: 120px;
     animation: spin 1s linear infinite;
 }
+#sort-option{
+    font-size: 2vw;
+    margin: 0 0 0 2vw;
+}
 @keyframes spin {
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
 }
 @keyframes leftmove {
-    from {opacity: 0; left: -100%;}
-    to {opacity: 100; left: 0%}
+    from {opacity: 0; left: -30%;}
+    to {opacity: 1; left: 0%}
 }
 @keyframes rightmove {
-    from {opacity: 0; left: 100%;}
-    to {opacity: 10; left: 0%}
+    from {opacity: 0; left: 30%;}
+    to {opacity: 1; left: 0%}
 }
-@media(prefers-reduced-motion: no-preference){
-    .movement{
-        animation: leftmove 0.5s ease-out both;
-    }
-    .movement1{
-        animation: rightmove 0.5s ease-out both;
-    }
+.leftMove{
+    animation: leftmove 0.7s ease-out;
 }
-
-.waifulist h3::before{
-    counter-increment: section;
-    content: "#" counter(section);
+.rightMove{
+    animation: rightmove 0.7s ease-out;
 }
 .left, .right{
+    position: relative;
     display: block;
     background-color: aliceblue;
     margin-bottom: 20vw;
     margin-right: 5vw;
     word-break: break-all;
+    border: 0.2vw ridge moccasin;
 }
 .avt{
     border-radius: 50%;
     border: 0.3vw solid rgb(0, 0, 0);
     width: 23vw;
     height: 23vw;
+    margin: 0 0 1vw 1vw;
     box-shadow: 0 3px 5px 0 rgba(238, 150, 234, 0.733), 2px 2px 15px 0 var(--color2);
     background-size: cover;
     cursor: pointer;
@@ -85,6 +85,14 @@ body{
 @keyframes change {
     from {transform: rotate(0deg); opacity: 1;}
     to {transform: rotate(360deg); opacity: 0;}
+}
+.waifulist h3::before{
+    counter-increment: section;
+    content: "#" counter(section);
+    background-color: rgba(240, 198, 146, 0.842);
+    border-right: 0.2vw ridge moccasin;
+    margin-right: 1.5vw;
+    padding: 0 0.5vw;
 }
 .left h3, .right h3{
     position: relative;
@@ -97,7 +105,11 @@ body{
     background-color: #aaa;
     font-size: 2vw;
     font-weight: bolder;
+    border-top: 0.2vw ridge moccasin;
+    border-bottom: 0.2vw ridge moccasin;
     margin: 0 0 1vw 0;
+    padding: 0.3vw 1vw;
+    font-style: italic;
 }
 .left div, .right div{
     display: flex;
