@@ -113,30 +113,3 @@ function changeAvt(index){
     arr[2][char[index].voice - 1] = arr[type][index];
     localStorage.setItem('arr', JSON.stringify(arr));
 }
-const selector = document.querySelector('.custom-sort');
-selector.addEventListener('mousedown', e => {
-    e.preventDefault();
-    const select = selector.children[0];
-    const dropDown = document.createElement('ul');
-    dropDown.className = 'sort-option';
-    [...select.children].forEach(option => {
-        const dropDownOption = document.createElement('li');
-        dropDownOption.textContent = option.textContent;
-        dropDownOption.addEventListener('mousedown', e => {
-            e.stopPropagation();
-            if (option.value == 0) {Personality();}
-            else if (option.value == 1) {Appearance();}
-            else if (option.value == 2) {Voice();}
-            select.value = option.value;
-            selector.value = option.value;
-            dropDown.remove();
-        })
-        dropDown.appendChild(dropDownOption);
-    });
-    selector.appendChild(dropDown);
-    document.addEventListener('click', e => {
-        if(!selector.contains(e.target)){
-            dropDown.remove();
-        }
-    })
-})
