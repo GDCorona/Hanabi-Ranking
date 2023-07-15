@@ -7,6 +7,7 @@
     --titlecolor:aquamarine;
     --cherryblossom: none;
 }
+*{box-sizing: border-box;}
 body{
     counter-reset: section;
     font-family: 'Cutive Mono', sans-serif;
@@ -37,10 +38,6 @@ body{
     width: 120px;
     height: 120px;
     animation: spin 1s linear infinite;
-}
-#sort-option{
-    font-size: 2vw;
-    margin: 0 0 0 2vw;
 }
 @keyframes spin {
     from{transform: rotate(0deg);}
