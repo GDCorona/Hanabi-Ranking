@@ -9,23 +9,63 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href= "https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel= "stylesheet">
     </head>
+    <style>
+      .custom-sort{
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bolder;
+
+      }
+      .custom-sort select{
+        font-size: 20px;
+        font-family: 'Cutive Mono', sans-serif;
+        font-weight: bolder;
+        padding: 5px 10px;
+        cursor: pointer;
+        border: 1px solid rgb(151, 147, 147);
+        border-radius: 5px;
+        background-color: rgba(167, 222, 243, 0.7);
+        outline: none;
+        appearance: none;
+        width: 200px;
+      }
+      .custom-sort .sort-option{
+        list-style: none;
+        padding: 0;
+        border: 2px solid #aaa;
+        margin: 0;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: aliceblue;
+        z-index: 1;
+        position: absolute;
+      }
+      .custom-sort .sort-option li{
+        
+        padding: 0 15px;
+        height: 50px;
+        transition: background 0.5s ease;
+      }
+      .custom-sort .sort-option li:hover{
+        background: rgba(126, 187, 211, 0.7);
+      }
+    </style>
     <body>
-        <h1>My top 20 favorite characters</h1>
+        <h1 style = "text-align: center;">My top 30 favorite anime characters</h1>
         <h2 id = "date"></h2>
         <h2 id = "test"></h2>
         <div class = "loadscreen">
           <div class = "loader"></div>
           <h2 id = "wait">Wait</h2>
         </div>
-        <h2 style="display:flex">Sort by: 
-          <div class = "custom-sort">
-            <select id = "sort-option">
-              <option value="0"><button onclick = "Personality()">Personality</button></option>
-              <option value="1"><button onclick = "Appearance()">Appearance</button></option>
-              <option value="2"><button onclick = "Voice()">Voice</button></option>
-            </select>
-          </div>
-        </h2>
+        <label class = "custom-sort">
+          Ranked by:
+          <select>
+            <option value="0"><button onclick = "Personality()">Personality</button></option>
+            <option value="1"><button onclick = "Appearance()">Appearance</button></option>
+            <option value="2"><button onclick = "Voice()">Voice</button></option>
+          </select>
+        </label>
         <button onclick = "Personality()">Personality</button>
         <button onclick = "Appearance()">Appearance</button>
         <button onclick = "Voice()">Voice</button>
@@ -39,7 +79,7 @@
           <h3>Nishimiya Shouko</h3>
           <h4>Koe no Katachi</h4>
           <div>
-            <button onclick = "changeAvt(0)" class = "avt" style = "background-image: url('https://i.pinimg.com/originals/81/c1/c6/81c1c6eaf82af8c8be2e2b27d9370ac2.jpg');"></button>
+            <button onclick = "changeAvt(0)" class = "avt"></button>
               <p>
                   VA: Hayami Saori <br>
                   caring, kind-hearted girl<br>
@@ -51,7 +91,7 @@
           <h3>Kurobane Yusa</h3>
           <h4>Charlotte</h4>
           <div>
-            <button onclick = "changeAvt(1)" class = "avt" style = "background-image: url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg');"></button>
+            <button onclick = "changeAvt(1)" class = "avt"></button>
             <p>
                 VA: Uchida Maaya <br>
                 <a href = "">More info <img style = "width: 30px; height: 30px;" src = './link.png'></a>
@@ -62,7 +102,7 @@
           <h3>Shiina Mashiro</h3>
           <h4> Sakurasou no Pet na Kanojo </h4>
           <div>
-            <button onclick = "changeAvt(2)" class = "avt" style = "background-image: url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg');"></button>
+            <button onclick = "changeAvt(2)" class = "avt"></button>
             <p>
                 VA: Kayano Ai <br>
                 <a href = "">More info <img style = "width: 30px; height: 30px;" src = './link.png'></a>
@@ -73,7 +113,7 @@
           <h3>Illyasviel von Einzbern</h3>
           <h4>Fate/ Stay Night </h4>
           <div>
-            <button onclick = "changeAvt(3)" class = "avt" style = "background-image: url('https://i.pinimg.com/originals/1b/36/8c/1b368c4a5da71c8637cef2e161fdab60.jpg');"></button>
+            <button onclick = "changeAvt(3)" class = "avt"></button>
             <p>
                 VA: Kadowaki Mai <br>
                 <a href = "">More info <img style = "width: 30px; height: 30px;" src = './link.png'></a>
@@ -118,5 +158,6 @@
             })
         </script> 
         <script src = "waifu.js"></script>
+        <script src = "test.js"></script>
     </body>
 </html>
