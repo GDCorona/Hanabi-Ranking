@@ -14,6 +14,7 @@ const char = [
             "url('https://i.pinimg.com/originals/b0/72/47/b072476c24c76403a6a5fab373e2b1da.jpg')",
             "url('https://i.pinimg.com/originals/90/ea/83/90ea832d6107d0729ad5565e5db0a70c.gif')"
         ],
+        bg: "url('https://i.pinimg.com/originals/69/d8/75/69d8754cdbf6263c8fbbcc53bb086cf7.jpg')", 
         info: document.getElementsByTagName("p")[0].innerHTML
     },
     {
@@ -28,6 +29,7 @@ const char = [
             "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
             "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
         ],
+        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
         info: document.getElementsByTagName("p")[1].innerHTML
     },
     {
@@ -42,6 +44,7 @@ const char = [
             "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
             "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
         ],
+        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
         info: document.getElementsByTagName("p")[2].innerHTML
     },
     {
@@ -56,6 +59,7 @@ const char = [
             "url('https://i.pinimg.com/originals/dc/c0/98/dcc0984a5f2f2cb15218317e1ea652cc.jpg')",
             "url('https://i.pinimg.com/originals/40/5a/af/405aafa6115504126fdcdbd58822bc8b.gif')"
         ],
+        bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
         info: document.getElementsByTagName("p")[3].innerHTML
     }
 ]
@@ -76,6 +80,7 @@ for (var i = 0; i < char.length; i++){
     document.getElementsByTagName("h3")[i].innerHTML = char[i].name;
     document.getElementsByTagName("h4")[i].innerHTML = char[i].anime;
     document.getElementsByClassName("avt")[i].style.backgroundImage = char[i].avt[arr[type][i]];
+    document.getElementsByClassName("switch-circle")[i].style.backgroundImage = char[i].avt[arr[type][i]];
     document.getElementsByTagName("p")[i].innerHTML = char[i].info;
 }
 //sort type
@@ -95,9 +100,21 @@ function Sort(){
             document.getElementsByTagName("h3")[i].innerHTML = char[i].name;
             document.getElementsByTagName("h4")[i].innerHTML = char[i].anime;
             document.getElementsByClassName("avt")[i].style.backgroundImage = char[i].avt[arr[type][i]];
+            document.getElementsByClassName("switch-circle")[i].style.backgroundImage = char[i].avt[arr[type][i]];
             document.getElementsByTagName("p")[i].innerHTML = char[i].info;
         }
     }, 1000);
+}
+//change bg
+function changeBG(index){
+    var check = document.getElementsByTagName("input")[index].checked;
+    if(check == true){
+        setTimeout(function(){document.body.style.backgroundImage = char[index].bg;}, 300);
+        for(var i = 0; i < 4; i++){
+            if(i != index) {document.getElementsByTagName("input")[i].checked = false;}
+        }
+    }
+    else {setTimeout(function(){document.body.style.backgroundImage = 'none';}, 300);} 
 }
 //change avt
 function changeAvt(index){
@@ -106,7 +123,10 @@ function changeAvt(index){
     document.getElementsByClassName("avt")[index].classList.add("changeavt");
     if(arr[type][index] == 3) {arr[type][index] = -1;}
     arr[type][index]++;
-    setTimeout(function(){document.getElementsByClassName("avt")[index].style.backgroundImage = char[index].avt[arr[type][index]];}, 900);
+    setTimeout(function(){
+    document.getElementsByClassName("avt")[index].style.backgroundImage = char[index].avt[arr[type][index]];
+    document.getElementsByClassName("switch-circle")[index].style.backgroundImage = char[index].avt[arr[type][index]];
+    }, 900);
     //update avt array
     arr[0][char[index].personality - 1] = arr[type][index];
     arr[1][char[index].appearance - 1] = arr[type][index];
