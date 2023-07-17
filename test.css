@@ -144,7 +144,7 @@ body{
     transition: 0.4s;
     border-radius: 34px;
 }
-.slider::before {
+.switch-circle {
     position: absolute;
     content: "";
     height: 26px;
@@ -155,15 +155,14 @@ body{
     background-size: cover;
     background-position: center;
     cursor: pointer;
-    background-image: url('https://i.pinimg.com/originals/c5/fa/a0/c5faa08028aad8b5ffee844820cd96dd.jpg');
     z-index: 1;
     transition: transform 0.5s ease;
 }
-input:checked + .slider{
+input:checked ~ .slider{
     background-color: #3498db;
     box-shadow: 0 0 15px #0d9cfc;
 }
-input:checked + .slider::before{
+input:checked ~ .switch-circle{
     transform: translateX(26px) rotate(360deg);
 }
 /*rank option*/
@@ -215,7 +214,7 @@ input:checked + .slider::before{
     from {transform: rotate(180deg);}
     to {transform: rotate(360deg);}
 }
-  .custom-sort .sort-option{
+.custom-sort .sort-option{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -224,8 +223,8 @@ input:checked + .slider::before{
     z-index: 1;
     width: 100%;
     position: absolute;
-  }
-  .custom-sort .sort-option li{
+}
+.custom-sort .sort-option li{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -233,7 +232,7 @@ input:checked + .slider::before{
     cursor: pointer;
     transition: background 0.5s ease;
 }
-  .open-option{
+.open-option{
     animation: open 1s ease forwards;
 }
   @keyframes open {
