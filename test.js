@@ -113,3 +113,62 @@ function changeAvt(index){
     arr[2][char[index].voice - 1] = arr[type][index];
     localStorage.setItem('arr', JSON.stringify(arr));
 }
+//sort option
+const selector = document.querySelector('.custom-sort');
+const select = selector.children[1]; //exclude children 0 which is the div arrow
+select.value = localStorage.getItem('select-value');
+if(select.value == ''){select.value = 0;} //set value to 0 if empty localStorage
+var click_count = 0;
+selector.addEventListener('mousedown', e => {
+    e.preventDefault();
+    click_count++;
+    const select = selector.children[1]; //exclude children 0 which is the div arrow
+    const dropDown = document.createElement('ul');
+    dropDown.className = 'sort-option';
+    var i = 0;
+    function CreateOption(){
+        setTimeout(function(){
+        const option = [...select.children][i];
+        const dropDownOption = document.createElement('li');
+        dropDownOption.textContent = option.textContent;
+        dropDownOption.addEventListener('mousedown', e => {
+            e.stopPropagation();
+            if (option.value == 0) {Personality();}
+            else if (option.value == 1) {Appearance();}
+            else if (option.value == 2) {Voice();}
+            select.value = option.value;
+            localStorage.setItem('select-value', option.value);
+            dropDown.remove();
+        })
+        dropDown.appendChild(dropDownOption);
+        dropDownOption.classList.remove("open-option");
+        void dropDownOption.offsetWidth; //trigger reflow
+        dropDownOption.classList.add("open-option");
+        i++;
+        if(i < 3){CreateOption();}
+        }, 50);
+    }
+    CreateOption();
+    selector.appendChild(dropDown);
+    document.addEventListener('click', e => {
+        if((click_count % 2 == 0) || !selector.contains(e.target)){
+            if(document.getElementsByClassName("arrow")[0].classList.contains("rotate-arrow-down") == false){
+                document.getElementsByClassName("arrow")[0].classList.remove("rotate-arrow-up");
+                void document.getElementsByClassName("arrow")[0].offsetWidth; //trigger reflow
+                document.getElementsByClassName("arrow")[0].classList.add("rotate-arrow-down");
+                click_count++;
+            }
+            dropDown.remove();
+        }
+    })
+    if(document.getElementsByClassName("arrow")[0].classList.contains("rotate-arrow-up") == false){
+        document.getElementsByClassName("arrow")[0].classList.remove("rotate-arrow-down");
+        void document.getElementsByClassName("arrow")[0].offsetWidth; //trigger reflow
+        document.getElementsByClassName("arrow")[0].classList.add("rotate-arrow-up");
+    }
+    else if (document.getElementsByClassName("arrow")[0].classList.contains("rotate-arrow-down") == false){
+        document.getElementsByClassName("arrow")[0].classList.remove("rotate-arrow-up");
+        void document.getElementsByClassName("arrow")[0].offsetWidth; //trigger reflow
+        document.getElementsByClassName("arrow")[0].classList.add("rotate-arrow-down");
+    }
+})
