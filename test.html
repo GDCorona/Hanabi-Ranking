@@ -10,45 +10,7 @@
         <link href= "https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel= "stylesheet">
     </head>
     <style>
-      .custom-sort{
-        display: inline-block;
-        font-size: 20px;
-        font-weight: bolder;
 
-      }
-      .custom-sort select{
-        font-size: 20px;
-        font-family: 'Cutive Mono', sans-serif;
-        font-weight: bolder;
-        padding: 5px 10px;
-        cursor: pointer;
-        border: 1px solid rgb(151, 147, 147);
-        border-radius: 5px;
-        background-color: rgba(167, 222, 243, 0.7);
-        outline: none;
-        appearance: none;
-        width: 200px;
-      }
-      .custom-sort .sort-option{
-        list-style: none;
-        padding: 0;
-        border: 2px solid #aaa;
-        margin: 0;
-        border-radius: 4px;
-        cursor: pointer;
-        background-color: aliceblue;
-        z-index: 1;
-        position: absolute;
-      }
-      .custom-sort .sort-option li{
-        
-        padding: 0 15px;
-        height: 50px;
-        transition: background 0.5s ease;
-      }
-      .custom-sort .sort-option li:hover{
-        background: rgba(126, 187, 211, 0.7);
-      }
     </style>
     <body>
         <h1 style = "text-align: center;">My top 30 favorite anime characters</h1>
@@ -60,19 +22,14 @@
         </div>
         <label class = "custom-sort">
           Ranked by:
+          <div class = "arrow"></div>
           <select>
-            <option value="0"><button onclick = "Personality()">Personality</button></option>
-            <option value="1"><button onclick = "Appearance()">Appearance</button></option>
-            <option value="2"><button onclick = "Voice()">Voice</button></option>
+            <option value="0">Personality</option>
+            <option value="1">Appearance</option>
+            <option value="2">Voice</option>
           </select>
         </label>
-        <button onclick = "Personality()">Personality</button>
-        <button onclick = "Appearance()">Appearance</button>
-        <button onclick = "Voice()">Voice</button>
-        <label class="switch">
-          <input type="checkbox">
-          <span class="slider"></span>
-        </label>
+        
         <br>
         <ul class = "waifulist">
         <li class = "top1 left">
@@ -86,6 +43,10 @@
                   <a href = "">More info <img style = "width: 30px; height: 30px;" src = './link.png'></a>
               </p>
           </div>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
         </li>
         <li class = "top2 right">
           <h3>Kurobane Yusa</h3>
@@ -97,6 +58,10 @@
                 <a href = "">More info <img style = "width: 30px; height: 30px;" src = './link.png'></a>
             </p>
           </div>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
         </li>
         <li class = "top3 left">
           <h3>Shiina Mashiro</h3>
@@ -108,6 +73,10 @@
                 <a href = "">More info <img style = "width: 30px; height: 30px;" src = './link.png'></a>
             </p>
           </div>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
         </li>
         <li class = "top4 right">
           <h3>Illyasviel von Einzbern</h3>
@@ -119,6 +88,10 @@
                 <a href = "">More info <img style = "width: 30px; height: 30px;" src = './link.png'></a>
             </p>
           </div>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
         </li>
         </ul>
         <script>
@@ -158,6 +131,5 @@
             })
         </script> 
         <script src = "waifu.js"></script>
-        <script src = "test.js"></script>
     </body>
 </html>
