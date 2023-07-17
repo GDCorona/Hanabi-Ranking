@@ -15,7 +15,9 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-image: none;
+
 }
+/*loading screen*/
 .loadscreen{
     display: var(--display);
     background-color: #aaa;
@@ -43,26 +45,27 @@ body{
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
 }
+
+/*main content*/
+.leftMove{
+    animation: leftmove 0.7s ease-out;
+}
 @keyframes leftmove {
     from {opacity: 0; left: -30%;}
     to {opacity: 1; left: 0%}
+}
+.rightMove{
+    animation: rightmove 0.7s ease-out;
 }
 @keyframes rightmove {
     from {opacity: 0; left: 30%;}
     to {opacity: 1; left: 0%}
 }
-.leftMove{
-    animation: leftmove 0.7s ease-out;
-}
-.rightMove{
-    animation: rightmove 0.7s ease-out;
-}
 .left, .right{
     position: relative;
     display: block;
     background-color: aliceblue;
-    margin-bottom: 20vw;
-    margin-right: 5vw;
+    margin: 20vw 5vw 20vw 0;
     word-break: break-all;
     border: 0.2vw ridge moccasin;
 }
@@ -116,6 +119,7 @@ body{
 .left p, .right p{
     margin: 0 0 0 3vw;
 }
+/*toggle switch*/
 .switch {
     position: relative;
     display: inline-block;
@@ -138,28 +142,104 @@ body{
     bottom: 0;
     background-color: #ccc;
     transition: 0.4s;
+    border-radius: 34px;
 }
-.slider:before {
+.slider::before {
     position: absolute;
     content: "";
     height: 26px;
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
-    transition: 0.4s;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    background-image: url('https://i.pinimg.com/originals/c5/fa/a0/c5faa08028aad8b5ffee844820cd96dd.jpg');
+    z-index: 1;
+    transition: transform 0.5s ease;
 }
 input:checked + .slider{
     background-color: #3498db;
     box-shadow: 0 0 15px #0d9cfc;
 }
-input:checked + .slider:before{
-    transform: translateX(26px);
+input:checked + .slider::before{
+    transform: translateX(26px) rotate(360deg);
 }
-.slider {
-    border-radius: 34px;
+/*rank option*/
+.custom-sort{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+}
+.custom-sort select{
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Cutive Mono', sans-serif;
+    font-weight: bolder;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid rgb(70, 157, 228);
+    border-radius: 5px;
+    background-color: rgba(167, 222, 243, 0.7);
+    outline: none;
+    appearance: none;
+    width: 250px;
+}
+.arrow {
+    width: 0;
+    height: 0;
+    background-color: #222;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    border-left: 7px solid rgb(194, 229, 241);
+    border-right: 7px solid rgb(194, 229, 241);
+    border-top: 7px solid #000;
+    right: 10px;
+    bottom: 20px;
+}
+.rotate-arrow-up {
+    animation: rotateUp 0.5s ease forwards;
+}
+.rotate-arrow-down {
+    animation: rotateDown 0.5s ease forwards;
+}
+@keyframes rotateUp {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+}
+@keyframes rotateDown {
+    from {transform: rotate(180deg);}
+    to {transform: rotate(360deg);}
+}
+  .custom-sort .sort-option{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    background-color: rgba(206, 238, 250, 0.7);
+    z-index: 1;
+    width: 100%;
+    position: absolute;
   }
-  
-.slider:before {
-    border-radius: 50%;
+  .custom-sort .sort-option li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+  .open-option{
+    animation: open 1s ease forwards;
+}
+  @keyframes open {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.custom-sort .sort-option li:hover{
+    background: rgba(126, 187, 211, 0.7);
 }
