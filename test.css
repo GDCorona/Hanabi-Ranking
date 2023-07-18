@@ -65,16 +65,18 @@ body{
     position: relative;
     display: block;
     background-color: aliceblue;
-    margin: 20vw 5vw 20vw 0;
+    margin: 0 5vw 20vw 0;
     word-break: break-all;
-    border: 0.2vw ridge moccasin;
+    border: 0.3vw ridge moccasin;
+    opacity: 0.9;
+    min-width: 90vw;
 }
 .avt{
     border-radius: 50%;
     border: 0.3vw solid rgb(0, 0, 0);
     width: 23vw;
     height: 23vw;
-    margin: 0 0 1vw 1vw;
+    margin: 1vw;
     box-shadow: 0 3px 5px 0 rgba(238, 150, 234, 0.733), 2px 2px 15px 0 var(--color2);
     background-size: cover;
     background-position: center;
@@ -101,6 +103,7 @@ body{
     background-color: rgba(142, 222, 253, 0.7);
     font-weight: bolder;
     margin: 0;
+
 }
 .left h4, .right h4{
     background-color: #aaa;
@@ -114,10 +117,16 @@ body{
 }
 .left div, .right div{
     display: flex;
-    font-size: 2.5vw;
+    font-size: 5vh;
 }
 .left p, .right p{
-    margin: 0 0 0 3vw;
+    padding: 0 2vw 0 1vw;
+    max-width: 63vw;
+}
+.features{
+    position:relative;
+    top: 75%;
+    padding: 5vw;
 }
 /*toggle switch*/
 .switch {
@@ -171,6 +180,7 @@ input:checked ~ .switch-circle{
     font-size: 20px;
     font-weight: bolder;
     position: relative;
+    left: 70%;
 }
 .custom-sort select{
     display: block;
