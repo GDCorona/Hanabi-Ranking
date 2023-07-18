@@ -62,6 +62,7 @@ const char = [
         bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
         info: document.getElementsByTagName("p")[3].innerHTML
     }
+    
 ]
 var arr = [
     new Int16Array(30), //0: personality
@@ -110,8 +111,8 @@ function changeBG(index){
     var check = document.getElementsByTagName("input")[index].checked;
     if(check == true){
         setTimeout(function(){document.body.style.backgroundImage = char[index].bg;}, 300);
-        for(var i = 0; i < 4; i++){
-            if(i != index) {document.getElementsByTagName("input")[i].checked = false;}
+        for(var i = 0; i < char.length; i++){
+            if(i != index) {document.getElementsByTagName("input")[i].checked = false;} //turn off other switches
         }
     }
     else {setTimeout(function(){document.body.style.backgroundImage = 'none';}, 300);} 
@@ -160,6 +161,7 @@ selector.addEventListener('mousedown', e => {
             localStorage.setItem('select-value', option.value);
             dropDown.remove();
         })
+        //dropdown animation
         dropDown.appendChild(dropDownOption);
         dropDownOption.classList.remove("open-option");
         void dropDownOption.offsetWidth; //trigger reflow
@@ -170,6 +172,7 @@ selector.addEventListener('mousedown', e => {
     }
     CreateOption();
     selector.appendChild(dropDown);
+    //close dropdown when clicking outside
     document.addEventListener('click', e => {
         if((click_count % 2 == 0) || !selector.contains(e.target)){
             if(document.getElementsByClassName("arrow")[0].classList.contains("rotate-arrow-down") == false){
@@ -181,6 +184,7 @@ selector.addEventListener('mousedown', e => {
             dropDown.remove();
         }
     })
+    //arrow animation
     if(document.getElementsByClassName("arrow")[0].classList.contains("rotate-arrow-up") == false){
         document.getElementsByClassName("arrow")[0].classList.remove("rotate-arrow-down");
         void document.getElementsByClassName("arrow")[0].offsetWidth; //trigger reflow
