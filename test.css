@@ -1,6 +1,4 @@
 :root{
-    --loadscreen_display: none;
-    --menu_display: none;
     --color1: aliceblue;
     --color2: black;
     --color3: skyblue;
@@ -17,9 +15,34 @@ body{
     background-size: cover;
     background-image: none;
 }
+/*jump to top*/
+#jump-to-top{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 80vh;
+    right: 2vw;
+    z-index: 1;
+    background-color: rgba(142, 222, 253, 0.7);
+    border: 0.2vw solid rgb(70, 157, 228);
+    transition: background 1s ease;
+}
+#jump-to-top span{
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #000;
+}
+#jump-to-top:hover{
+    background: rgba(126, 187, 211, 0.7);
+}
 /*loading screen*/
-.loadscreen{
-    display: var(--loadscreen_display);
+#loadscreen{
+    display: none;
     background-color: #aaa;
     left: 0;
     top: 0;
@@ -30,7 +53,7 @@ body{
     opacity: 0.8;
 }
 #wait{position: relative; left: 45%; top: 60%; font-size: 50px; font-weight: bolder;}
-.loader{
+#loader{
     border: 16px solid #f3f3f3;
     border-radius: 50%;
     border-top: 16px solid #3498db;
@@ -46,9 +69,10 @@ body{
     to{transform: rotate(360deg);}
 }
 /*navigation bar*/
+a{text-decoration: none; color: #000;}
 #menu{
     background-color: rgba(136, 130, 130, 0.849);
-    display: var(--menu_display);
+    display: none;
     top: 0;
     left: 0;
     width: 100%;
@@ -69,30 +93,17 @@ body{
     width: 20%;
     height: 100%;
 }
-
-#element1, #element2, #element3, #element4{
-    --underline_length1: auto; /*calc in js*/
-    --underline_length2: auto; /*calc in js*/
-    --underline_length3: auto; /*calc in js*/
-    --underline_length4: auto; /*calc in js*/
+.navbar li{
     margin: 0 0 1vw 0;
     cursor: pointer;
-
-    transition: width 0.5s ease;
+    width: fit-content;
+    max-width: 0;
+    transition: max-width 0.3s ease-in;
     border-bottom: 0.2vw solid #000;
 } 
-#element1:hover{
-    width: var(--underline_length1);
-}
-#element2:hover{
-    width: var(--underline_length2);
-}
-#element3:hover{
-    width: var(--underline_length3);
-}
-#element4:hover{
-    width: var(--underline_length4);
-}
+#currentPage{max-width: fit-content;}
+.navbar li:hover{max-width: 100%;}
+
 .open-navbar{
     animation: nav-open 0.5s ease forwards;
 }
@@ -111,11 +122,12 @@ body{
     color: var(--color2);
     font-size: 200%;
     margin: 1vw;
-    left: 70%;
+    left: 75%;
     position: relative;
     font-weight: bold;
     cursor: pointer;
 }
+#close:hover{color: rgb(133, 130, 130);}
 /*main content*/
 .leftMove{
     animation: leftmove 0.7s ease-out;
@@ -259,7 +271,7 @@ input:checked ~ .switch-circle{
     font-weight: bolder;
     padding: 10px;
     cursor: pointer;
-    border: 2px solid rgb(70, 157, 228);
+    border: 0.2vw solid rgb(70, 157, 228);
     border-radius: 5px;
     background-color: rgba(167, 222, 243, 0.7);
     outline: none;
@@ -269,12 +281,11 @@ input:checked ~ .switch-circle{
 .arrow {
     width: 0;
     height: 0;
-    background-color: #222;
     display: inline-block;
     position: absolute;
     cursor: pointer;
-    border-left: 7px solid rgb(194, 229, 241);
-    border-right: 7px solid rgb(194, 229, 241);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
     border-top: 7px solid #000;
     right: 10px;
     bottom: 20px;
@@ -314,7 +325,7 @@ input:checked ~ .switch-circle{
 .open-option{
     animation: open 1s ease forwards;
 }
-  @keyframes open {
+@keyframes open {
     from {opacity: 0;}
     to {opacity: 1;}
 }
