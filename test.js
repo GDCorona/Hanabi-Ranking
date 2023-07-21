@@ -106,6 +106,32 @@ function Sort(){
         }
     }, 1000);
 }
+function openNav(){
+    document.documentElement.style.setProperty('--menu_display', 'block');
+    document.getElementsByClassName("navbar")[0].classList.remove("close-navbar");
+    void document.getElementsByClassName("navbar")[0].offsetWidth; //trigger reflow
+    document.getElementsByClassName("navbar")[0].classList.add("open-navbar");
+    var x = document.querySelector(".navbar").children;
+    for (var i = 1; i < x.length; i++){
+
+        console.log(x[i].offsetWidth);
+    }
+}
+function closeNav(){
+    setTimeout(function() {document.documentElement.style.setProperty('--menu_display', 'none');}, 300);
+    document.getElementsByClassName("navbar")[0].classList.remove("open-navbar");
+    void document.getElementsByClassName("navbar")[0].offsetWidth; //trigger reflow
+    document.getElementsByClassName("navbar")[0].classList.add("close-navbar");
+}
+//close when clicking outside the menu
+document.addEventListener('click', e => {
+    if(document.querySelector("#menu").contains(e.target) && !document.querySelector(".navbar").contains(e.target)){
+        setTimeout(function() {document.documentElement.style.setProperty('--menu_display', 'none');}, 300);
+        document.getElementsByClassName("navbar")[0].classList.remove("open-navbar");
+        void document.getElementsByClassName("navbar")[0].offsetWidth; //trigger reflow
+        document.getElementsByClassName("navbar")[0].classList.add("close-navbar");
+    }
+})
 //change bg
 function changeBG(index){
     var check = document.getElementsByTagName("input")[index].checked;
