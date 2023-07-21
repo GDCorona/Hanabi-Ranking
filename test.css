@@ -1,5 +1,6 @@
 :root{
-    --display: none;
+    --loadscreen_display: none;
+    --menu_display: none;
     --color1: aliceblue;
     --color2: black;
     --color3: skyblue;
@@ -15,11 +16,10 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-image: none;
-
 }
 /*loading screen*/
 .loadscreen{
-    display: var(--display);
+    display: var(--loadscreen_display);
     background-color: #aaa;
     left: 0;
     top: 0;
@@ -45,7 +45,77 @@ body{
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
 }
+/*navigation bar*/
+#menu{
+    background-color: rgba(136, 130, 130, 0.849);
+    display: var(--menu_display);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.navbar{
+    list-style-type: none;
+    font-size: 2vw;
+    font-weight: bolder;
+    background-color: rgba(142, 222, 253, 0.7);
+    top: 0;
+    margin: 0;
+    left: -30%;
+    opacity: 0; 
+    position: fixed;
+    width: 20%;
+    height: 100%;
+}
 
+#element1, #element2, #element3, #element4{
+    --underline_length1: auto; /*calc in js*/
+    --underline_length2: auto; /*calc in js*/
+    --underline_length3: auto; /*calc in js*/
+    --underline_length4: auto; /*calc in js*/
+    margin: 0 0 1vw 0;
+    cursor: pointer;
+
+    transition: width 0.5s ease;
+    border-bottom: 0.2vw solid #000;
+} 
+#element1:hover{
+    width: var(--underline_length1);
+}
+#element2:hover{
+    width: var(--underline_length2);
+}
+#element3:hover{
+    width: var(--underline_length3);
+}
+#element4:hover{
+    width: var(--underline_length4);
+}
+.open-navbar{
+    animation: nav-open 0.5s ease forwards;
+}
+.close-navbar{
+    animation: nav-close 0.5s ease forwards;
+}
+@keyframes nav-open {
+    from {opacity: 0; left: -30%;}
+    to {opacity: 1; left: 0; }
+}
+@keyframes nav-close {
+    from {opacity: 1; left: 0;}
+    to{opacity: 0; left: -30%;}
+}
+#close{
+    color: var(--color2);
+    font-size: 200%;
+    margin: 1vw;
+    left: 70%;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+}
 /*main content*/
 .leftMove{
     animation: leftmove 0.7s ease-out;
@@ -103,7 +173,6 @@ body{
     background-color: rgba(142, 222, 253, 0.7);
     font-weight: bolder;
     margin: 0;
-
 }
 .left h4, .right h4{
     background-color: #aaa;
