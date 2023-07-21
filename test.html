@@ -13,7 +13,17 @@
 
     </style>
     <body>
-        <h1 style = "text-align: center;">My top 30 favorite anime characters</h1>
+        <h1 style = "text-align: center; font-size: 3vw">My top 30 favorite anime characters</h1>
+        <img onclick = "openNav()" style = "cursor:pointer; width: 50px; height: 50px; margin: 1vw; top: -10%; position:relative;" src = "./list.png">
+        <div id = "menu">
+        <ul class = "navbar">
+          <span onclick = "closeNav()" id = "close">&times;</span>
+          <li id ="element1"><a>Home</a></li>
+          <li id ="element2"><a>Demonlist</a></li>
+          <li id ="element3"><a>Anime</a></li>
+          <li id ="element4"><a>About</a></li>
+        </ul>
+        </div>
         <h2 id = "date"></h2>
         <h2 id = "test"></h2>
         <div class = "loadscreen">
