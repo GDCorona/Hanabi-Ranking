@@ -69,7 +69,7 @@ body{
     to{transform: rotate(360deg);}
 }
 /*navigation bar*/
-a{text-decoration: none; color: #000;}
+.navbar a{text-decoration: none; color: #000;}
 #menu{
     background-color: rgba(136, 130, 130, 0.849);
     display: none;
