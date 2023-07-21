@@ -89,11 +89,11 @@ function Personality(){type = 0; localStorage.setItem('type', type); Sort();}
 function Appearance(){type = 1; localStorage.setItem('type', type); Sort();}
 function Voice(){type = 2; localStorage.setItem('type', type); Sort();}
 function Sort(){
-    document.documentElement.style.setProperty('--display', 'block');
+    document.getElementById("loadscreen").style.display = "block";
     setInterval(function(){document.getElementById("wait").innerHTML += '.';}, 300);
     setTimeout(function(){
         location.reload();
-        document.documentElement.style.setProperty('--display', 'none');
+        document.getElementById("loadscreen").style.display = "none";
         if(type == 0){char.sort(function(a, b){return (a.personality - b.personality)});}
         else if (type == 1){char.sort(function(a, b){return (a.appearance - b.appearance)});}
         else if (type == 2){char.sort(function(a, b){return (a.voice - b.voice)});}
@@ -106,32 +106,44 @@ function Sort(){
         }
     }, 1000);
 }
+//open menu
 function openNav(){
-    document.documentElement.style.setProperty('--menu_display', 'block');
+    //document.documentElement.style.setProperty('--menu_display', 'block');
+    document.getElementById("menu").style.display = "block";
     document.getElementsByClassName("navbar")[0].classList.remove("close-navbar");
     void document.getElementsByClassName("navbar")[0].offsetWidth; //trigger reflow
     document.getElementsByClassName("navbar")[0].classList.add("open-navbar");
-    var x = document.querySelector(".navbar").children;
-    for (var i = 1; i < x.length; i++){
-
-        console.log(x[i].offsetWidth);
-    }
 }
+//close menu
 function closeNav(){
-    setTimeout(function() {document.documentElement.style.setProperty('--menu_display', 'none');}, 300);
+    setTimeout(function() {document.getElementById("menu").style.display = "none";}, 300);
     document.getElementsByClassName("navbar")[0].classList.remove("open-navbar");
     void document.getElementsByClassName("navbar")[0].offsetWidth; //trigger reflow
     document.getElementsByClassName("navbar")[0].classList.add("close-navbar");
 }
-//close when clicking outside the menu
 document.addEventListener('click', e => {
     if(document.querySelector("#menu").contains(e.target) && !document.querySelector(".navbar").contains(e.target)){
-        setTimeout(function() {document.documentElement.style.setProperty('--menu_display', 'none');}, 300);
+        setTimeout(function() {document.getElementById("menu").style.display = "none";}, 300);
         document.getElementsByClassName("navbar")[0].classList.remove("open-navbar");
         void document.getElementsByClassName("navbar")[0].offsetWidth; //trigger reflow
         document.getElementsByClassName("navbar")[0].classList.add("close-navbar");
     }
 })
+//jump to top
+let mybutton = document.getElementById("jump-to-top");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+
+    }
+  }
+function backtoTop(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 100;
+}
 //change bg
 function changeBG(index){
     var check = document.getElementsByTagName("input")[index].checked;
