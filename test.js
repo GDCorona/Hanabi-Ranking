@@ -1,5 +1,4 @@
-let d = new Date();
-document.getElementById("date").innerHTML = d;
+/*individual section (unique by pages)*/
 //variables
 const char = [
     {
@@ -15,6 +14,7 @@ const char = [
             "url('https://i.pinimg.com/originals/90/ea/83/90ea832d6107d0729ad5565e5db0a70c.gif')"
         ],
         bg: "url('https://i.pinimg.com/originals/69/d8/75/69d8754cdbf6263c8fbbcc53bb086cf7.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606938-corona-689894639-kaguya-noise-1.mp3",
         info: document.getElementsByTagName("p")[0].innerHTML
     },
     {
@@ -30,6 +30,7 @@ const char = [
             "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
         ],
         bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
         info: document.getElementsByTagName("p")[1].innerHTML
     },
     {
@@ -45,6 +46,7 @@ const char = [
             "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
         ],
         bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
         info: document.getElementsByTagName("p")[2].innerHTML
     },
     {
@@ -60,6 +62,7 @@ const char = [
             "url('https://i.pinimg.com/originals/40/5a/af/405aafa6115504126fdcdbd58822bc8b.gif')"
         ],
         bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
         info: document.getElementsByTagName("p")[3].innerHTML
     }
     
@@ -106,48 +109,12 @@ function Sort(){
         }
     }, 1000);
 }
-//open menu
-function openNav(){
-    //document.documentElement.style.setProperty('--menu_display', 'block');
-    document.getElementById("menu").style.display = "block";
-    document.getElementsByClassName("navbar")[0].classList.remove("close-navbar");
-    void document.getElementsByClassName("navbar")[0].offsetWidth; //trigger reflow
-    document.getElementsByClassName("navbar")[0].classList.add("open-navbar");
-}
-//close menu
-function closeNav(){
-    setTimeout(function() {document.getElementById("menu").style.display = "none";}, 300);
-    document.getElementsByClassName("navbar")[0].classList.remove("open-navbar");
-    void document.getElementsByClassName("navbar")[0].offsetWidth; //trigger reflow
-    document.getElementsByClassName("navbar")[0].classList.add("close-navbar");
-}
-document.addEventListener('click', e => {
-    if(document.querySelector("#menu").contains(e.target) && !document.querySelector(".navbar").contains(e.target)){
-        setTimeout(function() {document.getElementById("menu").style.display = "none";}, 300);
-        document.getElementsByClassName("navbar")[0].classList.remove("open-navbar");
-        void document.getElementsByClassName("navbar")[0].offsetWidth; //trigger reflow
-        document.getElementsByClassName("navbar")[0].classList.add("close-navbar");
-    }
-})
-//jump to top
-let mybutton = document.getElementById("jump-to-top");
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-
-    }
-  }
-function backtoTop(){
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 100;
-}
 //change bg
 function changeBG(index){
     var check = document.getElementsByTagName("input")[index].checked;
     if(check == true){
+        document.getElementsByTagName("audio")[0].src = char[index].audio;
+        document.getElementsByTagName("audio")[0].play();
         setTimeout(function(){document.body.style.backgroundImage = char[index].bg;}, 300);
         for(var i = 0; i < char.length; i++){
             if(i != index) {document.getElementsByTagName("input")[i].checked = false;} //turn off other switches
@@ -173,21 +140,21 @@ function changeAvt(index){
     localStorage.setItem('arr', JSON.stringify(arr));
 }
 //sort option
-const selector = document.querySelector('.custom-sort');
-const select = selector.children[1]; //exclude children 0 which is the div arrow
-select.value = localStorage.getItem('select-value');
-if(select.value == ''){select.value = 0;} //set value to 0 if empty localStorage
-var click_count = 0;
-selector.addEventListener('mousedown', e => {
+const sort_selector = document.querySelector('.custom-sort');
+const sort_select = sort_selector.children[1]; //exclude children 0 which is the div arrow
+sort_select.value = localStorage.getItem('sort-select-value');
+if(sort_select.value == ''){sort_select.value = 0;} //set value to 0 if empty localStorage
+var sort_click_count = 0;
+sort_selector.addEventListener('mousedown', e => {
     e.preventDefault();
-    click_count++;
-    const select = selector.children[1]; //exclude children 0 which is the div arrow
+    sort_click_count++;
+    const sort_select = sort_selector.children[1]; //exclude children 0 which is the div arrow
     const dropDown = document.createElement('ul');
     dropDown.className = 'sort-option';
     var i = 0;
     function CreateOption(){
         setTimeout(function(){
-        const option = [...select.children][i];
+        const option = [...sort_select.children][i];
         const dropDownOption = document.createElement('li');
         dropDownOption.textContent = option.textContent;
         dropDownOption.addEventListener('mousedown', e => {
@@ -195,8 +162,8 @@ selector.addEventListener('mousedown', e => {
             if (option.value == 0) {Personality();}
             else if (option.value == 1) {Appearance();}
             else if (option.value == 2) {Voice();}
-            select.value = option.value;
-            localStorage.setItem('select-value', option.value);
+            sort_select.value = option.value;
+            localStorage.setItem('sort-select-value', option.value);
             dropDown.remove();
         })
         //dropdown animation
@@ -209,15 +176,136 @@ selector.addEventListener('mousedown', e => {
         }, 50);
     }
     CreateOption();
-    selector.appendChild(dropDown);
+    sort_selector.appendChild(dropDown);
     //close dropdown when clicking outside
     document.addEventListener('click', e => {
-        if((click_count % 2 == 0) || !selector.contains(e.target)){
+        if((sort_click_count % 2 == 0) || !sort_selector.contains(e.target)){
+            if(document.getElementsByClassName("arrow")[1].classList.contains("rotate-arrow-down") == false){
+                document.getElementsByClassName("arrow")[1].classList.remove("rotate-arrow-up");
+                void document.getElementsByClassName("arrow")[1].offsetWidth; //trigger reflow
+                document.getElementsByClassName("arrow")[1].classList.add("rotate-arrow-down");
+                sort_click_count++;
+            }
+            dropDown.remove();
+        }
+    })
+    //arrow animation
+    if(document.getElementsByClassName("arrow")[1].classList.contains("rotate-arrow-up") == false){
+        document.getElementsByClassName("arrow")[1].classList.remove("rotate-arrow-down");
+        void document.getElementsByClassName("arrow")[1].offsetWidth; //trigger reflow
+        document.getElementsByClassName("arrow")[1].classList.add("rotate-arrow-up");
+    }
+    else if (document.getElementsByClassName("arrow")[1].classList.contains("rotate-arrow-down") == false){
+        document.getElementsByClassName("arrow")[1].classList.remove("rotate-arrow-up");
+        void document.getElementsByClassName("arrow")[1].offsetWidth; //trigger reflow
+        document.getElementsByClassName("arrow")[1].classList.add("rotate-arrow-down");
+    }
+})
+
+/*shared section (for every pages)*/
+//open menu
+function openNav(){
+    document.getElementById("menu").style.display = "block";
+    document.getElementsByClassName("navbar")[0].classList.remove("close-navbar");
+    void document.getElementsByClassName("navbar")[0].offsetWidth; //trigger reflow
+    document.getElementsByClassName("navbar")[0].classList.add("open-navbar");
+}
+//close menu
+function closeNav(){
+    setTimeout(function() {document.getElementById("menu").style.display = "none";}, 300);
+    document.getElementsByClassName("navbar")[0].classList.remove("open-navbar");
+    void document.getElementsByClassName("navbar")[0].offsetWidth; //trigger reflow
+    document.getElementsByClassName("navbar")[0].classList.add("close-navbar");
+}
+document.addEventListener('click', e => {
+    if(document.querySelector("#menu").contains(e.target) && !document.querySelector(".navbar").contains(e.target)){
+        setTimeout(function() {document.getElementById("menu").style.display = "none";}, 300);
+        document.getElementsByClassName("navbar")[0].classList.remove("open-navbar");
+        void document.getElementsByClassName("navbar")[0].offsetWidth; //trigger reflow
+        document.getElementsByClassName("navbar")[0].classList.add("close-navbar");
+    }
+})
+//jump to top
+let mybutton = document.getElementById("jump-to-top");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+function backtoTop(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+//change theme
+var Theme_click_count = 0;
+function ChangeTheme(value){
+    if(value == 0){
+        document.documentElement.style.setProperty('--color1', 'aliceblue');
+        document.documentElement.style.setProperty('--color2', 'black');
+    }
+    else if (value == 1){
+        document.documentElement.style.setProperty('--color1', 'black');
+        document.documentElement.style.setProperty('--color2', 'aliceblue');
+    }
+    else if (value == 2){
+        document.documentElement.style.setProperty('--color1', 'rgba(250, 206, 246, 0.829)');
+        document.documentElement.style.setProperty('--color2', 'rgb(223, 14, 129)');
+    }
+    if (document.getElementsByClassName("arrow")[0].classList.contains("rotate-arrow-down") == false){
+        document.getElementsByClassName("arrow")[0].classList.remove("rotate-arrow-up");
+        void document.getElementsByClassName("arrow")[0].offsetWidth; //trigger reflow
+        document.getElementsByClassName("arrow")[0].classList.add("rotate-arrow-down");
+    }
+    Theme_click_count++;
+}
+const theme_selector = document.querySelector('.theme-option');
+const theme_select = theme_selector.children[1]; //exclude children 0 which is the div arrow
+theme_select.value = localStorage.getItem('Theme-select-value');
+if(theme_select.value == ''){theme_select.value = 0;} //set value to 0 if empty localStorage
+theme_selector.addEventListener('mousedown', e => {
+    e.preventDefault();
+    Theme_click_count++;
+    const theme_select = theme_selector.children[1]; //exclude children 0 which is the div arrow
+    const dropDown = document.createElement('ul');
+    dropDown.className = 'sort-option';
+    var i = 0;
+    function CreateOption(){
+        setTimeout(function(){
+        const option = [...theme_select.children][i];
+        const dropDownOption = document.createElement('li');
+        dropDownOption.textContent = option.textContent;
+        dropDownOption.addEventListener('mousedown', e => {
+            e.stopPropagation();
+            if (option.value == 0) {ChangeTheme(0);}
+            else if (option.value == 1) {ChangeTheme(1);}
+            else if (option.value == 2) {ChangeTheme(2);}
+            theme_select.value = option.value;
+            localStorage.setItem('Theme-select-value', option.value);
+            dropDown.remove();
+
+        })
+        //dropdown animation
+        dropDown.appendChild(dropDownOption);
+        dropDownOption.classList.remove("open-option");
+        void dropDownOption.offsetWidth; //trigger reflow
+        dropDownOption.classList.add("open-option");
+        i++;
+        if(i < 3){CreateOption();}
+        }, 50);
+    }
+    CreateOption();
+    theme_selector.appendChild(dropDown);
+    //close dropdown when clicking outside
+    document.addEventListener('click', e => {
+        if((Theme_click_count % 2 == 0) || !theme_selector.contains(e.target)){
             if(document.getElementsByClassName("arrow")[0].classList.contains("rotate-arrow-down") == false){
                 document.getElementsByClassName("arrow")[0].classList.remove("rotate-arrow-up");
                 void document.getElementsByClassName("arrow")[0].offsetWidth; //trigger reflow
                 document.getElementsByClassName("arrow")[0].classList.add("rotate-arrow-down");
-                click_count++;
+                Theme_click_count++;
             }
             dropDown.remove();
         }
