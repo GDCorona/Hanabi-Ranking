@@ -10,6 +10,8 @@
 body{
     counter-reset: section;
     font-family: 'Cutive Mono', sans-serif;
+    background-color: var(--color1);
+    color: var(--color2);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -146,7 +148,7 @@ body{
 .left, .right{
     position: relative;
     display: block;
-    background-color: aliceblue;
+    background-color: var(--color1);
     margin: 0 5vw 20vw 0;
     word-break: break-all;
     border: 0.3vw ridge moccasin;
@@ -256,14 +258,16 @@ input:checked ~ .switch-circle{
     transform: translateX(26px) rotate(360deg);
 }
 /*rank option*/
-.custom-sort{
+.custom-sort, .theme-option{
+    color: var(--color2);
     display: inline-block;
     font-size: 20px;
     font-weight: bolder;
     position: relative;
     left: 70%;
 }
-.custom-sort select{
+.custom-sort select, .theme-option select{
+    color: var(--color2);
     display: block;
     font-size: 20px;
     text-align: center;
@@ -304,7 +308,7 @@ input:checked ~ .switch-circle{
     from {transform: rotate(180deg);}
     to {transform: rotate(360deg);}
 }
-.custom-sort .sort-option{
+.sort-option{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -314,7 +318,7 @@ input:checked ~ .switch-circle{
     width: 100%;
     position: absolute;
 }
-.custom-sort .sort-option li{
+.sort-option li{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -329,6 +333,6 @@ input:checked ~ .switch-circle{
     from {opacity: 0;}
     to {opacity: 1;}
 }
-.custom-sort .sort-option li:hover{
+.sort-option li:hover{
     background: rgba(126, 187, 211, 0.7);
 }
