@@ -1,8 +1,9 @@
 :root{
     --color1: white;
     --color2: black;
-    --color3: rgba(142, 222, 253, 0.7);
+    --color3: rgb(147, 224, 255);
     --color4: aliceblue;
+    --switchcolor: #cefaf8;
     --hovercolor: rgba(126, 187, 211, 0.7);
     --cherryblossom: none;
 }
@@ -46,8 +47,8 @@ h1{
     top: 80vh;
     right: 2vw;
     z-index: 1;
-    background-color: rgba(142, 222, 253, 0.7);
-    border: 0.2vw solid rgb(70, 157, 228);
+    background-color: var(--switchcolor);
+    border: 0.2vw solid var(--hovercolor);
     transition: background 1s ease;
 }
 #jump-to-top span{
@@ -56,28 +57,28 @@ h1{
     display: inline-block;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-bottom: 7px solid #000;
+    border-bottom: 7px solid var(--hovercolor);
 }
 #jump-to-top:hover{
-    background: var(--hovercolor);
+    background: var(--color3);
 }
 /*loading screen*/
 #loadscreen{
     display: none;
-    background-color: #aaa;
+    background-color: rgba(129, 126, 126, 0.849);
     left: 0;
     top: 0;
     z-index: 1;
     position: fixed;
     width: 100%;
     height: 100%;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 #wait{position: relative; left: 45%; top: 60%; font-size: 50px; font-weight: bolder;}
 #loader{
-    border: 16px solid #f3f3f3;
+    border: 16px solid var(--color1);
     border-radius: 50%;
-    border-top: 16px solid #3498db;
+    border-top: 16px solid var(--color2);
     position: fixed;
     left: 45%;
     top: 40%;
@@ -92,7 +93,7 @@ h1{
 /*navigation bar*/
 .navbar a{text-decoration: none; color: #000;}
 #menu{
-    background-color: rgba(136, 130, 130, 0.849);
+    background-color: rgba(129, 126, 126, 0.849);
     display: none;
     top: 0;
     left: 0;
@@ -150,7 +151,7 @@ h1{
     font-weight: bold;
     cursor: pointer;
 }
-#close:hover{color: rgb(133, 130, 130);}
+#close:hover{color: var(--color4);}
 /*main content*/
 .leftMove{
     animation: leftmove 0.7s ease-out;
@@ -170,7 +171,7 @@ h1{
     position: relative;
     display: block;
     background-color: var(--color4);
-    margin: 5vw 5vw 20vw 0;
+    margin: 10vw 5vw 20vw 0;
     word-break:break-word;
     border: 0.3vw ridge moccasin;
     opacity: 0.9;
@@ -210,7 +211,7 @@ h1{
     margin: 0;
 }
 .left h4, .right h4{
-    background-color: #aaa;
+    background-color: var(--switchcolor);
     font-size: 2vw;
     font-weight: bolder;
     border-top: 0.2vw ridge moccasin;
@@ -227,7 +228,7 @@ h1{
     padding: 0 2vw 0 1vw;
     max-width: 63vw;
 }
-.left a, .right a{position: relative; left: 30%; top: 65%; font-weight: bolder; color: black;}
+.left a, .right a{position: relative; left: 30%; top: 65%; font-weight: bolder; color: var(--color2);}
 /*toggle switch*/
 .switch {
     position: relative;
@@ -249,10 +250,10 @@ h1{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #cefaf8;
+    background-color: var(--switchcolor);
     transition: 0.4s;
     border-radius: 3vw;
-    border: 0.2vw solid rgb(147, 224, 255);
+    border: 0.2vw solid var(--color3);
 }
 .switch-circle {
     position: absolute;
@@ -267,11 +268,11 @@ h1{
     cursor: pointer;
     z-index: 1;
     transition: transform 0.5s ease;
-    border: 0.2vw solid rgb(147, 224, 255);
+    border: 0.2vw solid var(--color3);
 }
 input:checked ~ .slider{
-    background-color: #3498db;
-    box-shadow: 0 0 1vw #0d9cfc;
+    background-color: var(--hovercolor);
+    box-shadow: 0 0 1vw var(--hovercolor);
 }
 input:checked ~ .switch-circle{
     transform: translateX(6vw) rotate(360deg);
@@ -281,7 +282,7 @@ input:checked ~ .switch-circle{
     display: inline-block;
     font-size: 20px;
     font-weight: bolder;
-    position: relative;
+    position: absolute;
     left: 70%;
 }
 .custom-sort select, .theme-option select{
@@ -293,9 +294,9 @@ input:checked ~ .switch-circle{
     font-weight: bolder;
     padding: 10px;
     cursor: pointer;
-    border: 0.2vw solid rgb(70, 157, 228);
+    border: 0.2vw solid var(--hovercolor);
     border-radius: 5px;
-    background-color: rgba(167, 222, 243, 0.7);
+    background-color: var(--color3);
     outline: none;
     appearance: none;
     width: 250px;
@@ -308,7 +309,7 @@ input:checked ~ .switch-circle{
     cursor: pointer;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-top: 7px solid #000;
+    border-top: 7px solid var(--color2);
     right: 10px;
     bottom: 20px;
 }
@@ -331,7 +332,7 @@ input:checked ~ .switch-circle{
     padding: 0;
     margin: 0;
     border-radius: 5px;
-    background-color: rgba(206, 238, 250, 0.7);
+    background-color: var(--color3);
     z-index: 1;
     width: 100%;
     position: absolute;
