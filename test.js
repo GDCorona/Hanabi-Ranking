@@ -150,7 +150,7 @@ sort_selector.addEventListener('mousedown', e => {
     sort_click_count++;
     const sort_select = sort_selector.children[1]; //exclude children 0 which is the div arrow
     const dropDown = document.createElement('ul');
-    dropDown.className = 'sort-option';
+    dropDown.className = 'dropdown-option';
     var i = 0;
     function CreateOption(){
         setTimeout(function(){
@@ -243,16 +243,28 @@ function backtoTop(){
 var Theme_click_count = 0;
 function ChangeTheme(value){
     if(value == 0){
-        document.documentElement.style.setProperty('--color1', 'aliceblue');
+        document.getElementsByTagName("body")[0].style.backgroundImage = "none";
+        document.documentElement.style.setProperty('--cherryblossom', 'none');
+        document.documentElement.style.setProperty('--color1', 'white');
         document.documentElement.style.setProperty('--color2', 'black');
+        document.documentElement.style.setProperty('--color3', 'rgba(142, 222, 253, 0.7)');
+        document.documentElement.style.setProperty('--color4', 'aliceblue');
     }
     else if (value == 1){
+        document.getElementsByTagName("body")[0].style.backgroundImage = "none";
+        document.documentElement.style.setProperty('--cherryblossom', 'none');
         document.documentElement.style.setProperty('--color1', 'black');
-        document.documentElement.style.setProperty('--color2', 'aliceblue');
+        document.documentElement.style.setProperty('--color2', 'white');
+        document.documentElement.style.setProperty('--color3', 'rgba(30, 62, 75, 0.7)');
+        document.documentElement.style.setProperty('--color4', 'rgba(135, 167, 172, 0.925)');
     }
     else if (value == 2){
+        document.getElementsByTagName("body")[0].style.backgroundImage = "none";
+        document.documentElement.style.setProperty('--cherryblossom', 'block');
         document.documentElement.style.setProperty('--color1', 'rgba(250, 206, 246, 0.829)');
         document.documentElement.style.setProperty('--color2', 'rgb(223, 14, 129)');
+        document.documentElement.style.setProperty('--color3', 'rgba(238, 172, 239, 1)');
+        document.documentElement.style.setProperty('--color4', 'rgba(255, 232, 253, 0.8)');
     }
     if (document.getElementsByClassName("arrow")[0].classList.contains("rotate-arrow-down") == false){
         document.getElementsByClassName("arrow")[0].classList.remove("rotate-arrow-up");
@@ -260,6 +272,7 @@ function ChangeTheme(value){
         document.getElementsByClassName("arrow")[0].classList.add("rotate-arrow-down");
     }
     Theme_click_count++;
+    for(var i = 0; i < char.length; i++){document.getElementsByTagName("input")[i].checked = false;} //turn off switches
 }
 const theme_selector = document.querySelector('.theme-option');
 const theme_select = theme_selector.children[1]; //exclude children 0 which is the div arrow
@@ -270,13 +283,16 @@ theme_selector.addEventListener('mousedown', e => {
     Theme_click_count++;
     const theme_select = theme_selector.children[1]; //exclude children 0 which is the div arrow
     const dropDown = document.createElement('ul');
-    dropDown.className = 'sort-option';
+    dropDown.className = 'dropdown-option';
     var i = 0;
     function CreateOption(){
         setTimeout(function(){
         const option = [...theme_select.children][i];
         const dropDownOption = document.createElement('li');
         dropDownOption.textContent = option.textContent;
+        if(i == 0){dropDownOption.style.color = "white"; dropDownOption.style.textShadow = "3px 3px 5px rgba(228, 228, 228, 0.973)";}
+        else if(i == 1){dropDownOption.style.color = "black"; dropDownOption.style.textShadow = "1px 1px 5px rgba(92, 88, 88, 0.973)";}
+        else if(i == 2){dropDownOption.style.color = "rgb(228, 103, 124)"; dropDownOption.style.textShadow = "1px 1px 5px rgba(241, 9, 199, 0.973)";}
         dropDownOption.addEventListener('mousedown', e => {
             e.stopPropagation();
             if (option.value == 0) {ChangeTheme(0);}
@@ -285,7 +301,6 @@ theme_selector.addEventListener('mousedown', e => {
             theme_select.value = option.value;
             localStorage.setItem('Theme-select-value', option.value);
             dropDown.remove();
-
         })
         //dropdown animation
         dropDown.appendChild(dropDownOption);
