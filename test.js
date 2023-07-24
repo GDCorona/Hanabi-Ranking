@@ -240,6 +240,37 @@ function backtoTop(){
     document.documentElement.scrollTop = 0;
 }
 //change theme
+var loadBG = parseInt(localStorage.getItem("bg"));
+if(loadBG == 0){
+    document.getElementsByTagName("body")[0].style.backgroundImage = "none";
+    document.documentElement.style.setProperty('--cherryblossom', 'none');
+    document.documentElement.style.setProperty('--color1', 'white');
+    document.documentElement.style.setProperty('--color2', 'black');
+    document.documentElement.style.setProperty('--color3', 'rgb(147, 224, 255)');
+    document.documentElement.style.setProperty('--color4', 'aliceblue');
+    document.documentElement.style.setProperty('--switchcolor', '#cefaf8');
+    document.documentElement.style.setProperty('--hovercolor', 'rgb(70, 157, 228)');
+}
+else if (loadBG == 1){
+    document.getElementsByTagName("body")[0].style.backgroundImage = "none";
+    document.documentElement.style.setProperty('--cherryblossom', 'none');
+    document.documentElement.style.setProperty('--color1', 'black');
+    document.documentElement.style.setProperty('--color2', 'white');
+    document.documentElement.style.setProperty('--color3', 'rgb(30, 62, 75)');
+    document.documentElement.style.setProperty('--color4', 'rgba(135, 167, 172, 0.925)');
+    document.documentElement.style.setProperty('--switchcolor', '#8d8d8d');
+    document.documentElement.style.setProperty('--hovercolor', 'rgb(238, 241, 243)');
+}
+else if (loadBG == 2){
+    document.getElementsByTagName("body")[0].style.backgroundImage = "none";
+    document.documentElement.style.setProperty('--cherryblossom', 'block');
+    document.documentElement.style.setProperty('--color1', 'rgba(250, 206, 246, 0.829)');
+    document.documentElement.style.setProperty('--color2', 'rgb(223, 14, 129)');
+    document.documentElement.style.setProperty('--color3', 'rgb(238, 172, 239)');
+    document.documentElement.style.setProperty('--color4', 'rgba(255, 232, 253, 0.8)');
+    document.documentElement.style.setProperty('--switchcolor', '#fccbf5');
+    document.documentElement.style.setProperty('--hovercolor', 'rgb(185, 71, 185)');
+}
 var Theme_click_count = 0;
 function ChangeTheme(value){
     if(value == 0){
@@ -247,16 +278,20 @@ function ChangeTheme(value){
         document.documentElement.style.setProperty('--cherryblossom', 'none');
         document.documentElement.style.setProperty('--color1', 'white');
         document.documentElement.style.setProperty('--color2', 'black');
-        document.documentElement.style.setProperty('--color3', 'rgba(142, 222, 253, 0.7)');
+        document.documentElement.style.setProperty('--color3', 'rgb(147, 224, 255)');
         document.documentElement.style.setProperty('--color4', 'aliceblue');
+        document.documentElement.style.setProperty('--switchcolor', '#cefaf8');
+        document.documentElement.style.setProperty('--hovercolor', 'rgb(70, 157, 228)');
     }
     else if (value == 1){
         document.getElementsByTagName("body")[0].style.backgroundImage = "none";
         document.documentElement.style.setProperty('--cherryblossom', 'none');
         document.documentElement.style.setProperty('--color1', 'black');
         document.documentElement.style.setProperty('--color2', 'white');
-        document.documentElement.style.setProperty('--color3', 'rgba(30, 62, 75, 0.7)');
+        document.documentElement.style.setProperty('--color3', 'rgb(30, 62, 75)');
         document.documentElement.style.setProperty('--color4', 'rgba(135, 167, 172, 0.925)');
+        document.documentElement.style.setProperty('--switchcolor', '#8d8d8d');
+        document.documentElement.style.setProperty('--hovercolor', 'rgb(238, 241, 243)');
     }
     else if (value == 2){
         document.getElementsByTagName("body")[0].style.backgroundImage = "none";
@@ -265,12 +300,15 @@ function ChangeTheme(value){
         document.documentElement.style.setProperty('--color2', 'rgb(223, 14, 129)');
         document.documentElement.style.setProperty('--color3', 'rgba(238, 172, 239, 1)');
         document.documentElement.style.setProperty('--color4', 'rgba(255, 232, 253, 0.8)');
+        document.documentElement.style.setProperty('--switchcolor', '#fccbf5');
+        document.documentElement.style.setProperty('--hovercolor', 'rgb(185, 71, 185)');
     }
     if (document.getElementsByClassName("arrow")[0].classList.contains("rotate-arrow-down") == false){
         document.getElementsByClassName("arrow")[0].classList.remove("rotate-arrow-up");
         void document.getElementsByClassName("arrow")[0].offsetWidth; //trigger reflow
         document.getElementsByClassName("arrow")[0].classList.add("rotate-arrow-down");
     }
+    localStorage.setItem("bg", value);
     Theme_click_count++;
     for(var i = 0; i < char.length; i++){document.getElementsByTagName("input")[i].checked = false;} //turn off switches
 }
