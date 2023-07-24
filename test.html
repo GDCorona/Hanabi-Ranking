@@ -4,7 +4,7 @@
         <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
         <title> Hanabi Ranking </title>
         <link rel= "stylesheet" href = "/waifu.css">
-        <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/9isItErbbbsOpcyLqNhiwun70kM-JsvBKaw-h5x_2eRNakL11DRuuewIQZEiqGCzjJ91BbJMk3_B04OucYWAG5I4_nV2r9L9gETLFWydjUm9dM1-HKh3OHM_bk_v5eBfMsq1i320anrLugxxICodoN7xUlxkkPAwMEhhhYHolR4buhr1wxuJkXa6TG6JVBbkhV7p1P3qtja5zwGXdtwP6lru8S1HWkb0Dk_91-4bu_zODNKNxSGVxo4ypgngibBU3S4TsBFT2wTjdzYhQ3__cK8l5FtQocrG1Ug5Uzzn-4bqwox6E9UAiFRMLJ8l47icT2wBzzjoXelFlHvIRL81FveKc6ASmNHOgvxLUU4oLJgJKpD1xE7dth74ugQ8WXqNN6d9nSoSQYS7Ef5Hc-aB3rzd9POfaGDakP-UreXNqhynlEXr3bn9bwVKtWZes13ZWX2bg2nayieDw8ncGxZxc-0ytVPylhNbqNzmAyfBu23c264sNHZYLJ9lsaUgXLNDZOkf4nHEDMyUzwiwY2u3IFtQZugInVs--FfpITj7v8oIHB6ITWw3vL1Q5ZU2Tp5SSoB02wzuFOsxUFi3CgAVkyPiPvHrIbzbJ0VlJg0wNeMl5xaLVm2n0M5lLvLqryC9evfvVyNOpyLkTxj_HuoRRVYserB0Jq6_L6sFgY1jsYt743OL0FEe8P5oh9RQlba9ZI1zoQv83oHetliSBUCz2LqA_Yl_iHMWCSkvNrWvYUEaeOVT1GUlYGimKnQTgryW8paIPgD_dYDcCa7L0WJFtQjkOT_QkSi3NXUm1_Y7RWeTrhnjpxmT6hAitF_xXIj5wrfdXC-lLejTeybrYsYj-QrI29gRsDSHEE5c8PEBhJovaZD2fGdAWv3r-NsAlfyq9q9HF5mhlKInoU5DRl13Y3AxHOTtCPbBz-d30zXB4QXO=w560-h560-s-no?authuser=0">
+        <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/c7/11/1e/c7111ed1586b9d054c67b01beea9aac7.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href= "https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel= "stylesheet">
@@ -13,16 +13,19 @@
 
     </style>
     <body>
-        <audio><source src = "https://feeds.soundcloud.com/stream/1493606938-corona-689894639-kaguya-noise-1.mp3" type="audio/mp3"></audio>
-        <button id = "jump-to-top" onclick="backtoTop()"><span></span></button>
+      <audio><source src = "" type="audio/mp3"></audio>
+      <button id = "jump-to-top" onclick="backtoTop()"><span></span></button>
         <h1 style = "text-align: center; font-size: 3vw">My top 30 favorite anime characters</h1>
         <img onclick = "openNav()" style = "cursor:pointer; width: 50px; height: 50px; margin: 1vw; top: -10%; position:relative;" src = "./list.png">
         <div id = "menu">
         <ul class = "navbar">
-          <span onclick = "closeNav()" id = "close">&times;</span>
+          <span onclick = "closeNav()" id = "close">&times;</span><br>
+          <img src = "https://i.pinimg.com/originals/c7/11/1e/c7111ed1586b9d054c67b01beea9aac7.png" style="width: 10vw; height: 10vw; margin-left: 4.5vw;">
+          <h2>Hanabi Ranking</h2>
           <li><a href = "">Home</a></li>
           <li><a>Demonlist</a></li>
           <li id = "currentPage"><a>Anime</a></li>
+          <li><a>Song</a></li>
           <li><a>About</a></li>
         </ul>
         </div>
@@ -58,12 +61,11 @@
             <button onclick = "changeAvt(0)" class = "avt"></button>
               <p>
                   VA: Hayami Saori <br>
-                  caring, kind-hearted girl who got a tough childhood. Despite being continuously bullied by her classmate, she always put a smile on her face<br>
-                  <span class = "features">
-                  <a href = "">More info <img style = "width: 20px; height: 20px;" src = './link.png'></a>
-                  </span>
+                  Caring, kind-hearted girl who got a tough childhood. Despite being continuously bullied by her classmate, she always put a smile on her face <br>
+                  <a href = "">More info <img style = "width: 25px; height: 25px;" src = './link.png'></a>
               </p>
           </div>
+          
           <label class="switch">
             <input type="checkbox" onclick= "changeBG(0)">
             <span class="slider"></span>
@@ -77,9 +79,7 @@
             <button onclick = "changeAvt(1)" class = "avt"></button>
             <p>
                 VA: Uchida Maaya <br>
-                <span class = "features">
-                  <a href = "">More info <img style = "width: 20px; height: 20px;" src = './link.png'></a>
-                </span>
+                <a href = "">More info <img style = "width: 20px; height: 20px;" src = './link.png'></a>
             </p>
           </div>
           <label class="switch">
@@ -95,9 +95,7 @@
             <button onclick = "changeAvt(2)" class = "avt"></button>
             <p>
                 VA: Kayano Ai <br>
-                <span class = "features">
-                  <a href = "">More info <img style = "width: 20px; height: 20px;" src = './link.png'></a>
-                </span>
+                <a href = "">More info <img style = "width: 20px; height: 20px;" src = './link.png'></a>
             </p>
           </div>
           <label class="switch">
@@ -113,9 +111,7 @@
             <button onclick = "changeAvt(3)" class = "avt"></button>
             <p>
                 VA: Kadowaki Mai <br>
-                <span class = "features">
-                  <a href = "">More info <img style = "width: 20px; height: 20px;" src = './link.png'></a>
-                </span>
+                <a href = "">More info <img style = "width: 20px; height: 20px;" src = './link.png'></a>
             </p>
           </div>
           <label class="switch">
