@@ -3,8 +3,8 @@
 const char = [
     {
         personality: 1,
-        appearance: 4,
-        voice: 4,
+        appearance: 23,
+        voice: 30,
         name: "Nishimiya Shouko",
         anime: "Koe no katachi",
         avt: [
@@ -18,23 +18,23 @@ const char = [
         info: document.getElementsByTagName("p")[0].innerHTML
     },
     {
-        personality: 2,
-        appearance: 1,
-        voice: 3,
-        name: "Kurobane Yusa",
-        anime: "Charlotte",
+        personality: 3,
+        appearance: 2,
+        voice: 1,
+        name: "Madoka Kaname",
+        anime: "Mahou Shoujo Madoka Magica",
         avt: [
-            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
-            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
-            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
-            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+            "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
+            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
+            "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
+            "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
-        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: document.getElementsByTagName("p")[1].innerHTML
+        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
+        info: document.getElementsByTagName("p")[2].innerHTML
     },
     {
-        personality: 3,
+        personality: 7,
         appearance: 2,
         voice: 1,
         name: "Shiina Mashiro",
@@ -50,9 +50,25 @@ const char = [
         info: document.getElementsByTagName("p")[2].innerHTML
     },
     {
-        personality: 4,
+        personality: 16,
+        appearance: 1,
+        voice: 12,
+        name: "Kurobane Yusa",
+        anime: "Charlotte",
+        avt: [
+            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
+            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
+            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
+            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        info: document.getElementsByTagName("p")[1].innerHTML
+    },
+    {
+        personality: 19,
         appearance: 3,
-        voice: 2,
+        voice: 7,
         name: "Illyasviel von Einzbern",
         anime: "Fate/Stay Night",
         avt: [
@@ -250,6 +266,8 @@ if(loadBG == 0){
     document.documentElement.style.setProperty('--color4', 'aliceblue');
     document.documentElement.style.setProperty('--switchcolor', '#cefaf8');
     document.documentElement.style.setProperty('--hovercolor', 'rgb(70, 157, 228)');
+    document.getElementById("menuIcon").src = "listLight.png";
+    for(var i = 0; i < char.length; i++){document.getElementsByClassName("link")[i].src = "linkLight.png";}
 }
 else if (loadBG == 1){
     document.getElementsByTagName("body")[0].style.backgroundImage = "none";
@@ -259,7 +277,9 @@ else if (loadBG == 1){
     document.documentElement.style.setProperty('--color3', 'rgb(30, 62, 75)');
     document.documentElement.style.setProperty('--color4', 'rgba(135, 167, 172, 0.925)');
     document.documentElement.style.setProperty('--switchcolor', '#8d8d8d');
-    document.documentElement.style.setProperty('--hovercolor', 'rgb(238, 241, 243)');
+    document.documentElement.style.setProperty('--hovercolor', 'rgb(220, 221, 243)');
+    document.getElementById("menuIcon").src = "listDark.png";
+    for(var i = 0; i < char.length; i++){document.getElementsByClassName("link")[i].src = "linkDark.png";}
 }
 else if (loadBG == 2){
     document.getElementsByTagName("body")[0].style.backgroundImage = "none";
@@ -270,6 +290,8 @@ else if (loadBG == 2){
     document.documentElement.style.setProperty('--color4', 'rgba(255, 232, 253, 0.8)');
     document.documentElement.style.setProperty('--switchcolor', '#fccbf5');
     document.documentElement.style.setProperty('--hovercolor', 'rgb(185, 71, 185)');
+    document.getElementById("menuIcon").src = "listSakura.png";
+    for(var i = 0; i < char.length; i++){document.getElementsByClassName("link")[i].src = "linkSakura.png";}
 }
 var Theme_click_count = 0;
 function ChangeTheme(value){
@@ -282,6 +304,8 @@ function ChangeTheme(value){
         document.documentElement.style.setProperty('--color4', 'aliceblue');
         document.documentElement.style.setProperty('--switchcolor', '#cefaf8');
         document.documentElement.style.setProperty('--hovercolor', 'rgb(70, 157, 228)');
+        document.getElementById("menuIcon").src = "listLight.png";
+        for(var i = 0; i < char.length; i++){document.getElementsByClassName("link")[i].src = "linkLight.png";}
     }
     else if (value == 1){
         document.getElementsByTagName("body")[0].style.backgroundImage = "none";
@@ -291,7 +315,9 @@ function ChangeTheme(value){
         document.documentElement.style.setProperty('--color3', 'rgb(30, 62, 75)');
         document.documentElement.style.setProperty('--color4', 'rgba(135, 167, 172, 0.925)');
         document.documentElement.style.setProperty('--switchcolor', '#8d8d8d');
-        document.documentElement.style.setProperty('--hovercolor', 'rgb(238, 241, 243)');
+        document.documentElement.style.setProperty('--hovercolor', 'rgb(220, 221, 243)');
+        document.getElementById("menuIcon").src = "listDark.png";
+        for(var i = 0; i < char.length; i++){document.getElementsByClassName("link")[i].src = "linkDark.png";}
     }
     else if (value == 2){
         document.getElementsByTagName("body")[0].style.backgroundImage = "none";
@@ -302,6 +328,8 @@ function ChangeTheme(value){
         document.documentElement.style.setProperty('--color4', 'rgba(255, 232, 253, 0.8)');
         document.documentElement.style.setProperty('--switchcolor', '#fccbf5');
         document.documentElement.style.setProperty('--hovercolor', 'rgb(185, 71, 185)');
+        document.getElementById("menuIcon").src = "listSakura.png";
+        for(var i = 0; i < char.length; i++){document.getElementsByClassName("link")[i].src = "linkSakura.png";}
     }
     if (document.getElementsByClassName("arrow")[0].classList.contains("rotate-arrow-down") == false){
         document.getElementsByClassName("arrow")[0].classList.remove("rotate-arrow-up");
