@@ -16,7 +16,7 @@
       <audio><source src = "" type="audio/mp3"></audio>
       <button id = "jump-to-top" onclick="backtoTop()"><span></span></button>
         <h1 style = "text-align: center; font-size: 3vw">My top 30 favorite anime characters</h1>
-        <img onclick = "openNav()" style = "cursor:pointer; width: 50px; height: 50px; margin: 1vw; top: -10%; position:relative;" src = "./list.png">
+        <img id = "menuIcon" onclick = "openNav()" style = "cursor:pointer; width: 50px; height: 50px; margin: 1vw; top: -13%; position:relative;" src = "listLight.png">
         <div id = "menu">
         <ul class = "navbar">
           <span onclick = "closeNav()" id = "close">&times;</span><br>
@@ -54,7 +54,8 @@
         </label>
         <br>
         <ul class = "waifulist">
-        <li class = "top1 left">
+        <!--top1-->
+        <li class = "left">
           <h3>Nishimiya Shouko</h3>
           <h4>Koe no Katachi</h4>
           <div>
@@ -62,24 +63,23 @@
               <p>
                   VA: Hayami Saori <br>
                   Caring, kind-hearted girl who got a tough childhood. Despite being continuously bullied by her classmate, she always put a smile on her face <br>
-                  <a href = "">More info <img style = "width: 25px; height: 25px;" src = './link.png'></a>
+                  <a href = "">More info <img class = "link" src = 'linkLight.png'></a>
               </p>
           </div>
-          
           <label class="switch">
             <input type="checkbox" onclick= "changeBG(0)">
             <span class="slider"></span>
             <span class = "switch-circle"></span>
           </label>
         </li>
-        <li class = "top2 right">
-          <h3>Kurobane Yusa</h3>
-          <h4>Charlotte</h4>
+        <li class = "right">
+          <h3>Furukawa Nagisa</h3>
+          <h4>Clannad</h4>
           <div>
             <button onclick = "changeAvt(1)" class = "avt"></button>
             <p>
-                VA: Uchida Maaya <br>
-                <a href = "">More info <img style = "width: 20px; height: 20px;" src = './link.png'></a>
+                VA: Nakahara Mai <br>
+                <a href = "">More info <img class = "link" src = 'linkLight.png'></a>
             </p>
           </div>
           <label class="switch">
@@ -88,14 +88,15 @@
             <span class = "switch-circle"></span>
           </label>
         </li>
-        <li class = "top3 left">
-          <h3>Shiina Mashiro</h3>
-          <h4> Sakurasou no Pet na Kanojo </h4>
+        <!--top3-->
+        <li class = "left">
+          <h3>Madoka Kaname</h3>
+          <h4>Mahou Shoujo Madoka Magica </h4>
           <div>
             <button onclick = "changeAvt(2)" class = "avt"></button>
             <p>
-                VA: Kayano Ai <br>
-                <a href = "">More info <img style = "width: 20px; height: 20px;" src = './link.png'></a>
+                VA: Yuuki Aoi <br>
+                <a href = "">More info <img class = "link" src = 'linkLight.png'></a>
             </p>
           </div>
           <label class="switch">
@@ -104,14 +105,151 @@
             <span class = "switch-circle"></span>
           </label>
         </li>
-        <li class = "top4 right">
-          <h3>Illyasviel von Einzbern</h3>
+        <!--top4-->
+        <li class = "right">
+          <h3>Onodera Kosaki</h3>
+          <h4>Nisekoi</h4>
+          <div>
+            <button onclick = "changeAvt(3)" class = "avt"></button>
+            <p>
+                VA: Hanazawa Kana <br>
+                <a href = "">More info <img class = "link" src = 'linkLight.png'></a>
+            </p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" onclick= "changeBG(3)">
+            <span class="slider"></span>
+            <span class = "switch-circle"></span>
+          </label>
+        </li>
+        <!--top5-->
+        <li class = "left">
+          <h3>Honma Meiko</h3>
+          <h4>Anohana</h4>
+          <div>
+            <button onclick = "changeAvt(4)" class = "avt"></button>
+            <p>
+                VA: Kayano Ai <br>
+                <a href = "">More info <img class = "link" src = 'linkLight.png'></a>
+            </p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" onclick= "changeBG(4)">
+            <span class="slider"></span>
+            <span class = "switch-circle"></span>
+          </label>
+        </li>
+        <!--top6-->
+        <li class = "right">
+          <h3>Tachibana Kanade</h3>
+          <h4>Angel Beats!</h4>
+          <div>
+            <button onclick = "changeAvt(5)" class = "avt"></button>
+            <p>
+                VA: Hanazawa Kana <br>
+                <a href = "">More info <img class = "link" src = 'linkLight.png'></a>
+            </p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" onclick= "changeBG(5)">
+            <span class="slider"></span>
+            <span class = "switch-circle"></span>
+          </label>
+        </li>
+        <!--top7-->
+        <li class = "left">
+          <h3>Shiina Mashiro</h3>
+          <h4> Sakurasou no Pet na Kanojo </h4>
+          <div>
+            <button onclick = "changeAvt(6)" class = "avt"></button>
+            <p>
+                VA: Kayano Ai <br>
+                <a href = "">More info <img class = "link" src = 'linkLight.png'></a>
+            </p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" onclick= "changeBG(6)">
+            <span class="slider"></span>
+            <span class = "switch-circle"></span>
+          </label>
+        </li>
+        <!--top8-->
+        <li class = "right">
+          <h3>Sanka Rea</h3>
+          <h4>Sankarea</h4>
+          <div>
+            <button onclick = "changeAvt(7)" class = "avt"></button>
+            <p>
+                VA: Uchida Maaya <br>
+                <a href = "">More info <img class = "link" src = 'linkLight.png'></a>
+            </p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" onclick= "changeBG(7)">
+            <span class="slider"></span>
+            <span class = "switch-circle"></span>
+          </label>
+        </li>
+        <!--top9-->
+        <li class = "left">
+          <h3>Tohka Yatogami</h3>
+          <h4>Date A Live</h4>
+          <div>
+            <button onclick = "changeAvt(8)" class = "avt"></button>
+            <p>
+                VA: Asakura Momo <br>
+                <a href = "">More info <img class = "link" src = 'linkLight.png'></a>
+            </p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" onclick= "changeBG(8)">
+            <span class="slider"></span>
+            <span class = "switch-circle"></span>
+          </label>
+        </li>
+        <!--top10-->
+        <li class = "right">
+          <h3>Isla</h3>
+          <h4>Plastic Memories</h4>
+          <div>
+            <button onclick = "changeAvt(9)" class = "avt"></button>
+            <p>
+                VA: Amamiya Sora <br>
+                <a href = "">More info <img class = "link" src = 'linkLight.png'></a>
+            </p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" onclick= "changeBG(9)">
+            <span class="slider"></span>
+            <span class = "switch-circle"></span>
+          </label>
+        </li>
+
+        <li class = "right">
+          <h3>Kurobane Yusa</h3>
+          <h4>Charlotte</h4>
+          <div>
+            <button onclick = "changeAvt(1)" class = "avt"></button>
+            <p>
+                VA: Uchida Maaya <br>
+                <a href = "">More info <img class = "link" src = 'linkLight.png'></a>
+            </p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" onclick= "changeBG(1)">
+            <span class="slider"></span>
+            <span class = "switch-circle"></span>
+          </label>
+        </li>
+
+        <li class = "right">
+          <h3>Illyasviel Von Einzbern</h3>
           <h4>Fate/ Stay Night </h4>
           <div>
             <button onclick = "changeAvt(3)" class = "avt"></button>
             <p>
                 VA: Kadowaki Mai <br>
-                <a href = "">More info <img style = "width: 20px; height: 20px;" src = './link.png'></a>
+                <a href = "">More info <img class = "link" src = 'linkLight.png'></a>
             </p>
           </div>
           <label class="switch">
