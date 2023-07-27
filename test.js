@@ -18,9 +18,25 @@ const char = [
         info: document.getElementsByTagName("p")[0].innerHTML
     },
     {
+        personality: 2,
+        appearance: 29,
+        voice: 28,
+        name: "Furukawa Nagisa",
+        anime: "Clannad",
+        avt: [
+            "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
+            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
+            "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
+            "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
+        info: document.getElementsByTagName("p")[1].innerHTML
+    },
+    {
         personality: 3,
-        appearance: 2,
-        voice: 1,
+        appearance: 28,
+        voice: 27,
         name: "Madoka Kaname",
         anime: "Mahou Shoujo Madoka Magica",
         avt: [
@@ -34,7 +50,39 @@ const char = [
         info: document.getElementsByTagName("p")[2].innerHTML
     },
     {
-        personality: 7,
+        personality: 4,
+        appearance: 30,
+        voice: 8,
+        name: "Onodera Kosaki",
+        anime: "Nisekoi",
+        avt: [
+            "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
+            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
+            "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
+            "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
+        info: document.getElementsByTagName("p")[3].innerHTML
+    },
+    {
+        personality: 5,
+        appearance: 25,
+        voice: 3,
+        name: "Honma Meiko",
+        anime: "Anohana",
+        avt: [
+            "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
+            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
+            "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
+            "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
+        info: document.getElementsByTagName("p")[4].innerHTML
+    },
+    {
+        personality: 6,
         appearance: 2,
         voice: 1,
         name: "Shiina Mashiro",
@@ -47,10 +95,250 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: document.getElementsByTagName("p")[2].innerHTML
+        info: document.getElementsByTagName("p")[5].innerHTML
+    },
+    {
+        personality: 7,
+        appearance: 5,
+        voice: 10,
+        name: "Tohka Yatogami",
+        anime: "Date A Live",
+        avt: [
+            "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
+            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
+            "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
+            "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
+        info: document.getElementsByTagName("p")[6].innerHTML
+    },
+    {
+        personality: 8,
+        appearance: 24,
+        voice: 13,
+        name: "Sanka Rea",
+        anime: "Sankarea",
+        avt: [
+            "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
+            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
+            "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
+            "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
+        info: document.getElementsByTagName("p")[7].innerHTML
+    },
+    {
+        personality: 9,
+        appearance: 6,
+        voice: 16,
+        name: "Kirisaki Chitoge",
+        anime: "Nisekoi",
+        avt: [
+            "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
+            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
+            "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
+            "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
+        info: document.getElementsByTagName("p")[8].innerHTML
+    },
+    {
+        personality: 10,
+        appearance: 13,
+        voice: 14,
+        name: "Isla",
+        anime: "Plastic Memories",
+        avt: [
+            "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
+            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
+            "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
+            "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
+        info: document.getElementsByTagName("p")[9].innerHTML
+    },
+    {
+        personality: 11,
+        appearance: 16,
+        voice: 9,
+        name: "Tachibana Kanade",
+        anime: "Angel Beats!",
+        avt: [
+            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
+            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
+            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
+            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        info: document.getElementsByTagName("p")[10].innerHTML
+    },
+    {
+        personality: 12,
+        appearance: 12,
+        voice: 6,
+        name: "Nakano Miku",
+        anime: "Gotoubun no Hanayome",
+        avt: [
+            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
+            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
+            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
+            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        info: document.getElementsByTagName("p")[11].innerHTML
+    },
+    {
+        personality: 13,
+        appearance: 9,
+        voice: 19,
+        name: "Otosaka Ayumi",
+        anime: "Charlotte",
+        avt: [
+            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
+            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
+            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
+            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        info: document.getElementsByTagName("p")[12].innerHTML
+    },
+    {
+        personality: 14,
+        appearance: 7,
+        voice: 15,
+        name: "Itsuka Kotori",
+        anime: "Date A Live",
+        avt: [
+            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
+            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
+            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
+            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        info: document.getElementsByTagName("p")[13].innerHTML
+    },
+    {
+        personality: 15,
+        appearance: 4,
+        voice: 22,
+        name: "Hoshino Ruby",
+        anime: "Oshi no Ko",
+        avt: [
+            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
+            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
+            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
+            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        info: document.getElementsByTagName("p")[14].innerHTML
     },
     {
         personality: 16,
+        appearance: 20,
+        voice: 25,
+        name: "Iino Miko",
+        anime: "Kaguya Sama: Love is War",
+        avt: [
+            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
+            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
+            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
+            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        info: document.getElementsByTagName("p")[15].innerHTML
+    },
+    {
+        personality: 17,
+        appearance: 17,
+        voice: 20,
+        name: "Emilia",
+        anime: "Re:Zero",
+        avt: [
+            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
+            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
+            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
+            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        info: document.getElementsByTagName("p")[16].innerHTML
+    },
+    {
+        personality: 18,
+        appearance: 21,
+        voice: 17,
+        name: "Kuriyama Mirai",
+        anime: "Kyoukai no Kanata",
+        avt: [
+            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
+            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
+            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
+            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        info: document.getElementsByTagName("p")[17].innerHTML
+    },
+    {
+        personality: 19,
+        appearance: 26,
+        voice: 11,
+        name: "Takanashi Rikka",
+        anime: "Chuunibyou demo Koi ga Shitai!",
+        avt: [
+            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
+            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
+            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
+            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        info: document.getElementsByTagName("p")[18].innerHTML
+    },
+    {
+        personality: 20,
+        appearance: 8,
+        voice: 28,
+        name: "Nao Tomori",
+        anime: "Charlotte",
+        avt: [
+            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
+            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
+            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
+            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        info: document.getElementsByTagName("p")[19].innerHTML
+    },
+    {
+        personality: 21,
+        appearance: 11,
+        voice: 21,
+        name: "Nakano Itsuki",
+        anime: "Gotoubun no Hanayome",
+        avt: [
+            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
+            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
+            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
+            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        info: document.getElementsByTagName("p")[20].innerHTML
+    },
+    {
+        personality: 22,
         appearance: 1,
         voice: 12,
         name: "Kurobane Yusa",
@@ -63,10 +351,10 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: document.getElementsByTagName("p")[1].innerHTML
+        info: document.getElementsByTagName("p")[21].innerHTML
     },
     {
-        personality: 19,
+        personality: 23,
         appearance: 3,
         voice: 7,
         name: "Illyasviel von Einzbern",
@@ -79,9 +367,120 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: document.getElementsByTagName("p")[3].innerHTML
+        info: document.getElementsByTagName("p")[22].innerHTML
+    },
+    {
+        personality: 24,
+        appearance: 14,
+        voice: 2,
+        name: "Shiro",
+        anime: "No Game No Life",
+        avt: [
+            "url('https://i.pinimg.com/originals/1b/36/8c/1b368c4a5da71c8637cef2e161fdab60.jpg')",
+            "url('https://i.pinimg.com/originals/a4/17/17/a41717e430f20a2cdfa05896f99d8906.jpg')",
+            "url('https://i.pinimg.com/originals/dc/c0/98/dcc0984a5f2f2cb15218317e1ea652cc.jpg')",
+            "url('https://i.pinimg.com/originals/40/5a/af/405aafa6115504126fdcdbd58822bc8b.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
+        info: document.getElementsByTagName("p")[23].innerHTML
+    },
+    {
+        personality: 25,
+        appearance: 19,
+        voice: 26,
+        name: "Hayasaka Ai",
+        anime: "Kaguya Sama: Love is War",
+        avt: [
+            "url('https://i.pinimg.com/originals/1b/36/8c/1b368c4a5da71c8637cef2e161fdab60.jpg')",
+            "url('https://i.pinimg.com/originals/a4/17/17/a41717e430f20a2cdfa05896f99d8906.jpg')",
+            "url('https://i.pinimg.com/originals/dc/c0/98/dcc0984a5f2f2cb15218317e1ea652cc.jpg')",
+            "url('https://i.pinimg.com/originals/40/5a/af/405aafa6115504126fdcdbd58822bc8b.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
+        info: document.getElementsByTagName("p")[24].innerHTML
+    },
+    {
+        personality: 26,
+        appearance: 15,
+        voice: 24,
+        name: "Tohsaka Rin",
+        anime: "Fate/ Stay Night",
+        avt: [
+            "url('https://i.pinimg.com/originals/1b/36/8c/1b368c4a5da71c8637cef2e161fdab60.jpg')",
+            "url('https://i.pinimg.com/originals/a4/17/17/a41717e430f20a2cdfa05896f99d8906.jpg')",
+            "url('https://i.pinimg.com/originals/dc/c0/98/dcc0984a5f2f2cb15218317e1ea652cc.jpg')",
+            "url('https://i.pinimg.com/originals/40/5a/af/405aafa6115504126fdcdbd58822bc8b.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
+        info: document.getElementsByTagName("p")[25].innerHTML
+    },
+    {
+        personality: 27,
+        appearance: 22,
+        voice: 29,
+        name: "Saber",
+        anime: "Fate/ Stay Night",
+        avt: [
+            "url('https://i.pinimg.com/originals/1b/36/8c/1b368c4a5da71c8637cef2e161fdab60.jpg')",
+            "url('https://i.pinimg.com/originals/a4/17/17/a41717e430f20a2cdfa05896f99d8906.jpg')",
+            "url('https://i.pinimg.com/originals/dc/c0/98/dcc0984a5f2f2cb15218317e1ea652cc.jpg')",
+            "url('https://i.pinimg.com/originals/40/5a/af/405aafa6115504126fdcdbd58822bc8b.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
+        info: document.getElementsByTagName("p")[26].innerHTML
+    },
+    {
+        personality: 28,
+        appearance: 27,
+        voice: 5,
+        name: "Kaguya Shinomiya",
+        anime: "Kaguya Sama: Love is War",
+        avt: [
+            "url('https://i.pinimg.com/originals/1b/36/8c/1b368c4a5da71c8637cef2e161fdab60.jpg')",
+            "url('https://i.pinimg.com/originals/a4/17/17/a41717e430f20a2cdfa05896f99d8906.jpg')",
+            "url('https://i.pinimg.com/originals/dc/c0/98/dcc0984a5f2f2cb15218317e1ea652cc.jpg')",
+            "url('https://i.pinimg.com/originals/40/5a/af/405aafa6115504126fdcdbd58822bc8b.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
+        info: document.getElementsByTagName("p")[27].innerHTML
+    },
+    {
+        personality: 29,
+        appearance: 18,
+        voice: 4,
+        name: "Fuchiwara Chika",
+        anime: "Kaguya Sama: Love is War",
+        avt: [
+            "url('https://i.pinimg.com/originals/1b/36/8c/1b368c4a5da71c8637cef2e161fdab60.jpg')",
+            "url('https://i.pinimg.com/originals/a4/17/17/a41717e430f20a2cdfa05896f99d8906.jpg')",
+            "url('https://i.pinimg.com/originals/dc/c0/98/dcc0984a5f2f2cb15218317e1ea652cc.jpg')",
+            "url('https://i.pinimg.com/originals/40/5a/af/405aafa6115504126fdcdbd58822bc8b.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
+        info: document.getElementsByTagName("p")[28].innerHTML
+    },
+    {
+        personality: 30,
+        appearance: 10,
+        voice: 18,
+        name: "Jibril",
+        anime: "No Game No Life",
+        avt: [
+            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
+            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
+            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
+            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        info: document.getElementsByTagName("p")[29].innerHTML
     }
-    
 ]
 var arr = [
     new Int16Array(30), //0: personality
@@ -245,7 +644,7 @@ document.addEventListener('click', e => {
 let mybutton = document.getElementById("jump-to-top");
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-    if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+    if (document.body.scrollTop > 3000 || document.documentElement.scrollTop > 3000) {
       mybutton.style.display = "block";
     } else {
       mybutton.style.display = "none";
