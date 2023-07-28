@@ -646,7 +646,7 @@ input:checked ~ .switch-circle{
     display: inline-block;
     font-size: 20px;
     font-weight: bolder;
-    position: absolute;
+    position: relative;
     left: 70%;
 }
 .custom-sort select, .theme-option select{
