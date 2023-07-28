@@ -171,7 +171,7 @@ const char = [
             "url('https://i.pinimg.com/originals/47/44/5b/47445bdf7c3991a65e2c2bd92a21ca08.jpg')",
             "url('https://i.pinimg.com/originals/2c/37/00/2c370043956815a2c1056e2e621118af.jpg')",
             "url('https://i.pinimg.com/originals/93/32/65/933265e897663478f31fc15a6c72f850.jpg')",
-            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+            "url('https://i.pinimg.com/originals/3b/9c/b1/3b9cb118955a0908e42667e2397aa942.gif')"
         ],
         bg: "url('https://i.pinimg.com/originals/ae/0b/83/ae0b8342ae4fb78abe7f0204e2861fe4.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
@@ -216,12 +216,12 @@ const char = [
         name: "Itsuka Kotori",
         anime: "Date A Live",
         avt: [
-            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
-            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
-            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
-            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+            "url('https://i.pinimg.com/originals/14/f1/9c/14f19cc3d947cee1369a2cf49ce0be68.jpg')",
+            "url('https://i.pinimg.com/originals/41/0c/32/410c32ab98b5f1c29b67cff1e2fef4d4.jpg')",       
+            "url('https://i.pinimg.com/originals/ee/1a/15/ee1a155addfe110d4ac1d532733bd3f0.jpg')",
+            "url('https://i.pinimg.com/originals/97/9d/f8/979df8bfa0a7e782e1a23def29b6a878.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        bg: "url('https://i.pinimg.com/originals/ab/1c/1a/ab1c1abff26dc94f5c013598ef58e684.png')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
         info: document.getElementsByTagName("p")[13].innerHTML
     },
@@ -232,12 +232,12 @@ const char = [
         name: "Hoshino Ruby",
         anime: "Oshi no Ko",
         avt: [
-            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
-            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
-            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
-            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+            "url('https://i.pinimg.com/originals/8f/6f/c1/8f6fc148af4d22d27f0e86510bd0c501.jpg')",
+            "url('https://i.pinimg.com/originals/3d/15/bc/3d15bc3fb6bc4ad2aaf83070fe1d96eb.jpg')",
+            "url('https://i.pinimg.com/originals/59/ab/fa/59abfa515d8ef0cc87d81c9833be7103.jpg')",
+            "url('https://i.pinimg.com/originals/e3/f6/49/e3f649e79bc308992f579aad10f9d7b3.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        bg: "url('https://i.pinimg.com/originals/c3/96/38/c3963806f9f3aad56b61b94dd377dd25.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
         info: document.getElementsByTagName("p")[14].innerHTML
     },
@@ -248,12 +248,12 @@ const char = [
         name: "Iino Miko",
         anime: "Kaguya Sama: Love is War",
         avt: [
-            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
-            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
-            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
-            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+            "url('https://i.pinimg.com/originals/3f/68/cc/3f68ccf8f608d3e17ed974478690c1ac.jpg')",
+            "url('https://i.pinimg.com/originals/2b/eb/76/2beb76758f9590a8e8fe41f2d29b6c40.jpg')",
+            "url('https://i.pinimg.com/originals/c0/ce/ba/c0ceba69e2c119c466924137faa85936.jpg')",
+            "url('https://i.pinimg.com/originals/e6/83/b4/e683b468906c8592e1da38394801178f.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        bg: "url('https://i.pinimg.com/originals/52/db/ab/52dbab087fffd72aa2c28cbe68a82c82.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
         info: document.getElementsByTagName("p")[15].innerHTML
     },
@@ -264,12 +264,12 @@ const char = [
         name: "Emilia",
         anime: "Re:Zero",
         avt: [
-            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
-            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
-            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
-            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+            "url('https://i.pinimg.com/originals/ed/a2/f1/eda2f1681a679d941eb1eb44087c2f1d.jpg')",
+            "url('https://i.pinimg.com/originals/e1/53/a8/e153a8ec8fe4a9aab6843bca96b2a7d7.jpg')",
+            "url('https://i.pinimg.com/originals/d0/30/ee/d030ee769dbda672f92f05fb141c2e4b.jpg')",
+            "url('https://i.pinimg.com/originals/26/9e/79/269e798722c9eab14320ad4b5c1e8272.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        bg: "url('https://i.pinimg.com/originals/98/fa/9d/98fa9d624cf4c5076fa090d049d5d729.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
         info: document.getElementsByTagName("p")[16].innerHTML
     },
@@ -280,12 +280,12 @@ const char = [
         name: "Kuriyama Mirai",
         anime: "Kyoukai no Kanata",
         avt: [
-            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
-            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
-            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
-            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+            "url('https://i.pinimg.com/originals/32/3a/0a/323a0abe53856ef07526915033845947.jpg')",
+            "url('https://i.pinimg.com/originals/a4/c9/c4/a4c9c4d89ff2773d3ad59b5c3941093b.jpg')",
+            "url('https://i.pinimg.com/originals/3e/47/a2/3e47a23cd80796c736ae900530658a37.jpg')",
+            "url('https://i.pinimg.com/originals/a6/14/e9/a614e9cc50be9cfdbe1e673c2561ebeb.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        bg: "url('https://i.pinimg.com/originals/38/53/0a/38530ae82519ebd30ee8d704703c3bbe.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
         info: document.getElementsByTagName("p")[17].innerHTML
     },
@@ -296,12 +296,12 @@ const char = [
         name: "Takanashi Rikka",
         anime: "Chuunibyou demo Koi ga Shitai!",
         avt: [
-            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
-            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
-            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
-            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+            "url('https://i.pinimg.com/originals/9e/df/82/9edf82736c0a74ef6cc6a7cd60244450.jpg')",
+            "url('https://i.pinimg.com/originals/83/eb/54/83eb5441cfeaeeb0ee61a16204e3b599.jpg')",
+            "url('https://i.pinimg.com/originals/78/f9/2b/78f92b1e78dd59e45e4b0d234528bc32.jpg')",
+            "url('https://i.pinimg.com/originals/df/0f/99/df0f99889a73fc7256c68eee6582f95a.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        bg: "url('https://i.pinimg.com/originals/46/1e/ad/461eadc5d2d55705c9eaa689d960d147.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
         info: document.getElementsByTagName("p")[18].innerHTML
     },
@@ -312,12 +312,12 @@ const char = [
         name: "Nao Tomori",
         anime: "Charlotte",
         avt: [
-            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
-            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
-            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
-            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+            "url('https://i.pinimg.com/originals/d3/7f/5d/d37f5d0b84a168aa9372eb8e2a8ce843.jpg')",
+            "url('https://i.pinimg.com/originals/7f/1e/75/7f1e75c74f2af708172060fd638a83d3.jpg')",
+            "url('https://i.pinimg.com/originals/c3/66/18/c366182db37dd7b23466c57ff601dfe7.jpg')",
+            "url('https://i.pinimg.com/originals/74/59/ae/7459ae18669030c09daba8ca66b83931.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        bg: "url('https://i.pinimg.com/originals/a3/19/70/a31970be628d97f9cc36ca7d6e5cc9cd.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
         info: document.getElementsByTagName("p")[19].innerHTML
     },
@@ -328,12 +328,12 @@ const char = [
         name: "Nakano Itsuki",
         anime: "Gotoubun no Hanayome",
         avt: [
-            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
-            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
-            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
-            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+            "url('https://i.pinimg.com/originals/ac/61/8a/ac618a562ff21734a13de9abd20e7388.jpg')",
+            "url('https://i.pinimg.com/originals/dd/0a/6f/dd0a6fd9a35b543394b1e08b0fc22477.jpg')",
+            "url('https://i.pinimg.com/originals/b9/51/97/b9519781b6de4d68a7062a3b121aecaf.jpg')",
+            "url('https://i.pinimg.com/originals/06/fb/b8/06fbb8809e4a2967f7785ecef29abf03.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        bg: "url('https://i.pinimg.com/originals/0f/f3/60/0ff360e3ccf2913bd0722d1660b60645.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
         info: document.getElementsByTagName("p")[20].innerHTML
     },
@@ -361,7 +361,7 @@ const char = [
         anime: "Fate/Stay Night",
         avt: [
             "url('https://i.pinimg.com/originals/1b/36/8c/1b368c4a5da71c8637cef2e161fdab60.jpg')",
-            "url('https://i.pinimg.com/originals/a4/17/17/a41717e430f20a2cdfa05896f99d8906.jpg')",
+            "url('https://i.pinimg.com/originals/1e/45/55/1e45557fb62875b00b801d83b5f5e4f6.jpg')",
             "url('https://i.pinimg.com/originals/dc/c0/98/dcc0984a5f2f2cb15218317e1ea652cc.jpg')",
             "url('https://i.pinimg.com/originals/40/5a/af/405aafa6115504126fdcdbd58822bc8b.gif')"
         ],
@@ -376,12 +376,12 @@ const char = [
         name: "Shiro",
         anime: "No Game No Life",
         avt: [
-            "url('https://i.pinimg.com/originals/1b/36/8c/1b368c4a5da71c8637cef2e161fdab60.jpg')",
-            "url('https://i.pinimg.com/originals/a4/17/17/a41717e430f20a2cdfa05896f99d8906.jpg')",
-            "url('https://i.pinimg.com/originals/dc/c0/98/dcc0984a5f2f2cb15218317e1ea652cc.jpg')",
-            "url('https://i.pinimg.com/originals/40/5a/af/405aafa6115504126fdcdbd58822bc8b.gif')"
+            "url('https://i.pinimg.com/originals/06/c3/ae/06c3ae49a637dfc35c3c279bc43746bb.jpg')",
+            "url('https://i.pinimg.com/originals/ad/99/b8/ad99b85822f2b5cc5ad9fb89b176b012.jpg')",
+            "url('https://i.pinimg.com/originals/43/14/a9/4314a9a25d822540ac8aed4f523c077b.jpg')",
+            "url('https://i.pinimg.com/originals/78/00/c8/7800c885528eb9cee3bc4f9d132f75c1.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
+        bg: "url('https://i.pinimg.com/originals/bc/36/66/bc3666d2cfc0296ff03cfea8a72577be.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
         info: document.getElementsByTagName("p")[23].innerHTML
     },
@@ -392,60 +392,60 @@ const char = [
         name: "Hayasaka Ai",
         anime: "Kaguya Sama: Love is War",
         avt: [
-            "url('https://i.pinimg.com/originals/1b/36/8c/1b368c4a5da71c8637cef2e161fdab60.jpg')",
-            "url('https://i.pinimg.com/originals/a4/17/17/a41717e430f20a2cdfa05896f99d8906.jpg')",
-            "url('https://i.pinimg.com/originals/dc/c0/98/dcc0984a5f2f2cb15218317e1ea652cc.jpg')",
-            "url('https://i.pinimg.com/originals/40/5a/af/405aafa6115504126fdcdbd58822bc8b.gif')"
+            "url('https://i.pinimg.com/originals/46/1d/b3/461db313fa25bd37cc7ae766051b8569.jpg')",
+            "url('https://i.pinimg.com/originals/1d/7d/75/1d7d75ab0030b6b440a4ae9945e706c9.jpg')",
+            "url('https://i.pinimg.com/originals/aa/0b/44/aa0b44bf076f0b2017afc2d37dc5b0cf.jpg')",
+            "url('https://i.pinimg.com/originals/a6/ad/5a/a6ad5afb1d82e0dbafd4ed76239979ad.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
+        bg: "url('https://i.pinimg.com/originals/d7/5f/1b/d75f1b0e5d29f2a4e268a0b399bea7b1.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
         info: document.getElementsByTagName("p")[24].innerHTML
     },
     {
         personality: 26,
-        appearance: 15,
-        voice: 24,
-        name: "Tohsaka Rin",
-        anime: "Fate/ Stay Night",
-        avt: [
-            "url('https://i.pinimg.com/originals/1b/36/8c/1b368c4a5da71c8637cef2e161fdab60.jpg')",
-            "url('https://i.pinimg.com/originals/a4/17/17/a41717e430f20a2cdfa05896f99d8906.jpg')",
-            "url('https://i.pinimg.com/originals/dc/c0/98/dcc0984a5f2f2cb15218317e1ea652cc.jpg')",
-            "url('https://i.pinimg.com/originals/40/5a/af/405aafa6115504126fdcdbd58822bc8b.gif')"
-        ],
-        bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
-        audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: document.getElementsByTagName("p")[25].innerHTML
-    },
-    {
-        personality: 27,
-        appearance: 22,
-        voice: 29,
-        name: "Saber",
-        anime: "Fate/ Stay Night",
-        avt: [
-            "url('https://i.pinimg.com/originals/1b/36/8c/1b368c4a5da71c8637cef2e161fdab60.jpg')",
-            "url('https://i.pinimg.com/originals/a4/17/17/a41717e430f20a2cdfa05896f99d8906.jpg')",
-            "url('https://i.pinimg.com/originals/dc/c0/98/dcc0984a5f2f2cb15218317e1ea652cc.jpg')",
-            "url('https://i.pinimg.com/originals/40/5a/af/405aafa6115504126fdcdbd58822bc8b.gif')"
-        ],
-        bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
-        audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: document.getElementsByTagName("p")[26].innerHTML
-    },
-    {
-        personality: 28,
         appearance: 27,
         voice: 5,
         name: "Kaguya Shinomiya",
         anime: "Kaguya Sama: Love is War",
         avt: [
-            "url('https://i.pinimg.com/originals/1b/36/8c/1b368c4a5da71c8637cef2e161fdab60.jpg')",
-            "url('https://i.pinimg.com/originals/a4/17/17/a41717e430f20a2cdfa05896f99d8906.jpg')",
-            "url('https://i.pinimg.com/originals/dc/c0/98/dcc0984a5f2f2cb15218317e1ea652cc.jpg')",
-            "url('https://i.pinimg.com/originals/40/5a/af/405aafa6115504126fdcdbd58822bc8b.gif')"
+            "url('https://i.pinimg.com/originals/a5/8b/ec/a58becb9b590624cb5ddd3a0cd6a44f5.jpg')",
+            "url('https://i.pinimg.com/originals/f2/d1/33/f2d133417e828c348a9eebb7493a49ef.jpg')",
+            "url('https://i.pinimg.com/originals/11/bb/95/11bb955b807b37962966076cf5894100.jpg')",
+            "url('https://i.pinimg.com/originals/d4/17/b2/d417b2934eb1bffa01401f18a79ecf23.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
+        bg: "url('https://i.pinimg.com/originals/a9/27/e8/a927e8d6edacb4ac037834b6a0ed163f.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
+        info: document.getElementsByTagName("p")[25].innerHTML
+    },
+    {
+        personality: 27,
+        appearance: 15,
+        voice: 24,
+        name: "Tohsaka Rin",
+        anime: "Fate/ Stay Night",
+        avt: [
+            "url('https://i.pinimg.com/originals/e9/22/9e/e9229e08fad5626b581a728e1a79213b.jpg')",
+            "url('https://i.pinimg.com/originals/59/e2/ce/59e2ce8a9b1eff5e4d79fc43fcd5d9f3.jpg')",
+            "url('https://i.pinimg.com/originals/ac/8d/bb/ac8dbb5902961b85fe44b3b6a6d02c8c.jpg')",
+            "url('https://i.pinimg.com/originals/f7/17/d8/f717d8f46146cfcc5f4c3a968eb043fd.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/18/73/24/1873240d0a4231c40684501965fce2c0.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
+        info: document.getElementsByTagName("p")[26].innerHTML
+    },
+    {
+        personality: 28,
+        appearance: 22,
+        voice: 29,
+        name: "Saber",
+        anime: "Fate/ Stay Night",
+        avt: [
+            "url('https://i.pinimg.com/originals/6f/65/ec/6f65ec5d46f1423b0e01f416dabbd4aa.jpg')",
+            "url('https://i.pinimg.com/originals/2d/3f/f4/2d3ff41f530ef9d6e19fcb5fa5045826.jpg')",
+            "url('https://i.pinimg.com/originals/c0/1d/87/c01d874fd73c24bb00e16e4f3239a51c.jpg')",
+            "url('https://i.pinimg.com/originals/5c/af/2e/5caf2e8503ea4acc3667a60d3b5a3fa9.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/85/98/13/859813be1b04baee1fcaf8998a8d4a47.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
         info: document.getElementsByTagName("p")[27].innerHTML
     },
@@ -456,12 +456,12 @@ const char = [
         name: "Fuchiwara Chika",
         anime: "Kaguya Sama: Love is War",
         avt: [
-            "url('https://i.pinimg.com/originals/1b/36/8c/1b368c4a5da71c8637cef2e161fdab60.jpg')",
-            "url('https://i.pinimg.com/originals/a4/17/17/a41717e430f20a2cdfa05896f99d8906.jpg')",
-            "url('https://i.pinimg.com/originals/dc/c0/98/dcc0984a5f2f2cb15218317e1ea652cc.jpg')",
-            "url('https://i.pinimg.com/originals/40/5a/af/405aafa6115504126fdcdbd58822bc8b.gif')"
+            "url('https://i.pinimg.com/originals/e0/51/c9/e051c9768b6d5820dd0dddb9f46ddf79.jpg')",
+            "url('https://i.pinimg.com/originals/ef/0a/77/ef0a77694a67fb74e295c80a10afbfec.jpg')",
+            "url('https://i.pinimg.com/originals/ce/ee/89/ceee89d1fb083efa718d2b15d3547b87.jpg')",
+            "url('https://i.pinimg.com/originals/0b/eb/11/0beb117f878e076ccd8c5f5dae26c77f.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
+        bg: "url('https://i.pinimg.com/originals/0f/4c/5d/0f4c5d201dc528bc79fe74376144a38e.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
         info: document.getElementsByTagName("p")[28].innerHTML
     },
@@ -472,12 +472,12 @@ const char = [
         name: "Chitanda Eru",
         anime: "Hyouka",
         avt: [
-            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
-            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
-            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
-            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+            "url('https://i.pinimg.com/originals/43/9b/8b/439b8bfef32ca21bfe75b37d9e4db601.jpg')",
+            "url('https://i.pinimg.com/originals/b9/0e/ce/b90ece1caaedd61b3c5db0a73f36147a.jpg')",
+            "url('https://i.pinimg.com/originals/64/f9/8c/64f98c9f4fdd5041520e995c979fc97d.jpg')",
+            "url('https://i.pinimg.com/originals/bb/eb/47/bbeb470c2c417c4568acec92e1506a21.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        bg: "url('https://i.pinimg.com/originals/1b/27/86/1b2786f1cee290a4b548c46d2b78b37d.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
         info: document.getElementsByTagName("p")[29].innerHTML
     }
