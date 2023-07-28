@@ -20,16 +20,16 @@ const char = [
     {
         personality: 2,
         appearance: 29,
-        voice: 28,
+        voice: 18,
         name: "Furukawa Nagisa",
         anime: "Clannad",
         avt: [
-            "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
-            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
-            "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
-            "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
+            "url('https://i.pinimg.com/originals/cd/94/50/cd945069715cbebe209efb5204a09550.jpg')",
+            "url('https://i.pinimg.com/originals/97/ac/59/97ac590ebe14c0aaa87f8a49a0976beb.jpg')",
+            "url('https://i.pinimg.com/originals/51/11/fb/5111fb92c67dd21567fd9f1bcb0ed602.jpg')",
+            "url('https://i.pinimg.com/originals/1b/ba/db/1bbadbc7fb09e45c74c84138dc5cfb80.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        bg: "url('https://i.pinimg.com/originals/8f/ac/df/8facdf1548bcd88e0158f83a50a3c8d5.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
         info: document.getElementsByTagName("p")[1].innerHTML
     },
@@ -40,12 +40,12 @@ const char = [
         name: "Madoka Kaname",
         anime: "Mahou Shoujo Madoka Magica",
         avt: [
-            "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
-            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
-            "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
-            "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
+            "url('https://i.pinimg.com/originals/4f/b8/ff/4fb8ff973e8b88e8ffd0f8ce853ddcef.jpg')",
+            "url('https://i.pinimg.com/originals/8f/73/b0/8f73b066c3f41d32e603321c246ccc3d.jpg')",
+            "url('https://i.pinimg.com/originals/fe/10/df/fe10dfde96008ca962109c92de7d31d9.jpg')",
+            "url('https://i.pinimg.com/originals/c2/a7/a3/c2a7a3609a5d642c8178991fb4b1f0ba.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        bg: "url('https://i.pinimg.com/originals/df/7a/42/df7a4278523558979bd61e593cdf0a8e.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
         info: document.getElementsByTagName("p")[2].innerHTML
     },
@@ -56,12 +56,12 @@ const char = [
         name: "Onodera Kosaki",
         anime: "Nisekoi",
         avt: [
-            "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
-            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
-            "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
-            "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
+            "url('https://i.pinimg.com/originals/8c/08/87/8c0887b09c0be901004434af551c6383.jpg')",
+            "url('https://i.pinimg.com/originals/6b/75/45/6b75457a68515ac89ad2111592f52eb0.jpg')",
+            "url('https://i.pinimg.com/originals/70/40/d1/7040d1a1e15f7b0a2dbfd4f8c2376b3d.jpg')",
+            "url('https://i.pinimg.com/originals/68/a0/4d/68a04de1b4ba41ac319d2ad4eb54622d.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        bg: "url('https://i.pinimg.com/originals/d3/0f/7d/d30f7dd3b0042e83f567afa4da3017c2.png')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
         info: document.getElementsByTagName("p")[3].innerHTML
     },
@@ -72,12 +72,12 @@ const char = [
         name: "Honma Meiko",
         anime: "Anohana",
         avt: [
-            "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
-            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
-            "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
-            "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
+            "url('https://i.pinimg.com/originals/64/00/bc/6400bc293dad65daf3e9111488bf8b6c.jpg')",
+            "url('https://i.pinimg.com/originals/19/48/50/19485006cb2cc746d03453632102e087.jpg')",
+            "url('https://i.pinimg.com/originals/b1/4e/2d/b14e2dc666ab0f63ac1fc08f028b1ba7.jpg')",
+            "url('https://i.pinimg.com/originals/8e/cd/c5/8ecdc5f9429d3d101e0e9628980fa26e.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        bg: "url('https://i.pinimg.com/originals/73/9a/c6/739ac6d78cbae7052586776762a02bf7.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
         info: document.getElementsByTagName("p")[4].innerHTML
     },
@@ -89,7 +89,7 @@ const char = [
         anime: "Sakurasou no Pet na Kanojo",
         avt: [
             "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
-            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
+            "url('https://i.pinimg.com/originals/8a/00/de/8a00deae759dd8724981fe278ef2f784.jpg')",
             "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
             "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
         ],
@@ -104,12 +104,12 @@ const char = [
         name: "Tohka Yatogami",
         anime: "Date A Live",
         avt: [
-            "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
-            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
-            "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
-            "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
+            "url('https://i.pinimg.com/originals/2a/a5/ce/2aa5cec967d47b852e54f7d5caccf9bf.jpg')",
+            "url('https://i.pinimg.com/originals/da/11/c4/da11c4f51f967cf68ba8cbc0635065d4.jpg')",
+            "url('https://i.pinimg.com/originals/19/ee/db/19eedbadb87e07e7b9d518bd99edd0fb.jpg')",
+            "url('https://i.pinimg.com/originals/e5/3d/9d/e53d9d6dddae858ea6888b3e04f91894.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        bg: "url('https://i.pinimg.com/originals/c0/d7/e7/c0d7e76d37ec528d68c472643eabd690.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
         info: document.getElementsByTagName("p")[6].innerHTML
     },
@@ -120,12 +120,12 @@ const char = [
         name: "Sanka Rea",
         anime: "Sankarea",
         avt: [
-            "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
-            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
-            "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
-            "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
+            "url('https://i.pinimg.com/originals/d0/ce/24/d0ce24e65b4a7ed1b0eb09dc7da74fe0.jpg')",
+            "url('https://i.pinimg.com/originals/11/c4/69/11c4690809eb8f8aa805f35b4cd85dce.jpg')",
+            "url('https://i.pinimg.com/originals/2b/e4/52/2be4521e9574f084dccaefa3680b292b.jpg')",
+            "url('https://i.pinimg.com/originals/b7/ca/1a/b7ca1ad3a0f2a2daf36be53109d03cca.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        bg: "url('https://i.pinimg.com/originals/9b/79/a6/9b79a6de65abba2d53649d060bd7f2dd.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
         info: document.getElementsByTagName("p")[7].innerHTML
     },
@@ -136,12 +136,12 @@ const char = [
         name: "Kirisaki Chitoge",
         anime: "Nisekoi",
         avt: [
-            "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
-            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
-            "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
-            "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
+            "url('https://i.pinimg.com/originals/0d/3a/98/0d3a98964739aaf1e7621914140a1d74.jpg')",
+            "url('https://i.pinimg.com/originals/16/0a/90/160a907c30f7b1d7277745c005eb341a.jpg')",
+            "url('https://i.pinimg.com/originals/18/2d/0a/182d0ac30f89231693475ef631bb75bb.jpg')",
+            "url('https://i.pinimg.com/originals/af/b1/63/afb163c430df89a017aed1474b69357d.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        bg: "url('https://i.pinimg.com/originals/94/c2/0d/94c20db370050018ce306856e44e23ad.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
         info: document.getElementsByTagName("p")[8].innerHTML
     },
@@ -152,12 +152,12 @@ const char = [
         name: "Isla",
         anime: "Plastic Memories",
         avt: [
-            "url('https://i.pinimg.com/originals/7c/e3/c8/7ce3c89c6530b9b61b9deec77a39a2f5.jpg')",
-            "url('https://i.pinimg.com/originals/aa/b1/76/aab17609d0152435602d8163c49205fd.jpg')",
-            "url('https://i.pinimg.com/originals/3f/6b/db/3f6bdba68792ebe2e4aac00e5fe7e70b.jpg')",
-            "url('https://i.pinimg.com/originals/3e/ad/63/3ead636da3c80a59bb3de91d94b6d96d.gif')"
+            "url('https://i.pinimg.com/originals/b5/93/40/b5934057259d683141357f530ff5bbda.jpg')",
+            "url('https://i.pinimg.com/originals/d2/c1/4f/d2c14f2829827365d80d02a4d459523f.jpg')",
+            "url('https://i.pinimg.com/originals/a7/93/82/a793827af19fcd9056db5284f1914b29.jpg')",
+            "url('https://i.pinimg.com/originals/4a/8b/1e/4a8b1ebd14c28a0b09601d90e21c61a6.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
+        bg: "url('https://i.pinimg.com/originals/72/0a/d7/720ad71ee9cb909f51d9648d3c09777d.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
         info: document.getElementsByTagName("p")[9].innerHTML
     },
@@ -468,9 +468,9 @@ const char = [
     {
         personality: 30,
         appearance: 10,
-        voice: 18,
-        name: "Jibril",
-        anime: "No Game No Life",
+        voice: 23,
+        name: "Chitanda Eru",
+        anime: "Hyouka",
         avt: [
             "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
             "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
