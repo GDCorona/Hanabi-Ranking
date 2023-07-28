@@ -168,12 +168,12 @@ const char = [
         name: "Tachibana Kanade",
         anime: "Angel Beats!",
         avt: [
-            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
-            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
-            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
+            "url('https://i.pinimg.com/originals/47/44/5b/47445bdf7c3991a65e2c2bd92a21ca08.jpg')",
+            "url('https://i.pinimg.com/originals/2c/37/00/2c370043956815a2c1056e2e621118af.jpg')",
+            "url('https://i.pinimg.com/originals/93/32/65/933265e897663478f31fc15a6c72f850.jpg')",
             "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        bg: "url('https://i.pinimg.com/originals/ae/0b/83/ae0b8342ae4fb78abe7f0204e2861fe4.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
         info: document.getElementsByTagName("p")[10].innerHTML
     },
@@ -184,12 +184,12 @@ const char = [
         name: "Nakano Miku",
         anime: "Gotoubun no Hanayome",
         avt: [
-            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
-            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
-            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
-            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+            "url('https://i.pinimg.com/originals/1d/00/0b/1d000b1c3ff152042933fb58209b66ac.jpg')",
+            "url('https://i.pinimg.com/originals/6d/63/35/6d63354de46ea9b9a7aff3a26a2233a1.jpg')",
+            "url('https://i.pinimg.com/originals/97/30/e7/9730e7ea84718c892a356a60a3f90328.jpg')",
+            "url('https://i.pinimg.com/originals/f6/0c/66/f60c663ebcc96e520d29c47a1d9c4ecb.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        bg: "url('https://i.pinimg.com/originals/29/bd/11/29bd11aa3d4f833b982fb4c2b76fa086.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
         info: document.getElementsByTagName("p")[11].innerHTML
     },
@@ -200,12 +200,12 @@ const char = [
         name: "Otosaka Ayumi",
         anime: "Charlotte",
         avt: [
-            "url('https://i.pinimg.com/originals/1e/de/7d/1ede7d1a1d3c754892acb8c973a44858.jpg')",
-            "url('https://i.pinimg.com/originals/b3/7f/43/b37f43dccdd6aaf7a0f338984fda679c.jpg')",
-            "url('https://i.pinimg.com/originals/1b/3a/1e/1b3a1e13e1f3c380134b2232399fd0db.jpg')",
-            "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
+            "url('https://i.pinimg.com/originals/82/49/41/824941fc89053db189092c5ba7243759.jpg')",
+            "url('https://i.pinimg.com/originals/4d/98/ed/4d98ed85e7b58b8643098e612fac47da.jpg')",
+            "url('https://i.pinimg.com/originals/45/1d/b6/451db6d9fc64e6ff52967e27d7755eb5.jpg')",
+            "url('https://i.pinimg.com/originals/b7/c8/99/b7c8997c087252bfc316c3b8121f9e3a.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
+        bg: "url('https://i.pinimg.com/originals/c6/cf/0b/c6cf0bb79b4876faf17780ad5333dc55.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
         info: document.getElementsByTagName("p")[12].innerHTML
     },
