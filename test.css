@@ -228,7 +228,7 @@ h1{
     padding: 0 2vw 0 1vw;
     max-width: 63vw;
 }
-.left a, .right a{position: relative; left: 30%; top: 65%; font-weight: bolder; color: var(--color2);}
+.left a, .right a{font-weight: bolder; color: var(--color2);}
 .link{
     width: 20px;
     height: 20px;
@@ -588,10 +588,10 @@ h1{
     padding: 0 2vw 0 1vw;
     max-width: 63vw;
 }
-.left a, .right a{position: relative; left: 30%; top: 65%; font-weight: bolder; color: var(--color2);}
+.info{position: absolute; bottom: 4vw; left: 30%;}
 .link{
-    width: 20px;
-    height: 20px;
+    width: 1.5vw;
+    height: 1.5vw;
 }
 /*toggle switch*/
 .switch {
