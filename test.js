@@ -372,7 +372,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Uchida Maaya <br> Beautiful young vocalist who own the ability to speak to the dead. There aren't many things to say about her personality, she is lively and friendly with others, contrary to her dead older sister Misa, who is short-tempered and kind of masculine. Sometimes her sister could take over Yusa's consciousness and obsess her body, when things are back to normal Yusa will not remember anything that happened during that time, including her sister's existence.", "VA: Uchida Maaya <br> Yes, she is the prettiest girl in my eyes ~~ You know, long blone hair is my most beloved anime girls type, and everything about Yusa is just...glorious! There is a reason I see Charlotte as the best art anime I have ever watched, though...", "VA: Uchida Maaya <br> She has a pure, energetic voice that gives me a lot of joy. Her seiyuu, Uchida Maaya, is also one of my favorite seiyuus. However her role as Rikka is much more exceptional as Rikka has more opportunities to express herself and she got tons of unique phrases (Vanishmento thisu worldrudo!) and noises (Awww!)."], 
         link: "https://myanimelist.net/character/124037/Yusa_Kurobane"
     },
     {
@@ -423,7 +423,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/d7/5f/1b/d75f1b0e5d29f2a4e268a0b399bea7b1.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Hanamori Yumiri <br> The daughter of Hayasaka family, who has served the Shinomiya family for many generations. Her role is not only doing household chores, but also specifically taking care of Kaguya. Ai has supported Kaguya a lot in her life and became one of the few persons that she can trust and be honest with. I personally don't really like much about her personality, as she is more mature than her ages and she often say mean things.", "VA: Hanamori Yumiri <br>", "VA: Hanamori Yumiri <br>"],
         link: "https://myanimelist.net/character/143196/Ai_Hayasaka"
     },
     {
@@ -440,7 +440,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/a9/27/e8/a927e8d6edacb4ac037834b6a0ed163f.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Koga Aoi <br> Vice president of Shuchiin Academy student council and the only daughter of the Shinomiya aristocratic family. She is a multi-talented genius who have a cold attitude towards the surroundings. Initially Shirogane is the only person that she actually really care about but as the anime progressed we are able to see more about her good side as she began to open herself more and had more good relationships. Thanks to that, I could understand her better and have more feelings for her even though she is not the type of girls I like.", "VA: Koga Aoi <br> Kaguya is an opulent lady who has the charm and charisma of an aristocat. However just like Chika I am interested more about her funny moments as she expressed a lot of cute \"meme\" faces, while her overall appearance is still overshadowed by many characters in other animes. I think it's partly because Love is war isn't too striking in terms of art and there are a lot of animes such as Fate/ Stay Night, Charlotte and Date A Live just do a better job than that.", "VA: Koga Aoi <br> Do I need to say anything here? Her voice is one of the most precious treasure that God can gift to human beings. Although I love Secretary Fujiwara's voice a bit more, those 2 both made me die in cuteness. Kudos to Koga-san and Kohara-san for having such sweet voices that completely melted my heart!!! ~~"],
         link: "https://myanimelist.net/character/136359/Kaguya_Shinomiya"
     },
     {
@@ -491,7 +491,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/0f/4c/5d/0f4c5d201dc528bc79fe74376144a38e.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: ["VA: Kohara Konomi <br> Secretaty of Shuchiin Academy student council. Really love gossiping and involving others into her games. She can be annoying sometimes as her boisterous mouth often say bad things about others and she often unexpectedly ruins Kaguya and Shirogane's plan to make the other confess, but there are still moments when she actually showing her care towards her friend, like when she went through all difficulties teaching Shirogane about \"basic human\" skills.", "VA: Kohara Konomi <br> Chika is very cute and has a lot of both kawaii and funny expressions, for me she is the most beautiful girl in Love is war. However there are still many girls in other animes that I find prettier and my impression on her appearance is primarily about her funny \"meme\" face so that's why she is not that high on the list.", "VA: Kohara Konomi <br>  Regarding her voice, it's absolutely max level of cuteness. In most stuations she maintain a happy and cheering tone, but her voice shine most when she is upset and annoyed. It's just sooo entertaining watching secreatary Fujiwara complaining and babbling with an angery voice and that made up the majority of funny moments in the anime."],
+        info: ["VA: Kohara Konomi <br> Secretaty of Shuchiin Academy student council. Really love gossiping and involving others into her games. She can be annoying sometimes as her boisterous mouth often say bad things about others and she often unexpectedly ruins Kaguya and Shirogane's plan to make the other confess, but there are still moments when she actually showing her care towards her friend, like when she went through all difficulties teaching Shirogane about \"basic human\" skills.", "VA: Kohara Konomi <br> Chika is very cute and has a lot of both kawaii and funny expressions, for me she is the most beautiful girl in Love is war. However there are still many girls in other animes that I find prettier and my impression on her appearance is primarily about her funny \"meme\" face so that's why she is not that high on the list.", "VA: Kohara Konomi <br>  Regarding her voice, it's absolutely max level of cuteness. In most stuations she maintain a happy and cheering tone, but her voice shine most when she is upset and annoyed. It's just sooo entertaining watching secreatary Fujiwara complaining and babbling with an angry voice and that made up the majority of funny moments in the anime."],
         link: "https://myanimelist.net/character/140810/Chika_Fujiwara"
     },
     {
