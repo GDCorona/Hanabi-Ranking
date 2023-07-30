@@ -15,7 +15,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/69/d8/75/69d8754cdbf6263c8fbbcc53bb086cf7.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606938-corona-689894639-kaguya-noise-1.mp3",
-        info: document.getElementsByTagName("p")[0].innerHTML
+        info: ["info1 ", "info2", "info3"],
+        link: "https://myanimelist.net/character/80243/Shouko_Nishimiya"
     },
     {
         personality: 2,
@@ -31,7 +32,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/8f/ac/df/8facdf1548bcd88e0158f83a50a3c8d5.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: document.getElementsByTagName("p")[1].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/4604/Nagisa_Furukawa"
     },
     {
         personality: 3,
@@ -47,7 +49,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/df/7a/42/df7a4278523558979bd61e593cdf0a8e.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: document.getElementsByTagName("p")[2].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/37832/Madoka_Kaname"
     },
     {
         personality: 4,
@@ -63,7 +66,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/d3/0f/7d/d30f7dd3b0042e83f567afa4da3017c2.png')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: document.getElementsByTagName("p")[3].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/52723/Kosaki_Onodera"
     },
     {
         personality: 5,
@@ -79,7 +83,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/73/9a/c6/739ac6d78cbae7052586776762a02bf7.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: document.getElementsByTagName("p")[4].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/40592/Meiko_Honma"
     },
     {
         personality: 6,
@@ -95,7 +100,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: document.getElementsByTagName("p")[5].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/61371/Mashiro_Shiina"
     },
     {
         personality: 7,
@@ -111,7 +117,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/c0/d7/e7/c0d7e76d37ec528d68c472643eabd690.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: document.getElementsByTagName("p")[6].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/65259/Tooka_Yatogami"
     },
     {
         personality: 8,
@@ -127,7 +134,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/9b/79/a6/9b79a6de65abba2d53649d060bd7f2dd.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: document.getElementsByTagName("p")[7].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/32884/Rea_Sanka"
     },
     {
         personality: 9,
@@ -143,7 +151,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/94/c2/0d/94c20db370050018ce306856e44e23ad.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: document.getElementsByTagName("p")[8].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/48391/Chitoge_Kirisaki"
     },
     {
         personality: 10,
@@ -159,11 +168,12 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/72/0a/d7/720ad71ee9cb909f51d9648d3c09777d.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: document.getElementsByTagName("p")[9].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/124049/Isla"
     },
     {
         personality: 11,
-        appearance: 16,
+        appearance: 15,
         voice: 9,
         name: "Tachibana Kanade",
         anime: "Angel Beats!",
@@ -175,7 +185,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/ae/0b/83/ae0b8342ae4fb78abe7f0204e2861fe4.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: document.getElementsByTagName("p")[10].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/22369/Kanade_Tachibana"
     },
     {
         personality: 12,
@@ -191,7 +202,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/29/bd/11/29bd11aa3d4f833b982fb4c2b76fa086.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: document.getElementsByTagName("p")[11].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/160603/Miku_Nakano"
     },
     {
         personality: 13,
@@ -207,7 +219,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/c6/cf/0b/c6cf0bb79b4876faf17780ad5333dc55.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: document.getElementsByTagName("p")[12].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/129120/Ayumi_Otosaka"
     },
     {
         personality: 14,
@@ -223,7 +236,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/ab/1c/1a/ab1c1abff26dc94f5c013598ef58e684.png')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: document.getElementsByTagName("p")[13].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/65263/Kotori_Itsuka"
     },
     {
         personality: 15,
@@ -239,7 +253,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/c3/96/38/c3963806f9f3aad56b61b94dd377dd25.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: document.getElementsByTagName("p")[14].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/186921/Ruby_Hoshino"
     },
     {
         personality: 16,
@@ -255,7 +270,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/52/db/ab/52dbab087fffd72aa2c28cbe68a82c82.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: document.getElementsByTagName("p")[15].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/152052/Miko_Iino"
     },
     {
         personality: 17,
@@ -271,7 +287,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/98/fa/9d/98fa9d624cf4c5076fa090d049d5d729.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: document.getElementsByTagName("p")[16].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/118737/Emilia"
     },
     {
         personality: 18,
@@ -287,7 +304,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/38/53/0a/38530ae82519ebd30ee8d704703c3bbe.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: document.getElementsByTagName("p")[17].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/81751/Mirai_Kuriyama"
     },
     {
         personality: 19,
@@ -303,7 +321,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/46/1e/ad/461eadc5d2d55705c9eaa689d960d147.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: document.getElementsByTagName("p")[18].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/65865/Rikka_Takanashi"
     },
     {
         personality: 20,
@@ -319,7 +338,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/a3/19/70/a31970be628d97f9cc36ca7d6e5cc9cd.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: document.getElementsByTagName("p")[19].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/122211/Nao_Tomori"
     },
     {
         personality: 21,
@@ -335,7 +355,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/0f/f3/60/0ff360e3ccf2913bd0722d1660b60645.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: document.getElementsByTagName("p")[20].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/161471/Itsuki_Nakano"
     },
     {
         personality: 22,
@@ -351,7 +372,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: document.getElementsByTagName("p")[21].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/124037/Yusa_Kurobane"
     },
     {
         personality: 23,
@@ -367,7 +389,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: document.getElementsByTagName("p")[22].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/503/Illyasviel_von_Einzbern"
     },
     {
         personality: 24,
@@ -383,7 +406,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/bc/36/66/bc3666d2cfc0296ff03cfea8a72577be.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: document.getElementsByTagName("p")[23].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/82525/Shiro"
     },
     {
         personality: 25,
@@ -399,7 +423,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/d7/5f/1b/d75f1b0e5d29f2a4e268a0b399bea7b1.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: document.getElementsByTagName("p")[24].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/143196/Ai_Hayasaka"
     },
     {
         personality: 26,
@@ -415,11 +440,12 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/a9/27/e8/a927e8d6edacb4ac037834b6a0ed163f.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: document.getElementsByTagName("p")[25].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/136359/Kaguya_Shinomiya"
     },
     {
         personality: 27,
-        appearance: 15,
+        appearance: 16,
         voice: 24,
         name: "Tohsaka Rin",
         anime: "Fate/ Stay Night",
@@ -431,7 +457,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/18/73/24/1873240d0a4231c40684501965fce2c0.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: document.getElementsByTagName("p")[26].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/498/Rin_Toosaka"
     },
     {
         personality: 28,
@@ -447,7 +474,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/85/98/13/859813be1b04baee1fcaf8998a8d4a47.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: document.getElementsByTagName("p")[27].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/497/Saber"
     },
     {
         personality: 29,
@@ -463,7 +491,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/0f/4c/5d/0f4c5d201dc528bc79fe74376144a38e.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: document.getElementsByTagName("p")[28].innerHTML
+        info: ["VA: Kohara Konomi <br> Secretaty of Shuchiin Academy student council. Really love gossiping and involving others into her games. She can be annoying sometimes as her boisterous mouth often say bad things about others and she often unexpectedly ruins Kaguya and Shirogane's plan to make the other confess, but there are still moments when she actually showing her care towards her friend, like when she went through all difficulties teaching Shirogane about \"basic human\" skills.", "VA: Kohara Konomi <br> Chika is very cute and has a lot of both kawaii and funny expressions, for me she is the most beautiful girl in Love is war. However there are still many girls in other animes that I find prettier and my impression on her appearance is primarily about her funny \"meme\" face so that's why she is not that high on the list.", "VA: Kohara Konomi <br>  Regarding her voice, it's absolutely max level of cuteness. In most stuations she maintain a happy and cheering tone, but her voice shine most when she is upset and annoyed. It's just sooo entertaining watching secreatary Fujiwara complaining and babbling with an angery voice and that made up the majority of funny moments in the anime."],
+        link: "https://myanimelist.net/character/140810/Chika_Fujiwara"
     },
     {
         personality: 30,
@@ -479,7 +508,8 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/1b/27/86/1b2786f1cee290a4b548c46d2b78b37d.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: document.getElementsByTagName("p")[29].innerHTML
+        info: ["info1", "info2", "info3"],
+        link: "https://myanimelist.net/character/55133/Eru_Chitanda"
     }
 ]
 var arr = [
@@ -500,7 +530,8 @@ for (var i = 0; i < char.length; i++){
     document.getElementsByTagName("h4")[i].innerHTML = char[i].anime;
     document.getElementsByClassName("avt")[i].style.backgroundImage = char[i].avt[arr[type][i]];
     document.getElementsByClassName("switch-circle")[i].style.backgroundImage = char[i].avt[arr[type][i]];
-    document.getElementsByTagName("p")[i].innerHTML = char[i].info;
+    document.getElementsByTagName("p")[i].innerHTML = char[i].info[type];
+    document.getElementsByClassName("info")[i].href = char[i].link;
 }
 //sort type
 function Personality(){type = 0; localStorage.setItem('type', type); Sort();}
@@ -520,7 +551,8 @@ function Sort(){
             document.getElementsByTagName("h4")[i].innerHTML = char[i].anime;
             document.getElementsByClassName("avt")[i].style.backgroundImage = char[i].avt[arr[type][i]];
             document.getElementsByClassName("switch-circle")[i].style.backgroundImage = char[i].avt[arr[type][i]];
-            document.getElementsByTagName("p")[i].innerHTML = char[i].info;
+            document.getElementsByTagName("p")[i].innerHTML = char[i].info[type];
+            document.getElementsByClassName("info")[i].href = char[i].link;
         }
     }, 1000);
 }
