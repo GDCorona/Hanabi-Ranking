@@ -15,7 +15,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/69/d8/75/69d8754cdbf6263c8fbbcc53bb086cf7.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606938-corona-689894639-kaguya-noise-1.mp3",
-        info: ["VA: Hayami Saori <br> ", "VA: Hayami Saori <br>", "VA: Hayami Saori <br>"],
+        info: ["info1 ", "info2", "info3"],
         link: "https://myanimelist.net/character/80243/Shouko_Nishimiya"
     },
     {
@@ -32,7 +32,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/8f/ac/df/8facdf1548bcd88e0158f83a50a3c8d5.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Nakahara Mai <br>", "VA: Nakahara Mai <br>", "VA: Nakahara Mai <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/4604/Nagisa_Furukawa"
     },
     {
@@ -49,7 +49,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/df/7a/42/df7a4278523558979bd61e593cdf0a8e.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Yuuki Aoi <br>", "VA: Yuuki Aoi <br>", "VA: Yuuki Aoi <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/37832/Madoka_Kaname"
     },
     {
@@ -66,7 +66,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/d3/0f/7d/d30f7dd3b0042e83f567afa4da3017c2.png')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Hanazawa Kana <br>", "VA: Hanazawa Kana <br>", "VA: Hanazawa Kana <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/52723/Kosaki_Onodera"
     },
     {
@@ -83,7 +83,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/73/9a/c6/739ac6d78cbae7052586776762a02bf7.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Kayano Ai <br>", "VA: Kayano Ai <br>", "VA: Kayano Ai <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/40592/Meiko_Honma"
     },
     {
@@ -100,7 +100,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Kayano Ai <br>", "VA: Kayano Ai <br>", "VA: Kayano Ai <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/61371/Mashiro_Shiina"
     },
     {
@@ -117,7 +117,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/c0/d7/e7/c0d7e76d37ec528d68c472643eabd690.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Inoue Marina<br>", "VA: Inoue Marina<br>", "VA: Inoue Marina<br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/65259/Tooka_Yatogami"
     },
     {
@@ -134,7 +134,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/9b/79/a6/9b79a6de65abba2d53649d060bd7f2dd.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Uchida Maaya <br>", "VA: Uchida Maaya <br>", "VA: Uchida Maaya <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/32884/Rea_Sanka"
     },
     {
@@ -151,7 +151,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/94/c2/0d/94c20db370050018ce306856e44e23ad.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Touyama Nao <br>", "VA: Touyama Nao <br>", "VA: Touyama Nao <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/48391/Chitoge_Kirisaki"
     },
     {
@@ -168,7 +168,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/72/0a/d7/720ad71ee9cb909f51d9648d3c09777d.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Amamiya Sora <br>", "VA: Amamiya Sora <br>", "VA: Amamiya Sora <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/124049/Isla"
     },
     {
@@ -185,7 +185,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/ae/0b/83/ae0b8342ae4fb78abe7f0204e2861fe4.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Hanazawa Kana <br>", "VA: Hanazawa Kana <br>", "VA: Hanazawa Kana <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/22369/Kanade_Tachibana"
     },
     {
@@ -202,7 +202,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/29/bd/11/29bd11aa3d4f833b982fb4c2b76fa086.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Itou Miku <br>", "VA: Itou Miku <br>", "VA: Itou Miku <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/160603/Miku_Nakano"
     },
     {
@@ -219,7 +219,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/c6/cf/0b/c6cf0bb79b4876faf17780ad5333dc55.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Asakura Momo <br>", "VA: Asakura Momo <br>", "VA: Asakura Momo <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/129120/Ayumi_Otosaka"
     },
     {
@@ -236,7 +236,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/ab/1c/1a/ab1c1abff26dc94f5c013598ef58e684.png')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Taketatsu Ayana <br>", "VA: Taketatsu Ayana <br>", "VA: Taketatsu Ayana <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/65263/Kotori_Itsuka"
     },
     {
@@ -253,7 +253,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/c3/96/38/c3963806f9f3aad56b61b94dd377dd25.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Igoma Yurie <br>", "VA: Igoma Yurie <br>", "VA: Igoma Yurie <br>"],
+        info: ["VA: Igoma Yurie <br>", "VA: Igoma Yurie <br>", "VA: Igoma Yurie <br> Ruby's voice is really chill and bring me a delightful vibe. It's just that she doesn't have as many special moments to express her voice at different types of emotion like the above characters. Her position will probably change when the next season come out and she will have more screentime."],
         link: "https://myanimelist.net/character/186921/Ruby_Hoshino"
     },
     {
@@ -270,7 +270,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/52/db/ab/52dbab087fffd72aa2c28cbe68a82c82.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Tomita Miyu <br>", "VA: Tomita Miyu <br>", "VA: Tomita Miyu <br>"],
+        info: ["VA: Tomita Miyu <br> Young disciplinary commitee who strictly follow rules and criticize anyone that break them. Despite being too strict sometimes especially with Ishigami, she actually care for him and doesn't want anyone to behave wrongly. I particularly love all of her misunderstanding moments when she falsely think The Student Council members are doing something indecent, her overreaction is just tooooo funny and cute for me to handle @@.", "VA: Tomita Miyu <br> Her appearance is quite typical of a young freshman. I particulary notice her hairstyle which looks really adorable for me.", "VA: Tomita Miyu <br> Even though her voice doesn't give me much impression, it still gives me a lot of chill and hapiness especially in her misunderstanding moments. My most unforgettable moment of her voice is when she miscomprehended Stubame senpai's invite to the party at her house. If you have watched the movie you know what I am refering to =)) That scene was just so hillarious."],
         link: "https://myanimelist.net/character/152052/Miko_Iino"
     },
     {
@@ -287,7 +287,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/98/fa/9d/98fa9d624cf4c5076fa090d049d5d729.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Takahashi Rie <br>", "VA: Takahashi Rie <br>", "VA: Takahashi Rie <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/118737/Emilia"
     },
     {
@@ -304,7 +304,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/38/53/0a/38530ae82519ebd30ee8d704703c3bbe.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Taneda Risa", "VA: Taneda Risa", "VA: Taneda Risa"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/81751/Mirai_Kuriyama"
     },
     {
@@ -321,7 +321,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/46/1e/ad/461eadc5d2d55705c9eaa689d960d147.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Uchida Maaya <br>", "VA: Uchida Maaya <br>", "VA: Uchida Maaya <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/65865/Rikka_Takanashi"
     },
     {
@@ -338,7 +338,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/a3/19/70/a31970be628d97f9cc36ca7d6e5cc9cd.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Sakura Ayane <br>", "VA: Sakura Ayane <br>", "VA: Sakura Ayane <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/122211/Nao_Tomori"
     },
     {
@@ -355,7 +355,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/0f/f3/60/0ff360e3ccf2913bd0722d1660b60645.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Minase Inori <br>", "VA: Minase Inori <br>", "VA: Minase Inori <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/161471/Itsuki_Nakano"
     },
     {
@@ -389,7 +389,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: ["VA: Kadowaki Mai <br>", "VA: Kadowaki Mai <br>", "VA: Kadowaki Mai <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/503/Illyasviel_von_Einzbern"
     },
     {
@@ -406,7 +406,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/bc/36/66/bc3666d2cfc0296ff03cfea8a72577be.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: ["VA: Kayano Ai <br>", "VA: Kayano Ai <br>", "VA: Kayano Ai <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/82525/Shiro"
     },
     {
@@ -423,7 +423,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/d7/5f/1b/d75f1b0e5d29f2a4e268a0b399bea7b1.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: ["VA: Hanamori Yumiri <br> The daughter of Hayasaka family, who has served the Shinomiya family for many generations. Her role is not only doing household chores, but also specifically taking care of Kaguya. Ai has supported Kaguya a lot in her life and became one of the few persons that she can trust and be honest with. I personally don't really like much about her personality, as she is more mature than her ages and she often say mean things.", "VA: Hanamori Yumiri <br> ", "VA: Hanamori Yumiri <br> "],
+        info: ["VA: Hanamori Yumiri <br> The daughter of Hayasaka family, who has served the Shinomiya family for many generations. Her role is not only doing household chores, but also specifically taking care of Kaguya. I personally don't really like much about her personality, as she often being indifferent and barely show her feelings. However I still admire Ai since her role demand her to be more mature than her ages and she has done an excellent job in supporting Kaguya a lot in her life and became one of the few persons she can trust and be honest with.", "VA: Hanamori Yumiri <br> Hayasaka mainly shows off in her maid outfit and that's when I see her most captivating. At school her style is more bright and reflect a young energetic schoolgirl. There was also a special ocassion when she turned on \"naive Hayasaka\" mode and dressed in a totally different way, that's when she tried to seduce Shirogane but failed, and I also found that style very charming!", "VA: Hanamori Yumiri <br> Her voice doesn't sound that remarkable for me as it sounds lethargic and pretty much like a robot. However it's understandable since she must be very tired dealing with troubles from Kaguya (mainly about her love struggle with president). She does sometimes sounds more lively though...that's often when she is at school and during these times she has left us the 2 legendary words which is \"Heyyy Heyyyyyyyyyy!!!!\"."],
         link: "https://myanimelist.net/character/143196/Ai_Hayasaka"
     },
     {
@@ -457,7 +457,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/18/73/24/1873240d0a4231c40684501965fce2c0.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: ["VA: Ueda Kana <br>", "VA: Ueda Kana <br>", "VA: Ueda Kana <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/498/Rin_Toosaka"
     },
     {
@@ -474,7 +474,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/85/98/13/859813be1b04baee1fcaf8998a8d4a47.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: ["VA: Kawasumi Ayako <br>", "VA: Kawasumi Ayako <br>", "VA: Kawasumi Ayako <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/497/Saber"
     },
     {
@@ -508,7 +508,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/1b/27/86/1b2786f1cee290a4b548c46d2b78b37d.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Satou Satomi <br>", "VA: Satou Satomi <br> ", "VA: Satou Satomi <br>"],
+        info: ["info1", "info2", "info3"],
         link: "https://myanimelist.net/character/55133/Eru_Chitanda"
     }
 ]
