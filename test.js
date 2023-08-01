@@ -190,7 +190,7 @@ const char = [
     },
     {
         personality: 12,
-        appearance: 12,
+        appearance: 11,
         voice: 6,
         name: "Nakano Miku",
         anime: "Gotoubun no Hanayome",
@@ -208,7 +208,7 @@ const char = [
     {
         personality: 13,
         appearance: 9,
-        voice: 19,
+        voice: 20,
         name: "Otosaka Ayumi",
         anime: "Charlotte",
         avt: [
@@ -224,7 +224,7 @@ const char = [
     },
     {
         personality: 14,
-        appearance: 7,
+        appearance: 12,
         voice: 15,
         name: "Itsuka Kotori",
         anime: "Date A Live",
@@ -253,7 +253,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/c3/96/38/c3963806f9f3aad56b61b94dd377dd25.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Igoma Yurie <br>", "VA: Igoma Yurie <br>", "VA: Igoma Yurie <br> Ruby's voice is really chill and bring me a delightful vibe. It's just that she doesn't have as many special moments to express her voice at different types of emotion like the above characters. Her position will probably change when the next season come out and she will have more screentime."],
+        info: ["VA: Igoma Yurie <br> The daughter of the twins born by the famous idol Hoshino Ai. In her previous life she was Sarina Tendouji, a young enthusiastic girl who was a big fan of Ai. She died because of a fatal disease and reincarnated as the daughter of her idol. Ruby is pure, amiable and very passionate about being a famous idol like her mother and those nice qualities made me like her very much. It's just that she need more screentime so that I could have more affections for her. In fact, later in the manga she isn't a naive and cheerful Ruby anymore...but that's all because of the revenge for her mother and I still love her no matter what ~~.", "VA: Igoma Yurie <br> Her appearance is pretty similar with Yusa which is the most beautiful girl in my eyes so it's apparent that she must be ranked very high. The main difference is her sparkling star eyes which I think are more splendid than Yusa's, but the art in Charlotte for me is just way more iconic for me. I feels like modern animes are kind of generic in terms of art and story, and Oshi no Ko is just one of the few recent animes that has their own uniqueness. Although the modern arts looks more clean and polished, animes from 2010-2018 era still have some of the best art styles in my opinion. ", "VA: Igoma Yurie <br> Ruby's voice is really chill and it brings me a delightful vibe. It's just that she doesn't have as many special moments to express her voice at different types of emotion like the above characters. Her position will probably change when the next season come out and she will have more screentime."],
         link: "https://myanimelist.net/character/186921/Ruby_Hoshino"
     },
     {
@@ -276,7 +276,7 @@ const char = [
     {
         personality: 17,
         appearance: 17,
-        voice: 20,
+        voice: 21,
         name: "Emilia",
         anime: "Re:Zero",
         avt: [
@@ -343,8 +343,8 @@ const char = [
     },
     {
         personality: 21,
-        appearance: 11,
-        voice: 21,
+        appearance: 10,
+        voice: 23,
         name: "Nakano Itsuki",
         anime: "Gotoubun no Hanayome",
         avt: [
@@ -496,8 +496,8 @@ const char = [
     },
     {
         personality: 30,
-        appearance: 10,
-        voice: 23,
+        appearance: 7,
+        voice: 19,
         name: "Chitanda Eru",
         anime: "Hyouka",
         avt: [
@@ -508,7 +508,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/1b/27/86/1b2786f1cee290a4b548c46d2b78b37d.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Satou Satomi<br> The president of the Classics Club, who is also the daughter of a very wealthy family. She is intelligent and often very curious and excited about intriguing new things. This personality is pretty interesting for me but sadly I don't have much impression for her like the other characters. To tell the truth I am pretty much the kind of guy like Houtarou the main protagonist in the anime so it would be very uncomfortable and exhausting for me if I were involved into her endless curiosity :<.", "VA: Satou Satomi <br> Gosh she is soooo adorable >< Her long black hair and purple eyes reflect a dark but elegant tone in my eyes. The fact that her apperance is blessed by Kyoto Animation made me fall for her even more! KyoAni is no doubt the goat of animation in my opinion.", "VA: Satou Satomi <br> Chitanda has a calm voice that really improve my mood, but most of her conversations are just normal and there are barely any events that make her significantly change her reaction. My strongest impression about her voice is the phrase \"Watashi kininarimasu!\" which she use very often when she found something interesting."],
         link: "https://myanimelist.net/character/55133/Eru_Chitanda"
     }
 ]
