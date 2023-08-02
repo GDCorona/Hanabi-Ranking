@@ -49,7 +49,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/df/7a/42/df7a4278523558979bd61e593cdf0a8e.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Yuuki Aoi <br>", "VA: Yuuki Aoi <br> Madoka has typical styles of a young magical girl with pink twintail and a colorful magical girl outfit. That makes her really adorable for me but I still find others characters much more attractive ", "VA: Yuuki Aoi <br>"],
         link: "https://myanimelist.net/character/37832/Madoka_Kaname"
     },
     {
@@ -66,7 +66,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/d3/0f/7d/d30f7dd3b0042e83f567afa4da3017c2.png')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Hanazawa Kana <br> One of the girl in Raku's harem =)) She has been Raku's close friend and has a crush on him throughout her school years, but she never be able to confess her feelings for him. I was dumbfounded to know that she is the true promised girl of Raku and it was just so depressing that she lost. Even though I like Chitoge more and want her to win but I still feel very sad for Onodera <br> :<.", "VA: Hanazawa Kana <br> For me Onodera looks like a supporting character and she doesn't have any noticeable features like other anime girls, but her simple looks still enough to make her a lovable girl in my eyes.", "VA: Hanazawa Kana <br> Awwwww her voice is so smooth!!!!!! I am just unable to resist the cuteness when she is being shy and embarrassed while talking with Raku."],
         link: "https://myanimelist.net/character/52723/Kosaki_Onodera"
     },
     {
