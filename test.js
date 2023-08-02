@@ -49,7 +49,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/df/7a/42/df7a4278523558979bd61e593cdf0a8e.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Yuuki Aoi <br>", "VA: Yuuki Aoi <br> Madoka has typical styles of a young magical girl with pink twintail and a colorful magical girl outfit. That makes her really adorable for me but I still find others characters much more attractive ", "VA: Yuuki Aoi <br>"],
+        info: ["VA: Yuuki Aoi <br>", "VA: Yuuki Aoi <br> Madoka has typical styles of a young magical girl with pink twintail and a colorful magical girl outfit. That makes her really adorable for me but I still find others characters much more attractive.", "VA: Yuuki Aoi <br>"],
         link: "https://myanimelist.net/character/37832/Madoka_Kaname"
     },
     {
