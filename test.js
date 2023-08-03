@@ -151,12 +151,12 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/94/c2/0d/94c20db370050018ce306856e44e23ad.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Touyama Nao <br> ", "VA: Touyama Nao <br> Wow she is sooooo gorgeous!!! I was totally mesmerized by her radiance when I first read the manga in middle school, her image with long blone hair, lovely red ribbon and elegant school uniform just deeply implanted in my mind. She had hold the top 1 spot for such a long times before Yusa came, and she will forever be one of the prettiest girls in my heart <3.", "VA: Touyama Nao <br>"],
+        info: ["VA: Touyama Nao <br> Half-Japanese girl who is the daughter of the boss of the Bee Hive gangster. She is very smart and has excellent strength and agility but is disastrous at cooking. She is very friendly and willing to make friends, Being dragged into a fake relationship Raku and having a bad first impression make Chitoge often being annoyed and rude with him. However as the story progresses she began to realize his kindness and gradually fall in love with him. Although tsundere isn't the best type for me, she is still among the top tier waifus in my heart! In fact she is my first waifu so I have much more feelings for her than the others.", "VA: Touyama Nao <br> Wow she is sooooo gorgeous!!! I was totally mesmerized by her radiance when I first read the manga in middle school, her image with long blone hair, lovely red ribbon and elegant school uniform just deeply implanted in my mind. She had hold the top 1 spot for such a long times before Yusa came, and she will forever be one of the prettiest girls in my heart <3.", "VA: Touyama Nao <br> Her tsundere voice is really awesome, it doesn't feel too harsh for me compared with other typical tsunderes like Nino, Kotori and Rin. She mainly just being rude with her bean sprout Raku while with others she sounds very energetic and friendly."],
         link: "https://myanimelist.net/character/48391/Chitoge_Kirisaki"
     },
     {
         personality: 10,
-        appearance: 13,
+        appearance: 14,
         voice: 14,
         name: "Isla",
         anime: "Plastic Memories",
@@ -173,7 +173,7 @@ const char = [
     },
     {
         personality: 11,
-        appearance: 15,
+        appearance: 9,
         voice: 9,
         name: "Tachibana Kanade",
         anime: "Angel Beats!",
@@ -185,12 +185,12 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/ae/0b/83/ae0b8342ae4fb78abe7f0204e2861fe4.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Hanazawa Kana <br>", "VA: Hanazawa Kana <br>", "VA: Hanazawa Kana <br>"],
+        info: ["VA: Hanazawa Kana <br> The Student Council president and is regarded as \"Tenshi\"", "VA: Hanazawa Kana <br> It's easy for you to recognize the resemblance between her style and Charlotte characters. It's because Angel Beats is produced by P.A. Works, which is the studio that made Charlotte (the best art anime of all times). That's enough for you to know how beautiful she is in my eyes. Her sharp eyes alongside with her long silver hair make it really fit with her personality as a kuudere.", "VA: Hanazawa Kana <br> She has the same voice with Onodera so Awwwww her voice is so smooth!!!!!! Except that she barely show her emotion at all...For most of the time she just names her Guard Skills which make her sounds like an AI killing machine for me lmao :/."],
         link: "https://myanimelist.net/character/22369/Kanade_Tachibana"
     },
     {
         personality: 12,
-        appearance: 11,
+        appearance: 12,
         voice: 6,
         name: "Nakano Miku",
         anime: "Gotoubun no Hanayome",
@@ -207,7 +207,7 @@ const char = [
     },
     {
         personality: 13,
-        appearance: 9,
+        appearance: 10,
         voice: 20,
         name: "Otosaka Ayumi",
         anime: "Charlotte",
@@ -224,7 +224,7 @@ const char = [
     },
     {
         personality: 14,
-        appearance: 12,
+        appearance: 13,
         voice: 16,
         name: "Itsuka Kotori",
         anime: "Date A Live",
@@ -343,7 +343,7 @@ const char = [
     },
     {
         personality: 21,
-        appearance: 10,
+        appearance: 11,
         voice: 23,
         name: "Nakano Itsuki",
         anime: "Gotoubun no Hanayome",
@@ -394,7 +394,7 @@ const char = [
     },
     {
         personality: 24,
-        appearance: 14,
+        appearance: 15,
         voice: 2,
         name: "Shiro",
         anime: "No Game No Life",
