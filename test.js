@@ -15,7 +15,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/69/d8/75/69d8754cdbf6263c8fbbcc53bb086cf7.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606938-corona-689894639-kaguya-noise-1.mp3",
-        info: ["info1 ", "info2", "info3"],
+        info: ["VA: Hayami Saori <br> Mild, kind-hearted girl who got a tough childhood. She was born deaf and unable to hear and talk. Even worse, she was continuously bullied by her classmates during her elementary school to the extent that her mother had to transfer her to another school. Despite that, she always put a smile on her face and still happy when she meet Shouya (one of the main bullies) again after several years. She never blame anyone at all, even though her old classmate (Ueno) still hates and continue to bully her. The moment when she attempted to commit suicide really broke my soul...She just make me wholeheartedly wish that I could have a good friend like her.", "VA: Hayami Saori <br> I don't have anything to say about her apperance, she just looks like a normal school girl with a simple style. But from her face I can feel the strong sense of benevolence and I can immediately tell that it would be fortunate to be a friend with her. I just couldn't get why her classmates hate her that much >:(.", "VA: Hayami Saori <br> Shouko literally can't talk though...she just communicates via sign language, but sometimes she still try to make some single words and sounds and that's pretty kawaii!"],
         link: "https://myanimelist.net/character/80243/Shouko_Nishimiya"
     },
     {
@@ -139,8 +139,8 @@ const char = [
     },
     {
         personality: 9,
-        appearance: 6,
-        voice: 16,
+        appearance: 3,
+        voice: 15,
         name: "Kirisaki Chitoge",
         anime: "Nisekoi",
         avt: [
@@ -151,7 +151,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/94/c2/0d/94c20db370050018ce306856e44e23ad.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Touyama Nao <br> ", "VA: Touyama Nao <br> Wow she is sooooo gorgeous!!! I was totally mesmerized by her radiance when I first read the manga in middle school, her image with long blone hair, lovely red ribbon and elegant school uniform just deeply implanted in my mind. She had hold the top 1 spot for such a long times before Yusa came, and she will forever be one of the prettiest girls in my heart <3.", "VA: Touyama Nao <br>"],
         link: "https://myanimelist.net/character/48391/Chitoge_Kirisaki"
     },
     {
@@ -185,7 +185,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/ae/0b/83/ae0b8342ae4fb78abe7f0204e2861fe4.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Hanazawa Kana <br>", "VA: Hanazawa Kana <br>", "VA: Hanazawa Kana <br>"],
         link: "https://myanimelist.net/character/22369/Kanade_Tachibana"
     },
     {
@@ -225,7 +225,7 @@ const char = [
     {
         personality: 14,
         appearance: 12,
-        voice: 15,
+        voice: 16,
         name: "Itsuka Kotori",
         anime: "Date A Live",
         avt: [
@@ -253,7 +253,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/c3/96/38/c3963806f9f3aad56b61b94dd377dd25.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Igoma Yurie <br> The daughter of the twins born by the famous idol Hoshino Ai. In her previous life she was Sarina Tendouji, a young enthusiastic girl who was a big fan of Ai. She died because of a fatal disease and reincarnated as the daughter of her idol. Ruby is pure, amiable and very passionate about being a famous idol like her mother and those nice qualities made me like her very much. It's just that she need more screentime so that I could have more affections for her. In fact, later in the manga she isn't a naive and cheerful Ruby anymore...but that's all because of the revenge for her mother and I still love her no matter what ~~.", "VA: Igoma Yurie <br> Her appearance is pretty similar with Yusa which is the most beautiful girl in my eyes so it's apparent that she must be ranked very high. The main difference is her sparkling star eyes which I think are more splendid than Yusa's, but the art in Charlotte is just way more iconic for me.", "VA: Igoma Yurie <br> Ruby's voice is really chill and it brings me a delightful vibe. It's just that she doesn't have as many special moments to express her voice at different types of emotion like the above characters. Her position will probably change when the next season come out and she will have more screentime."],
+        info: ["VA: Igoma Yurie <br> The daughter of the twins born by the famous idol Hoshino Ai. In her previous life she was Sarina Tendouji, a young enthusiastic girl who was a big fan of Ai. She died because of a fatal disease and reincarnated as the daughter of her idol. Ruby is pure, amiable and very passionate about being a famous idol like her mother and those nice qualities made me like her very much. It's just that she need more screentime so that I could have more affections for her. In fact, later in the manga she isn't a naive and cheerful Ruby anymore...but that's all because of the revenge for her mother and I still love her no matter what ~~.", "VA: Igoma Yurie <br> Blone hair girls completely dominated the list ayooo :O. Her appearance is pretty similar with Yusa which is the most beautiful girl in my eyes. The main difference is her sparkling star eyes which I think are more splendid than Yusa's, but the art in Charlotte is just way more iconic for me.", "VA: Igoma Yurie <br> Ruby's voice is really chill and it brings me a delightful vibe. It's just that she doesn't have as many special moments to express her voice at different types of emotion like the above characters. Her position will probably change when the next season come out and she will have more screentime."],
         link: "https://myanimelist.net/character/186921/Ruby_Hoshino"
     },
     {
@@ -377,7 +377,7 @@ const char = [
     },
     {
         personality: 23,
-        appearance: 3,
+        appearance: 6,
         voice: 7,
         name: "Illyasviel von Einzbern",
         anime: "Fate/Stay Night",
