@@ -32,7 +32,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/8f/ac/df/8facdf1548bcd88e0158f83a50a3c8d5.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["info1", "I do find her cute and her hair is kind of unique. However she doesn't looks as beautiful as other girls in Clannad like Kyou, Kotomi and Tomoyo in my opinion. Still, I have to again show my appreciation for KyoAni for making all of their characters super endearing and well-polished.", "info3"],
         link: "https://myanimelist.net/character/4604/Nagisa_Furukawa"
     },
     {
@@ -321,7 +321,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/46/1e/ad/461eadc5d2d55705c9eaa689d960d147.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Uchida Maaya <br> The main heroine of the anime. Having serious chuunibyou syndrome, she imagines her own fantasy realm where she fight the dark with her mystical powers in order to find the Horizon, the place she believes her father to be there. It's such a joy watching her battles against various evil powers and her clumsy moments with \"Dark Flame Master\" Yuuta.", "VA: Uchida Maaya <br> You know that the character must be very glorious when she is animated by Kyoto Animation, that's a fact. Rikka looks really distinct with her golden \"Wicked Eye\" veiled by an eye-patch. It's just that I notice more about her bizarre behaviour and her cute voice rather than her looks.", "VA: Uchida Maaya <br> Her voice sounds freaking cute ><, especially her \"Awwww\" noises when she is hit by Yuuta. As a chuunibyou she has a fertile imagination and she has invented a bunch of unique terms that sounds hella cool and funny for me!!! 2 of her most iconic words are \"Banisment this World!\" (used to awaken her power) and \"Schwarzsechs Prototype Mark II\", which is her supreme battle weapon."],
         link: "https://myanimelist.net/character/65865/Rikka_Takanashi"
     },
     {
@@ -372,7 +372,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Uchida Maaya <br> Beautiful young vocalist who own the ability to speak to the dead. There aren't many things to say about her personality, she is lively and friendly with others, contrary to her dead older sister Misa, who is short-tempered and kind of masculine. Sometimes her sister could take over Yusa's consciousness and obsess her body, when things are back to normal Yusa will not remember anything that happened during that time, including her sister's existence.", "VA: Uchida Maaya <br> Yes, she is the prettiest girl in my eyes ~~ You know, long blone hair is my most beloved anime girls type, and everything about Yusa is just...glorious! There is a reason I see Charlotte as the best art anime I have ever watched, though...", "VA: Uchida Maaya <br> She has a pure, energetic voice that gives me a lot of joy. Her seiyuu, Uchida Maaya, is also one of my favorite seiyuus. However her role as Rikka is much more exceptional as Rikka has more opportunities to express herself and she got tons of unique phrases (Vanishmento thisu worldrudo!) and noises (Awww!)."], 
+        info: ["VA: Uchida Maaya <br> Beautiful young vocalist who own the ability to speak to the dead. There aren't many things to say about her personality, she is lively and friendly with others, contrary to her dead older sister Misa, who is short-tempered and kind of masculine. Sometimes her sister could take over Yusa's consciousness and obsess her body, when things are back to normal Yusa will not remember anything that happened during that time, including her sister's existence.", "VA: Uchida Maaya <br> Yes, she is the prettiest girl in my eyes ~~ You know, long blone hair is my most beloved anime girls type, and everything about Yusa is just...glorious! There is a reason I see Charlotte as the best art anime I have ever watched, though...", "VA: Uchida Maaya <br> She has a pure, energetic voice that gives me a lot of joy. Her seiyuu, Uchida Maaya, is also one of my favorite seiyuus. However her role as Rikka is much more exceptional as Rikka has more opportunities to express herself and she got tons of unique phrases and noises that gave me a lot of impressions."], 
         link: "https://myanimelist.net/character/124037/Yusa_Kurobane"
     },
     {
