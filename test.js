@@ -32,7 +32,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/8f/ac/df/8facdf1548bcd88e0158f83a50a3c8d5.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["info1", "I do find her cute and her hair is kind of unique. However she doesn't looks as beautiful as other girls in Clannad like Kyou, Kotomi and Tomoyo in my opinion. Still, I have to again show my appreciation for KyoAni for making all of their characters super endearing and well-polished.", "info3"],
+        info: ["The main heroine of Clannad, she has a mysterious illness that made her unable to attend ", "I do find her cute and her hair is kind of unique. However she doesn't looks as beautiful as other girls in Clannad like Kyou, Kotomi and Tomoyo in my opinion. Still, I have to again show my appreciation for KyoAni for making all of their characters super endearing and well-polished.", "info3"],
         link: "https://myanimelist.net/character/4604/Nagisa_Furukawa"
     },
     {
@@ -236,7 +236,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/ab/1c/1a/ab1c1abff26dc94f5c013598ef58e684.png')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Taketatsu Ayana <br> Lord Harem Itsuka Shidou's foster sister (thus legitimately included in his harem). She has 2 types of personality, the first one is the Imouto ver which is indicated by her white ribbons. In this mode she is timid, naive and clearly shows dependence on her brother. The second one, indicated by her black ribbons, is her Commander ver for which she take a responsibility as the head commander of Ratatoskyr. In this \"strong ver\" she is determined, bossy and often being rude with her brother. However she actually still care for him, she just prefer to hide her true feelings and pretends to be strong.", "VA: Taketatsu Ayana <br> Needless to say she is absolutely gorgeous. Out of all spirits her astral dress looks best for me, and it is the closest exemplar of an angel suit. The moments when Kotori, in her angelic dress covered in flame, descends from sky with a merciless look and throw some badass words into her enemies, it's just...magnificent! ", "VA: Taketatsu Ayana <br> In her Imouto mode she just sounds like a cute little sister who is shy and clinging with her brother, whereas in her commander mode her voice is the epitome of stundere voice. It sounds bossy, merciless which really fits her strong self as a commander. For me Taketatsu Ayana is definitely the goat of tsundere voice with so many outstanding tsundere perfomances notably Kotori, Nino (Gotoubun) and Suguha (SAO)."],
         link: "https://myanimelist.net/character/65263/Kotori_Itsuka"
     },
     {
