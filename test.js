@@ -32,7 +32,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/8f/ac/df/8facdf1548bcd88e0158f83a50a3c8d5.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["The main heroine of Clannad, she has a mysterious illness that made her unable to attend ", "I do find her cute and her hair is kind of unique. However she doesn't looks as beautiful as other girls in Clannad like Kyou, Kotomi and Tomoyo in my opinion. Still, I have to again show my appreciation for KyoAni for making all of their characters super endearing and well-polished.", "info3"],
+        info: ["VA: Nakahara Mai <br> The main heroine of Clannad, she has a mysterious illness that gives her a weak physical body. That made her unable to attend school for nine months and had to repeat her third year of high school. She loves Dango and had a dream which was to re-establish the Theater Club, thanks to the help of Tomoya and other friends her wish was finally fulfilled. She began dating Tomoya after that event and eventually married him. Nagisa has a shy nature and never wants anyone to be hurt, that just make her an ideal girl for me and I love and cherish her just as much as Shouko. It was so shocking and heart-wrenching to see her passed away after giving birth to her daughter Ushio, fortunately the author still has mercy and let her survive in the true ending which is shown in the anime. To be honest I nearly burst into tears watching that scene :_(.", "VA: Nakahara Mai <br> I do find her cute and her hair is kind of unique. However she doesn't looks as beautiful as other girls in Clannad like Kyou, Kotomi and Tomoyo in my opinion. Still, I have to again show my appreciation for KyoAni for making all of their characters super endearing and well-polished.", "VA: Nakahara Mai <br> "],
         link: "https://myanimelist.net/character/4604/Nagisa_Furukawa"
     },
     {
@@ -457,7 +457,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/18/73/24/1873240d0a4231c40684501965fce2c0.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Ueda Kana <br> The daughter of the Tohsaka family, which along with the Matou and the Einzbern, are the 3 largest families that formed the Holy Grail War. Inheriting the will from her father, Rin has strived to improve her sorcery and participated in the 5th Holy Grail War as one of the chosen masters. During the war she is able to show her great ability to evaluate the situation and make logical decisions quickly. After becoming an ally with Shirou their decisions often clash as Shirou acts based on his emotion rather than reason. However she still shows her kindness and care by helping him to master his magic and taking care of his wounds.", "VA: Ueda Kana <br> As the daughter of the Tohsaka family and the model student of the Homurahara Academy, Rin radiates the charisma of a nobility and she always knows how to make herself glamorous and stand out from others. But with Shirou she is often seen to be more ordinary, caring and sometimes...clumsy.", "VA: Ueda Kana <br> She has a stereotypical tsundere voices just as good as Kotori, but somehow it sounds a bit annoying for me. My favorite moment of her is when she got teased by Lancer and that made her blushed and grumbled in a silly but cute way."],
         link: "https://myanimelist.net/character/498/Rin_Toosaka"
     },
     {
@@ -474,7 +474,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/85/98/13/859813be1b04baee1fcaf8998a8d4a47.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Kawasumi Ayako <br> Shirou's servant whose true identity is King Arthur Pendragon. She is loyal, determined with a sole goal in mind that is obtain the Holy Grail in order to redo the selection of King. She doesn't allow personal feelings to get in her way so she prefers Shirou to treats her as a tool for him. However as the story goes she began to show emotions to him (even love him in Fate route) and started to enjoy certain things such as eating and stuffed lions.", "VA: Kawasumi Ayako <br> When battle she looks valiant with her shiny armor and legendary sword Excalibur, while at home she looks more feminine in an elegant white shirt and blue skirt that Rin gave her.", "VA: Kawasumi Ayako <br> Well her voice is cold and lack emotions as she treats herself as a Servant whose the only purpose is to become her master's sword and win the Holy Grail War. But later on she began to open up more and we can see she her tone slightly become warmer."],
         link: "https://myanimelist.net/character/497/Saber"
     },
     {
