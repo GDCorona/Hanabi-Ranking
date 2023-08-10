@@ -32,7 +32,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/8f/ac/df/8facdf1548bcd88e0158f83a50a3c8d5.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Nakahara Mai <br> The main heroine of Clannad, she has a mysterious illness that gives her a weak physical body. That made her unable to attend school for nine months and had to repeat her third year of high school. She loves Dango and had a dream which was to re-establish the Theater Club, thanks to the help of Tomoya and other friends her wish was finally fulfilled. She began dating Tomoya after that event and eventually married him. Nagisa has a shy nature and never wants anyone to be hurt, that just make her an ideal girl for me and I love and cherish her just as much as Shouko. It was so shocking and heart-wrenching to see her passed away after giving birth to her daughter Ushio, fortunately the author still has mercy and let her survive in the true ending which is shown in the anime. To be honest I nearly burst into tears watching that scene :_(.", "VA: Nakahara Mai <br> I do find her cute and her hair is kind of unique. However she doesn't looks as beautiful as other girls in Clannad like Kyou, Kotomi and Tomoyo in my opinion. Still, I have to again show my appreciation for KyoAni for making all of their characters super endearing and well-polished.", "VA: Nakahara Mai <br> "],
+        info: ["VA: Nakahara Mai <br> The main heroine of Clannad, she has a mysterious illness that gives her a weak physical body. That made her unable to attend school for nine months and had to repeat her third year of high school. She loves Dango and had a dream which was to re-establish the Theater Club, thanks to the help of Tomoya and other friends her wish was finally fulfilled. She began dating Tomoya after that event and eventually married him. Nagisa has a shy nature and never wants anyone to be hurt, that just make her an ideal girl for me and I love and cherish her just as much as Shouko. It was so shocking and heart-wrenching to see her passed away after giving birth to her daughter Ushio, fortunately the author still has mercy and let her survive in the true ending which is shown in the anime. To be honest I nearly burst into tears watching that scene :_(.", "VA: Nakahara Mai <br> I do find her cute and her hair is kind of unique. However she doesn't looks as beautiful as other girls in Clannad like Kyou, Kotomi and Tomoyo in my opinion. Still, I have to again show my appreciation for KyoAni for making all of their characters super endearing and well-polished.", "VA: Nakahara Mai <br> She has a rather childish voice that is expected with her timid nature. Although it doesn't sounds memorable to me like other voices, it still significantly warmed my heart and it made me see her as a naive young girl that I want to protect and be with her forever."],
         link: "https://myanimelist.net/character/4604/Nagisa_Furukawa"
     },
     {
@@ -156,7 +156,7 @@ const char = [
     },
     {
         personality: 10,
-        appearance: 14,
+        appearance: 15,
         voice: 14,
         name: "Isla",
         anime: "Plastic Memories",
@@ -190,7 +190,7 @@ const char = [
     },
     {
         personality: 12,
-        appearance: 12,
+        appearance: 13,
         voice: 6,
         name: "Nakano Miku",
         anime: "Gotoubun no Hanayome",
@@ -202,7 +202,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/29/bd/11/29bd11aa3d4f833b982fb4c2b76fa086.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Itou Miku <br> The third sister of the Nakano quintuplets. Being bad at study but just like other sisters, she has one subject that she is good at, which is History. At first she was a reserved and pessimistic person, but the more times she met Futarou, the more confidence she had and she began to have feelings for him. It's a shame that she and Itsuki both lost >:( cuz they are my only 2 favorite girls of the quintuplets. Screw you author at least make Nino win since she confessed first 😞.", "VA: Itou Miku <br> Even though Miku might not be the prettiest, I can assure that she is one of, if not the most stylish anime girls in my eyes. Her charming hairstyle and her unique headphones are enough to make me totally fall for her. (Sorry Miku I still find Itsuki more beautiful than you 😥).", "VA: Itou Miku <br> It's just astonishing that her seiyuu is also Miku :O, and goshhh Miku's voice is soooo sweet and chill!!! I have to again admit that I am highly addicted to kuudere voices, they lack energy and enthusiasm but incredibly pleasing and can be a good medicine to cure your depression 😌."],
         link: "https://myanimelist.net/character/160603/Miku_Nakano"
     },
     {
@@ -224,7 +224,7 @@ const char = [
     },
     {
         personality: 14,
-        appearance: 13,
+        appearance: 14,
         voice: 16,
         name: "Itsuka Kotori",
         anime: "Date A Live",
@@ -343,7 +343,7 @@ const char = [
     },
     {
         personality: 21,
-        appearance: 11,
+        appearance: 12,
         voice: 23,
         name: "Nakano Itsuki",
         anime: "Gotoubun no Hanayome",
@@ -355,7 +355,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/0f/f3/60/0ff360e3ccf2913bd0722d1660b60645.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Minase Inori <br>", "VA: Minase Inori <br> Yo she is the most beautiful out of the Nakano sisters! :D (Itsuki > Miku > Nino > Yotsuba > Ichika). Really love her hair, it's kind of unique with 2 little stars attached.", "VA: Minase Inori <br> Don't have anything particular to say here. She has a serious voice which suits herself as a polite person caring a lot about manners. But when it comes to food she literally sounds like a child who has nothing in her mind but eating."],
         link: "https://myanimelist.net/character/161471/Itsuki_Nakano"
     },
     {
@@ -394,7 +394,7 @@ const char = [
     },
     {
         personality: 24,
-        appearance: 15,
+        appearance: 11,
         voice: 2,
         name: "Shiro",
         anime: "No Game No Life",
