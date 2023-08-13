@@ -83,7 +83,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/73/9a/c6/739ac6d78cbae7052586776762a02bf7.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Kayano Ai <br> Also known as Menma, she is one of 6 people in a group friends called \"Super Peace Busters\" and she died because of an accident when she was only a child. Several years later she suddenly appears in front of Jinta (Used to be the captain of their group and is the only one who could see her) and asks him to reunite the group and fulfill her wish. At the end of the anime, all of her friends were finally able to notice her presence and she wrote them letters as a farewell. Those moments were so heartbreaking and it really reminded me of my beautiful childhood with friends. Her smile, her childishness and her beautiful wish,... everything about her just make me want to cherish her at all costs >< <3.", "VA: Kayano Ai <br> Although she is taller when she meet Jinta after her death, she still has the looks of a child. While she still looks really lovely and adorable with her skyblue eyes and elegant white dress, the above characters feel more captivating for me :|.", "VA: Kayano Ai <br> Glory glory Kayano Ai the best seiyuu of all time. Her performance as Menma is still excellent as always. Compared with Mashiro and Shiro who have a soft and sleep-inducing voices, Menma's voice has more energy and joy. However I still like Mashiro and Shiro voices a bit more because they are more chill and relaxing :P."],
+        info: ["VA: Kayano Ai <br> Also known as Menma, she is one of 6 people in a group friends called \"Super Peace Busters\" and she died because of an accident when she was only a child. Several years later she suddenly appears in front of Jinta (Used to be the captain of their group and is the only one who could see her) and asks him to reunite the group and fulfill her wish. At the end of the anime, all of her friends were finally able to notice her presence and she wrote them letters as a farewell. Those moments were so heartbreaking and it really reminded me of my beautiful childhood with friends. Her smile, her childishness and her beautiful wish,... everything about her just make me want to cherish her at all costs >< <3.", "VA: Kayano Ai <br> Although she is taller when she meet Jinta after her death, she still has the looks of a child. While she still looks really lovely and adorable with her skyblue eyes and elegant white dress, the above characters feel more captivating for me :|.", "VA: Kayano Ai <br> 3rd times showing my appreciation for Kayano Ai <3. Her performance as Menma is still excellent as always. Compared with Mashiro and Shiro who have a soft and sleep-inducing voices, Menma's voice has more energy and joy. However I still like Mashiro and Shiro voices a bit more because they are more chill and relaxing :P."],
         link: "https://myanimelist.net/character/40592/Meiko_Honma"
     },
     {
@@ -100,7 +100,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Kayano Ai <br>", "VA: Kayano Ai <br>", "VA: Kayano Ai <br> Such a heavenly voice that blesses our souls and cures our depression. I love all of her conversations and I just can't describe how I feel in words. With all of the blissful feelings Mashiro gave me, I can confidently say that Kayano Ai is the best seiyuu of all time."],
         link: "https://myanimelist.net/character/61371/Mashiro_Shiina"
     },
     {
@@ -338,7 +338,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/a3/19/70/a31970be628d97f9cc36ca7d6e5cc9cd.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["", "info2", "info3"],
         link: "https://myanimelist.net/character/122211/Nao_Tomori"
     },
     {
@@ -355,7 +355,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/0f/f3/60/0ff360e3ccf2913bd0722d1660b60645.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Minase Inori <br>", "VA: Minase Inori <br> Yo she is the most beautiful out of the Nakano sisters! :D (Itsuki > Miku > Nino > Yotsuba > Ichika). Really love her hair, it's kind of unique with 2 little stars attached.", "VA: Minase Inori <br> Don't have anything particular to say here. She has a serious voice which suits herself as a polite person caring a lot about manners. But when it comes to food she literally sounds like a child who has nothing in her mind but eating."],
+        info: ["VA: Minase Inori <br> Being the youngest sister of the Nakano quintuplets, Itsuki is in fact a bit more mature and serious than her sisters. She cares a lot about good manners and has a clear goal which is to become a teacher. Nevertheless, she has a bad habit which is overeating and we can see her munching on all kind of food (mainly sweets) throughout the series. That's what make me love her though :).", "VA: Minase Inori <br> Yo she is the most beautiful out of the Nakano sisters! :D (Itsuki > Miku > Nino > Yotsuba > Ichika). Really love her hair, it's kind of unique with 2 little stars attached.", "VA: Minase Inori <br> Don't have anything particular to say here. She has a serious voice which suits herself as a polite person caring a lot about manners. But when it comes to food she literally sounds like a child who has nothing in her mind but eating."],
         link: "https://myanimelist.net/character/161471/Itsuki_Nakano"
     },
     {
@@ -406,7 +406,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/bc/36/66/bc3666d2cfc0296ff03cfea8a72577be.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Kayano Ai <br> A 11 years old pro gamer. Along with her step-brother Sora, these 2 genius NEET totally dominated the gamer world. She barely shows emotion to anyone except Sora, and it's apparent that she has a brother complex as she is extremely close to him and often get jealous when her brother pay too much attention to other girls.", "VA: Kayano Ai <br> She looks sooooo radiant and colorful! I really love this unique, colorful styles in No Game No Life, it brings me a positive vibe and makes the anime become the true definition of a fantasy anime.", "VA: Kayano Ai <br> It's Kayano Ai so what do you expect? My feeling is exactly the same like when I heard Mashiro's voice, it's just that I love Mashiro's voice a bit more cuz she has more diverse and lovely expressions while Shiro often just speaks in short sentences."],
         link: "https://myanimelist.net/character/82525/Shiro"
     },
     {
