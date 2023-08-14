@@ -117,7 +117,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/c0/d7/e7/c0d7e76d37ec528d68c472643eabd690.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Inoue Marina<br>", "VA: Inoue Marina<br>", "VA: Inoue Marina<br> "],
         link: "https://myanimelist.net/character/65259/Tooka_Yatogami"
     },
     {
@@ -304,7 +304,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/38/53/0a/38530ae82519ebd30ee8d704703c3bbe.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Taneda Risa <br>", "VA: Taneda Risa <br> ", "VA: Taneda Risa <br> Decent and delicate, that's pretty much all I can say about her voice. Still, she has one iconic catchphrase that I really like and you already know what that is. Fuyukai desu!!!! ><"],
         link: "https://myanimelist.net/character/81751/Mirai_Kuriyama"
     },
     {
@@ -355,7 +355,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/0f/f3/60/0ff360e3ccf2913bd0722d1660b60645.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Minase Inori <br> Being the youngest sister of the Nakano quintuplets, Itsuki is in fact a bit more mature and serious than her sisters. She cares a lot about good manners and has a clear goal which is to become a teacher. Nevertheless, she has a bad habit which is overeating and we can see her munching on all kind of food (mainly sweets) throughout the series. That's what make me love her though :).", "VA: Minase Inori <br> Yo she is the most beautiful out of the Nakano sisters! :D (Itsuki > Miku > Nino > Yotsuba > Ichika). Really love her hair, it's kind of unique with 2 little stars attached.", "VA: Minase Inori <br> Don't have anything particular to say here. She has a serious voice which suits herself as a polite person caring a lot about manners. But when it comes to food she literally sounds like a child who has nothing in her mind but eating."],
+        info: ["VA: Minase Inori <br> Being the youngest sister of the Nakano quintuplets, Itsuki is in fact a bit more mature and serious than her sisters. She cares a lot about good manners and has a clear goal which is to become a teacher. Nevertheless, she has a bad habit which is overeating and we can see her munching on all kind of food (mainly sweets) throughout the series. That's what make me love her though :).", "VA: Minase Inori <br> Yo she is the most beautiful out of the Nakano sisters! :D (Itsuki > Miku > Nino > Yotsuba > Ichika). Really love her hair, it's kind of unique with 2 little stars attached and a tiny piece of hair sticking out.", "VA: Minase Inori <br> Don't have anything particular to say here. She has a serious voice which suits herself as a polite person caring a lot about manners. But when it comes to food she literally sounds like a child who has nothing in her mind but eating."],
         link: "https://myanimelist.net/character/161471/Itsuki_Nakano"
     },
     {
