@@ -73,7 +73,7 @@ const char = [
         personality: 5,
         appearance: 25,
         voice: 3,
-        name: "Honma Meiko",
+        name: "Honma Meiko", 
         anime: "Anohana",
         avt: [
             "url('https://i.pinimg.com/originals/64/00/bc/6400bc293dad65daf3e9111488bf8b6c.jpg')",
@@ -83,7 +83,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/73/9a/c6/739ac6d78cbae7052586776762a02bf7.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Kayano Ai <br> Also known as Menma, she is one of 6 people in a group friends called \"Super Peace Busters\" and she died because of an accident when she was only a child. Several years later she suddenly appears in front of Jinta (Used to be the captain of their group and is the only one who could see her) and asks him to reunite the group and fulfill her wish. At the end of the anime, all of her friends were finally able to notice her presence and she wrote them letters as a farewell. Those moments were so heartbreaking and it really reminded me of my beautiful childhood with friends. Her smile, her childishness and her beautiful wish,... everything about her just make me want to cherish her at all costs >< <3.", "VA: Kayano Ai <br> Although she is taller when she meet Jinta after her death, she still has the looks of a child. While she still looks really lovely and adorable with her skyblue eyes and elegant white dress, the above characters feel more captivating for me :|.", "VA: Kayano Ai <br> 3rd times showing my appreciation for Kayano Ai <3. Her performance as Menma is still excellent as always. Compared with Mashiro and Shiro who have a soft and sleep-inducing voices, Menma's voice has more energy and joy. However I still like Mashiro and Shiro voices a bit more because they are more chill and relaxing :P."],
+        info: ["VA: Kayano Ai <br> Also known as Menma, she is one of 6 people in a group friends called \"Super Peace Busters\" and she died because of an accident when she was only a child. Several years later she suddenly appears in front of Jinta (Used to be the captain of their group and is the only one who could see her) and asks him to reunite the group and fulfill her wish. At the end of the anime, all of her friends were finally able to notice her presence and she wrote them letters as a farewell. Those moments were so heartbreaking and it really reminded me of my beautiful childhood with friends. Her smile, her childishness and her beautiful wish,... everything about her just make me want to cherish her at all costs >< <3.", "VA: Kayano Ai <br> Although she is taller when she meet Jinta after her death, she still has the looks of a child. While she still looks really lovely and adorable with her skyblue eyes and elegant white dress, the above characters feel more captivating for me :|.", "VA: Kayano Ai <br> 3rd times showing my appreciation for Kayano Ai <3. Her performance as Menma is still excellent as always. Compared with Mashiro and Shiro who have a soft and sleep-inducing voices, Menma's voice has more energy and joy. Still, I like Mashiro and Shiro voices a bit more because they are more chill and relaxing :P."],
         link: "https://myanimelist.net/character/40592/Meiko_Honma"
     },
     {
@@ -100,7 +100,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Kayano Ai <br>", "VA: Kayano Ai <br>", "VA: Kayano Ai <br> Such a heavenly voice that blesses our souls and cures our depression. I love all of her conversations and I just can't describe how I feel in words. With all of the blissful feelings Mashiro gave me, I can confidently say that Kayano Ai is the best seiyuu of all time."],
+        info: ["VA: Kayano Ai <br> World famous artist who transferred to Sakurasou dormitory as a foreign exchange student. Despite being exceptional at art, she seriously lacks the ability to perform simple daily tasks. With the help of Sorata and other Sakurasou members, she started to view the world in a more bright and lively way, not just all about drawing like before. It's really wholesome to see her gradually grow feelings for Sorata.", "VA: Kayano Ai <br> I believe in blone hair supremacy(❁´◡`❁). My vocab is just too limited to fully depict her magnificent beauty. In fact, kuuderes always look cool and uninteresting at first but then they started to notice more about the surroundings and show their affection to those who are close to them. That's when they look most beautiful, shining more than any others.", "VA: Kayano Ai <br> Awwwwwwwwwwww cuteness overloaded!!!!!! 😵. Such a heavenly voice that blesses our souls and cures our depression. I love all of her conversations and I just can't describe how I feel in words. With all of the blissful feelings Mashiro gave me, I can confidently say that Kayano Ai is the best seiyuu of all time."],
         link: "https://myanimelist.net/character/61371/Mashiro_Shiina"
     },
     {
@@ -389,7 +389,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Kadowaki Mai <br> Emiya Kiritsugu's daughter and Shirou's foster sister. She attend the Fifth Holy Grail war as a master on behalf of the Einzbern. At first, she was ruthless and willing to kill other masters violently using her powerful immortal servant Berserker. She especially wanted to avenge Shirou and torture him thinking that he was the main cause of her father's abandonment. However as the story goes she started to realize his good nature and formed a strong connection with him. Their relationship developed most significantly in Heaven's Feel and this is the fundamental element that make me have sympathy for her since I was really shocked knowing what she had done to Shirou in the Visual Novel 💀.", "VA: Kadowaki Mai <br> Her angelic appearance completely fascinated me 💘. It's too easy to be fooled by her lovely, innocent looks when she actually is a merciless evil. I was also staggered knowing that she is older than Shirou since she looks like a child and always call Shirou \"onii chan\" (＃°Д°). She already looks cute in Fate 2006 and then ufotable just made her more gorgeous than ever! Literally anything that come to the hand of Kyoto Animation and ufotable can become masterpieces 💯✨.", "VA: Kadowaki Mai <br> Illya's voice is just soooo soft!!!!!! Along with her angelic looks it's not exaggerating at all to call her a \"tenshi\" descended from heaven. Such a blessing to listen to her voice and she is just among a few characters that could give me this high level of satisfaction ~~."],
         link: "https://myanimelist.net/character/503/Illyasviel_von_Einzbern"
     },
     {
