@@ -3,7 +3,7 @@
 const char = [
     {
         personality: 1,
-        appearance: 23,
+        appearance: 22,
         voice: 30,
         name: "Nishimiya Shouko",
         anime: "Koe no katachi",
@@ -122,7 +122,7 @@ const char = [
     },
     {
         personality: 8,
-        appearance: 24,
+        appearance: 21,
         voice: 13,
         name: "Sanka Rea",
         anime: "Sankarea",
@@ -292,7 +292,7 @@ const char = [
     },
     {
         personality: 18,
-        appearance: 21,
+        appearance: 23,
         voice: 17,
         name: "Kuriyama Mirai",
         anime: "Kyoukai no Kanata",
@@ -304,7 +304,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/38/53/0a/38530ae82519ebd30ee8d704703c3bbe.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Taneda Risa <br>", "VA: Taneda Risa <br> ", "VA: Taneda Risa <br> Decent and delicate, that's pretty much all I can say about her voice. Still, she has one iconic catchphrase that I really like and you already know what that is. Fuyukai desu!!!! ><"],
+        info: ["VA: Taneda Risa <br> First-year high school student who is a youmu hunter. Despite having a rare abitlity to manipulate blood, her constant fear of encountering youmus prevents her from slaying them and that make her struggle to earn an income as this is a profession in which hunters have to kill youmus in order to earn money. After meeting Akihito, who is a half-youmu and glasses addict, she gains more confidence and friendliness as her senpai help her to have more friends and overcome her fear of youmus.", "VA: Taneda Risa <br> I am not addicted to glasses like Akihito :/, and short hair is not my types either. Nonetheless she still looks cute and rather clumsy and I love it!", "VA: Taneda Risa <br> Decent and delicate, that's pretty much all I can say about her voice. Still, she has one iconic catchphrase that I really like and you already know what that is. Fuyukai desu!!!! ><"],
         link: "https://myanimelist.net/character/81751/Mirai_Kuriyama"
     },
     {
@@ -462,7 +462,7 @@ const char = [
     },
     {
         personality: 28,
-        appearance: 22,
+        appearance: 24,
         voice: 29,
         name: "Saber",
         anime: "Fate/ Stay Night",
