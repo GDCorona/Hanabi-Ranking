@@ -117,7 +117,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/c0/d7/e7/c0d7e76d37ec528d68c472643eabd690.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Inoue Marina<br>", "VA: Inoue Marina<br>", "VA: Inoue Marina<br> "],
+        info: ["VA: Inoue Marina<br> Tohka is the first spirit that Shidou saved and is one of the girls he love most. She has a personality like a child: ignorant, energetic and loyal to Shidou; her hobbies are merely eating and hanging around with him. Tohka sometimes can be a troublemaker as she often get jealous easily when Shidou is clung by another girl (especially Origami) and it might takes a lot of effort to calm her down. Other than that, she is super friendly and really care about Shidou and her fellow Spirits.", "VA: Inoue Marina<br> Tohka is, without a doubt, the most glorious and captivating spirits for me. The codename \"Princess\" just perfectly fits her as her magnificent astral dress and her armament Saldaphon which takes the form of the gilded throne make her looks like a powerful, charismatic princess.", "VA: Inoue Marina<br> Tohka sounds immensely adorable ~~, especially when she encounter foods 😋. Date A Live is one of the first animes that I watched and Tohka's voice is the one that left me most elation and beautiful memories. Gotta rewatch Date A Live soon cuz I missed her voice so much T_T."],
         link: "https://myanimelist.net/character/65259/Tooka_Yatogami"
     },
     {
@@ -168,7 +168,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/72/0a/d7/720ad71ee9cb909f51d9648d3c09777d.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Amamiya Sora <br> A giftia works in SAI Corporation, an organization specializes in collecting expired giftias (Expired giftias will lose their memories and become hostile so they need to be collected). Despite being shy and clumsy, she is lively, caring and willing to help others. It was really sad to see her trying not to admit her feelings to Tsukasa as her life is running out and she afraid that he would be hurt. When they got to confess their feelings to each other it was already the 10th eps and I could only enjoy their beautiful relationship for a short amount of times ╯︿╰.", "VA: Amamiya Sora <br> Twin-tails girls are freaking cute 😍. Along with her childish appearance and clumsy character it just makes me adore her so much! Besides, I've just known that Plastic Memories was produced by Doga Kobo the studio that also adapted Oshi no Ko, their art honestly looks very neat!", "VA: Amamiya Sora <br> To describe anime girls voices I have no choice but to overuse the words \"chill\", \"soft\", \"cute\" and \"sweet\" since almost all of my favorite girls sounds like that 😑. Isla has one of the best \"soft\" voice for me and it's relaxing hearing her voice throughout the anime. However it slowly turned out to be depressing at the end when she was fear of never be able to meet Tsukasa again, man I tried so hard not to cry (┬┬﹏┬┬)."],
         link: "https://myanimelist.net/character/124049/Isla"
     },
     {
@@ -219,7 +219,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/c6/cf/0b/c6cf0bb79b4876faf17780ad5333dc55.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Asakura Momo <br> Yuu's cute Imouto and a big fan of Yusarin.   ", "VA: Asakura Momo <br> ", "VA: Asakura Momo <br> "],
         link: "https://myanimelist.net/character/129120/Ayumi_Otosaka"
     },
     {
