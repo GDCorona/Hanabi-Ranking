@@ -219,7 +219,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/c6/cf/0b/c6cf0bb79b4876faf17780ad5333dc55.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Asakura Momo <br> Yuu's cute Imouto and a big fan of Yusarin.   ", "VA: Asakura Momo <br> ", "VA: Asakura Momo <br> "],
+        info: ["VA: Asakura Momo <br> Yuu's cute Imouto, she love stars and is a huge fan of the idol Yusa Nishimori aka Yusarin. Ayumi owns the dangerous ability to make everything around her collapse but that didn't awakened until she was threatened by a jealous classmate. Sadly this had made the school collapse and resulted in her death. Yuu fell into deep grief after this shocking event and isolated himself from everyone. Watching those episodes was really tough for me ╯︿╰, since I was having great sadness like him and I totally sympathized with his acts. It was such a relief knowing that later on Ayumi was saved by her brother using time travel（︶^︶）.", "VA: Asakura Momo <br> Charlotte girls are among the top level of cuteness 💖. Ayumi is literlly one of the best Imotous out there and Yuu is just so lucky to have a cute, caring little sister like her.", "VA: Asakura Momo <br> Not much to say here, just a cute, lovely voice that make us adore her immediately at first sight 🥰."],
         link: "https://myanimelist.net/character/129120/Ayumi_Otosaka"
     },
     {
@@ -287,7 +287,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/98/fa/9d/98fa9d624cf4c5076fa090d049d5d729.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["info1", "info2", "info3"],
+        info: ["VA: Takahashi Rie <br> Half-elf girl who is one of the candidates to become the next ruler in the royal election. She is kind, cheerful and willing to give other people a help. However she has received unfair discrimination from others because of her identical appearance with Satella the Witch of Envy and that has resulted in her sometimes feeling sad and isolated.", "VA: Takahashi Rie <br> Emilia genuinely looks so elegant and well dressed, perfectly fits her status as a noblewoman. She just shines more than any other characters in Re Zero in terms of appearance. The ones that I think can come up to her level of charm are Priscilla and Anastasia, who are the other candiates in the royal election. However they didn't appear much in the series thus didn't leave me enough impression.", "VA: Takahashi Rie <br> Ayoooo such a sweet, heart-warming voice that could melt even the coldest heart (￣m￣）. It's so awesome to know that she is also the VA for Hoshino Ai our beloved idol. "],
         link: "https://myanimelist.net/character/118737/Emilia"
     },
     {
@@ -338,7 +338,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/a3/19/70/a31970be628d97f9cc36ca7d6e5cc9cd.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["", "info2", "info3"],
+        info: ["VA: Sakura Ayane <br>", "VA: Sakura Ayane <br> ", "VA: Sakura Ayane <br> I don't have much to comment, she usually sounds a bit means and sarcastic but sometimes she actually show care and worriness. The best moment is definitely the last scene when she cried in happiness. "],
         link: "https://myanimelist.net/character/122211/Nao_Tomori"
     },
     {
