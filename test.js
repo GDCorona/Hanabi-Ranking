@@ -15,13 +15,13 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/69/d8/75/69d8754cdbf6263c8fbbcc53bb086cf7.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606938-corona-689894639-kaguya-noise-1.mp3",
-        info: ["VA: Hayami Saori <br> Mild, kind-hearted girl who got a tough childhood. She was born deaf and unable to hear and talk. Even worse, she was continuously bullied by her classmates during her elementary school to the extent that her mother had to transfer her to another school. Despite that, she always put a smile on her face and still happy when she meet Shouya (one of the main bullies) again after several years. She never blame anyone at all, even though her old classmate (Ueno) still hates and continue to bully her. The moment when she attempted to commit suicide really broke my soul...She just make me wholeheartedly wish that I could have a good friend like her.", "VA: Hayami Saori <br> I don't have anything to say about her apperance, she just looks like a normal school girl with a simple style. But from her face I can feel the strong sense of benevolence and I can immediately tell that it would be fortunate to be a friend with her. I just couldn't get why her classmates hate her that much >:(.", "VA: Hayami Saori <br> Shouko literally can't talk though...she just communicates via sign language, but sometimes she still try to make some single words and sounds and that's pretty kawaii!"],
+        info: ["VA: Hayami Saori <br> Mild, kind-hearted girl who got a tough childhood. She was born deaf and unable to hear and talk. Even worse, she was continuously bullied by her classmates during her elementary school to the extent that her mother had to transfer her to another school. Despite that, she always put a smile on her face and still happy when she meet Shouya (one of the main bullies) again after several years. She never blame anyone at all, even though her old classmate (Ueno) still hates and continue to bully her. The moment when she attempted to commit suicide really broke my soul...She just make me wholeheartedly wish that I could have a good friend like her.", "VA: Hayami Saori <br> I don't have anything to say about her apperance, she just looks like a normal school girl with a simple style. But from her face I can feel the strong sense of benevolence and I can immediately tell that it would be fortunate to be a friend with her. I just couldn't get why her classmates hate her that much >:(.", "VA: Hayami Saori <br> Shouko literally can't talk though...she just communicates via sign language, but sometimes she still try to make some single words and sounds and that's pretty kawaii! (✿◕‿◕✿)"],
         link: "https://myanimelist.net/character/80243/Shouko_Nishimiya"
     },
     {
         personality: 2,
-        appearance: 29,
-        voice: 18,
+        appearance: 28,
+        voice: 20,
         name: "Furukawa Nagisa",
         anime: "Clannad",
         avt: [
@@ -32,12 +32,12 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/8f/ac/df/8facdf1548bcd88e0158f83a50a3c8d5.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Nakahara Mai <br> The main heroine of Clannad, she has a mysterious illness that gives her a weak physical body. That made her unable to attend school for nine months and had to repeat her third year of high school. She loves Dango and had a dream which was to re-establish the Theater Club, thanks to the help of Tomoya and other friends her wish was finally fulfilled. She began dating Tomoya after that event and eventually married him. Nagisa has a shy nature and never wants anyone to be hurt, that just make her an ideal girl for me and I love and cherish her just as much as Shouko. It was so shocking and heart-wrenching to see her passed away after giving birth to her daughter Ushio, fortunately the author still has mercy and let her survive in the true ending which is shown in the anime. To be honest I nearly burst into tears watching that scene :_(.", "VA: Nakahara Mai <br> I do find her cute and her hair is kind of unique. However she doesn't looks as beautiful as other girls in Clannad like Kyou, Kotomi and Tomoyo in my opinion. Still, I have to again show my appreciation for KyoAni for making all of their characters super endearing and well-polished.", "VA: Nakahara Mai <br> She has a rather childish voice that is expected with her timid nature. Although it doesn't sounds memorable to me like other voices, it still significantly warmed my heart and it made me see her as a naive young girl that I want to protect and be with her forever."],
+        info: ["VA: Nakahara Mai <br> The main heroine of Clannad, she has a mysterious illness that gives her a weak physical body. That made her unable to attend school for nine months and had to repeat her third year of high school. She loves Dango and had a dream which was to re-establish the Theater Club, thanks to the help of Tomoya and other friends her wish was finally fulfilled. She began dating Tomoya after that event and eventually married him. Nagisa has a shy nature and never wants anyone to be hurt, that just make her an ideal girl for me and I love and cherish her just as much as Shouko. It was so shocking and heart-wrenching to see her passed away after giving birth to her daughter Ushio, fortunately the author still has mercy and let her survive in the true ending which is shown in the anime. To be honest I nearly burst into tears watching that scene :_(.", "VA: Nakahara Mai <br> I do find her cute and her hair is kind of unique. However she doesn't looks as beautiful as other girls in Clannad like Kyou, Kotomi and Tomoyo in my opinion. Still, I have to again show my appreciation for KyoAni for making all of their characters super endearing and well-polished.", "VA: Nakahara Mai <br> She has a rather childish voice that is expected with her timid nature. Although it doesn't sounds memorable to me like other voices, it still significantly warmed my heart and it made me see her as a naive young girl that I want to protect and be with her forever ❤."],
         link: "https://myanimelist.net/character/4604/Nagisa_Furukawa"
     },
     {
         personality: 3,
-        appearance: 28,
+        appearance: 29,
         voice: 27,
         name: "Madoka Kaname",
         anime: "Mahou Shoujo Madoka Magica",
@@ -66,7 +66,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/d3/0f/7d/d30f7dd3b0042e83f567afa4da3017c2.png')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Hanazawa Kana <br> One of the girl in Raku's harem =)) She has been Raku's close friend and has a crush on him throughout her school years, but she never be able to confess her feelings for him. I was dumbfounded to know that she is the true promised girl of Raku and it was just so depressing that she lost. Even though I like Chitoge more and want her to win but I still feel very sad for Onodera :<.", "VA: Hanazawa Kana <br> For me Onodera looks like a supporting character and she doesn't have any noticeable features like other anime girls, but her simple looks still enough to make her a lovable girl in my eyes.", "VA: Hanazawa Kana <br> Awwwww her voice is so smooth!!!!!! I am just unable to resist the cuteness when she is being shy and embarrassed while talking with Raku."],
+        info: ["VA: Hanazawa Kana <br> One of the girl in Raku's harem =)) She has been Raku's close friend and has a crush on him throughout her school years, but she never be able to confess her feelings for him. I was dumbfounded to know that she is the true promised girl of Raku and it was just so depressing that she lost. Even though I like Chitoge more and want her to win but I still feel very sad for Onodera 💔 :<.", "VA: Hanazawa Kana <br> For me Onodera looks like a supporting character and she doesn't have any noticeable features like other anime girls, but her simple looks still enough to make her a lovable girl in my eyes ✿◡‿◡).", "VA: Hanazawa Kana <br> Awwwww her voice is so smooth!!! (～﹃～)~zZ I am just unable to resist the cuteness when she is being shy and embarrassed while talking with Raku."],
         link: "https://myanimelist.net/character/52723/Kosaki_Onodera"
     },
     {
@@ -83,7 +83,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/73/9a/c6/739ac6d78cbae7052586776762a02bf7.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Kayano Ai <br> Also known as Menma, she is one of 6 people in a group friends called \"Super Peace Busters\" and she died because of an accident when she was only a child. Several years later she suddenly appears in front of Jinta (Used to be the captain of their group and is the only one who could see her) and asks him to reunite the group and fulfill her wish. At the end of the anime, all of her friends were finally able to notice her presence and she wrote them letters as a farewell. Those moments were so heartbreaking and it really reminded me of my beautiful childhood with friends. Her smile, her childishness and her beautiful wish,... everything about her just make me want to cherish her at all costs >< <3.", "VA: Kayano Ai <br> Although she is taller when she meet Jinta after her death, she still has the looks of a child. While she still looks really lovely and adorable with her skyblue eyes and elegant white dress, the above characters feel more captivating for me :|.", "VA: Kayano Ai <br> 3rd times showing my appreciation for Kayano Ai <3. Her performance as Menma is still excellent as always. Compared with Mashiro and Shiro who have a soft and sleep-inducing voices, Menma's voice has more energy and joy. Still, I like Mashiro and Shiro voices a bit more because they are more chill and relaxing :P."],
+        info: ["VA: Kayano Ai <br> Also known as Menma, she is one of 6 people in a group friends called \"Super Peace Busters\" and she died because of an accident when she was only a child. Several years later she suddenly appears in front of Jinta (Used to be the captain of their group and is the only one who could see her) and asks him to reunite the group and fulfill her wish. At the end of the anime, all of her friends were finally able to notice her presence and she wrote them letters as a farewell. Those moments were so heartbreaking and it really reminded me of my beautiful childhood with friends. Her smile, her childishness and her beautiful wish,... everything about her just make me want to cherish her at all costs >< <3.", "VA: Kayano Ai <br> Although she is taller when she meet Jinta after her death, she still has the looks of a child. While she still looks really lovely and adorable with her skyblue eyes and elegant white dress, the above characters feel more captivating for me 😐.", "VA: Kayano Ai <br> 3rd times showing my appreciation for Kayano Ai <3. Her performance as Menma is still excellent as always. Compared with Mashiro and Shiro who have a soft and sleep-inducing voices, Menma's voice has more energy and joy. Still, I like Mashiro and Shiro voices a bit more because they are more chill and relaxing :P."],
         link: "https://myanimelist.net/character/40592/Meiko_Honma"
     },
     {
@@ -100,7 +100,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/14/68/eb/1468ebc64153539d362c61f9f9cbb92a.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Kayano Ai <br> World famous artist who transferred to Sakurasou dormitory as a foreign exchange student. Despite being exceptional at art, she seriously lacks the ability to perform simple daily tasks. With the help of Sorata and other Sakurasou members, she started to view the world in a more bright and lively way, not just all about drawing like before. It's really wholesome to see her gradually grow feelings for Sorata.", "VA: Kayano Ai <br> I believe in blone hair supremacy(❁´◡`❁). My vocab is just too limited to fully depict her magnificent beauty. In fact, kuuderes always look cool and uninteresting at first but then they started to notice more about the surroundings and show their affection to those who are close to them. That's when they look most beautiful, shining more than any others.", "VA: Kayano Ai <br> Awwwwwwwwwwww cuteness overloaded!!!!!! 😵. Such a heavenly voice that blesses our souls and cures our depression. I love all of her conversations and I just can't describe how I feel in words. With all of the blissful feelings Mashiro gave me, I can confidently say that Kayano Ai is the best seiyuu of all time."],
+        info: ["VA: Kayano Ai <br> World famous artist who transferred to Sakurasou dormitory as a foreign exchange student. Despite being exceptional at art, she seriously lacks the ability to perform simple daily tasks. With the help of Sorata and other Sakurasou members, she started to view the world in a more bright and lively way, not just all about drawing like before. It's really wholesome to see her gradually grow feelings for Sorata.", "VA: Kayano Ai <br> I believe in blone hair supremacy(❁´◡`❁). My vocab is just too limited to fully depict her magnificent beauty. In fact, kuuderes always look cool and uninteresting at first but then they started to notice more about the surroundings and show their affection to those who are close to them. That's when they look most beautiful, shining more than any others ✨.", "VA: Kayano Ai <br> Awwwwwwwwwwww cuteness overloaded!!!!!! 😵. Such a heavenly voice that blesses our souls and cures our depression. I love all of her conversations and I just can't describe how I feel in words o(≧∀≦)o. With all of the blissful feelings Mashiro gave me, I can confidently say that Kayano Ai is the best seiyuu of all time 💯."],
         link: "https://myanimelist.net/character/61371/Mashiro_Shiina"
     },
     {
@@ -117,7 +117,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/c0/d7/e7/c0d7e76d37ec528d68c472643eabd690.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Inoue Marina<br> Tohka is the first spirit that Shidou saved and is one of the girls he love most. She has a personality like a child: ignorant, energetic and loyal to Shidou; her hobbies are merely eating and hanging around with him. Tohka sometimes can be a troublemaker as she often get jealous easily when Shidou is clung by another girl (especially Origami) and it might takes a lot of effort to calm her down. Other than that, she is super friendly and really care about Shidou and her fellow Spirits.", "VA: Inoue Marina<br> Tohka is, without a doubt, the most glorious and captivating spirits for me. The codename \"Princess\" just perfectly fits her as her magnificent astral dress and her armament Saldaphon which takes the form of the gilded throne make her looks like a powerful, charismatic princess.", "VA: Inoue Marina<br> Tohka sounds immensely adorable ~~, especially when she encounter foods 😋. Date A Live is one of the first animes that I watched and Tohka's voice is the one that left me most elation and beautiful memories. Gotta rewatch Date A Live soon cuz I missed her voice so much T_T."],
+        info: ["VA: Inoue Marina<br> Tohka is the first spirit that Shidou saved and is one of the girls he love most. She has a personality like a child: ignorant, energetic and loyal to Shidou; her hobbies are merely eating and hanging around with him. Tohka sometimes can be a troublemaker as she often get jealous easily when Shidou is clung by another girl (especially Origami) and it might takes a lot of effort to calm her down 🥱. Other than that, she is super friendly and really care about Shidou and her fellow Spirits.", "VA: Inoue Marina<br> Tohka is, without a doubt, the most glorious and captivating spirits for me 💜. The codename \"Princess\" just perfectly fits her as her magnificent astral dress and her armament Saldaphon which takes the form of the gilded throne make her looks like a powerful, charismatic princess.", "VA: Inoue Marina<br> Tohka sounds immensely adorable ♪(´▽｀), especially when she encounter foods 😋. Date A Live is one of the first animes that I watched and Tohka's voice is the one that left me most elation and beautiful memories. Gotta rewatch Date A Live soon cuz I missed her voice so much T_T."],
         link: "https://myanimelist.net/character/65259/Tooka_Yatogami"
     },
     {
@@ -134,7 +134,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/9b/79/a6/9b79a6de65abba2d53649d060bd7f2dd.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Uchida Maaya <br> The only daughter of the prosperous Sanka family. Naive, timid and gentle, she has all qualities of an ideal anime girl for me. Although she died sorrowfully at her young ages, she is fortunately resurrected by previously drinking a potion made Furuya Chihiro, a normal youth who seek for a miracle therapy that can bring life back to his dead cat. I really love her relationship with Furuya, it's so beautiful and heartwarming, even though they have to face many troubles maintaining her life as a \"zombie\".", "VA: Uchida Maaya <br> There isn't much things to say about her simple appearance. For me she looks significantly more charming after being resurrected, her new red eyes and her long black hair is just a perfect combination that can be seen in a lot of anime characters as well.", "VA: Uchida Maaya <br> Uchida Maaya is soooo amazing she voiced 3 of my favorite characters. I love her voice so much as it helps lighten my mood a lot. However as I said earlier her role as Rikka is the most iconic, whereas there aren't many things to comment about her Yusa and Rea performances (they are still brilliant though...)."],
+        info: ["VA: Uchida Maaya <br> The only daughter of the prosperous Sanka family. Naive, timid and gentle, she has all qualities of an ideal anime girl for me. Although she died sorrowfully at her young ages, she is fortunately resurrected by previously drinking a potion made Furuya Chihiro, a normal youth who seek for a miracle therapy that can bring life back to his dead cat. I really love her relationship with Furuya, it's so beautiful and heartwarming, even though they have to face many troubles maintaining her life as a \"zombie\".", "VA: Uchida Maaya <br> There isn't much things to say about her simple appearance. For me she looks significantly more charming after being resurrected, her new red eyes and her long black hair is just a perfect combination that can be seen in a lot of anime characters as well.", "VA: Uchida Maaya <br> Uchida Maaya is soooo amazing she voiced 3 of my favorite characters 🥰. I love her voice so much as it helps lighten my mood a lot. However as I said earlier her role as Rikka is the most iconic, whereas there aren't many things to comment about her Yusa and Rea performances (they are still brilliant though...)."],
         link: "https://myanimelist.net/character/32884/Rea_Sanka"
     },
     {
@@ -151,7 +151,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/94/c2/0d/94c20db370050018ce306856e44e23ad.jpg')",
         audio: "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
-        info: ["VA: Touyama Nao <br> Half-Japanese girl who is the daughter of the boss of the Bee Hive gangster. She is very smart and has excellent strength and agility but is disastrous at cooking. She is very friendly and willing to make friends, Being dragged into a fake relationship Raku and having a bad first impression make Chitoge often being annoyed and rude with him. However as the story progresses she began to realize his kindness and gradually fall in love with him. Although tsundere isn't the best type for me, she is still among the top tier waifus in my heart! In fact she is my first waifu so I have much more feelings for her than the others.", "VA: Touyama Nao <br> Wow she is sooooo gorgeous!!! I was totally mesmerized by her radiance when I first read the manga in middle school, her image with long blone hair, lovely red ribbon and elegant school uniform just deeply implanted in my mind. She had hold the top 1 spot for such a long times before Yusa came, and she will forever be one of the prettiest girls in my heart <3.", "VA: Touyama Nao <br> Her tsundere voice is really awesome, it doesn't feel too harsh for me compared with other typical tsunderes like Nino, Kotori and Rin. She mainly just being rude with her bean sprout Raku while with others she sounds very energetic and friendly."],
+        info: ["VA: Touyama Nao <br> Half-Japanese girl who is the daughter of the boss of the Bee Hive gangster. She is very smart and has excellent strength and agility but is disastrous at cooking. She is very friendly and willing to make friends, Being dragged into a fake relationship Raku and having a bad first impression make Chitoge often being annoyed and rude with him. However as the story progresses she began to realize his kindness and gradually fall in love with him. Although tsundere isn't the best type for me, she is still among the top tier waifus in my heart! In fact she is my first waifu so I have much more feelings for her than the others 🥰💖.", "VA: Touyama Nao <br> Wow she is sooooo gorgeous!!! I was totally mesmerized by her radiance when I first read the manga in middle school, her image with long blone hair, lovely red ribbon and elegant school uniform just deeply implanted in my mind. She had hold the top 1 spot for such a long times before Yusa came, and she will forever be one of the prettiest girls in my heart <3.", "VA: Touyama Nao <br> Her tsundere voice is really awesome, it doesn't feel too harsh for me compared with other typical tsunderes like Nino, Kotori and Rin. She mainly just being rude with her bean sprout Raku while with others she sounds very energetic and friendly."],
         link: "https://myanimelist.net/character/48391/Chitoge_Kirisaki"
     },
     {
@@ -185,7 +185,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/ae/0b/83/ae0b8342ae4fb78abe7f0204e2861fe4.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Hanazawa Kana <br> The Student Council president of the afterlife school. She is regarded as \"Tenshi\" and is seen as the ultimate enemy by the SSS (Shinda Sekai Sensen), a faction of students who have unwanted deaths and desire to fight against Tenshi in order to take control of their own lives. Although she has various powerful Guard Skills, she has never wanted to fight and hurt anyone; but in fact she just wants to oversee the process of the afterlife. In the end it's revealed that her heart was Otonashi's heart, which he donated before his death. I am so pleased that she reunited with Otonashi in the last scene (not 100% sure but nvm), just wish it was more clear 😌.", "VA: Hanazawa Kana <br> It's easy for you to recognize the resemblance between her style and Charlotte characters. It's because Angel Beats is produced by P.A. Works, which is the studio that made Charlotte (the best art anime of all times). That's enough for you to know how beautiful she is in my eyes. Her sharp golden eyes alongside with her long silver hair make it really fit with her personality as a kuudere.", "VA: Hanazawa Kana <br> She has the same voice with Onodera so Awwwww her voice is so smooth!!!!!! Except that she barely show her emotion at all...For most of the time she just names her Guard Skills which make her sounds like an AI killing machine for me lmao :/."],
+        info: ["VA: Hanazawa Kana <br> The Student Council president of the afterlife school. She is regarded as \"Tenshi\" and is seen as the ultimate enemy by the SSS (Shinda Sekai Sensen), a faction of students who have unwanted deaths and desire to fight against Tenshi in order to take control of their own lives. Although she has various powerful Guard Skills, she has never wanted to fight and hurt anyone; but in fact she just wants to oversee the process of the afterlife. In the end it's revealed that her heart was Otonashi's heart, which he donated before his death. I am so pleased that she reunited with Otonashi in the last scene (not 100% sure but nvm), just wish it was more clear 😌.", "VA: Hanazawa Kana <br> It's easy for you to recognize the resemblance between her style and Charlotte characters. It's because Angel Beats is produced by P.A. Works, which is the studio that made Charlotte (the best art anime of all times). That's enough for you to know how beautiful she is in my eyes 🙃👍. Her sharp golden eyes alongside with her long silver hair make it really fit with her personality as a kuudere.", "VA: Hanazawa Kana <br> She has the same voice with Onodera so Awwwww her voice is so smooth!!! (～﹃～)~zZ Except that she barely show her emotion at all...For most of the time she just names her Guard Skills which make her sounds like an AI killing machine for me lmao :/."],
         link: "https://myanimelist.net/character/22369/Kanade_Tachibana"
     },
     {
@@ -208,7 +208,7 @@ const char = [
     {
         personality: 13,
         appearance: 10,
-        voice: 20,
+        voice: 16,
         name: "Otosaka Ayumi",
         anime: "Charlotte",
         avt: [
@@ -219,13 +219,13 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/c6/cf/0b/c6cf0bb79b4876faf17780ad5333dc55.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Asakura Momo <br> Yuu's cute Imouto, she love stars and is a huge fan of the idol Yusa Nishimori aka Yusarin. Ayumi owns the dangerous ability to make everything around her collapse but that didn't awakened until she was threatened by a jealous classmate. Sadly this had made the school collapse and resulted in her death. Yuu fell into deep grief after this shocking event and isolated himself from everyone. Watching those episodes was really tough for me ╯︿╰, since I was having great sadness like him and I totally sympathized with his acts. It was such a relief knowing that later on Ayumi was saved by her brother using time travel（︶^︶）.", "VA: Asakura Momo <br> Charlotte girls are among the top level of cuteness 💖. Ayumi is literlly one of the best Imotous out there and Yuu is just so lucky to have a cute, caring little sister like her.", "VA: Asakura Momo <br> Not much to say here, just a cute, lovely voice that make us adore her immediately at first sight 🥰."],
+        info: ["VA: Asakura Momo <br> Yuu's cute Imouto, she love stars and is a huge fan of the idol Yusa Nishimori aka Yusarin. Ayumi owns the dangerous ability to make everything around her collapse but that didn't awakened until she was threatened by a jealous classmate. Sadly this had made the school collapse and resulted in her death. Yuu fell into deep grief after this shocking event and isolated himself from everyone. Watching those episodes was really tough for me ಥ_ಥ, since I was having great sadness like Yuu and I totally sympathized with his acts. It was such a relief knowing that later on Ayumi was saved by her brother using time travel（︶^︶）.", "VA: Asakura Momo <br> Charlotte girls are among the top level of cuteness 💖. Ayumi is literlly one of the best Imotous out there and Yuu is just so lucky to have a cute, caring little sister like her.", "VA: Asakura Momo <br> Not much to say here, just a cute, lovely voice that make us adore her immediately at first sight 🥰. I absolutely adore those nosebleeding moments when she meet her idol Yusarin, it's just sooooo funny and cute!!! (p≧w≦q)"],
         link: "https://myanimelist.net/character/129120/Ayumi_Otosaka"
     },
     {
         personality: 14,
         appearance: 14,
-        voice: 16,
+        voice: 18,
         name: "Itsuka Kotori",
         anime: "Date A Live",
         avt: [
@@ -270,13 +270,13 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/52/db/ab/52dbab087fffd72aa2c28cbe68a82c82.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Tomita Miyu <br> Young disciplinary commitee who strictly follow rules and criticize anyone that break them. Despite being too strict sometimes especially with Ishigami, she actually care for him and doesn't want anyone to behave wrongly. I particularly love all of her misunderstanding moments when she falsely think The Student Council members are doing something indecent, her overreaction is just tooooo funny and cute for me to handle @@.", "VA: Tomita Miyu <br> Her appearance is quite typical of a young freshman. I particulary notice her hairstyle which looks really adorable for me.", "VA: Tomita Miyu <br> Even though her voice doesn't give me much impression, it still gives me a lot of chill and hapiness especially in her misunderstanding moments. My most unforgettable moment of her voice is when she miscomprehended Stubame senpai's invite to the party at her house. If you have watched the movie you know what I am refering to =)) That scene was just so hillarious."],
+        info: ["VA: Tomita Miyu <br> Young disciplinary commitee who strictly follow rules and criticize anyone that break them. Despite being too strict sometimes especially with Ishigami, she actually care for him and doesn't want anyone to behave wrongly. I particularly love all of her misunderstanding moments when she falsely think The Student Council members are doing something indecent, her overreaction is just tooooo funny and cute for me to handle @@.", "VA: Tomita Miyu <br> Her appearance is quite typical of a young freshman. I particulary notice her hairstyle which looks really adorable for me ^_^.", "VA: Tomita Miyu <br> Even though her voice doesn't give me much impression, it still gives me a lot of chill and hapiness especially in her misunderstanding moments. My most unforgettable moment of her voice is when she miscomprehended Stubame senpai's invite to the party at her house. If you have watched the movie you know what I am refering to =)) That scene was just so hillarious."],
         link: "https://myanimelist.net/character/152052/Miko_Iino"
     },
     {
         personality: 17,
         appearance: 17,
-        voice: 21,
+        voice: 17,
         name: "Emilia",
         anime: "Re:Zero",
         avt: [
@@ -287,13 +287,13 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/98/fa/9d/98fa9d624cf4c5076fa090d049d5d729.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Takahashi Rie <br> Half-elf girl who is one of the candidates to become the next ruler in the royal election. She is kind, cheerful and willing to give other people a help. However she has received unfair discrimination from others because of her identical appearance with Satella the Witch of Envy and that has resulted in her sometimes feeling sad and isolated.", "VA: Takahashi Rie <br> Emilia genuinely looks so elegant and well dressed, perfectly fits her status as a noblewoman. She just shines more than any other characters in Re Zero in terms of appearance. The ones that I think can come up to her level of charm are Priscilla and Anastasia, who are the other candiates in the royal election. However they didn't appear much in the series thus didn't leave me enough impression.", "VA: Takahashi Rie <br> Ayoooo such a sweet, heart-warming voice that could melt even the coldest heart (￣m￣）. It's so awesome to know that she is also the VA for Hoshino Ai our beloved idol. "],
+        info: ["VA: Takahashi Rie <br> Half-elf girl who is one of the candidates to become the next ruler in the royal election. She is kind, cheerful and willing to give other people a help. However she has received unfair discrimination from others because of her identical appearance with Satella the Witch of Envy and that has resulted in her sometimes feeling sad and isolated.", "VA: Takahashi Rie <br> Emilia genuinely looks so elegant and well dressed, perfectly fits her status as a noblewoman. She just shines more than any other characters in Re Zero in terms of appearance. The ones that I think can come up to her level of charm are Priscilla and Anastasia, who are the other candiates in the royal election. However they didn't appear much in the series thus didn't leave me enough impression.", "VA: Takahashi Rie <br> Ayoooo such a sweet, heart-warming voice that could melt even the coldest heart (╯▽╰ ). It's so awesome to know that she is also the VA for Hoshino Ai our beloved idol ✪ ω ✪."],
         link: "https://myanimelist.net/character/118737/Emilia"
     },
     {
         personality: 18,
         appearance: 23,
-        voice: 17,
+        voice: 19,
         name: "Kuriyama Mirai",
         anime: "Kyoukai no Kanata",
         avt: [
@@ -321,45 +321,11 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/46/1e/ad/461eadc5d2d55705c9eaa689d960d147.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Uchida Maaya <br> The main heroine of the anime. Having serious chuunibyou syndrome, she imagines her own fantasy realm where she fight the dark with her mystical powers in order to find the Horizon, the place she believes her father to be there. It's such a joy watching her battles against various evil powers and her clumsy moments with \"Dark Flame Master\" Yuuta.", "VA: Uchida Maaya <br> You know that the character must be very glorious when she is animated by Kyoto Animation, that's a fact. Rikka looks really distinct with her golden \"Wicked Eye\" veiled by an eye-patch. It's just that I notice more about her bizarre behaviour and her cute voice rather than her looks.", "VA: Uchida Maaya <br> Her voice sounds freaking cute ><, especially her \"Awwww\" noises when she is hit by Yuuta. As a chuunibyou she has a fertile imagination and she has invented a bunch of unique terms that sounds hella cool and funny for me!!! 2 of her most iconic words are \"Banisment this World!\" (used to awaken her power) and \"Schwarzsechs Prototype Mark II\", which is her supreme battle weapon."],
+        info: ["VA: Uchida Maaya <br> The main heroine of the anime. Having serious chuunibyou syndrome, she imagines her own fantasy realm where she fight the dark with her mystical powers in order to find the Horizon, the place she believes her father to be there. It's such a joy watching her battles against various evil powers and her clumsy moments with \"Dark Flame Master\" Yuuta 😎.", "VA: Uchida Maaya <br> You know that the character must be very glorious when she is animated by Kyoto Animation, that's a fact 👌. Rikka looks really distinct with her golden \"Wicked Eye\" veiled by an eye-patch. It's just that I notice more about her bizarre behaviour and her cute voice rather than her looks.", "VA: Uchida Maaya <br> Her voice sounds freaking cute ><, especially her \"Awwww\" noises when she is hit by Yuuta. As a chuunibyou she has a fertile imagination and she has invented a bunch of unique terms that sounds hella cool and funny for me!!! 2 of her most iconic words are \"Banisment this World!\" (used to awaken her power) and \"Schwarzsechs Prototype Mark II\", which is her supreme battle weapon."],
         link: "https://myanimelist.net/character/65865/Rikka_Takanashi"
     },
     {
         personality: 20,
-        appearance: 8,
-        voice: 28,
-        name: "Nao Tomori",
-        anime: "Charlotte",
-        avt: [
-            "url('https://i.pinimg.com/originals/d3/7f/5d/d37f5d0b84a168aa9372eb8e2a8ce843.jpg')",
-            "url('https://i.pinimg.com/originals/7f/1e/75/7f1e75c74f2af708172060fd638a83d3.jpg')",
-            "url('https://i.pinimg.com/originals/c3/66/18/c366182db37dd7b23466c57ff601dfe7.jpg')",
-            "url('https://i.pinimg.com/originals/74/59/ae/7459ae18669030c09daba8ca66b83931.gif')"
-        ],
-        bg: "url('https://i.pinimg.com/originals/a3/19/70/a31970be628d97f9cc36ca7d6e5cc9cd.jpg')", 
-        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Sakura Ayane <br> The student council president of Hoshinoumi Academy, which is secretly an institution created by adolescents who possess supernatural abilities with the aim to fight against those who want to experiment and abuse their powers. Nao's ability is to make herself invisible, but only to one person she choose. She also has a strong personality, being straightforward and often a bit too harsh with others (particularly Yuu).", "VA: Sakura Ayane <br> When it comes to appearance it's hard to find an anime that have prettier girls than Charlotte. Nao has silver hair and skyblue eyes that surprisingly fit with the sky background. I have a handful amount of pictures of her sitting and walking under the sky full of twinkling stars, they are just incredibly stunning and breathtaking ✨.", "VA: Sakura Ayane <br> Her voice is pretty neat, however I just don't really like it because she usually sounds means and sarcastic (especially with Yuu). Though, in serious situation she actually shows care and worriness for her friends. The best moment is definitely the last scene when she met Yuu again and cried in happiness after his long journey to save the world."],
-        link: "https://myanimelist.net/character/122211/Nao_Tomori"
-    },
-    {
-        personality: 21,
-        appearance: 12,
-        voice: 23,
-        name: "Nakano Itsuki",
-        anime: "Gotoubun no Hanayome",
-        avt: [
-            "url('https://i.pinimg.com/originals/ac/61/8a/ac618a562ff21734a13de9abd20e7388.jpg')",
-            "url('https://i.pinimg.com/originals/dd/0a/6f/dd0a6fd9a35b543394b1e08b0fc22477.jpg')",
-            "url('https://i.pinimg.com/originals/b9/51/97/b9519781b6de4d68a7062a3b121aecaf.jpg')",
-            "url('https://i.pinimg.com/originals/06/fb/b8/06fbb8809e4a2967f7785ecef29abf03.gif')"
-        ],
-        bg: "url('https://i.pinimg.com/originals/0f/f3/60/0ff360e3ccf2913bd0722d1660b60645.jpg')", 
-        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Minase Inori <br> Being the youngest sister of the Nakano quintuplets, Itsuki is in fact a bit more mature and serious than her sisters. She cares a lot about good manners and has a clear goal which is to become a teacher. Nevertheless, she has a bad habit which is overeating and we can see her munching on all kind of food (mainly sweets) throughout the series. That's what make me love her though :).", "VA: Minase Inori <br> Yo she is the most beautiful out of the Nakano sisters! :D (Itsuki > Miku > Nino > Yotsuba > Ichika). Really love her hair, it's kind of unique with 2 little stars attached and a tiny piece of hair sticking out.", "VA: Minase Inori <br> Don't have anything particular to say here. She has a serious voice which suits herself as a polite person caring a lot about manners. But when it comes to food she literally sounds like a child who has nothing in her mind but eating."],
-        link: "https://myanimelist.net/character/161471/Itsuki_Nakano"
-    },
-    {
-        personality: 22,
         appearance: 1,
         voice: 12,
         name: "Kurobane Yusa",
@@ -372,8 +338,42 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Uchida Maaya <br> Beautiful young vocalist who own the ability to speak to the dead. There aren't many things to say about her personality, she is lively and friendly with others, contrary to her dead older sister Misa, who is short-tempered and kind of masculine. Sometimes her sister could take over Yusa's consciousness and obsess her body, when things are back to normal Yusa will not remember anything that happened during that time, including her sister's existence.", "VA: Uchida Maaya <br> Yes, she is the prettiest girl in my eyes ~~ You know, long blone hair is my most beloved anime girls type, and everything about Yusa is just...glorious! There is a reason I see Charlotte as the best art anime I have ever watched, though...", "VA: Uchida Maaya <br> She has a pure, energetic voice that gives me a lot of joy. Her seiyuu, Uchida Maaya, is also one of my favorite seiyuus. However her role as Rikka is much more exceptional as Rikka has more opportunities to express herself and she got tons of unique phrases and noises that gave me a lot of impressions."], 
+        info: ["VA: Uchida Maaya <br> Beautiful young vocalist who own the ability to speak to the dead. There aren't many things to say about her personality, she is lively and friendly with others, contrary to her dead older sister Misa, who is short-tempered and kind of masculine. Sometimes her sister could take over Yusa's consciousness and obsess her body, when things are back to normal Yusa will not remember anything that happened during that time, including her sister's existence.", "VA: Uchida Maaya <br> Yes, she is the prettiest girl in my eyes (*/ω＼*)💓. You know, long blone hair is my most beloved anime girls type, and everything about Yusa is just...glorious! There is a reason I see Charlotte as the best art anime I have ever watched, though...", "VA: Uchida Maaya <br> She has a pure, energetic voice that gives me a lot of joy. Her seiyuu, Uchida Maaya, is also one of my favorite seiyuus. However her role as Rikka is much more exceptional as Rikka has more opportunities to express herself and she got tons of unique phrases and noises that gave me a lot of impressions."], 
         link: "https://myanimelist.net/character/124037/Yusa_Kurobane"
+    },
+    {
+        personality: 21,
+        appearance: 11,
+        voice: 2,
+        name: "Shiro",
+        anime: "No Game No Life",
+        avt: [
+            "url('https://i.pinimg.com/originals/06/c3/ae/06c3ae49a637dfc35c3c279bc43746bb.jpg')",
+            "url('https://i.pinimg.com/originals/ad/99/b8/ad99b85822f2b5cc5ad9fb89b176b012.jpg')",
+            "url('https://i.pinimg.com/originals/43/14/a9/4314a9a25d822540ac8aed4f523c077b.jpg')",
+            "url('https://i.pinimg.com/originals/78/00/c8/7800c885528eb9cee3bc4f9d132f75c1.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/bc/36/66/bc3666d2cfc0296ff03cfea8a72577be.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
+        info: ["VA: Kayano Ai <br> A 11 years old pro gamer. Along with her step-brother Sora, these 2 genius NEET totally dominated the gamer world. She barely shows emotion to anyone except Sora, and it's apparent that she has a brother complex as she is extremely close to him and often get jealous when her brother pay too much attention to other girls.", "VA: Kayano Ai <br> She looks sooooo radiant and colorful! I really love this unique, colorful styles in No Game No Life, it brings me a positive vibe and makes the anime become the true definition of a fantasy anime.", "VA: Kayano Ai <br> It's Kayano Ai so what do you expect? My feeling is exactly the same like when I heard Mashiro's voice, it's just that I love Mashiro's voice a bit more cuz she has more diverse and lovely expressions while Shiro often just speaks in short sentences."],
+        link: "https://myanimelist.net/character/82525/Shiro"
+    },
+    {
+        personality: 22,
+        appearance: 12,
+        voice: 23,
+        name: "Nakano Itsuki",
+        anime: "Gotoubun no Hanayome",
+        avt: [
+            "url('https://i.pinimg.com/originals/ac/61/8a/ac618a562ff21734a13de9abd20e7388.jpg')",
+            "url('https://i.pinimg.com/originals/dd/0a/6f/dd0a6fd9a35b543394b1e08b0fc22477.jpg')",
+            "url('https://i.pinimg.com/originals/b9/51/97/b9519781b6de4d68a7062a3b121aecaf.jpg')",
+            "url('https://i.pinimg.com/originals/06/fb/b8/06fbb8809e4a2967f7785ecef29abf03.gif')"
+        ],
+        bg: "url('https://i.pinimg.com/originals/0f/f3/60/0ff360e3ccf2913bd0722d1660b60645.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        info: ["VA: Minase Inori <br> Being the youngest sister of the Nakano quintuplets, Itsuki is in fact a bit more mature and serious than her sisters. She cares a lot about good manners and has a clear goal which is to become a teacher. Nevertheless, she has a bad habit which is overeating and we can see her munching on all kind of food (mainly sweets) throughout the series. That's what make me love her though :).", "VA: Minase Inori <br> Yo she is the most beautiful out of the Nakano sisters! :D (Itsuki > Miku > Nino > Yotsuba > Ichika). Really love her hair, it's kind of unique with 2 little stars attached and a tiny piece of hair sticking out.", "VA: Minase Inori <br> Don't have anything particular to say here. She has a serious voice which suits herself as a polite person caring a lot about manners. But when it comes to food she literally sounds like a child who has nothing in her mind but eating 🍩🍧🍨."],
+        link: "https://myanimelist.net/character/161471/Itsuki_Nakano"
     },
     {
         personality: 23,
@@ -389,25 +389,25 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/91/92/36/919236b1772a23bd465836898b2e5840.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: ["VA: Kadowaki Mai <br> Emiya Kiritsugu's daughter and Shirou's foster sister. She attend the Fifth Holy Grail war as a master on behalf of the Einzbern. At first, she was ruthless and willing to kill other masters violently using her powerful immortal servant Berserker. She especially wanted to avenge Shirou and torture him thinking that he was the main cause of her father's abandonment. However as the story goes she started to realize his good nature and formed a strong connection with him. Their relationship developed most significantly in Heaven's Feel and this is the fundamental element that make me have sympathy for her since I was really shocked knowing what she had done to Shirou in the Visual Novel 💀.", "VA: Kadowaki Mai <br> Her angelic appearance completely fascinated me 💘. It's too easy to be fooled by her lovely, innocent looks when she actually is a merciless evil. I was also staggered knowing that she is older than Shirou since she looks like a child and always call Shirou \"onii chan\" (＃°Д°). She already looks cute in Fate 2006 and then ufotable just made her more gorgeous than ever! Literally anything that come to the hand of Kyoto Animation and ufotable can become masterpieces 💯✨.", "VA: Kadowaki Mai <br> Illya's voice is just soooo soft!!!!!! Along with her angelic looks it's not exaggerating at all to call her a \"tenshi\" descended from heaven. Such a blessing to listen to her voice and she is just among a few characters that could give me this high level of satisfaction ~~."],
+        info: ["VA: Kadowaki Mai <br> Emiya Kiritsugu's daughter and Shirou's foster sister. She attend the Fifth Holy Grail war as a master on behalf of the Einzbern. At first, she was ruthless and willing to kill other masters violently using her powerful immortal servant Berserker. She especially wanted to avenge Shirou and torture him thinking that he was the main cause of her father's abandonment. However as the story goes she started to realize his good nature and formed a strong connection with him. Their relationship developed most significantly in Heaven's Feel and this is the fundamental element that make me have sympathy for her since I was really shocked knowing what she had done to Shirou in the Visual Novel 💀.", "VA: Kadowaki Mai <br> Her angelic appearance completely fascinated me 💘. It's too easy to be fooled by her lovely, innocent looks when she actually is a merciless evil. I was also staggered knowing that she is older than Shirou since she looks like a child and always call Shirou \"onii chan\" (＃°Д°). She already looks cute in Fate 2006 and then ufotable just made her more gorgeous than ever! Literally anything that come to the hand of Kyoto Animation and ufotable can become masterpieces 💯✨.", "VA: Kadowaki Mai <br> Illya's voice is just sooo soft! (～﹃～)~zZ Along with her angelic looks it's not exaggerating at all to call her a \"tenshi\" descended from heaven. Such a blessing to listen to her voice and she is just among a few characters that could give me this high level of satisfaction ~~."],
         link: "https://myanimelist.net/character/503/Illyasviel_von_Einzbern"
     },
     {
         personality: 24,
-        appearance: 11,
-        voice: 2,
-        name: "Shiro",
-        anime: "No Game No Life",
+        appearance: 8,
+        voice: 28,
+        name: "Nao Tomori",
+        anime: "Charlotte",
         avt: [
-            "url('https://i.pinimg.com/originals/06/c3/ae/06c3ae49a637dfc35c3c279bc43746bb.jpg')",
-            "url('https://i.pinimg.com/originals/ad/99/b8/ad99b85822f2b5cc5ad9fb89b176b012.jpg')",
-            "url('https://i.pinimg.com/originals/43/14/a9/4314a9a25d822540ac8aed4f523c077b.jpg')",
-            "url('https://i.pinimg.com/originals/78/00/c8/7800c885528eb9cee3bc4f9d132f75c1.gif')"
+            "url('https://i.pinimg.com/originals/d3/7f/5d/d37f5d0b84a168aa9372eb8e2a8ce843.jpg')",
+            "url('https://i.pinimg.com/originals/7f/1e/75/7f1e75c74f2af708172060fd638a83d3.jpg')",
+            "url('https://i.pinimg.com/originals/c3/66/18/c366182db37dd7b23466c57ff601dfe7.jpg')",
+            "url('https://i.pinimg.com/originals/74/59/ae/7459ae18669030c09daba8ca66b83931.gif')"
         ],
-        bg: "url('https://i.pinimg.com/originals/bc/36/66/bc3666d2cfc0296ff03cfea8a72577be.jpg')", 
-        audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: ["VA: Kayano Ai <br> A 11 years old pro gamer. Along with her step-brother Sora, these 2 genius NEET totally dominated the gamer world. She barely shows emotion to anyone except Sora, and it's apparent that she has a brother complex as she is extremely close to him and often get jealous when her brother pay too much attention to other girls.", "VA: Kayano Ai <br> She looks sooooo radiant and colorful! I really love this unique, colorful styles in No Game No Life, it brings me a positive vibe and makes the anime become the true definition of a fantasy anime.", "VA: Kayano Ai <br> It's Kayano Ai so what do you expect? My feeling is exactly the same like when I heard Mashiro's voice, it's just that I love Mashiro's voice a bit more cuz she has more diverse and lovely expressions while Shiro often just speaks in short sentences."],
-        link: "https://myanimelist.net/character/82525/Shiro"
+        bg: "url('https://i.pinimg.com/originals/a3/19/70/a31970be628d97f9cc36ca7d6e5cc9cd.jpg')", 
+        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        info: ["VA: Sakura Ayane <br> The student council president of Hoshinoumi Academy, which is secretly an institution created by adolescents who possess supernatural abilities with the aim to fight against those who want to experiment and abuse their powers. Nao's ability is to make herself invisible, but only to one person she choose. She also has a strong personality, being straightforward and often a bit too harsh with others (particularly Yuu).", "VA: Sakura Ayane <br> When it comes to appearance it's hard to find an anime that have prettier girls than Charlotte. Nao has silver hair and skyblue eyes that surprisingly fit with the sky background. I have a handful amount of pictures of her sitting and walking under the sky full of twinkling stars, they are just incredibly stunning and breathtaking ✨.", "VA: Sakura Ayane <br> Her voice is pretty neat, however I just don't really like it because she usually sounds means and sarcastic (especially with Yuu). Though, in serious situation she actually shows care and worriness for her friends. The best moment is definitely the last scene when she met Yuu again and cried in happiness after his long journey to save the world."],
+        link: "https://myanimelist.net/character/122211/Nao_Tomori"
     },
     {
         personality: 25,
@@ -440,7 +440,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/a9/27/e8/a927e8d6edacb4ac037834b6a0ed163f.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: ["VA: Koga Aoi <br> Vice president of Shuchiin Academy student council and the only daughter of the Shinomiya aristocratic family. She is a multi-talented genius who have a cold attitude towards the surroundings. Initially Shirogane is the only person that she actually really care about but as the anime progressed we are able to see more about her good side as she began to open herself more and had more good relationships. Thanks to that, I could understand her better and have more feelings for her even though she is not the type of girls I like.", "VA: Koga Aoi <br> Kaguya is an opulent lady who has the charm and charisma of an aristocat. However just like Chika I am interested more about her funny moments as she expressed a lot of cute \"meme\" faces, while her overall appearance is still overshadowed by many characters in other animes. I think it's partly because Love is war isn't too striking in terms of art and there are a lot of animes such as Fate/ Stay Night, Charlotte and Date A Live just do a better job than that.", "VA: Koga Aoi <br> Do I need to say anything here? Her voice is one of the most precious treasure that God can gift to human beings. Although I love Secretary Fujiwara's voice a bit more, those 2 both made me die in cuteness. Kudos to Koga-san and Kohara-san for having such sweet voices that completely melted my heart!!! ~~"],
+        info: ["VA: Koga Aoi <br> Vice president of Shuchiin Academy student council and the only daughter of the Shinomiya aristocratic family. She is a multi-talented genius who have a cold attitude towards the surroundings. Initially Shirogane is the only person that she actually really care about but as the anime progressed we are able to see more about her good side as she began to open herself more and had more good relationships. Thanks to that, I could understand her better and have more feelings for her even though she is not the type of girls I like.", "VA: Koga Aoi <br> Kaguya is an opulent lady who has the charm and charisma of an aristocat. However just like Chika I am interested more about her funny moments as she expressed a lot of cute \"meme\" faces, while her overall appearance is still overshadowed by many characters in other animes. I think it's partly because Love is war isn't too striking in terms of art and there are a lot of animes such as Fate/ Stay Night, Charlotte and Date A Live just do a better job than that.", "VA: Koga Aoi <br> Do I need to say anything here? Her voice is one of the most precious treasure that God can gift to human beings. Although I love Secretary Fujiwara's voice a bit more, those 2 both made me die in cuteness. Kudos to Koga-san and Kohara-san for having such sweet voices that completely melted my heart!!! (❤´艸｀❤)"],
         link: "https://myanimelist.net/character/136359/Kaguya_Shinomiya"
     },
     {
@@ -491,13 +491,13 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/0f/4c/5d/0f4c5d201dc528bc79fe74376144a38e.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606911-corona-689894639-rikka-noise-1.mp3",
-        info: ["VA: Kohara Konomi <br> Secretaty of Shuchiin Academy student council. Really love gossiping and involving others into her games. She can be annoying sometimes as her boisterous mouth often say bad things about others and she often unexpectedly ruins Kaguya and Shirogane's plan to make the other confess, but there are still moments when she actually showing her care towards her friend, like when she went through all difficulties teaching Shirogane about \"basic human\" skills.", "VA: Kohara Konomi <br> Chika is very cute and has a lot of both kawaii and funny expressions, for me she is the most beautiful girl in Love is war. However there are still many girls in other animes that I find prettier and my impression on her appearance is primarily about her funny \"meme\" face so that's why she is not that high on the list.", "VA: Kohara Konomi <br>  Regarding her voice, it's absolutely max level of cuteness. In most stuations she maintain a happy and cheering tone, but her voice shine most when she is upset and annoyed. It's just sooo entertaining watching secreatary Fujiwara complaining and babbling with an angry voice and that made up the majority of funny moments in the anime."],
+        info: ["VA: Kohara Konomi <br> Secretaty of Shuchiin Academy student council. Really love gossiping and involving others into her games. She can be annoying sometimes as her boisterous mouth often say bad things about others and she often unexpectedly ruins Kaguya and Shirogane's plan to make the other confess, but there are still moments when she actually showing her care towards her friend, like when she went through all difficulties teaching Shirogane about \"basic human\" skills.", "VA: Kohara Konomi <br> Chika is very cute and has a lot of both kawaii and funny expressions, for me she is the most beautiful girl in Love is war. However there are still many girls in other animes that I find prettier and my impression on her appearance is primarily about her funny \"meme\" face ( ͡° ͜ʖ ͡°) so that's why she is not that high on the list.", "VA: Kohara Konomi <br>  Regarding her voice, it's absolutely max level of cuteness (。・ω・。). In most stuations she maintain a happy and cheering tone, but her voice shine most when she is upset and annoyed. It's just sooo entertaining watching secreatary Fujiwara complaining and babbling with an angry voice and that made up the majority of funny moments in the anime."],
         link: "https://myanimelist.net/character/140810/Chika_Fujiwara"
     },
     {
         personality: 30,
         appearance: 7,
-        voice: 19,
+        voice: 21,
         name: "Chitanda Eru",
         anime: "Hyouka",
         avt: [
@@ -508,7 +508,7 @@ const char = [
         ],
         bg: "url('https://i.pinimg.com/originals/1b/27/86/1b2786f1cee290a4b548c46d2b78b37d.jpg')", 
         audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
-        info: ["VA: Satou Satomi<br> The president of the Classics Club, who is also the daughter of a very wealthy family. She is intelligent and often very curious and excited about intriguing new things. This personality is pretty interesting for me but sadly I don't have much impression for her like the other characters. To tell the truth I am pretty much the kind of guy like Houtarou the main protagonist in the anime so it would be very uncomfortable and exhausting for me if I were involved into her endless curiosity :<.", "VA: Satou Satomi <br> Gosh she is soooo adorable >< Her long black hair and purple eyes reflect a dark but elegant tone in my eyes. The fact that her apperance is blessed by Kyoto Animation made me fall for her even more! KyoAni is no doubt the goat of animation in my opinion.", "VA: Satou Satomi <br> Chitanda has a calm voice that really improve my mood, but most of her conversations are just normal and there are barely any events that make her significantly change her reaction. My strongest impression about her voice is the phrase \"Watashi kininarimasu!\" which she use very often when she found something interesting."],
+        info: ["VA: Satou Satomi<br> The president of the Classics Club, who is also the daughter of a very wealthy family. She is intelligent and often very curious and excited about intriguing new things. This personality is pretty interesting for me but sadly I don't have much impression for her like the other characters. To tell the truth I am pretty much the kind of guy like Houtarou the main protagonist in the anime so it would be very uncomfortable and exhausting for me if I were involved into her endless curiosity :<.", "VA: Satou Satomi <br> Gosh she is soooo adorable ><. Her long black hair and purple eyes reflect a dark but elegant tone in my eyes. The fact that her apperance is blessed by Kyoto Animation made me fall for her even more! KyoAni is no doubt the goat of animation in my opinion.", "VA: Satou Satomi <br> Chitanda has a calm voice that really improve my mood, but most of her conversations are just normal and there are barely any events that make her significantly change her reaction. My strongest impression about her voice is the phrase \"Watashi kininarimasu!\" (★‿★) which she use very often when she found something interesting."],
         link: "https://myanimelist.net/character/55133/Eru_Chitanda"
     }
 ]
@@ -687,7 +687,7 @@ function backtoTop(){
     document.documentElement.scrollTop = 0;
 }
 //change theme
-var loadBG = parseInt(localStorage.getItem("bg"));
+var loadBG = parseInt(localStorage.getItem("bg")); //load current theme
 if(loadBG == 0){
     document.getElementsByTagName("body")[0].style.backgroundImage = "none";
     document.documentElement.style.setProperty('--cherryblossom', 'none');
@@ -698,7 +698,7 @@ if(loadBG == 0){
     document.documentElement.style.setProperty('--switchcolor', '#cefaf8');
     document.documentElement.style.setProperty('--hovercolor', 'rgb(70, 157, 228)');
     document.getElementById("menuIcon").src = "listLight.png";
-    for(var i = 0; i < char.length; i++){document.getElementsByClassName("link")[i].src = "linkLight.png";}
+    for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "linkLight.png";}
 }
 else if (loadBG == 1){
     document.getElementsByTagName("body")[0].style.backgroundImage = "none";
@@ -710,7 +710,7 @@ else if (loadBG == 1){
     document.documentElement.style.setProperty('--switchcolor', '#8d8d8d');
     document.documentElement.style.setProperty('--hovercolor', 'rgb(220, 221, 243)');
     document.getElementById("menuIcon").src = "listDark.png";
-    for(var i = 0; i < char.length; i++){document.getElementsByClassName("link")[i].src = "linkDark.png";}
+    for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "linkDark.png";}
 }
 else if (loadBG == 2){
     document.getElementsByTagName("body")[0].style.backgroundImage = "none";
@@ -722,7 +722,7 @@ else if (loadBG == 2){
     document.documentElement.style.setProperty('--switchcolor', '#fccbf5');
     document.documentElement.style.setProperty('--hovercolor', 'rgb(185, 71, 185)');
     document.getElementById("menuIcon").src = "listSakura.png";
-    for(var i = 0; i < char.length; i++){document.getElementsByClassName("link")[i].src = "linkSakura.png";}
+    for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "linkSakura.png";}
 }
 var Theme_click_count = 0;
 function ChangeTheme(value){
@@ -736,7 +736,7 @@ function ChangeTheme(value){
         document.documentElement.style.setProperty('--switchcolor', '#cefaf8');
         document.documentElement.style.setProperty('--hovercolor', 'rgb(70, 157, 228)');
         document.getElementById("menuIcon").src = "listLight.png";
-        for(var i = 0; i < char.length; i++){document.getElementsByClassName("link")[i].src = "linkLight.png";}
+        for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "linkLight.png";}
     }
     else if (value == 1){
         document.getElementsByTagName("body")[0].style.backgroundImage = "none";
@@ -748,7 +748,7 @@ function ChangeTheme(value){
         document.documentElement.style.setProperty('--switchcolor', '#8d8d8d');
         document.documentElement.style.setProperty('--hovercolor', 'rgb(220, 221, 243)');
         document.getElementById("menuIcon").src = "listDark.png";
-        for(var i = 0; i < char.length; i++){document.getElementsByClassName("link")[i].src = "linkDark.png";}
+        for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "linkDark.png";}
     }
     else if (value == 2){
         document.getElementsByTagName("body")[0].style.backgroundImage = "none";
@@ -760,7 +760,7 @@ function ChangeTheme(value){
         document.documentElement.style.setProperty('--switchcolor', '#fccbf5');
         document.documentElement.style.setProperty('--hovercolor', 'rgb(185, 71, 185)');
         document.getElementById("menuIcon").src = "listSakura.png";
-        for(var i = 0; i < char.length; i++){document.getElementsByClassName("link")[i].src = "linkSakura.png";}
+        for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "linkSakura.png";}
     }
     if (document.getElementsByClassName("arrow")[0].classList.contains("rotate-arrow-down") == false){
         document.getElementsByClassName("arrow")[0].classList.remove("rotate-arrow-up");
