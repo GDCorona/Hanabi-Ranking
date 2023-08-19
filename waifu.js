@@ -521,6 +521,8 @@ var type = 0;
 //load current status
 var currentType = localStorage.getItem('type');
 var currentAvts = JSON.parse(localStorage.getItem('arr'));
+if(currentType == null) currentType = 0;
+if(currentAvts == null) currentAvts = arr;
 console.log(currentType + " " + currentAvts);
 arr = currentAvts;
 if(currentType == 0){type = 0; char.sort(function(a, b){return (a.personality - b.personality)});}
