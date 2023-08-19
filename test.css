@@ -32,6 +32,7 @@ body::after {
     z-index: 1;
 }
 h1{
+    font-size: 3vw;
     text-transform:uppercase;
     text-align: center;
     color: var(--color2);
@@ -102,6 +103,8 @@ h1{
     position: fixed;
     z-index: 1;
 }
+#logo{width: 10vw; height: 10vw; margin-left: 4.5vw;}
+#menuIcon{cursor:pointer; width: 50px; height: 50px; margin: 1vw; top: 0; position:fixed; z-index:1;}
 .navbar{
     list-style-type: none;
     font-size: 2vw;
@@ -171,7 +174,7 @@ h1{
     position: relative;
     display: block;
     background-color: var(--color4);
-    margin: 10vw 5vw 20vw 0;
+    margin: 10vw 0 20vw 0;
     word-break:break-word;
     border: 0.3vw ridge moccasin;
     opacity: 0.9;
@@ -222,11 +225,11 @@ h1{
 }
 .left div, .right div{
     display: flex;
-    font-size: 5vh;
 }
 .left p, .right p{
-    padding: 0 2vw 0 1vw;
-    max-width: 63vw;
+    padding: 0 1vw 0 1vw;
+    font-size: 5vh;
+    max-width: 65vw;
 }
 .left a, .right a{font-weight: bolder; color: var(--color2);}
 .link{
@@ -478,7 +481,7 @@ h1{
 }
 .navbar h2{padding-right:1vw; text-align: center;}
 .navbar li{
-    margin: 1vw 2vw;
+    margin: 2vw 2.5vw;
     cursor: pointer;
     width: fit-content;
     max-width: 0;
@@ -506,7 +509,7 @@ h1{
     color: var(--color2);
     font-size: 4vw;
     margin: 1vw;
-    left: 75%;
+    left: 80%;
     position: relative;
     font-weight: bold;
     cursor: pointer;
@@ -588,7 +591,7 @@ h1{
     padding: 0 2vw 0 1vw;
     max-width: 63vw;
 }
-.info{position: absolute; bottom: 4vw; left: 30%;}
+.info{position: absolute; bottom: 4vw; left: 29%;}
 .link{
     width: 1.5vw;
     height: 1.5vw;
