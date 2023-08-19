@@ -592,8 +592,6 @@ function changeAvt(index){
 //sort option
 const sort_selector = document.querySelector('.custom-sort');
 const sort_select = sort_selector.children[1]; //exclude children 0 which is the div arrow
-sort_select.value = localStorage.getItem('sort-select-value');
-if(sort_select.value == ''){sort_select.value = 0;} //set value to 0 if empty localStorage
 var sort_click_count = 0;
 sort_selector.addEventListener('mousedown', e => {
     e.preventDefault();
@@ -612,8 +610,6 @@ sort_selector.addEventListener('mousedown', e => {
             if (option.value == 0) {Personality();}
             else if (option.value == 1) {Appearance();}
             else if (option.value == 2) {Voice();}
-            sort_select.value = option.value;
-            localStorage.setItem('sort-select-value', option.value);
             dropDown.remove();
         })
         //dropdown animation
@@ -776,8 +772,6 @@ function ChangeTheme(value){
 }
 const theme_selector = document.querySelector('.theme-option');
 const theme_select = theme_selector.children[1]; //exclude children 0 which is the div arrow
-theme_select.value = localStorage.getItem('Theme-select-value');
-if(theme_select.value == ''){theme_select.value = 0;} //set value to 0 if empty localStorage
 theme_selector.addEventListener('mousedown', e => {
     e.preventDefault();
     Theme_click_count++;
@@ -798,8 +792,6 @@ theme_selector.addEventListener('mousedown', e => {
             if (option.value == 0) {ChangeTheme(0);}
             else if (option.value == 1) {ChangeTheme(1);}
             else if (option.value == 2) {ChangeTheme(2);}
-            theme_select.value = option.value;
-            localStorage.setItem('Theme-select-value', option.value);
             dropDown.remove();
         })
         //dropdown animation
