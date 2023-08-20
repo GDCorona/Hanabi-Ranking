@@ -523,7 +523,6 @@ var currentType = localStorage.getItem('type');
 var currentAvts = JSON.parse(localStorage.getItem('arr'));
 if(currentType == null) currentType = 0;
 if(currentAvts == null) currentAvts = arr;
-//console.log(currentType + " " + currentAvts);
 arr = currentAvts;
 if(currentType == 0){type = 0; char.sort(function(a, b){return (a.personality - b.personality)});}
 else if (currentType == 1){type = 1; char.sort(function(a, b){return (a.appearance - b.appearance)});}
@@ -592,9 +591,9 @@ function changeAvt(index){
 //sort option
 const sort_selector = document.querySelector('.custom-sort');
 const sort_select = sort_selector.children[1]; //exclude children 0 which is the div arrow
-var sort_click_count = 0;
 sort_select.value = localStorage.getItem('sort-select-value');
 if(sort_select.value == ''){sort_select.value = 0;} //set value to 0 if empty localStorage
+var sort_click_count = 0;
 sort_selector.addEventListener('mousedown', e => {
     e.preventDefault();
     sort_click_count++;
@@ -612,6 +611,7 @@ sort_selector.addEventListener('mousedown', e => {
             if (option.value == 0) {Personality();}
             else if (option.value == 1) {Appearance();}
             else if (option.value == 2) {Voice();}
+            sort_select.value = option.value;
             localStorage.setItem('sort-select-value', option.value);
             dropDown.remove();
         })
@@ -797,6 +797,7 @@ theme_selector.addEventListener('mousedown', e => {
             if (option.value == 0) {ChangeTheme(0);}
             else if (option.value == 1) {ChangeTheme(1);}
             else if (option.value == 2) {ChangeTheme(2);}
+            theme_select.value = option.value;
             localStorage.setItem('Theme-select-value', option.value);
             dropDown.remove();
         })
