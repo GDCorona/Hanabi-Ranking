@@ -523,7 +523,7 @@ var currentType = localStorage.getItem('type');
 var currentAvts = JSON.parse(localStorage.getItem('arr'));
 if(currentType == null) currentType = 0;
 if(currentAvts == null) currentAvts = arr;
-console.log(currentType + " " + currentAvts);
+//console.log(currentType + " " + currentAvts);
 arr = currentAvts;
 if(currentType == 0){type = 0; char.sort(function(a, b){return (a.personality - b.personality)});}
 else if (currentType == 1){type = 1; char.sort(function(a, b){return (a.appearance - b.appearance)});}
@@ -593,6 +593,8 @@ function changeAvt(index){
 const sort_selector = document.querySelector('.custom-sort');
 const sort_select = sort_selector.children[1]; //exclude children 0 which is the div arrow
 var sort_click_count = 0;
+sort_select.value = localStorage.getItem('sort-select-value');
+if(sort_select.value == ''){sort_select.value = 0;} //set value to 0 if empty localStorage
 sort_selector.addEventListener('mousedown', e => {
     e.preventDefault();
     sort_click_count++;
@@ -772,6 +774,8 @@ function ChangeTheme(value){
 }
 const theme_selector = document.querySelector('.theme-option');
 const theme_select = theme_selector.children[1]; //exclude children 0 which is the div arrow
+theme_select.value = localStorage.getItem('Theme-select-value');
+if(theme_select.value == ''){theme_select.value = 0;} //set value to 0 if empty localStorage
 theme_selector.addEventListener('mousedown', e => {
     e.preventDefault();
     Theme_click_count++;
