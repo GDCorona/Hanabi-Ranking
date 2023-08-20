@@ -612,6 +612,7 @@ sort_selector.addEventListener('mousedown', e => {
             if (option.value == 0) {Personality();}
             else if (option.value == 1) {Appearance();}
             else if (option.value == 2) {Voice();}
+            localStorage.setItem('sort-select-value', option.value);
             dropDown.remove();
         })
         //dropdown animation
@@ -796,6 +797,7 @@ theme_selector.addEventListener('mousedown', e => {
             if (option.value == 0) {ChangeTheme(0);}
             else if (option.value == 1) {ChangeTheme(1);}
             else if (option.value == 2) {ChangeTheme(2);}
+            localStorage.setItem('Theme-select-value', option.value);
             dropDown.remove();
         })
         //dropdown animation
