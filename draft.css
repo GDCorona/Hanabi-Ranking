@@ -1,365 +1,378 @@
 :root{
-  --color1: white;
-  --color2: black;
-  --color3: rgb(147, 224, 255);
-  --color4: aliceblue;
-  --switchcolor: #cefaf8;
-  --hovercolor: rgba(126, 187, 211, 0.7);
-  --cherryblossom: none;
+    --color1: white;
+    --color2: black;
+    --color3: rgb(147, 224, 255);
+    --color4: aliceblue;
+    --switchcolor: #cefaf8;
+    --hovercolor: rgba(126, 187, 211, 0.7);
+    --cherryblossom: none;
 }
 *{box-sizing: border-box;}
 body{
-  counter-reset: section;
-  font-family: 'Cutive Mono', sans-serif;
-  background-color: var(--color1);
-  color: var(--color2);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-image: none;
+    counter-reset: section;
+    font-family: 'Cutive Mono', sans-serif;
+    background-color: var(--color1);
+    color: var(--color2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: none;
 }
 body::after {
-  background-image: url('https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwBAS62lleijrhGHB-Tx5_KQ');
-  filter: hue-rotate(0deg);
-  pointer-events: none !important;
-  content: "";
-  width: 100% !important;
-  height: 100% !important;
-  display: var(--cherryblossom);
-  top: 0 !important;
-  left: 0 !important;
-  position: fixed;
-  z-index: 1;
+    background-image: url('https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwBAS62lleijrhGHB-Tx5_KQ');
+    filter: hue-rotate(0deg);
+    pointer-events: none !important;
+    content: "";
+    width: 100% !important;
+    height: 100% !important;
+    display: var(--cherryblossom);
+    top: 0 !important;
+    left: 0 !important;
+    position: fixed;
+    z-index: 1;
 }
 h1{
-  font-size: 7vw;/*!!!*/
-  text-transform:uppercase;
-  text-align: center;
-  color: var(--color2);
-  text-shadow: 1px 1px 5px var(--color2), 3px 3px 6px rgba(255, 191, 245, 0.973);
+    font-size: 3vw;
+    text-transform:uppercase;
+    text-align: center;
+    color: var(--color2);
+    text-shadow: 1px 1px 5px var(--color2), 3px 3px 6px rgba(255, 191, 245, 0.973);
 }
 /*jump to top*/
 #jump-to-top{
-  display: none;
-  cursor: pointer;
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  top: 80%;
-  right: 2vw;
-  z-index: 1;
-  background-color: var(--switchcolor);
-  border: 0.2vw solid var(--hovercolor);
-  transition: background 1s ease;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 80vh;
+    right: 2vw;
+    z-index: 1;
+    background-color: var(--switchcolor);
+    border: 0.2vw solid var(--hovercolor);
+    transition: background 1s ease;
 }
 #jump-to-top span{
-  width: 0;
-  height: 0;
-  display: inline-block;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-bottom: 7px solid var(--hovercolor);
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid var(--hovercolor);
 }
 #jump-to-top:hover{
-  background: var(--color3);
+    background: var(--color3);
 }
 /*loading screen*/
 #loadscreen{
-  display: none;
-  background-color: rgba(129, 126, 126, 0.849);
-  left: 0;
-  top: 0;
-  z-index: 1;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  opacity: 0.9;
+    display: none;
+    background-color: rgba(129, 126, 126, 0.849);
+    left: 0;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
 }
-/*!!!*/
-#wait{position: relative; left: 35%; top: 50%; font-size: 50px; font-weight: bolder;}
+#wait{position: relative; left: 45%; top: 60%; font-size: 50px; font-weight: bolder;}
 #loader{
-  border: 16px solid var(--color1);
-  border-radius: 50%;
-  border-top: 16px solid var(--color2);
-  position: fixed;
-  left: 35%; /*!!!*/
-  top: 40%;
-  width: 120px;
-  height: 120px;
-  animation: spin 1s linear infinite;
+    border: 16px solid var(--color1);
+    border-radius: 50%;
+    border-top: 16px solid var(--color2);
+    position: fixed;
+    left: 45%;
+    top: 40%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
 }
 @keyframes spin {
-  from{transform: rotate(0deg);}
-  to{transform: rotate(360deg);}
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
 }
 /*navigation bar*/
-.navbar a{text-decoration: none; color: #000;}
 #menu{
-  background-color: rgba(129, 126, 126, 0.849);
-  display: none;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 1;
+    background-color: rgba(129, 126, 126, 0.849);
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
 }
-#menuIcon{cursor:pointer; width: 50px; height: 50px; margin: 1vw; top: 0; position:fixed; z-index:1}
-#logo{width: 30vw; height: 30vw; margin-left: 4.5vw;}
+#logo{width: 10vw; height: 10vw; margin-left: 4.5vw;}
+#menuIcon{cursor:pointer; width: 50px; height: 50px; margin: 1vw; top: 0; position:fixed; z-index:1;}
 .navbar{
-  list-style-type: none;
-  font-size: 5vw; /*!!!*/
-  font-weight: bolder;
-  background-color: var(--color3);
-  top: 0;
-  margin: 0;
-  left: -30%;
-  opacity: 0; 
-  position: fixed;
-  width: 40vw; /*!!!*/
-  height: 100%;
-  padding: 0;
+    list-style-type: none;
+    font-size: 2vw;
+    font-weight: bolder;
+    background-color: var(--color3);
+    top: 0;
+    margin: 0;
+    left: -30%;
+    opacity: 0; 
+    position: fixed;
+    width: 20vw;
+    height: 100%;
+    padding: 0;
 }
 .navbar h2{padding-right:1vw; text-align: center;}
 .navbar li{
-  margin: 5vw 2vw; /*!!!*/
-  cursor: pointer;
-  width: fit-content;
-  max-width: 0;
-  transition: max-width 0.3s ease-in;
-  border-bottom: 0.2vw solid var(--color2);
+    margin: 1vw 2vw;
+    cursor: pointer;
+    width: fit-content;
+    max-width: 0;
+    transition: max-width 0.3s ease-in;
+    border-bottom: 0.2vw solid var(--color2);
 }
 .navbar li a{text-decoration: none; color: var(--color2);}
 #currentPage{max-width: fit-content;}
 .navbar li:hover{max-width: 100%;}
 .open-navbar{
-  animation: nav-open 0.5s ease forwards;
+    animation: nav-open 0.5s ease forwards;
 }
 .close-navbar{
-  animation: nav-close 0.5s ease forwards;
+    animation: nav-close 0.5s ease forwards;
 }
 @keyframes nav-open {
-  from {opacity: 0; left: -30%;}
-  to {opacity: 1; left: 0; }
+    from {opacity: 0; left: -30%;}
+    to {opacity: 1; left: 0; }
 }
 @keyframes nav-close {
-  from {opacity: 1; left: 0;}
-  to{opacity: 0; left: -30%;}
+    from {opacity: 1; left: 0;}
+    to{opacity: 0; left: -30%;}
 }
 #close{
-  color: var(--color2);
-  font-size: 10vw; /*!!!*/
-  margin: 1vw;
-  left: 75%;
-  position: relative;
-  font-weight: bold;
-  cursor: pointer;
+    color: var(--color2);
+    font-size: 4vw;
+    margin: 1vw;
+    left: 75%;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
 }
 #close:hover{color: var(--color4);}
 /*main content*/
 .leftMove{
-  animation: leftmove 0.7s ease-out;
+    animation: leftmove 0.7s ease-out;
 }
 @keyframes leftmove {
-  from {opacity: 0; left: -30%;}
-  to {opacity: 1; left: 0%}
+    from {opacity: 0; left: -30%;}
+    to {opacity: 1; left: 0%}
 }
 .rightMove{
-  animation: rightmove 0.7s ease-out;
+    animation: rightmove 0.7s ease-out;
 }
 @keyframes rightmove {
-  from {opacity: 0; left: 30%;}
-  to {opacity: 1; left: 0%}
+    from {opacity: 0; left: 30%;}
+    to {opacity: 1; left: 0%}
 }
 .left, .right{
-  position: relative;
-  display: block;
-  background-color: var(--color4);
-  margin: 10vw 0 20vw -10vw; /*!!!*/
-  word-break:break-word;
-  border: 0.3vw ridge moccasin;
-  opacity: 0.9;
-  min-width: 90vw;
+    position: relative;
+    display: block;
+    background-color: var(--color4);
+    margin: 10vw 3vw 20vw 0;
+    word-break:break-word;
+    border: 0.3vw ridge moccasin;
+    opacity: 0.9;
+    min-width: 90vw;
 }
 .avt{
-  border-radius: 50%;
-  border: 0.3vw solid var(--color2);
-  width: 23vw;
-  height: 23vw;
-  margin: 1vw;
-  box-shadow: 0 3px 7px 0 rgba(238, 150, 234, 0.733), 2px 2px 20px 0 var(--color2);
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
+    border-radius: 50%;
+    border: 0.3vw solid var(--color2);
+    width: 23vw;
+    height: 23vw;
+    margin: 1vw;
+    box-shadow: 0 3px 7px 0 rgba(238, 150, 234, 0.733), 2px 2px 20px 0 var(--color2);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
 }
 .changeavt{
-  animation: change 1s ease-out;
+    animation: change 1s ease-out;
 }
 @keyframes change {
-  from {transform: rotate(0deg); opacity: 1;}
-  to {transform: rotate(360deg); opacity: 0;}
+    from {transform: rotate(0deg); opacity: 1;}
+    to {transform: rotate(360deg); opacity: 0;}
 }
 .waifulist h3::before{
-  counter-increment: section;
-  content: "#" counter(section);
-  background-color: rgba(240, 198, 146, 0.842);
-  border-right: 0.2vw ridge moccasin;
-  margin-right: 1.5vw;
-  padding: 0 0.5vw;
+    counter-increment: section;
+    content: "#" counter(section);
+    background-color: rgba(240, 198, 146, 0.842);
+    border-right: 0.2vw ridge moccasin;
+    margin-right: 1.5vw;
+    padding: 0 0.5vw;
 }
 .left h3, .right h3{
-  position: relative;
-  font-size: 7vw; /*!!!*/
-  background-color: var(--color3);
-  font-weight: bolder;
-  margin: 0;
+    position: relative;
+    font-size: 4vw;
+    background-color: var(--color3);
+    font-weight: bolder;
+    margin: 0;
 }
 .left h4, .right h4{
-  background-color: var(--switchcolor);
-  font-size: 5vw; /*!!!*/
-  font-weight: bolder;
-  border-top: 0.2vw ridge moccasin;
-  border-bottom: 0.2vw ridge moccasin;
-  margin: 0 0 1vw 0;
-  padding: 0.3vw 1vw;
-  font-style: italic;
+    background-color: var(--switchcolor);
+    font-size: 2vw;
+    font-weight: bolder;
+    border-top: 0.2vw ridge moccasin;
+    border-bottom: 0.2vw ridge moccasin;
+    margin: 0 0 1vw 0;
+    padding: 0.3vw 1vw;
+    font-style: italic;
 }
 .left div, .right div{
-  display: flex;
-  font-size: 5vw; /*!!!*/
+    display: flex;
+    font-size: 2.5vw;
 }
 .left p, .right p{
-  padding: 0 1vw 0 1vw;
-  width: 65vw;
+    padding: 0 1vw 0 1vw;
+    max-width: 65vw;
 }
 .info{position: absolute; bottom: 4vw; left: 28%; font-weight: bolder; color: var(--color2);} 
-.link{ /*!!!*/
-  width: 3vw;
-  height: 3vw;
+.link{
+  width: 1.5vw;
+  height: 1.5vw;
 }
 /*toggle switch*/
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 10vw;
-  height: 4vw;
-  margin: 3vw;
-  left: 80%;
+    position: relative;
+    display: inline-block;
+    width: 10vw;
+    height: 4vw;
+    margin: 3vw;
+    left: 80%;
 }
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--switchcolor);
-  transition: 0.4s;
-  border-radius: 3vw;
-  border: 0.2vw solid var(--color3);
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--switchcolor);
+    transition: 0.4s;
+    border-radius: 3vw;
+    border: 0.2vw solid var(--color3);
 }
 .switch-circle {
-  position: absolute;
-  content: "";
-  height: 4vw;
-  width: 4vw;
-  left: 0;
-  bottom: 0;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  z-index: 1;
-  transition: transform 0.5s ease;
-  border: 0.2vw solid var(--color3);
+    position: absolute;
+    content: "";
+    height: 4vw;
+    width: 4vw;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform 0.5s ease;
+    border: 0.2vw solid var(--color3);
 }
 input:checked ~ .slider{
-  background-color: var(--hovercolor);
-  box-shadow: 0 0 1vw var(--hovercolor);
+    background-color: var(--hovercolor);
+    box-shadow: 0 0 1vw var(--hovercolor);
 }
 input:checked ~ .switch-circle{
-  transform: translateX(6vw) rotate(360deg);
+    transform: translateX(6vw) rotate(360deg);
 }
 /*rank option*/
 .custom-sort, .theme-option{
-  display: inline-block;
-  font-size: 20px;
-  font-weight: bolder;
-  position: relative;
-  left: 20%; /*!!!*/
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    left: 70%;
 }
 .custom-sort select, .theme-option select{
-  color: var(--color2);
-  display: block;
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Cutive Mono', sans-serif;
-  font-weight: bolder;
-  padding: 10px;
-  cursor: pointer;
-  border: 0.2vw solid var(--hovercolor);
-  border-radius: 5px;
-  background-color: var(--color3);
-  outline: none;
-  appearance: none;
-  width: 250px;
+    color: var(--color2);
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Cutive Mono', sans-serif;
+    font-weight: bolder;
+    padding: 10px;
+    cursor: pointer;
+    border: 0.2vw solid var(--hovercolor);
+    border-radius: 5px;
+    background-color: var(--color3);
+    outline: none;
+    appearance: none;
+    width: 250px;
 }
 .arrow {
-  width: 0;
-  height: 0;
-  display: inline-block;
-  position: absolute;
-  cursor: pointer;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-top: 7px solid var(--color2);
-  right: 10px;
-  bottom: 20px;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid var(--color2);
+    right: 10px;
+    bottom: 20px;
 }
 .rotate-arrow-up {
-  animation: rotateUp 0.5s ease forwards;
+    animation: rotateUp 0.5s ease forwards;
 }
 .rotate-arrow-down {
-  animation: rotateDown 0.5s ease forwards;
+    animation: rotateDown 0.5s ease forwards;
 }
 @keyframes rotateUp {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(180deg);}
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
 }
 @keyframes rotateDown {
-  from {transform: rotate(180deg);}
-  to {transform: rotate(360deg);}
+    from {transform: rotate(180deg);}
+    to {transform: rotate(360deg);}
 }
 .dropdown-option{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-radius: 5px;
-  background-color: var(--color3);
-  z-index: 1;
-  width: 100%;
-  position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    background-color: var(--color3);
+    z-index: 1;
+    width: 100%;
+    position: absolute;
 }
 .dropdown-option li{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  cursor: pointer;
-  transition: background 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    cursor: pointer;
+    transition: background 0.5s ease;
 }
 .open-option{
-  animation: open 1s ease forwards;
+    animation: open 1s ease forwards;
 }
 @keyframes open {
-  from {opacity: 0;}
-  to {opacity: 1;}
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 .dropdown-option li:hover{
-  background: var(--hovercolor);
+    background: var(--hovercolor);
+}
+/*responsive for mobile screen*/
+@media only screen and (max-width: 600px){ 
+    h1{font-size: 7vw;}
+    #wait{left: 35%; top: 50%;}
+    #loader{left: 35%; top: 40%;}
+    #close{font-size: 10vw;}
+    .navbar{font-size: 5vw; width: 40vw;}
+    .navbar li{margin: 5vw 2vw;}
+    .left, .right{margin: 10vw 0 20vw -10vw;}
+    .left h3, .right h3{font-size: 7vw;}
+    .left h4, .right h4{font-size: 5vw;}
+    .left div, .right div{font-size: 5vw;}
+    .link{width: 3vw; height: 3vw;}
+    .custom-sort, .theme-option{left: 20%;}
 }
