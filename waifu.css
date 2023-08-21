@@ -92,7 +92,6 @@ h1{
     to{transform: rotate(360deg);}
 }
 /*navigation bar*/
-.navbar a{text-decoration: none; color: #000;}
 #menu{
     background-color: rgba(129, 126, 126, 0.849);
     display: none;
@@ -128,7 +127,7 @@ h1{
     transition: max-width 0.3s ease-in;
     border-bottom: 0.2vw solid var(--color2);
 }
-.navbar li a{color: var(--color2);}
+.navbar li a{text-decoration: none; color: var(--color2);}
 #currentPage{max-width: fit-content;}
 .navbar li:hover{max-width: 100%;}
 .open-navbar{
@@ -174,7 +173,7 @@ h1{
     position: relative;
     display: block;
     background-color: var(--color4);
-    margin: 10vw 0 20vw 0;
+    margin: 10vw 3vw 20vw 0;
     word-break:break-word;
     border: 0.3vw ridge moccasin;
     opacity: 0.9;
@@ -285,12 +284,12 @@ input:checked ~ .switch-circle{
     transform: translateX(6vw) rotate(360deg);
 }
 /*rank option*/
-.custom-sort, .theme-option{
+.custom-sort, .theme-option, h5{
     display: inline-block;
     font-size: 20px;
     font-weight: bolder;
     position: relative;
-    left: 70%;
+    left: 60%;
 }
 .custom-sort select, .theme-option select{
     color: var(--color2);
@@ -361,4 +360,20 @@ input:checked ~ .switch-circle{
 }
 .dropdown-option li:hover{
     background: var(--hovercolor);
+}
+/*responsive for mobile screen*/
+@media only screen and (max-width: 600px){ 
+    h1{font-size: 7vw;}
+    #wait{left: 35%; top: 50%;}
+    #loader{left: 35%; top: 40%;}
+    #close{font-size: 10vw;}
+    .navbar{font-size: 5vw; width: 40vw;}
+    .navbar li{margin: 5vw 2vw;}
+    .left, .right{margin: 10vw 0 20vw -10vw;}
+    .left h3, .right h3{font-size: 7vw;}
+    .left h4, .right h4{font-size: 5vw;}
+    .left div, .right div{font-size: 5vw;}
+    .link{width: 3vw; height: 3vw;}
+    h5{display: block; left: 20%;}
+    .custom-sort, .theme-option{left: 20%;}
 }
