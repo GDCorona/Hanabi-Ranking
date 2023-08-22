@@ -21,7 +21,7 @@ const char = [
     {
         personality: 2,
         appearance: 28,
-        voice: 20,
+        voice: 21,
         name: "Furukawa Nagisa",
         anime: "Clannad",
         avt: [
@@ -218,7 +218,7 @@ const char = [
             "url('https://i.pinimg.com/originals/b7/c8/99/b7c8997c087252bfc316c3b8121f9e3a.gif')"
         ],
         bg: "url('https://i.pinimg.com/originals/c6/cf/0b/c6cf0bb79b4876faf17780ad5333dc55.jpg')", 
-        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        audio: "https://feeds.soundcloud.com/stream/1598339277-corona-689894639-ayumi-voice.mp3",
         info: ["VA: Asakura Momo <br> Yuu's cute Imouto, she love stars and is a huge fan of the idol Yusa Nishimori aka Yusarin. Ayumi owns the dangerous ability to make everything around her collapse but that didn't awakened until she was threatened by a jealous classmate. Sadly this had made the school collapse and resulted in her death. Yuu fell into deep grief after this shocking event and isolated himself from everyone. Watching those episodes was really tough for me ಥ_ಥ, since I was having great sadness like Yuu and I totally sympathized with his acts. It was such a relief knowing that later on Ayumi was saved by her brother using time travel（︶^︶）.", "VA: Asakura Momo <br> Charlotte girls are among the top level of cuteness 💖. Ayumi is literlly one of the best Imotous out there and Yuu is just so lucky to have a cute, caring little sister like her.", "VA: Asakura Momo <br> Not much to say here, just a cute, lovely voice that make us adore her immediately at first sight 🥰. I absolutely adore those nosebleeding moments when she meet her idol Yusarin, it's just sooooo funny and cute!!! (p≧w≦q)"],
         link: "https://myanimelist.net/character/129120/Ayumi_Otosaka"
     },
@@ -303,7 +303,7 @@ const char = [
             "url('https://i.pinimg.com/originals/a6/14/e9/a614e9cc50be9cfdbe1e673c2561ebeb.gif')"
         ],
         bg: "url('https://i.pinimg.com/originals/38/53/0a/38530ae82519ebd30ee8d704703c3bbe.jpg')", 
-        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        audio: "https://feeds.soundcloud.com/stream/1598355846-corona-689894639-mirai-voice.mp3",
         info: ["VA: Taneda Risa <br> First-year high school student who is a youmu hunter. Despite having a rare abitlity to manipulate blood, her constant fear of encountering youmus prevents her from slaying them and that make her struggle to earn an income as this is a profession in which hunters have to kill youmus in order to earn money. After meeting Akihito, who is a half-youmu and glasses addict, she gains more confidence and friendliness as her senpai help her to have more friends and overcome her fear of youmus.", "VA: Taneda Risa <br> I am not addicted to glasses like Akihito :/, and short hair is not my types either. Nonetheless she still looks cute and rather clumsy and I love it!", "VA: Taneda Risa <br> Decent and delicate, that's pretty much all I can say about her voice. Still, she has one iconic catchphrase that I really like and you already know what that is. Fuyukai desu!!!! ><"],
         link: "https://myanimelist.net/character/81751/Mirai_Kuriyama"
     },
@@ -337,7 +337,7 @@ const char = [
             "url('https://i.pinimg.com/originals/d6/b3/5e/d6b35eea6a63a56c4fd2774f042cceb8.gif')"
         ],
         bg: "url('https://i.pinimg.com/originals/e3/f1/b0/e3f1b05ad0f82c6b048e6a58b27b5d2a.jpg')", 
-        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        audio: "https://feeds.soundcloud.com/stream/1598360370-corona-689894639-yusa-voice.mp3",
         info: ["VA: Uchida Maaya <br> Beautiful young vocalist who own the ability to speak to the dead. There aren't many things to say about her personality, she is lively and friendly with others, contrary to her dead older sister Misa, who is short-tempered and kind of masculine. Sometimes her sister could take over Yusa's consciousness and obsess her body, when things are back to normal Yusa will not remember anything that happened during that time, including her sister's existence.", "VA: Uchida Maaya <br> Yes, she is the prettiest girl in my eyes (*/ω＼*)💓. You know, long blone hair is my most beloved anime girls type, and everything about Yusa is just...glorious! There is a reason I see Charlotte as the best art anime I have ever watched, though...", "VA: Uchida Maaya <br> She has a pure, energetic voice that gives me a lot of joy. Her seiyuu, Uchida Maaya, is also one of my favorite seiyuus. However her role as Rikka is much more exceptional as Rikka has more opportunities to express herself and she got tons of unique phrases and noises that gave me a lot of impressions."], 
         link: "https://myanimelist.net/character/124037/Yusa_Kurobane"
     },
@@ -371,7 +371,7 @@ const char = [
             "url('https://i.pinimg.com/originals/06/fb/b8/06fbb8809e4a2967f7785ecef29abf03.gif')"
         ],
         bg: "url('https://i.pinimg.com/originals/0f/f3/60/0ff360e3ccf2913bd0722d1660b60645.jpg')", 
-        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        audio: "https://feeds.soundcloud.com/stream/1598355693-corona-689894639-itsuki-voice.mp3",
         info: ["VA: Minase Inori <br> Being the youngest sister of the Nakano quintuplets, Itsuki is in fact a bit more mature and serious than her sisters. She cares a lot about good manners and has a clear goal which is to become a teacher. Nevertheless, she has a bad habit which is overeating and we can see her munching on all kind of food (mainly sweets) throughout the series. That's what make me love her though :).", "VA: Minase Inori <br> Yo she is the most beautiful out of the Nakano sisters! :D (Itsuki > Miku > Nino > Yotsuba > Ichika). Really love her hair, it's kind of unique with 2 little stars attached and a tiny piece of hair sticking out.", "VA: Minase Inori <br> Don't have anything particular to say here. She has a serious voice which suits herself as a polite person caring a lot about manners. But when it comes to food she literally sounds like a child who has nothing in her mind but eating 🍩🍧🍨."],
         link: "https://myanimelist.net/character/161471/Itsuki_Nakano"
     },
@@ -497,7 +497,7 @@ const char = [
     {
         personality: 30,
         appearance: 7,
-        voice: 21,
+        voice: 20,
         name: "Chitanda Eru",
         anime: "Hyouka",
         avt: [
@@ -507,7 +507,7 @@ const char = [
             "url('https://i.pinimg.com/originals/bb/eb/47/bbeb470c2c417c4568acec92e1506a21.gif')"
         ],
         bg: "url('https://i.pinimg.com/originals/1b/27/86/1b2786f1cee290a4b548c46d2b78b37d.jpg')", 
-        audio: "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+        audio: "https://feeds.soundcloud.com/stream/1598355972-corona-689894639-chitanda-voice.mp3",
         info: ["VA: Satou Satomi<br> The president of the Classics Club, who is also the daughter of a very wealthy family. She is intelligent and often very curious and excited about intriguing new things. This personality is pretty interesting for me but sadly I don't have much impression for her like the other characters. To tell the truth I am pretty much the kind of guy like Houtarou the main protagonist in the anime so it would be very uncomfortable and exhausting for me if I were involved into her endless curiosity :<.", "VA: Satou Satomi <br> Gosh she is soooo adorable ><. Her long black hair and purple eyes reflect a dark but elegant tone in my eyes. The fact that her apperance is blessed by Kyoto Animation made me fall for her even more! KyoAni is no doubt the goat of animation in my opinion.", "VA: Satou Satomi <br> Chitanda has a calm voice that really improve my mood, but most of her conversations are just normal and there are barely any events that make her significantly change her reaction. My strongest impression about her voice is the phrase \"Watashi kininarimasu!\" (★‿★) which she use very often when she found something interesting."],
         link: "https://myanimelist.net/character/55133/Eru_Chitanda"
     }
