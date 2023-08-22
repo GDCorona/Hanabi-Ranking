@@ -16,6 +16,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     background-image: none;
 }
 /*cherry blossom effect*/
@@ -119,4 +120,40 @@ hr{border: 0.1vw solid var(--color2);}
 }
 .dropdown-option li:hover{
     background: var(--hovercolor);
+}
+h1{font-size: 5vw; text-shadow: 1px 1px 5px var(--color2), 3px 3px 3px rgba(255, 255, 255, 0.973);}
+h2{text-align: center; font-size: 5vw; text-shadow: 1px 1px 5px var(--color2), 3px 3px 3px rgba(45, 202, 230, 0.973);}
+h3{font-size: 3vw;}
+a{
+    text-decoration: none;
+    color: #cefaf8;
+    position:absolute;
+    cursor: pointer;
+    font-size: 2vw;
+    width: fit-content;
+    bottom: 5%;
+    right: 5%;
+    transition: color 0.5s ease-in, border 0.5s ease-in;
+    border-bottom: 0.2vw solid #cefaf8;
+}
+a:hover{color: #62c2bd; border-bottom: 0.2vw solid #62c2bd;}
+.category{
+    background-color: rgb(41, 29, 94);
+    color: #cefaf8;
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    width: 100%;
+    height: 40vw;
+    margin: 0;
+    overflow:hidden;
+    border-bottom: 0.2vw solid #cefaf8;
+}
+img{
+    opacity: 1;
+    position:absolute;
+    left: 0;
+    width: 100%;
+    height: 40vw;
+    mix-blend-mode:soft-light;
 }
