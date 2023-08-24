@@ -14,6 +14,13 @@
     </style>
     <body>
         <button id = "jump-to-top" onclick="backtoTop()"><span></span></button>
+        <div id = "secret" onclick="runSecret()" >
+            <img src = "https://i.pinimg.com/originals/bb/ec/d5/bbecd51bf71a302e745d2bd2c8a2073e.jpg">
+        </div>
+        <div id = "loadscreen">
+            <div id = "loader"></div>
+            <h2 id = "wait">Wait</h2>
+        </div>
         <div class = "header">
             <h1>Welcome to Hanabi's official website!</h1>
             <br><br><br><br>
@@ -32,11 +39,11 @@
             </select>
         </label>
         <h2>What I rank</h2>
-        <div class = "category">
+        <div class = "category" style = "border-top: 0.2vw solid #cefaf8;">
             <img src = "Thiết kế chưa có tên.png">
             <h2>Demonlist</h2>
             <h3>This is my top 20 hardest completions in Geometry Dash. I rank these levels using 60hz standard so be expect wave and ship levels to be ranked very high ;)</h3>
-            <a href="https://www.w3schools.com/">Check it out! →</a>
+            <a href="javascript:delay('https://www.w3schools.com/')">Check it out! →</a>
             
         </div>
         <div class = "category">
@@ -46,7 +53,7 @@
             <a href="https://www.w3schools.com/">Check it out! →</a>
         </div>
         <div class = "category">
-            <img src = "./08680006.jpg">
+            <img src = "./anime-the-quintessential-quintuplets-ichika-nakano-itsuki-nakano-miku-nakano-hd-wallpaper-preview.jpg">
             <h2>Anime</h2>
             <h3>Coming soon! <br> The place where I list my top 20 favorite animes.</h3>
         </div>
@@ -54,6 +61,43 @@
             <img src = "./maxresdefault.jpg">
             <h2>Song</h2>
             <h3>Coming soon! <br> You will find all of my favorite songs here!</h3>
+        </div>
+        <h2>Credits</h2>
+        <div class = "credits">
+            <img class = "creditsImg" src = "./icon128x128.jpg">
+            <h3>All of the icons used in this website are provided by Flaticon. You can find every icons you want there. Huge shout-out to them!</h3>
+            <a target="_blank" href = "https://www.flaticon.com/">Check out Flaticon! →</a>
+        </div>
+        <hr>
+        <div class = "credits">
+            <img class = "creditsImg" src = "./unnamed.png">
+            <h3>This website is hosted on Github Pages, huge thanks to them for providing a useful, easy-to-use hosting service!</h3>
+            <a target="_blank" href = "https://github.com/">Check out Github! →</a>
+        </div>
+        <hr>
+        <div class = "credits">
+            <img class = "creditsImg" src = "./pinterest_blog_prev.jpg">
+            <h3>Pinterest is where I find and and store all of the images used in this website.</h3>
+            <a target="_blank" href = "https://www.pinterest.com/">Check out Pinterest! →</a>
+        </div>
+        <hr>
+        <div class = "credits">
+            <img class = "creditsImg" src = "./MyAnimeList_Logo.png">
+            <h3>MyAnimeList is where I get most of the information about animes and their characters.</h3>
+            <a target="_blank" href = "https://myanimelist.net/">Check out MyAnimeList! →</a>
+        </div>
+        <hr>
+        <h3>This website is developed entirely by me. I own none of the images, icons and audios used in this website. All of them belong to their respective owners!</h3>
+        <a>More info about me →</a>
+        <h3>That's it. Hope you have a fun visit! 😎🤘</h3>
+        <img src = "353107577_3446114565706614_112971213445925103_n.jpg" style="width: 70%; height:auto;">
+        <div class = "footer">
+            <div class = "social">
+                <a target = "_blank" href = "https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN"><img src = "facebook.png"></a>
+                <a target = "_blank" href = "https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ"><img src = "youtube.png"></a>
+                <a target = "_blank" href = "http://discord.com/users/785306828661456906"><img src = "discord.png"></a>
+            </div>
+            <h4>Copyright &#169; 2023 __Hanabi__ </h4>
         </div>
     </body>
     <script src = "./home.js"></script>
