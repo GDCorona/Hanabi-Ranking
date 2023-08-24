@@ -17,6 +17,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-image: none;
+    margin: 0;
 }
 body::after {
     background-image: url('https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwBAS62lleijrhGHB-Tx5_KQ');
@@ -62,6 +63,15 @@ h1{
 }
 #jump-to-top:hover{
     background: var(--color3);
+}
+/*secret*/
+#secret{position: fixed; top: 80vh; right: 2vw; transition: transform 1s; z-index: 1;}
+#secret img{
+    animation: secretmove 1s ease-out both;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px 0 rgba(238, 150, 234, 0.733), 2px 2px 20px 0 var(--color2);
 }
 /*loading screen*/
 #loadscreen{
@@ -361,6 +371,16 @@ input:checked ~ .switch-circle{
 .dropdown-option li:hover{
     background: var(--hovercolor);
 }
+.footer{
+    text-align: center;
+    background-color: var(--color3);
+    width: 100%;
+    margin-top: 10vw;
+    padding: 3vw 0 0.5vw 0;
+    font-size: 2vw;
+}
+.social img{width: 30px; height: 30px;}
+.social a{border: none;}
 /*responsive for mobile screen*/
 @media only screen and (max-width: 600px){ 
     h1{font-size: 7vw;}
