@@ -12,6 +12,7 @@
     <body>
         <audio><source src = "" type="audio/mp3"></audio>
         <button id = "jump-to-top" onclick="backtoTop()"><span></span></button>
+        <div id = "secret" onclick="runSecret()" ></div>
         <h1>My top 30 favorite anime girls</h1>
         <img id = "menuIcon" onclick = "openNav()" src = "listLight.png">
         <div id = "menu">
@@ -551,6 +552,14 @@
             </div>
           </li>
         </ul>
+        <div class = "footer">
+          <div class = "social">
+              <a target = "_blank" href = "https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN"><img src = "facebook.png"></a>
+              <a target = "_blank" href = "https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ"><img src = "youtube.png"></a>
+              <a target = "_blank" href = "http://discord.com/users/785306828661456906"><img src = "discord.png"></a>
+          </div>
+          <h4>Copyright &#169; 2023 __Hanabi__ </h4>
+        </div>
         <script>
             const left_observer = new IntersectionObserver(entries => {
                 // Loop over the entries
