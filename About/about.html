@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+        <title> About - Hanabi Ranking</title>
+        <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/Np3rcv0FqkEfYRbCVI3wg6mlEP5N5zERCapBrakf34ZjVkwNWAgIx6a0V_OygxabyzCLGmf1lsDNDnJYbjj5aOk-7BGKcrwXJsarwFyCAJ5KZ24qGOHDvJD7V20FWavrj4TPflb535sqMhD_K1opKsye12psNXt_MWO1kF3Tk7w6gdQIic-KVBegFjLo3gwvE2MUcSSPUz4xSRgezgsmuZD87B7sauxYV5UBoR5jEN_g9abQF6ln9PwhGIf6MVl4HEpdwcF7OWMpeZslw7EnnnyqM5WIjw3C-iNne4-wPRkMC6do7tW14jb2zEpTv_EtW48OZrL_N8GWGy7MMdNH-EnSn9NevtGsAxIUtO-TNZa7lc3083h8Z0KKe37BRxumjcmw2d_TggYbexbLM_HMoDSfBc3sISY6IwLlJBgqGJ_-qYAb9qrLOn9iz3IdCj23xe_NrC7Gb1WaitNN58OvAgMwX4HukHnEbMTvFsaOWtoWQ7R5yBNLc1xGeFSkJWzLzhSvcFvsDE8HTQbFX47qbVT9YqcBKo-40f1oqcdf1zNvDcfiRdRKDHf_S4UOw6fjybtzY9sVcwteOlgTA1h3XZpDdH-i1GefJBWlJUrq0fIllactSMIEsfle6b4apPQhiKzVka7-IR6NvFnRLgMZkvqf3f_-ppp7bjplLil1rlzLikYdbf1LRQW3rPnA0DVBQoWJ1l7f-oNPACLMS_EC_AdgqySGOEkZRvo_UoVu6oFK8nr_Ouzj3b-3KZ8ErAzVoj4pHM0LHQVj5IjmpSNJa6O0b4IX-ydMLSRixUzOglP2mJ7vngvXBOFkBvQCogd4L_W4aT0-y29r-6cNG4fznUTtGXlu6twwiN6ZbDQJsEE7-3Xqsv-Oblzgv19gUahQFwOgb1SaiaAboii4EXDMSfekdEqMB2Xzn69VQfUOjthi=w560-h560-s-no?authuser=0">
+        <link rel = "stylesheet" href = "./about.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <button id = "jump-to-top" onclick="backtoTop()"><span></span></button>
+        <h1> Meet the lame guy who made this atrocious website</h1>
+        <img id = "menuIcon" onclick = "openNav()" src = "listLight.png">
+        <div id = "menu">
+        <ul class = "navbar">
+          <span onclick = "closeNav()" id = "close">&times;</span><br>
+          <img id = "logo" src = "https://i.pinimg.com/originals/c7/11/1e/c7111ed1586b9d054c67b01beea9aac7.png" alt = "logo">
+          <h2>Hanabi Ranking</h2>
+          <li><a href = "./home.html">Home</a></li>
+          <li><a href = "https://gdcorona.github.io/Hanabi-Ranking/">Demonlist</a></li>
+          <li><a href = "waifu.html">Waifu</a></li>
+          <li id = "currentPage"><a>About</a></li>
+        </ul>
+        </div>
+        <hr>
+        <p>Theme</p>
+        <label class = "theme-option">
+            <div class = "arrow"></div>
+            <select>
+              <option value="0">Light</option>
+              <option value="1">Dark</option>
+              <option value="2">Sakura</option>
+            </select>
+        </label>
+        <div id = "secret" onclick="runSecret()" >
+            <img src = "https://i.pinimg.com/originals/bb/ec/d5/bbecd51bf71a302e745d2bd2c8a2073e.jpg">
+        </div>
+        <img id = "avt" src= "https://i.pinimg.com/originals/99/14/4d/99144d939cef3c03390edef3ffb9e0f6.jpg" alt="pfp">
+        <h3 id = "name">Hanabi</h3>
+        <h3>
+            Love: Games, Animes, Drawing, Learning Languages, Coding
+            <br>
+            <br> 
+            Games I play: Geometry Dash, The Battle Cats, Survivor.io, Chess.
+            <br>
+            <br> 
+            I am currently learning HTML, CSS and JS and I will try my best to further improve this website and release other projects if I have time. 
+            <br>
+            <br>
+            More importantly, I intend to add more features such as my top favorite animes, anime characters and songs as well so stay tuned!
+        </h3>
+        <hr>
+        <h1>Social</h1>
+        <div class = "social">
+            <div>
+                <img id = "facebook" class = "icon" src = https://img.icons8.com/dusk/256/facebook-new--v2.png>
+                <br>
+                <a class = link target = "_blank" href = "https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN">Facebook</a>
+            </div>
+            <div>
+                <img id = "youtube" class = "icon" src = https://img.icons8.com/dusk/256/youtube-play.png>
+                <br>
+                <a class = link target = "_blank" href = "https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ">Youtube</a>
+            </div>
+            <div>
+                <img id = "discord" class = "icon" src = https://img.icons8.com/dusk/256/discord-logo.png>
+                <br>
+                <a class = link target = "_blank" href = "http://discord.com/users/785306828661456906">Discord</a>
+            </div> 
+        </div>
+        <div class = "footer">
+            <div class = "socialIcon">
+                <a target = "_blank" href = "https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN"><img src = "facebook.png"></a>
+                <a target = "_blank" href = "https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ"><img src = "youtube.png"></a>
+                <a target = "_blank" href = "http://discord.com/users/785306828661456906"><img src = "discord.png"></a>
+            </div>
+            <h4>Copyright &#169; 2023 __Hanabi__ </h4>
+        </div>
+        <audio id = "greetingSound"><source src = "https://feeds.soundcloud.com/stream/1493606938-corona-689894639-kaguya-noise-1.mp3" type="audio/mp3"></audio>
+        <audio id = "secretSounds"><source src = "" type = "audio/mp3"></audio>
+        <script>
+            var greet = document.getElementById("greetingSound");
+            setTimeout(function(){greet.play();}, 1500);
+            const observer = new IntersectionObserver(entries => {
+                // Loop over the entries
+                entries.forEach(entry => {
+                  // If the element is visible
+                  if (entry.isIntersecting) {
+                    // Add the animation class
+                    entry.target.classList.add("icon-animation");
+                  }
+                });
+              });
+              observer.observe(document.querySelector("#youtube"));
+              observer.observe(document.querySelector("#facebook"));
+              observer.observe(document.querySelector("#discord"));
+        </script> 
+        <script src = "./about.js"></script>
+    </body>
+</html>
