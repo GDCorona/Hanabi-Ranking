@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset= "UTF-8">
+        <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">
+        <title> Hanabi Ranking </title>
+        <link rel= "stylesheet" href = "./demonlist.css">
+        <link rel= "icon" type= "image/x-icon" href= "./Photos/icon.png">
+        <link rel= "preconnect" href= "https://fonts.googleapis.com">
+        <link rel= "preconnect" href= "https://fonts.gstatic.com" crossorigin>
+        <link href= "https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel= "stylesheet">
+    </head>
+    <body>
+        <button id = "jump-to-top" onclick="backtoTop()"><span></span></button>
+        <h1>My top 20 hardest demons</h1>
+        <hr>
+        <img id = "menuIcon" onclick = "openNav()" src = "listLight.png">
+        <div id = "menu">
+            <ul class = "navbar">
+              <span onclick = "closeNav()" class = "closeNav">&times;</span><br>
+              <img id = "logo" src = "https://i.pinimg.com/originals/c7/11/1e/c7111ed1586b9d054c67b01beea9aac7.png" alt = "logo">
+              <h2>Hanabi Ranking</h2>
+              <li><a href = "./home.html">Home</a></li>
+              <li><a href = "https://gdcorona.github.io/Hanabi-Ranking/">Demonlist</a></li>
+              <li><a href = "waifu.html">Waifu</a></li>
+              <li id = "currentPage"><a>About</a></li>
+            </ul>
+        </div>
+        <h5>Theme</h5>
+        <label class = "theme-option">
+            <div class = "arrow"></div>
+            <select>
+              <option value="0">Light</option>
+              <option value="1">Dark</option>
+              <option value="2">Sakura</option>
+            </select>
+        </label>
+        <div id = "top1Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close1">&times;</span>
+                    <h2>#1-Deception Dive</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Extreme Demon</p>
+                    <p>FPS: 144</p>
+                    <p>Attempts: ~11k</p>
+                    <p>Worst fail: 82%</p>
+                    <p>Enjoyment: 7/10 </p>
+                    <p>Completion Date: 20/5/2023</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/h_NeAjalj8A">https://youtu.be/h_NeAjalj8A</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top2Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close2">&times;</span>
+                    <h2>#2-MELTDOWN</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Extreme Demon</p>
+                    <p>FPS: 144</p>
+                    <p>Attempts: ~8k</p>
+                    <p>Worst fail: 96%</p>
+                    <p>Enjoyment: 8/10 </p>
+                    <p>Completion Date: 26/1/2023</p>
+                    <p>Video: <a target = "_blank" href = "https://youtu.be/BbGiPoHRufo">https://youtu.be/BbGiPoHRufo</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top3Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close3">&times;</span>
+                    <h2>#3-Novalis</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Extreme Demon</p>
+                    <p>FPS: 75</p>
+                    <p>Attempts: 15078</p>
+                    <p>Worst fail: 93%</p>
+                    <p>Enjoyment: 9/10 </p>
+                    <p>Completion Date: 10/9/2022</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/ejUUtMAdgrY">https://youtu.be/ejUUtMAdgrY</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top4Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close4">&times;</span>
+                    <h2>#4-Allegiance</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Extreme Demon</p>
+                    <p>FPS: 144</p>
+                    <p>Attempts: 5254</p>
+                    <p>Worst fail: 94%</p>
+                    <p>Enjoyment: 7.7/10 </p>
+                    <p>Completion Date: 11/7/2023</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/Fd7uKTwwZrc">https://youtu.be/Fd7uKTwwZrc</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top5Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close5">&times;</span>
+                    <h2>#5-Marathon</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Extreme Demon</p>
+                    <p>FPS: 60</p>
+                    <p>Attempts: ~18k</p>
+                    <p>Worst fail: 97%</p>
+                    <p>Enjoyment: 8.5/10 </p>
+                    <p>Completion Date: 8/1/2022</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/xCQuDfkmPIs">https://youtu.be/xCQuDfkmPIs</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top6Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close6">&times;</span>
+                    <h2>#6-Endurance</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Extreme Demon</p>
+                    <p>FPS: 75</p>
+                    <p>Attempts: 8782</p>
+                    <p>Worst fail: 92%</p>
+                    <p>Enjoyment: 9.7/10 </p>
+                    <p>Completion Date: 11/8/2023</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/odOXl12VR8M">https://youtu.be/odOXl12VR8M</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top7Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close7">&times;</span>
+                    <h2>#7-HyperSonic</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Extreme Demon</p>
+                    <p>FPS: 75</p>
+                    <p>Attempts: ~12k</p>
+                    <p>Worst fail: 87%</p>
+                    <p>Enjoyment: 5/10 </p>
+                    <p>Completion Date: 8/5/2023</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/X9yha51Y2uk">https://youtu.be/X9yha51Y2uk</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top8Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close8">&times;</span>
+                    <h2>#8-Miscellaneous Memory</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Extreme Demon</p>
+                    <p>FPS: 75</p>
+                    <p>Attempts: 8434</p>
+                    <p>Worst fail: 98%</p>
+                    <p>Enjoyment: 8.5/10 </p>
+                    <p>Completion Date: 17/7/2023</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/mxuxR_YB5SI">https://youtu.be/mxuxR_YB5SI</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top9Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close9">&times;</span>
+                    <h2>#9-Loop</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Extreme Demon</p>
+                    <p>FPS: 75</p>
+                    <p>Attempts: 6428</p>
+                    <p>Worst fail: 80%</p>
+                    <p>Enjoyment: 10/10 </p>
+                    <p>Completion Date: 7/5/2023</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/tnC6FWcwiJQ">https://youtu.be/tnC6FWcwiJQ</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top10Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close10">&times;</span>
+                    <h2>#10-Retention</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Extreme Demon</p>
+                    <p>FPS: 60</p>
+                    <p>Attempts: ~9.6k</p>
+                    <p>Worst fail: 87%</p>
+                    <p>Enjoyment: 9.7/10 </p>
+                    <p>Completion Date: 25/5/2022</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/UrtmDTSKKEk">https://youtu.be/UrtmDTSKKEk</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top11Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close11">&times;</span>
+                    <h2>#11-Duelo Maestro (Solo)</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Insane Demon</p>
+                    <p>FPS: 75</p>
+                    <p>Attempts: ~10k</p>
+                    <p>Worst fail: 84% x2</p>
+                    <p>Enjoyment: 8.3/10 </p>
+                    <p>Completion Date: 9/7/2022</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/fzeVpbRrekw">https://youtu.be/fzeVpbRrekw</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top12Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close12">&times;</span>
+                    <h2>#12-Beetle</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Insane Demon</p>
+                    <p>FPS: 144</p>
+                    <p>Attempts: ~5k</p>
+                    <p>Worst fail: 92%</p>
+                    <p>Enjoyment: 9.7/10 </p>
+                    <p>Completion Date: 14/4/2023</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/sD1k-Fn41qQ">https://youtu.be/sD1k-Fn41qQ</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top13Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close13">&times;</span>
+                    <h2>#13-Lost Love</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Extreme Demon</p>
+                    <p>FPS: 60</p>
+                    <p>Attempts: ~5k</p>
+                    <p>Worst fail: 91%</p>
+                    <p>Enjoyment: 8/10 </p>
+                    <p>Completion Date: 26/2/2023</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/ENdu8pjo5D4">https://youtu.be/ENdu8pjo5D4</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top14Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close14">&times;</span>
+                    <h2>#14-Troll Level</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Extreme Demon</p>
+                    <p>FPS: 60</p>
+                    <p>Attempts: ~10k</p>
+                    <p>Worst fail: 91%</p>
+                    <p>Enjoyment: 8/10 </p>
+                    <p>Completion Date: 20/2/2022</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/_M_K-ikuCLI">https://youtu.be/_M_K-ikuCLI</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top15Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close15">&times;</span>
+                    <h2>#15-Plasma Pulse II</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Insane Demon</p>
+                    <p>FPS: 60</p>
+                    <p>Attempts: ~9k</p>
+                    <p>Worst fail: 91%</p>
+                    <p>Enjoyment: 1/10 </p>
+                    <p>Completion Date: 18/1/2023</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/a7NIROob76s">https://youtu.be/a7NIROob76s</a></p>
+                </div>
+            </div>
+        </div>
+                <div id = "top16Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close16">&times;</span>
+                    <h2>#16-Knot</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Insane Demon</p>
+                    <p>FPS: 75</p>
+                    <p>Attempts: 7858</p>
+                    <p>Worst fail: 96%</p>
+                    <p>Enjoyment: 9.5/10 </p>
+                    <p>Completion Date: 21/7/2023</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/9eFUCPNh_rQ">https://youtu.be/9eFUCPNh_rQ</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top17Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close17">&times;</span>
+                    <h2>#17-Mucho Fuego</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Insane Demon</p>
+                    <p>FPS: 75</p>
+                    <p>Attempts: 4880</p>
+                    <p>Worst fail: 93% </p>
+                    <p>Enjoyment: 6/10 </p>
+                    <p>Completion Date: 30/7/2023</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/HoVYlOhRJaw">https://youtu.be/HoVYlOhRJaw</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top18Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close18">&times;</span>
+                    <h2>#18-Acropolis</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Insane Demon</p>
+                    <p>FPS: 75</p>
+                    <p>Attempts: ~5.5k</p>
+                    <p>Worst fail: 91%</p>
+                    <p>Enjoyment: 3.5/10 </p>
+                    <p>Completion Date: 19/7/2022</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/QYeG8yNGbx0">https://youtu.be/QYeG8yNGbx0</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top19Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close19">&times;</span>
+                    <h2>#19-Nine Paws</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Insane Demon</p>
+                    <p>FPS: 60</p>
+                    <p>Attempts: ~7k</p>
+                    <p>Worst fail: 88%</p>
+                    <p>Enjoyment: 1.5/10 </p>
+                    <p>Completion Date: 24/6/2021</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/Yd1KJDaGEEY">https://youtu.be/Yd1KJDaGEEY</a></p>
+                </div>
+            </div>
+        </div>
+        <div id = "top20Info" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <span id = "close" class = "close20">&times;</span>
+                    <h2>#20-Antique Circles</h2>
+                </div>
+                <div class = "modal-body">
+                    <p>Difficulty: Insane Demon</p>
+                    <p>FPS: 75</p>
+                    <p>Attempts: ~6k</p>
+                    <p>Worst fail: 77%</p>
+                    <p>Enjoyment: 2.5/10 </p>
+                    <p>Completion Date: 28/4/2023</p>
+                    <p>Video: <a target="_blank" href = "https://youtu.be/0mwqaZIVir4">https://youtu.be/0mwqaZIVir4</a></p>
+                </div>
+            </div>
+        </div>
+        <!--secret-->
+        <div id = "secret" onclick="runSecret()" >
+            <img src = "https://i.pinimg.com/originals/bb/ec/d5/bbecd51bf71a302e745d2bd2c8a2073e.jpg">
+        </div>
+        <audio id = "secretSounds"><source src = "" type = "audio/mp3"></audio>
+        <!---->
+        <ul class = "demonlist">   
+            <li id = "t1">
+                <p>Deception Dive</p>
+                <img src = 'https://i.pinimg.com/originals/b3/91/9c/b3919cdbaed62d1f775f54c7e29f7d0a.png' alt = "DeceptionDive">
+            </li>
+            <li id = "t2">
+                <p>MELTDOWN</p>
+                <img src = 'https://i.pinimg.com/originals/4c/68/9f/4c689f71305855c7527db1855d34d0d7.png' alt = "Meltdown">
+            </li>
+            <li id = "t3">
+                <p>Novalis</p>
+                <img src = 'https://i.pinimg.com/originals/ca/39/bc/ca39bcd7ef762d3778d478398eb4d883.png' alt = "Novalis">
+            </li>
+            <li id = "t4">
+                <p>Allegiance</p>
+                <img src = 'https://i.pinimg.com/originals/54/63/80/546380cf5e4690102f5badaffd3ecdab.png' alt = "Allegiance">
+            </li>
+            <li id = "t5">
+                <p>Marathon</p>
+                <img src = 'https://i.pinimg.com/originals/77/62/54/7762543a460335d4e9c61c75f6d1ca07.png' alt = "Marathon">
+            </li>
+            <li id = "t6">
+                <p>Endurance</p>
+                <img src = 'https://i.pinimg.com/originals/c9/e5/e4/c9e5e4401442f1e01d7cdc8286b41755.png' alt = "Endurance">
+            </li>
+            <li id = "t7">
+                <p>HyperSonic</p>
+                <img src = 'https://i.pinimg.com/originals/2a/e7/4a/2ae74a0ab6a5bee13994a40f0fb4952e.png' alt = "HyperSonic">
+            </li>
+            <li id = "t8">
+                <p>Miscellaneous Memory</p>
+                <img src = 'https://i.pinimg.com/originals/80/6e/62/806e624fdf3160019bd0bc22d362e453.png' alt = "MiscellaneousMemory">
+            </li>
+            <li id = "t9">
+                <p>Loop</p>
+                <img src = 'https://i.pinimg.com/originals/7d/b5/9d/7db59d7ec03898c212a2ca443202971a.png' alt = "Loop">
+            </li>
+            <li id = "t10">
+                <p>Retention</p>
+                <img src = 'https://i.pinimg.com/originals/43/e3/97/43e397697beffd0e4d06ec84f0dadc07.png' alt = "Retention">
+            </li>
+            <li id = "t11">
+                <p>Duelo Maestro(Solo)</p>
+                <img src = 'https://i.pinimg.com/originals/1b/1b/a2/1b1ba299eac136773fc305f9fb2ff87c.png' alt = "DueloMaestro">
+            </li>
+            <li id = "t12">
+                <p>Beetle</p>
+                <img src = 'https://i.pinimg.com/originals/46/7e/ee/467eeef3424dd1a2d8d3ee492136ca70.jpg' alt = "Beetle">
+            </li>
+            <li id = "t13">
+                <p>Lost Love</p>
+                <img src = 'https://i.pinimg.com/originals/fb/0e/6f/fb0e6f30043113fd46a3722d042a28a7.png' alt = "LostLove">
+            </li>
+            <li id = "t14">
+                <p>Troll Level</p>
+                <img src = 'https://i.pinimg.com/originals/11/34/35/113435809d7944d9931d466c2fd035b4.jpg' alt = "TrollLevel">
+            </li>
+            <li id = "t15">
+                <p>Plasma Pulse II</p>
+                <img src = 'https://i.pinimg.com/originals/4f/c4/f8/4fc4f8ae4e4a172c48c4c4c8009da562.png' alt = "PP2">
+            </li>
+            <li id = "t16">
+                <p>Knot</p>
+                <img src = 'https://i.pinimg.com/originals/e8/54/cd/e854cd56d67673a2b080273a674bc10e.png' alt = "Knot">
+            </li>
+            <li id = "t17">
+                <p>Mucho Fuego</p>
+                <img src = 'https://i.pinimg.com/originals/e0/5a/89/e05a89045312ca42320552e7d61c5101.png' alt = "MuchoFuego"> 
+            </li>
+            <li id = "t18">
+                <p>Acropolis</p>
+                <img src = 'https://i.pinimg.com/originals/5c/a6/ee/5ca6ee5e500302f4fdd7986f3e2e0fcb.png' alt = "Acropolis">
+            </li>
+            <li id = "t19">
+                <p>Nine Paws</p>
+                <img src = 'https://i.pinimg.com/originals/62/85/d8/6285d80f1791715d74503a99a68a5477.jpg' alt = "NinePaws">
+            </li>
+            <li id = "t20">
+                <p>Antique Circles</p>
+                <img src = 'https://i.pinimg.com/originals/b2/11/8c/b2118cc73cefb8d0c7e62da9f8a3e5e2.jpg' alt = "AntiqueCircles">
+            </li>
+        </ul>
+        <div class = "footer">
+            <div class = "socialIcon">
+                <a target = "_blank" href = "https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN"><img src = "facebook.png"></a>
+                <a target = "_blank" href = "https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ"><img src = "youtube.png"></a>
+                <a target = "_blank" href = "http://discord.com/users/785306828661456906"><img src = "discord.png"></a>
+            </div>
+            <h4>Copyright &#169; 2023 __Hanabi__ </h4>
+        </div>
+        <script src = "./demonlist.js"></script>
+    </body>
+</html>

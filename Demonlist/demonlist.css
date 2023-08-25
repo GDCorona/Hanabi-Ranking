@@ -1,0 +1,349 @@
+:root{
+    --color1: white;
+    --color2: black;
+    --color3: rgb(147, 224, 255);
+    --color4: aliceblue;
+    --switchcolor: #cefaf8;
+    --hovercolor: rgba(126, 187, 211, 0.7);
+    --cherryblossom: none;
+}
+*{box-sizing: border-box;}
+body{
+    counter-reset: section;
+    font-family: 'Cutive Mono', sans-serif;
+    background-color: var(--color1);
+    color: var(--color2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: none;
+    margin: 0;
+}
+body::after {
+    background-image: url('https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwBAS62lleijrhGHB-Tx5_KQ');
+    filter: hue-rotate(0deg);
+    pointer-events: none !important;
+    content: "";
+    width: 100% !important;
+    height: 100% !important;
+    display: var(--cherryblossom);
+    top: 0 !important;
+    left: 0 !important;
+    position: fixed;
+    z-index: 1;
+}
+hr{border: 0.1vw solid var(--color2);}
+a{color: var(--color2);}
+a:active{color: var(--color4);}
+h1{
+    font-size: 5vw;
+    text-align: center;
+    color: var(--color2);
+    text-shadow: 1px 1px 5px var(--color2), 3px 3px 6px rgba(255, 191, 245, 0.973);
+}
+.demonlist{
+    text-align: center;
+    margin: 10%;
+    background-color: rgba(245, 217, 206, 0.7);
+    border: 0.3vmax groove rgba(128, 177, 177, 0.7);
+    padding: 5%;
+}
+.demonlist li{
+    animation: move3 1s ease-out both;
+    overflow:hidden;
+    margin: 0 0 4% 0;
+    border-radius: 30px;
+    mix-blend-mode:multiply;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 7px 22px 0 rgba(22, 22, 22, 0.8);
+}
+.demonlist li:hover{
+    opacity: 0.5;
+    mix-blend-mode: hard-light;
+    cursor: pointer;
+}
+@keyframes move3 {
+    from {opacity: 0.1; transform:translate(0, 100%);}
+    to {opacity: 1;}
+}
+.demonlist p{
+    font-weight: bolder;
+    font-size: 5vw;
+    word-wrap:normal;
+    margin: 0;
+    color: rgb(252, 248, 27);
+    background-color: rgba(65, 61, 54, 0.986);
+    border-radius: 27px 27px 0px 0px;
+    display: block;
+    border-bottom: 0.3vmax solid rgb(243, 165, 199);
+}
+.demonlist p::before{
+    counter-increment: section;
+    content: "#" counter(section) "-";
+}
+.demonlist li img{
+    border-radius: 0px 0px 27px 27px;
+    width:100%;
+    height:50vh;
+    display: block;
+}
+@keyframes move1 {
+    from {opacity: 0.1; left: -50%;}
+    to {opacity: 1; left: 0%; transform: rotate(360deg);}
+}
+button a{text-decoration: none; color: var(--color2);}
+@keyframes move2 {
+    from {opacity: 0.1; right: -50%}
+    to {opacity: 1; right: 0%; transform: rotate(-360deg);}
+}
+@media screen and (min-width: 1800px){
+    .demonlist{display: grid; grid-template-columns: auto auto; grid-auto-rows: 18vw;}
+    .demonlist li{margin: 1.5% 4%;}
+    .demonlist li img{height: 30vh;}
+    .demonlist li p{font-size: 2.5vw;}
+}
+.modal{
+    display: none;
+    position: fixed;
+    overflow: auto;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content{
+    animation: modalmove 0.5s ease-in both;
+    position:relative;
+    background-color: var(--color3);
+    color: var(--color2);
+    font-size: 2vw;
+    text-align:justify;
+    text-indent: 2vw;
+    margin: 3vw auto;
+    border: 0.2vw solid rgb(82, 66, 66);
+    width: 70%;
+    box-shadow: 0 1px 3px 0 rgba(238, 150, 234, 0.733), 2px 2px 20px 0 var(--color2);
+}
+@keyframes modalmove {
+    from{opacity: 0; top:-50%;}
+    to{opacity: 1; top:0%;}
+}
+.modal-header{
+    text-align: center;
+    background-color: var(--color1);
+    padding: 0.3vw 2vw;
+}
+#close{
+    cursor: pointer;
+    color: var(--color2);
+    float: right;
+    font-size: 300%;
+    font-weight: bold;
+}
+/*theme option*/
+.theme-option, h5{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    left: 60%;
+}
+.theme-option select{
+    color: var(--color2);
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Cutive Mono', sans-serif;
+    font-weight: bolder;
+    padding: 10px;
+    cursor: pointer;
+    border: 0.2vw solid var(--hovercolor);
+    border-radius: 5px;
+    background-color: var(--color3);
+    outline: none;
+    appearance: none;
+    width: 250px;
+}
+.arrow {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid var(--color2);
+    right: 10px;
+    bottom: 20px;
+}
+.rotate-arrow-up {
+    animation: rotateUp 0.5s ease forwards;
+}
+.rotate-arrow-down {
+    animation: rotateDown 0.5s ease forwards;
+}
+@keyframes rotateUp {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+}
+@keyframes rotateDown {
+    from {transform: rotate(180deg);}
+    to {transform: rotate(360deg);}
+}
+.dropdown-option{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    background-color: var(--color3);
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+}
+.dropdown-option li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+.open-option{
+    animation: open 1s ease forwards;
+}
+@keyframes open {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.dropdown-option li:hover{
+    background: var(--hovercolor);
+}
+#secret{position: fixed; right: 2vw; bottom:2vw; transition: transform 1s;}
+#secret img{
+    animation: secretmove 1s ease-out both;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px 0 rgba(238, 150, 234, 0.733), 2px 2px 20px 0 var(--color2);
+}
+#secret:hover{cursor:pointer; transform: rotate(180deg);}
+@keyframes secretmove{
+    from{opacity: 0.1;}
+    to{opacity: 1; transform: rotate(360deg);}
+}
+/*navigation bar*/
+#menu{
+    background-color: rgba(129, 126, 126, 0.849);
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+}
+#logo{width: 10vw; height: 10vw; margin-left: 4.5vw;}
+#menuIcon{cursor:pointer; width: 50px; height: 50px; margin: 1vw; top: 0; position:fixed; z-index:1;}
+.navbar{
+    list-style-type: none;
+    font-size: 2vw;
+    font-weight: bolder;
+    background-color: var(--color3);
+    top: 0;
+    margin: 0;
+    left: -30%;
+    opacity: 0; 
+    position: fixed;
+    width: 20vw;
+    height: 100%;
+    padding: 0;
+}
+.navbar h2{padding-right:1vw; text-align: center;}
+.navbar li{
+    margin: 1vw 2vw;
+    cursor: pointer;
+    width: fit-content;
+    max-width: 0;
+    transition: max-width 0.3s ease-in;
+    border-bottom: 0.2vw solid var(--color2);
+}
+.navbar li a{text-decoration: none; color: var(--color2);}
+#currentPage{max-width: fit-content;}
+.navbar li:hover{max-width: 100%;}
+.open-navbar{
+    animation: nav-open 0.5s ease forwards;
+}
+.close-navbar{
+    animation: nav-close 0.5s ease forwards;
+}
+@keyframes nav-open {
+    from {opacity: 0; left: -30%;}
+    to {opacity: 1; left: 0; }
+}
+@keyframes nav-close {
+    from {opacity: 1; left: 0;}
+    to{opacity: 0; left: -30%;}
+}
+.closeNav{
+    color: var(--color2);
+    font-size: 4vw;
+    margin: 1vw;
+    left: 75%;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+}
+#close:hover, .closeNav:hover{color: var(--color4);}
+/*jump to top*/
+#jump-to-top{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 70vh;
+    right: 2vw;
+    z-index: 1;
+    background-color: var(--switchcolor);
+    border: 0.2vw solid var(--hovercolor);
+    transition: background 1s ease;
+}
+#jump-to-top span{
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid var(--hovercolor);
+}
+#jump-to-top:hover{
+    background: var(--color3);
+}
+.footer{
+    text-align: center;
+    background-color: var(--color3);
+    width: 100%;
+    margin-top: 10vw;
+    padding: 3vw 0 0.5vw 0;
+    font-size: 2vw;
+}
+.socialIcon img{width: 30px; height: 30px;}
+.socialIcon a{border: none;}
+.rotateImg{
+    animation: imgspin 1s ease-out;
+}
+/*responsive for mobile screen*/
+@media only screen and (max-width: 600px){ 
+    h1{font-size: 10vw;}
+    h3{font-size: 4vw;}
+    .closeNav{font-size: 10vw;}
+    #logo{width: 25vw; height: 25vw; margin-left: 7vw;}
+    .navbar{font-size: 5vw; width: 40vw;}
+    .navbar li{margin: 5vw 2vw;}
+    h5{display: block; left: 20%;}
+    .theme-option{left: 20%;}
+    #jump-to-top{right: 25vw; top: 70vh;}
+}
