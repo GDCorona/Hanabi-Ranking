@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     </head>
     <style>
     </style>
@@ -19,7 +20,7 @@
         </div>
         <div id = "loadscreen">
             <div id = "loader"></div>
-            <h2 id = "wait">Wait</h2>
+            <h3 id = "wait">Wait</h3>
         </div>
         <div class = "header">
             <h1>Welcome to Hanabi's official website!</h1>
@@ -43,14 +44,14 @@
             <img src = "Thiết kế chưa có tên.png">
             <h2>Demonlist</h2>
             <h3>This is my top 20 hardest completions in Geometry Dash. I rank these levels using 60hz standard so be expect wave and ship levels to be ranked very high ;)</h3>
-            <a href="javascript:delay('https://www.w3schools.com/')">Check it out! →</a>
+            <a href="javascript:delay('./Demonlist/index.html')">Check it out! →</a>
             
         </div>
         <div class = "category">
             <img src = "./yo_.gif">
             <h2>Waifu</h2>
             <h3>This is where I rank my top 30 favorite anime girls, based on 3 categories: Personality, Appearance and Voice. A character must be good at all of those categories in order to be in the list. Having beauty alone is not enough!</h3>
-            <a href="https://www.w3schools.com/">Check it out! →</a>
+            <a href="javascript:delay('./Waifu/index.html')">Check it out! →</a>
         </div>
         <div class = "category">
             <img src = "./anime-the-quintessential-quintuplets-ichika-nakano-itsuki-nakano-miku-nakano-hd-wallpaper-preview.jpg">
@@ -88,11 +89,11 @@
         </div>
         <hr>
         <h3>This website is developed entirely by me. I own none of the images, icons and audios used in this website. All of them belong to their respective owners!</h3>
-        <a>More info about me →</a>
+        <a href="javascript:delay('./About/index.html')">More info about me →</a>
         <h3>That's it. Hope you have a fun visit! 😎🤘</h3>
-        <img src = "353107577_3446114565706614_112971213445925103_n.jpg" style="width: 70%; height:auto;">
+        <img class = "meme" src = "353107577_3446114565706614_112971213445925103_n.jpg" style="width: 70%; height:auto;">
         <div class = "footer">
-            <div class = "social">
+            <div class = "socialIcon">
                 <a target = "_blank" href = "https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN"><img src = "facebook.png"></a>
                 <a target = "_blank" href = "https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ"><img src = "youtube.png"></a>
                 <a target = "_blank" href = "http://discord.com/users/785306828661456906"><img src = "discord.png"></a>
@@ -100,5 +101,19 @@
             <h4>Copyright &#169; 2023 __Hanabi__ </h4>
         </div>
     </body>
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            // Loop over the entries
+            entries.forEach(entry => {
+              // If the element is visible
+              if (entry.isIntersecting) {
+                // Add the animation class
+                entry.target.classList.add("rotateImg");                  
+              }
+            });
+          }, {threshold: 0});
+        element = document.querySelector(".meme");
+        observer.observe(element);
+    </script>
     <script src = "./home.js"></script>
 </html>
