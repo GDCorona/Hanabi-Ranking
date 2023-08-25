@@ -89,7 +89,6 @@ function ChangeTheme(value){
 const theme_selector = document.querySelector('.theme-option');
 const theme_select = theme_selector.children[1]; //exclude children 0 which is the div arrow
 theme_select.value = localStorage.getItem('Theme-select-value');
-console.log(theme_select.value);
 if(theme_select.value == ''){theme_select.value = 0;} //set value to 0 if empty localStorage
 theme_selector.addEventListener('mousedown', e => {
   e.preventDefault();
@@ -154,5 +153,4 @@ function delay (URL) {
   document.getElementById("loadscreen").style.display = "block";
   setInterval(function(){document.getElementById("wait").innerHTML += '.';}, 300);
   setTimeout(function() { window.location = URL; document.getElementById("loadscreen").style.display = "none";}, 1000);
-
 }
