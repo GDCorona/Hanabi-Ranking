@@ -44,25 +44,24 @@ h1{
 .demonlist{
     text-align: center;
     margin: 10%;
-    background-color: rgba(245, 217, 206, 0.7);
-    border: 0.3vmax groove rgba(128, 177, 177, 0.7);
+    background-color: var(--color4);
+    border: 0.3vmax groove var(--color2);
     padding: 5%;
 }
 .demonlist li{
-    animation: move3 1s ease-out both;
+    animation: listmove 1s ease-out both;
     overflow:hidden;
     margin: 0 0 4% 0;
     border-radius: 30px;
-    mix-blend-mode:multiply;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 7px 22px 0 rgba(22, 22, 22, 0.8);
 }
 .demonlist li:hover{
-    opacity: 0.5;
-    mix-blend-mode: hard-light;
+    opacity: 0.7;
+    mix-blend-mode:hard-light;
     cursor: pointer;
 }
-@keyframes move3 {
+@keyframes listmove {
     from {opacity: 0.1; transform:translate(0, 100%);}
     to {opacity: 1;}
 }
@@ -71,11 +70,11 @@ h1{
     font-size: 5vw;
     word-wrap:normal;
     margin: 0;
-    color: rgb(252, 248, 27);
-    background-color: rgba(65, 61, 54, 0.986);
+    color: var(--color2);
+    background-color: var(--color3);
     border-radius: 27px 27px 0px 0px;
     display: block;
-    border-bottom: 0.3vmax solid rgb(243, 165, 199);
+    border-bottom: 0.3vmax solid var(--color2);
 }
 .demonlist p::before{
     counter-increment: section;
@@ -87,22 +86,9 @@ h1{
     height:50vh;
     display: block;
 }
-@keyframes move1 {
-    from {opacity: 0.1; left: -50%;}
-    to {opacity: 1; left: 0%; transform: rotate(360deg);}
-}
 button a{text-decoration: none; color: var(--color2);}
-@keyframes move2 {
-    from {opacity: 0.1; right: -50%}
-    to {opacity: 1; right: 0%; transform: rotate(-360deg);}
-}
-@media screen and (min-width: 1800px){
-    .demonlist{display: grid; grid-template-columns: auto auto; grid-auto-rows: 18vw;}
-    .demonlist li{margin: 1.5% 4%;}
-    .demonlist li img{height: 30vh;}
-    .demonlist li p{font-size: 2.5vw;}
-}
 .modal{
+    font-weight: bolder;
     display: none;
     position: fixed;
     overflow: auto;
@@ -122,7 +108,7 @@ button a{text-decoration: none; color: var(--color2);}
     text-align:justify;
     text-indent: 2vw;
     margin: 3vw auto;
-    border: 0.2vw solid rgb(82, 66, 66);
+    border: 0.2vw solid var(--color2);
     width: 70%;
     box-shadow: 0 1px 3px 0 rgba(238, 150, 234, 0.733), 2px 2px 20px 0 var(--color2);
 }
@@ -220,16 +206,6 @@ button a{text-decoration: none; color: var(--color2);}
 .dropdown-option li:hover{
     background: var(--hovercolor);
 }
-#secret{position: fixed; right: 2vw; bottom:2vw; transition: transform 1s;}
-#secret img{
-    animation: secretmove 1s ease-out both;
-    z-index: 1;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    box-shadow: 0 1px 3px 0 rgba(238, 150, 234, 0.733), 2px 2px 20px 0 var(--color2);
-}
-#secret:hover{cursor:pointer; transform: rotate(180deg);}
 @keyframes secretmove{
     from{opacity: 0.1;}
     to{opacity: 1; transform: rotate(360deg);}
@@ -305,7 +281,7 @@ button a{text-decoration: none; color: var(--color2);}
     width: 50px;
     height: 50px;
     top: 70vh;
-    right: 2vw;
+    right: 3vw;
     z-index: 1;
     background-color: var(--switchcolor);
     border: 0.2vw solid var(--hovercolor);
@@ -322,6 +298,15 @@ button a{text-decoration: none; color: var(--color2);}
 #jump-to-top:hover{
     background: var(--color3);
 }
+#secret{position: fixed; top: 80vh; right: 3vw; transition: transform 1s; z-index: 1;}
+#secret img{
+    animation: secretmove 1s ease-out both;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px 0 rgba(238, 150, 234, 0.733), 2px 2px 20px 0 var(--color2);
+}
+#secret:hover{cursor:pointer; transform: rotate(180deg);}
 .footer{
     text-align: center;
     background-color: var(--color3);
@@ -332,8 +317,11 @@ button a{text-decoration: none; color: var(--color2);}
 }
 .socialIcon img{width: 30px; height: 30px;}
 .socialIcon a{border: none;}
-.rotateImg{
-    animation: imgspin 1s ease-out;
+@media screen and (min-width: 1800px){
+    .demonlist{display: grid; grid-template-columns: auto auto; grid-auto-rows: 18vw;}
+    .demonlist li{margin: 1.5% 4%;}
+    .demonlist li img{height: 30vh;}
+    .demonlist li p{font-size: 2.5vw;}
 }
 /*responsive for mobile screen*/
 @media only screen and (max-width: 600px){ 
@@ -345,5 +333,6 @@ button a{text-decoration: none; color: var(--color2);}
     .navbar li{margin: 5vw 2vw;}
     h5{display: block; left: 20%;}
     .theme-option{left: 20%;}
-    #jump-to-top{right: 25vw; top: 70vh;}
+    .demonlist li img{height: 15vh;}
+    .modal-content{font-size: 3.5vw; margin: 25vw 7vw;}
 }
