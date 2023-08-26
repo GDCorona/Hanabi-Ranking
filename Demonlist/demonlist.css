@@ -129,6 +129,7 @@ button a{text-decoration: none; color: var(--color2);}
     font-weight: bold;
 }
 /*theme option*/
+h5{width: fit-content;}
 .theme-option, h5{
     display: inline-block;
     font-size: 20px;
