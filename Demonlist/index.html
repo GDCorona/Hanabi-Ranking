@@ -4,17 +4,20 @@
         <meta charset= "UTF-8">
         <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">
         <title> Demonlist - Hanabi Ranking </title>
-        <link rel= "stylesheet" href= "./demonlist.css">
-        <link rel= "icon" type= "image/x-icon" href= "https://lh3.googleusercontent.com/Np3rcv0FqkEfYRbCVI3wg6mlEP5N5zERCapBrakf34ZjVkwNWAgIx6a0V_OygxabyzCLGmf1lsDNDnJYbjj5aOk-7BGKcrwXJsarwFyCAJ5KZ24qGOHDvJD7V20FWavrj4TPflb535sqMhD_K1opKsye12psNXt_MWO1kF3Tk7w6gdQIic-KVBegFjLo3gwvE2MUcSSPUz4xSRgezgsmuZD87B7sauxYV5UBoR5jEN_g9abQF6ln9PwhGIf6MVl4HEpdwcF7OWMpeZslw7EnnnyqM5WIjw3C-iNne4-wPRkMC6do7tW14jb2zEpTv_EtW48OZrL_N8GWGy7MMdNH-EnSn9NevtGsAxIUtO-TNZa7lc3083h8Z0KKe37BRxumjcmw2d_TggYbexbLM_HMoDSfBc3sISY6IwLlJBgqGJ_-qYAb9qrLOn9iz3IdCj23xe_NrC7Gb1WaitNN58OvAgMwX4HukHnEbMTvFsaOWtoWQ7R5yBNLc1xGeFSkJWzLzhSvcFvsDE8HTQbFX47qbVT9YqcBKo-40f1oqcdf1zNvDcfiRdRKDHf_S4UOw6fjybtzY9sVcwteOlgTA1h3XZpDdH-i1GefJBWlJUrq0fIllactSMIEsfle6b4apPQhiKzVka7-IR6NvFnRLgMZkvqf3f_-ppp7bjplLil1rlzLikYdbf1LRQW3rPnA0DVBQoWJ1l7f-oNPACLMS_EC_AdgqySGOEkZRvo_UoVu6oFK8nr_Ouzj3b-3KZ8ErAzVoj4pHM0LHQVj5IjmpSNJa6O0b4IX-ydMLSRixUzOglP2mJ7vngvXBOFkBvQCogd4L_W4aT0-y29r-6cNG4fznUTtGXlu6twwiN6ZbDQJsEE7-3Xqsv-Oblzgv19gUahQFwOgb1SaiaAboii4EXDMSfekdEqMB2Xzn69VQfUOjthi=w560-h560-s-no?authuser=0">
+        <link rel= "stylesheet" href = "./demonlist.css">
+        <link rel= "icon" type= "image/x-icon" href= "./Photos/icon.png">
         <link rel= "preconnect" href= "https://fonts.googleapis.com">
         <link rel= "preconnect" href= "https://fonts.gstatic.com" crossorigin>
         <link href= "https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel= "stylesheet">
     </head>
     <body>
         <button id = "jump-to-top" onclick="backtoTop()"><span></span></button>
+        <!--secret-->
         <div id = "secret" onclick="runSecret()" >
             <img src = "https://i.pinimg.com/originals/bb/ec/d5/bbecd51bf71a302e745d2bd2c8a2073e.jpg">
         </div>
+        <audio id = "secretSounds"><source src = "" type = "audio/mp3"></audio>
+        <!---->
         <h1>My top 20 hardest demons</h1>
         <hr>
         <img id = "menuIcon" onclick = "openNav()" src = "listLight.png">
@@ -23,10 +26,10 @@
               <span onclick = "closeNav()" class = "closeNav">&times;</span><br>
               <img id = "logo" src = "https://i.pinimg.com/originals/c7/11/1e/c7111ed1586b9d054c67b01beea9aac7.png" alt = "logo">
               <h2>Hanabi Ranking</h2>
-              <li><a href = "https://gdcorona.github.io/Test/">Home</a></li>
-              <li id = "currentPage"><a>Demonlist</a></li>
-              <li><a href = "https://gdcorona.github.io/Test/Waifu/index.html">Waifu</a></li>
-              <li><a href = "https://gdcorona.github.io/Test/About/index.html">About</a></li>
+              <li><a href = "./home.html">Home</a></li>
+              <li><a href = "https://gdcorona.github.io/Hanabi-Ranking/">Demonlist</a></li>
+              <li><a href = "waifu.html">Waifu</a></li>
+              <li id = "currentPage"><a>About</a></li>
             </ul>
         </div>
         <h5>Theme</h5>
