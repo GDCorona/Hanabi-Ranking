@@ -262,7 +262,7 @@ a:hover{color: var(--hovercolor); border-bottom: 0.2vw solid var(--hovercolor);}
     a, .category a{font-size: 4vw;}
     .category{height: 70vw;}
     .category img{height: 70vw;}
-    .credits a{left: 17%;}
+    .credits a{left: 13%;}
     p{display: block;}
     .theme-option, p{left: 0;}
 }
