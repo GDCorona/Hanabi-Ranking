@@ -134,7 +134,7 @@ button a{text-decoration: none; color: var(--color2);}
     font-size: 20px;
     font-weight: bolder;
     position: relative;
-    left: 60%;
+    left: 70%;
 }
 .theme-option select{
     color: var(--color2);
@@ -331,8 +331,8 @@ button a{text-decoration: none; color: var(--color2);}
     #logo{width: 25vw; height: 25vw; margin-left: 7vw;}
     .navbar{font-size: 5vw; width: 40vw;}
     .navbar li{margin: 5vw 2vw;}
-    h5{display: block; left: 20%;}
-    .theme-option{left: 20%;}
+    h5{left: 10%;}
+    .theme-option{left: 10%;}
     .demonlist li img{height: 15vh;}
     .modal-content{font-size: 3.5vw; margin: 25vw 7vw;}
 }
