@@ -268,5 +268,4 @@ a:hover{color: var(--hovercolor); border-bottom: 0.2vw solid var(--hovercolor);}
     .credits a{left: 20%;}
     p{display: block;}
     .theme-option, p{left: 0;}
-    #jump-to-top{right: 25vw; top: 70vh;}
 }
