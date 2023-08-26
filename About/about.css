@@ -192,6 +192,7 @@ h3{font-size: 2vw; margin-left: 2vw;}
     animation: iconmove 1.5s ease-in both;
 }
 /*theme option*/
+p{width: fit-content;}
 .theme-option, p{
     display: inline-block;
     font-size: 20px;
