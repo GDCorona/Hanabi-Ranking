@@ -294,6 +294,7 @@ input:checked ~ .switch-circle{
     transform: translateX(6vw) rotate(360deg);
 }
 /*rank option*/
+h5{width: fit-content;}
 .custom-sort, .theme-option, h5{
     display: inline-block;
     font-size: 20px;
