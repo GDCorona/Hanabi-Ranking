@@ -512,6 +512,13 @@ const char = [
         link: "https://myanimelist.net/character/55133/Eru_Chitanda"
     }
 ]
+const char_honorable = [
+    "url('https://i.pinimg.com/originals/03/3b/95/033b95d218e51102a011c5f7bf5c568b.jpg')",
+    "url('https://i.pinimg.com/originals/71/14/7b/71147ba9b88bd237b09ba095c0981fd1.jpg')",
+    "url('https://i.pinimg.com/originals/3f/1b/0a/3f1b0ad82e19b669da5fa4a7cabcb67b.jpg')",
+    "url('https://i.pinimg.com/originals/20/a4/87/20a487b9286f5dc88310ccc6d256d895.jpg')",
+    "url('https://i.pinimg.com/originals/cf/f3/04/cff30430b2cea602541cdff88c510425.jpg"
+]
 var arr = [
     new Int16Array(30), //0: personality
     new Int16Array(30), //1: appearance
@@ -535,6 +542,9 @@ for (var i = 0; i < char.length; i++){
     document.getElementsByClassName("switch-circle")[i].style.backgroundImage = char[i].avt[arr[type][i]];
     document.getElementsByTagName("p")[i].innerHTML = char[i].info[type];
     document.getElementsByClassName("info")[i].href = char[i].link;
+}
+for (var i = char.length; i < char.length + char_honorable.length; i++){
+    document.getElementsByClassName("switch-circle")[i].style.backgroundImage = document.getElementsByClassName("avt")[i].style.backgroundImage;
 }
 //sort type
 function Personality(){type = 0; localStorage.setItem('type', type); Sort();}
@@ -572,6 +582,19 @@ function changeBG(index){
     }
     else {setTimeout(function(){document.body.style.backgroundImage = 'none';}, 300);} 
 }
+//change BG (for honorable mention)
+function changeBG_Honorable(index){
+    var check = document.getElementsByTagName("input")[char.length + index].checked;
+    if(check == true){
+        setTimeout(function(){document.body.style.backgroundImage = char_honorable[index];}, 300);
+        for(var i = 0; i < char.length + char_honorable.length; i++){
+            if(i != char.length + index) {document.getElementsByTagName("input")[i].checked = false;} //turn off other switches
+        }
+    }
+    else {setTimeout(function(){document.body.style.backgroundImage = 'none';}, 300);} 
+}
+//change avt (for honorable mention)
+function Nah(){alert("nah no images available :<");}
 //change avt
 function changeAvt(index){
     document.getElementsByClassName("avt")[index].classList.remove("changeavt");
@@ -651,7 +674,6 @@ sort_selector.addEventListener('mousedown', e => {
         document.getElementsByClassName("arrow")[1].classList.add("rotate-arrow-down");
     }
 })
-
 /*shared section (for every pages)*/
 //open menu
 function openNav(){
@@ -701,8 +723,8 @@ if(loadBG == 0){
     document.documentElement.style.setProperty('--color4', 'aliceblue');
     document.documentElement.style.setProperty('--switchcolor', '#cefaf8');
     document.documentElement.style.setProperty('--hovercolor', 'rgb(70, 157, 228)');
-    document.getElementById("menuIcon").src = "listLight.png";
-    for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "linkLight.png";}
+    document.getElementById("menuIcon").src = "./Photos/listLight.png";
+    for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "./Photos/linkLight.png";}
 }
 else if (loadBG == 1){
     document.getElementsByTagName("body")[0].style.backgroundImage = "none";
@@ -713,8 +735,8 @@ else if (loadBG == 1){
     document.documentElement.style.setProperty('--color4', 'rgba(135, 167, 172, 0.925)');
     document.documentElement.style.setProperty('--switchcolor', '#8d8d8d');
     document.documentElement.style.setProperty('--hovercolor', 'rgb(220, 221, 243)');
-    document.getElementById("menuIcon").src = "listDark.png";
-    for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "linkDark.png";}
+    document.getElementById("menuIcon").src = "./Photos/listDark.png";
+    for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "./Photos/linkDark.png";}
 }
 else if (loadBG == 2){
     document.getElementsByTagName("body")[0].style.backgroundImage = "none";
@@ -725,8 +747,8 @@ else if (loadBG == 2){
     document.documentElement.style.setProperty('--color4', 'rgba(255, 232, 253, 0.8)');
     document.documentElement.style.setProperty('--switchcolor', '#fccbf5');
     document.documentElement.style.setProperty('--hovercolor', 'rgb(185, 71, 185)');
-    document.getElementById("menuIcon").src = "listSakura.png";
-    for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "linkSakura.png";}
+    document.getElementById("menuIcon").src = "./Photos/listSakura.png";
+    for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "./Photos/linkSakura.png";}
 }
 var Theme_click_count = 0;
 function ChangeTheme(value){
@@ -739,8 +761,9 @@ function ChangeTheme(value){
         document.documentElement.style.setProperty('--color4', 'aliceblue');
         document.documentElement.style.setProperty('--switchcolor', '#cefaf8');
         document.documentElement.style.setProperty('--hovercolor', 'rgb(70, 157, 228)');
-        document.getElementById("menuIcon").src = "listLight.png";
-        for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "linkLight.png";}
+        document.getElementById("menuIcon").src = "./Photos/listLight.png";
+        for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "./Photos/linkLight.png";}
+        localStorage.setItem('background', -1);
     }
     else if (value == 1){
         document.getElementsByTagName("body")[0].style.backgroundImage = "none";
@@ -751,8 +774,9 @@ function ChangeTheme(value){
         document.documentElement.style.setProperty('--color4', 'rgba(135, 167, 172, 0.925)');
         document.documentElement.style.setProperty('--switchcolor', '#8d8d8d');
         document.documentElement.style.setProperty('--hovercolor', 'rgb(220, 221, 243)');
-        document.getElementById("menuIcon").src = "listDark.png";
-        for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "linkDark.png";}
+        document.getElementById("menuIcon").src = "./Photos/listDark.png";
+        for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "./Photos/linkDark.png";}
+        localStorage.setItem('background', -1);
     }
     else if (value == 2){
         document.getElementsByTagName("body")[0].style.backgroundImage = "none";
@@ -763,8 +787,9 @@ function ChangeTheme(value){
         document.documentElement.style.setProperty('--color4', 'rgba(255, 232, 253, 0.8)');
         document.documentElement.style.setProperty('--switchcolor', '#fccbf5');
         document.documentElement.style.setProperty('--hovercolor', 'rgb(185, 71, 185)');
-        document.getElementById("menuIcon").src = "listSakura.png";
-        for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "linkSakura.png";}
+        document.getElementById("menuIcon").src = "./Photos/listSakura.png";
+        for(var i = 0; i < 35; i++){document.getElementsByClassName("link")[i].src = "./Photos/linkSakura.png";}
+        localStorage.setItem('background', -1);
     }
     if (document.getElementsByClassName("arrow")[0].classList.contains("rotate-arrow-down") == false){
         document.getElementsByClassName("arrow")[0].classList.remove("rotate-arrow-up");
@@ -838,3 +863,60 @@ theme_selector.addEventListener('mousedown', e => {
         document.getElementsByClassName("arrow")[0].classList.add("rotate-arrow-down");
     }
 })
+/*secret*/
+var currentbg = -1;
+var currentSounds = -1;
+var check = true;
+var body = document.getElementsByTagName("body")[0];
+var secretsounds = document.getElementById("secretSounds");
+var bg = 
+[
+    "url('https://i.pinimg.com/originals/52/a2/62/52a262d0944bcf487bf6c323c7c64c67.jpg')",
+    "url('https://i.pinimg.com/originals/28/61/fe/2861fe7c95b8124208fecdf63f818572.jpg')",
+    "url('https://i.pinimg.com/originals/5f/32/73/5f32731ab2f9e18ce9509913c05eac4b.jpg')",
+    "url('https://i.pinimg.com/originals/bb/37/a6/bb37a6037cce5fc895a8450914a07458.jpg')",
+    "url('https://i.pinimg.com/originals/b3/a7/99/b3a79923cb5dc7add78054d5d005801a.jpg')",
+    "url('https://i.pinimg.com/originals/26/59/93/2659934c11ee4ca9305de593b8c1e401.jpg')",
+    "url('https://i.pinimg.com/originals/e9/54/d1/e954d16d765536dd99186667953a5f66.jpg')",
+    "url('https://i.pinimg.com/originals/5b/c8/ae/5bc8aeb83131e38bbab8ba96fc4959d8.jpg')",
+    "url('https://i.pinimg.com/originals/7c/26/c8/7c26c8d4fe0b8b6f4ce595a55768488f.jpg')",
+    "url('https://i.pinimg.com/originals/40/6b/5d/406b5d7bcae6ebdfacd5ce20d7c3a823.jpg')"
+];
+var sounds = 
+[
+    "https://feeds.soundcloud.com/stream/1493606947-corona-689894639-kaguya-noise-2.mp3",
+    "https://feeds.soundcloud.com/stream/1493606929-corona-689894639-chika-noise-2.mp3",
+    "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+    "https://feeds.soundcloud.com/stream/1493606914-corona-689894639-rikka-noise-2.mp3",
+    "https://feeds.soundcloud.com/stream/1602173829-corona-689894639-jibril-voice.mp3"
+];
+var background = parseInt(localStorage.getItem('background'));
+if(background == -1) {body.style.backgroundImage = "none";}
+else{body.style.backgroundImage = bg[background];}
+function runSecret(){
+    if(check) {
+        check = false;
+        randombg(); 
+        randomSounds(); 
+        setTimeout(function(){check = true;}, 3000);
+    }
+    else {alert("Too fast!");}
+}
+function randombg(){
+    var random = Math.floor(Math.random() * 10);
+    if(currentbg == random){randombg();}
+    else{
+        currentbg = random;
+        body.style.backgroundImage = bg[currentbg];
+        localStorage.setItem('background', currentbg);
+    }
+}
+function randomSounds(){
+    var random = Math.floor(Math.random() * 5);
+    if(currentSounds == random){randomSounds();}
+    else{
+        currentSounds = random;
+        secretsounds.src = sounds[currentSounds];
+        secretsounds.play();
+    }
+}
