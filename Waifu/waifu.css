@@ -190,7 +190,7 @@ input:checked ~ .switch-circle{transform: translateX(6vw) rotate(360deg);}
 h5{width: fit-content;}
 .custom-sort, .theme-option, h5{
     display: inline-block;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bolder;
     position: relative;
     left: 60%;
@@ -198,7 +198,7 @@ h5{width: fit-content;}
 .custom-sort select, .theme-option select{
     color: var(--color2);
     display: block;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     font-family: 'Cutive Mono', sans-serif;
     font-weight: bolder;
