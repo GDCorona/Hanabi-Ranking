@@ -5,7 +5,7 @@
         <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">
         <title> Demonlist - Hanabi Ranking </title>
         <link rel= "stylesheet" href = "./demonlist.css">
-        <link rel= "icon" type= "image/x-icon" href= "./Photos/icon.png">
+        <link rel= "icon" type= "image/x-icon" href= "./Photos/WebLogo.png">
         <link rel= "preconnect" href= "https://fonts.googleapis.com">
         <link rel= "preconnect" href= "https://fonts.gstatic.com" crossorigin>
         <link href= "https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel= "stylesheet">
@@ -14,17 +14,16 @@
         <button id = "jump-to-top" onclick="backtoTop()"><span></span></button>
         <!--secret-->
         <div id = "secret" onclick="runSecret()" >
-            <img src = "https://i.pinimg.com/originals/bb/ec/d5/bbecd51bf71a302e745d2bd2c8a2073e.jpg">
+            <img src = "./Photos/secret/jpg">
         </div>
         <audio id = "secretSounds"><source src = "" type = "audio/mp3"></audio>
         <!---->
         <h1>My top 20 hardest demons</h1>
-        <hr>
-        <img id = "menuIcon" onclick = "openNav()" src = "listLight.png">
+        <img id = "menuIcon" onclick = "openNav()" src = "./Photos/listLight.png">
         <div id = "menu">
             <ul class = "navbar">
-              <span onclick = "closeNav()" class = "closeNav">&times;</span><br>
-              <img id = "logo" src = "https://i.pinimg.com/originals/c7/11/1e/c7111ed1586b9d054c67b01beea9aac7.png" alt = "logo">
+              <span onclick = "closeNav()" class = "close">&times;</span><br>
+              <img id = "logo" src = "./Photos/WebLogo.png" alt = "logo">
               <h2>Hanabi Ranking</h2>
               <li><a href = "https://gdcorona.github.io/Hanabi-Ranking/">Home</a></li>
               <li id = "currentPage"><a>Demonlist</a></li>
@@ -41,10 +40,11 @@
               <option value="2">Sakura</option>
             </select>
         </label>
+        <a id = "changelog" href = "./listchangelog.txt" download = "listchangelog">Download list changelog ⇓</a>
         <div id = "top1Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close1">&times;</span>
+                    <span class = "close" id = "close1">&times;</span>
                     <h2>#1-Deception Dive</h2>
                 </div>
                 <div class = "modal-body">
@@ -61,7 +61,7 @@
         <div id = "top2Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close2">&times;</span>
+                    <span class = "close" id = "close2">&times;</span>
                     <h2>#2-MELTDOWN</h2>
                 </div>
                 <div class = "modal-body">
@@ -78,7 +78,7 @@
         <div id = "top3Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close3">&times;</span>
+                    <span class = "close" id = "close3">&times;</span>
                     <h2>#3-Novalis</h2>
                 </div>
                 <div class = "modal-body">
@@ -95,7 +95,7 @@
         <div id = "top4Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close4">&times;</span>
+                    <span class = "close" id = "close4">&times;</span>
                     <h2>#4-Allegiance</h2>
                 </div>
                 <div class = "modal-body">
@@ -112,7 +112,7 @@
         <div id = "top5Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close5">&times;</span>
+                    <span class = "close" id = "close5">&times;</span>
                     <h2>#5-Marathon</h2>
                 </div>
                 <div class = "modal-body">
@@ -129,7 +129,7 @@
         <div id = "top6Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close6">&times;</span>
+                    <span class = "close" id = "close6">&times;</span>
                     <h2>#6-Endurance</h2>
                 </div>
                 <div class = "modal-body">
@@ -146,7 +146,7 @@
         <div id = "top7Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close7">&times;</span>
+                    <span class = "close" id = "close7">&times;</span>
                     <h2>#7-HyperSonic</h2>
                 </div>
                 <div class = "modal-body">
@@ -163,7 +163,7 @@
         <div id = "top8Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close8">&times;</span>
+                    <span class = "close" id = "close8">&times;</span>
                     <h2>#8-Miscellaneous Memory</h2>
                 </div>
                 <div class = "modal-body">
@@ -180,7 +180,7 @@
         <div id = "top9Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close9">&times;</span>
+                    <span class = "close" id = "close9">&times;</span>
                     <h2>#9-Loop</h2>
                 </div>
                 <div class = "modal-body">
@@ -197,7 +197,7 @@
         <div id = "top10Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close10">&times;</span>
+                    <span class = "close" id = "close10">&times;</span>
                     <h2>#10-Retention</h2>
                 </div>
                 <div class = "modal-body">
@@ -214,7 +214,7 @@
         <div id = "top11Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close11">&times;</span>
+                    <span class = "close" id = "close11">&times;</span>
                     <h2>#11-Duelo Maestro (Solo)</h2>
                 </div>
                 <div class = "modal-body">
@@ -231,7 +231,7 @@
         <div id = "top12Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close12">&times;</span>
+                    <span class = "close" id = "close12">&times;</span>
                     <h2>#12-Beetle</h2>
                 </div>
                 <div class = "modal-body">
@@ -248,7 +248,7 @@
         <div id = "top13Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close13">&times;</span>
+                    <span class = "close" id = "close13">&times;</span>
                     <h2>#13-Lost Love</h2>
                 </div>
                 <div class = "modal-body">
@@ -265,7 +265,7 @@
         <div id = "top14Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close14">&times;</span>
+                    <span class = "close" id = "close14">&times;</span>
                     <h2>#14-Troll Level</h2>
                 </div>
                 <div class = "modal-body">
@@ -282,7 +282,7 @@
         <div id = "top15Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close15">&times;</span>
+                    <span class = "close" id = "close15">&times;</span>
                     <h2>#15-Plasma Pulse II</h2>
                 </div>
                 <div class = "modal-body">
@@ -299,7 +299,7 @@
                 <div id = "top16Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close16">&times;</span>
+                    <span class = "close" id = "close16">&times;</span>
                     <h2>#16-Knot</h2>
                 </div>
                 <div class = "modal-body">
@@ -316,7 +316,7 @@
         <div id = "top17Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close17">&times;</span>
+                    <span class = "close" id = "close17">&times;</span>
                     <h2>#17-Mucho Fuego</h2>
                 </div>
                 <div class = "modal-body">
@@ -333,7 +333,7 @@
         <div id = "top18Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close18">&times;</span>
+                    <span class = "close" id = "close18">&times;</span>
                     <h2>#18-Acropolis</h2>
                 </div>
                 <div class = "modal-body">
@@ -350,7 +350,7 @@
         <div id = "top19Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close19">&times;</span>
+                    <span class = "close" id = "close19">&times;</span>
                     <h2>#19-Nine Paws</h2>
                 </div>
                 <div class = "modal-body">
@@ -367,7 +367,7 @@
         <div id = "top20Info" class = "modal">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <span id = "close" class = "close20">&times;</span>
+                    <span class = "close" id = "close20">&times;</span>
                     <h2>#20-Antique Circles</h2>
                 </div>
                 <div class = "modal-body">
@@ -465,9 +465,9 @@
         </ul>
         <div class = "footer">
             <div class = "socialIcon">
-                <a target = "_blank" href = "https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN"><img src = "facebook.png"></a>
-                <a target = "_blank" href = "https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ"><img src = "youtube.png"></a>
-                <a target = "_blank" href = "http://discord.com/users/785306828661456906"><img src = "discord.png"></a>
+                <a target = "_blank" href = "https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN"><img src = "./Photos/facebook.png"></a>
+                <a target = "_blank" href = "https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ"><img src = "./Photos/youtube.png"></a>
+                <a target = "_blank" href = "http://discord.com/users/785306828661456906"><img src = "./Photos/discord.png"></a>
             </div>
             <h4>Copyright &#169; 2023 __Hanabi__ </h4>
         </div>
