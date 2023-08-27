@@ -5,7 +5,7 @@
         <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
         <title> Hanabi Ranking </title>
         <link rel = "stylesheet" href = "./home.css">
-        <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/9isItErbbbsOpcyLqNhiwun70kM-JsvBKaw-h5x_2eRNakL11DRuuewIQZEiqGCzjJ91BbJMk3_B04OucYWAG5I4_nV2r9L9gETLFWydjUm9dM1-HKh3OHM_bk_v5eBfMsq1i320anrLugxxICodoN7xUlxkkPAwMEhhhYHolR4buhr1wxuJkXa6TG6JVBbkhV7p1P3qtja5zwGXdtwP6lru8S1HWkb0Dk_91-4bu_zODNKNxSGVxo4ypgngibBU3S4TsBFT2wTjdzYhQ3__cK8l5FtQocrG1Ug5Uzzn-4bqwox6E9UAiFRMLJ8l47icT2wBzzjoXelFlHvIRL81FveKc6ASmNHOgvxLUU4oLJgJKpD1xE7dth74ugQ8WXqNN6d9nSoSQYS7Ef5Hc-aB3rzd9POfaGDakP-UreXNqhynlEXr3bn9bwVKtWZes13ZWX2bg2nayieDw8ncGxZxc-0ytVPylhNbqNzmAyfBu23c264sNHZYLJ9lsaUgXLNDZOkf4nHEDMyUzwiwY2u3IFtQZugInVs--FfpITj7v8oIHB6ITWw3vL1Q5ZU2Tp5SSoB02wzuFOsxUFi3CgAVkyPiPvHrIbzbJ0VlJg0wNeMl5xaLVm2n0M5lLvLqryC9evfvVyNOpyLkTxj_HuoRRVYserB0Jq6_L6sFgY1jsYt743OL0FEe8P5oh9RQlba9ZI1zoQv83oHetliSBUCz2LqA_Yl_iHMWCSkvNrWvYUEaeOVT1GUlYGimKnQTgryW8paIPgD_dYDcCa7L0WJFtQjkOT_QkSi3NXUm1_Y7RWeTrhnjpxmT6hAitF_xXIj5wrfdXC-lLejTeybrYsYj-QrI29gRsDSHEE5c8PEBhJovaZD2fGdAWv3r-NsAlfyq9q9HF5mhlKInoU5DRl13Y3AxHOTtCPbBz-d30zXB4QXO=w560-h560-s-no?authuser=0">
+        <link rel="icon" type="image/x-icon" href = "./Photos/WebIcon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
@@ -15,9 +15,12 @@
     </style>
     <body>
         <button id = "jump-to-top" onclick="backtoTop()"><span></span></button>
+        <!--secret-->
         <div id = "secret" onclick="runSecret()" >
-            <img src = "https://i.pinimg.com/originals/bb/ec/d5/bbecd51bf71a302e745d2bd2c8a2073e.jpg">
+            <img src = "./Photos/secret.jpg">
         </div>
+        <audio id = "secretSounds"><source src = "" type = "audio/mp3"></audio>
+        <!---->
         <div id = "loadscreen">
             <div id = "loader"></div>
             <h3 id = "wait">Wait</h3>
@@ -41,49 +44,49 @@
         </label>
         <h2>What I rank</h2>
         <div class = "category" style = "border-top: 0.2vw solid #cefaf8;">
-            <img src = "Thiết kế chưa có tên.png">
+            <img src = "./Photos/demonlistBG.png">
             <h2>Demonlist</h2>
             <h3>This is my top 20 hardest completions in Geometry Dash. I rank these levels using 60hz standard so be expect wave and ship levels to be ranked very high ;)</h3>
             <a href="javascript:delay('./Demonlist/index.html')">Check it out! →</a>
             
         </div>
         <div class = "category">
-            <img src = "./yo_.gif">
+            <img src = "./Photos/waifuBG.gif">
             <h2>Waifu</h2>
             <h3>This is where I rank my top 30 favorite anime girls, based on 3 categories: Personality, Appearance and Voice. A character must be good at all of those categories in order to be in the list. Having beauty alone is not enough!</h3>
             <a href="javascript:delay('./Waifu/index.html')">Check it out! →</a>
         </div>
         <div class = "category">
-            <img src = "./anime-the-quintessential-quintuplets-ichika-nakano-itsuki-nakano-miku-nakano-hd-wallpaper-preview.jpg">
+            <img src = "./Photos/animeBG.jpg">
             <h2>Anime</h2>
             <h3>Coming soon! <br> The place where I list my top 20 favorite animes.</h3>
         </div>
         <div class = "category">
-            <img src = "./maxresdefault.jpg">
+            <img src = "./Photos/songBG.jpg">
             <h2>Song</h2>
             <h3>Coming soon! <br> You will find all of my favorite songs here!</h3>
         </div>
         <h2>Credits</h2>
         <div class = "credits">
-            <img class = "creditsImg" src = "./icon128x128.jpg">
+            <img class = "creditsImg" src = "./Photos/flaticonLogo.jpg">
             <h3>All of the icons used in this website are provided by Flaticon. You can find every icons you want there. Huge shout-out to them!</h3>
             <a target="_blank" href = "https://www.flaticon.com/">Check out Flaticon! →</a>
         </div>
         <hr>
         <div class = "credits">
-            <img class = "creditsImg" src = "./unnamed.png">
+            <img class = "creditsImg" src = "./Photos/githubLogo.png">
             <h3>This website is hosted on Github Pages, huge thanks to them for providing a useful, easy-to-use hosting service!</h3>
             <a target="_blank" href = "https://github.com/">Check out Github! →</a>
         </div>
         <hr>
         <div class = "credits">
-            <img class = "creditsImg" src = "./pinterest_blog_prev.jpg">
+            <img class = "creditsImg" src = "./Photos/pinterestLogo.jpg">
             <h3>Pinterest is where I find and and store all of the images used in this website.</h3>
             <a target="_blank" href = "https://www.pinterest.com/">Check out Pinterest! →</a>
         </div>
         <hr>
         <div class = "credits">
-            <img class = "creditsImg" src = "./MyAnimeList_Logo.png">
+            <img class = "creditsImg" src = "./Photos/MyAnimeListLogo.png">
             <h3>MyAnimeList is where I get most of the information about animes and their characters.</h3>
             <a target="_blank" href = "https://myanimelist.net/">Check out MyAnimeList! →</a>
         </div>
@@ -91,12 +94,13 @@
         <h3>This website is developed entirely by me. I own none of the images, icons and audios used in this website. All of them belong to their respective owners!</h3>
         <a href="javascript:delay('./About/index.html')">More info about me →</a>
         <h3>That's it. Hope you have a fun visit! 😎🤘</h3>
-        <img class = "meme" src = "353107577_3446114565706614_112971213445925103_n.jpg" style="width: 70%; height:auto;">
+        <img class = "meme" src = "./Photos/meme.jpg" style="width: 70%; height:auto;">
+        <audio id = "memeSound"><source src = "https://feeds.soundcloud.com/stream/1602217236-corona-689894639-meme.mp3" type = "audio/mp3"></audio>
         <div class = "footer">
             <div class = "socialIcon">
-                <a target = "_blank" href = "https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN"><img src = "facebook.png"></a>
-                <a target = "_blank" href = "https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ"><img src = "youtube.png"></a>
-                <a target = "_blank" href = "http://discord.com/users/785306828661456906"><img src = "discord.png"></a>
+                <a target = "_blank" href = "https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN"><img src = "./Photos/facebook.png"></a>
+                <a target = "_blank" href = "https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ"><img src = "./Photos/youtube.png"></a>
+                <a target = "_blank" href = "http://discord.com/users/785306828661456906"><img src = "./Photos/discord.png"></a>
             </div>
             <h4>Copyright &#169; 2023 __Hanabi__ </h4>
         </div>
@@ -108,7 +112,8 @@
               // If the element is visible
               if (entry.isIntersecting) {
                 // Add the animation class
-                entry.target.classList.add("rotateImg");                  
+                entry.target.classList.add("rotateImg");
+                document.getElementById("memeSound").play();         
               }
             });
           }, {threshold: 0});
