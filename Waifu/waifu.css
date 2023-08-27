@@ -39,40 +39,125 @@ h1{
     color: var(--color2);
     text-shadow: 1px 1px 5px var(--color2), 3px 3px 6px rgba(255, 191, 245, 0.973);
 }
-/*jump to top*/
-#jump-to-top{
-    display: none;
-    cursor: pointer;
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    top: 80vh;
-    right: 2vw;
-    z-index: 1;
-    background-color: var(--switchcolor);
-    border: 0.2vw solid var(--hovercolor);
-    transition: background 1s ease;
+/*main content*/
+.leftMove{animation: leftmove 0.7s ease-out;}
+@keyframes leftmove {
+    from {opacity: 0; left: -30%;}
+    to {opacity: 1; left: 0%}
 }
-#jump-to-top span{
+.rightMove{animation: rightmove 0.7s ease-out;}
+@keyframes rightmove {
+    from {opacity: 0; left: 30%;}
+    to {opacity: 1; left: 0%}
+}
+.left, .right{
+    position: relative;
+    display: block;
+    background-color: var(--color4);
+    margin: 10vw 3vw 20vw 0;
+    word-break:break-word;
+    border: 0.3vw ridge moccasin;
+    opacity: 0.9;
+    min-width: 90vw;
+}
+.avt{
+    border-radius: 50%;
+    border: 0.3vw solid var(--color2);
+    width: 23vw;
+    height: 23vw;
+    margin: 1vw;
+    box-shadow: 0 3px 7px 0 rgba(238, 150, 234, 0.733), 2px 2px 20px 0 var(--color2);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.changeavt{animation: change 1s ease-out;}
+@keyframes change {
+    from {transform: rotate(0deg); opacity: 1;}
+    to {transform: rotate(360deg); opacity: 0;}
+}
+.waifulist h3::before{
+    counter-increment: section;
+    content: "#" counter(section);
+    background-color: rgba(240, 198, 146, 0.842);
+    border-right: 0.2vw ridge moccasin;
+    margin-right: 1.5vw;
+    padding: 0 0.5vw;
+}
+.left h3, .right h3{
+    position: relative;
+    font-size: 4vw;
+    background-color: var(--color3);
+    font-weight: bolder;
+    margin: 0;
+}
+.honorable h3{padding-left: 1vw;}
+.left h4, .right h4{
+    background-color: var(--switchcolor);
+    font-size: 2vw;
+    font-weight: bolder;
+    border-top: 0.2vw ridge moccasin;
+    border-bottom: 0.2vw ridge moccasin;
+    margin: 0 0 1vw 0;
+    padding: 0.3vw 1vw;
+    font-style: italic;
+}
+.left div, .right div{
+    display: flex;
+    font-size: 2.5vw;
+}
+.left p, .right p{
+    padding: 0 1vw 0 1vw;
+    max-width: 65vw;
+}
+.info{position: absolute; bottom: 4vw; left: 28%; font-weight: bolder; color: var(--color2);} 
+.link{width: 1.5vw; height: 1.5vw;}
+/*toggle switch*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 10vw;
+    height: 4vw;
+    margin: 3vw;
+    left: 80%;
+}
+.switch input {
+    opacity: 0;
     width: 0;
     height: 0;
-    display: inline-block;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid var(--hovercolor);
 }
-#jump-to-top:hover{
-    background: var(--color3);
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--switchcolor);
+    transition: 0.4s;
+    border-radius: 3vw;
+    border: 0.2vw solid var(--color3);
 }
-/*secret*/
-#secret{position: fixed; top: 80vh; right: 2vw; transition: transform 1s; z-index: 1;}
-#secret img{
-    animation: secretmove 1s ease-out both;
-    width: 100px;
-    height: 100px;
+.switch-circle {
+    position: absolute;
+    content: "";
+    height: 4vw;
+    width: 4vw;
+    left: 0;
+    bottom: 0;
     border-radius: 50%;
-    box-shadow: 0 1px 3px 0 rgba(238, 150, 234, 0.733), 2px 2px 20px 0 var(--color2);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform 0.5s ease;
+    border: 0.2vw solid var(--color3);
 }
+input:checked ~ .slider{
+    background-color: var(--hovercolor);
+    box-shadow: 0 0 1vw var(--hovercolor);
+}
+input:checked ~ .switch-circle{transform: translateX(6vw) rotate(360deg);}
 /*loading screen*/
 #loadscreen{
     display: none;
@@ -101,6 +186,77 @@ h1{
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
 }
+/*rank & theme option*/
+h5{width: fit-content;}
+.custom-sort, .theme-option, h5{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    left: 60%;
+}
+.custom-sort select, .theme-option select{
+    color: var(--color2);
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Cutive Mono', sans-serif;
+    font-weight: bolder;
+    padding: 10px;
+    cursor: pointer;
+    border: 0.2vw solid var(--hovercolor);
+    border-radius: 5px;
+    background-color: var(--color3);
+    outline: none;
+    appearance: none;
+    width: 250px;
+}
+.arrow {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid var(--color2);
+    right: 10px;
+    bottom: 20px;
+}
+.rotate-arrow-up {animation: rotateUp 0.5s ease forwards;}
+.rotate-arrow-down {animation: rotateDown 0.5s ease forwards;}
+@keyframes rotateUp {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+}
+@keyframes rotateDown {
+    from {transform: rotate(180deg);}
+    to {transform: rotate(360deg);}
+}
+.dropdown-option{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    background-color: var(--color3);
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+}
+.dropdown-option li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+.open-option{animation: open 1s ease forwards;}
+@keyframes open {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.dropdown-option li:hover{background: var(--hovercolor);}
 /*navigation bar*/
 #menu{
     background-color: rgba(129, 126, 126, 0.849);
@@ -164,214 +320,46 @@ h1{
     cursor: pointer;
 }
 #close:hover{color: var(--color4);}
-/*main content*/
-.leftMove{
-    animation: leftmove 0.7s ease-out;
-}
-@keyframes leftmove {
-    from {opacity: 0; left: -30%;}
-    to {opacity: 1; left: 0%}
-}
-.rightMove{
-    animation: rightmove 0.7s ease-out;
-}
-@keyframes rightmove {
-    from {opacity: 0; left: 30%;}
-    to {opacity: 1; left: 0%}
-}
-.left, .right{
-    position: relative;
-    display: block;
-    background-color: var(--color4);
-    margin: 10vw 3vw 20vw 0;
-    word-break:break-word;
-    border: 0.3vw ridge moccasin;
-    opacity: 0.9;
-    min-width: 90vw;
-}
-.avt{
-    border-radius: 50%;
-    border: 0.3vw solid var(--color2);
-    width: 23vw;
-    height: 23vw;
-    margin: 1vw;
-    box-shadow: 0 3px 7px 0 rgba(238, 150, 234, 0.733), 2px 2px 20px 0 var(--color2);
-    background-size: cover;
-    background-position: center;
+/*jump to top*/
+#jump-to-top{
+    display: none;
     cursor: pointer;
-}
-.changeavt{
-    animation: change 1s ease-out;
-}
-@keyframes change {
-    from {transform: rotate(0deg); opacity: 1;}
-    to {transform: rotate(360deg); opacity: 0;}
-}
-.waifulist h3::before{
-    counter-increment: section;
-    content: "#" counter(section);
-    background-color: rgba(240, 198, 146, 0.842);
-    border-right: 0.2vw ridge moccasin;
-    margin-right: 1.5vw;
-    padding: 0 0.5vw;
-}
-.left h3, .right h3{
-    position: relative;
-    font-size: 4vw;
-    background-color: var(--color3);
-    font-weight: bolder;
-    margin: 0;
-}
-.left h4, .right h4{
-    background-color: var(--switchcolor);
-    font-size: 2vw;
-    font-weight: bolder;
-    border-top: 0.2vw ridge moccasin;
-    border-bottom: 0.2vw ridge moccasin;
-    margin: 0 0 1vw 0;
-    padding: 0.3vw 1vw;
-    font-style: italic;
-}
-.left div, .right div{
-    display: flex;
-    font-size: 2.5vw;
-}
-.left p, .right p{
-    padding: 0 1vw 0 1vw;
-    max-width: 65vw;
-}
-.info{position: absolute; bottom: 4vw; left: 28%; font-weight: bolder; color: var(--color2);} 
-.link{
-  width: 1.5vw;
-  height: 1.5vw;
-}
-/*toggle switch*/
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 10vw;
-    height: 4vw;
-    margin: 3vw;
-    left: 80%;
-}
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--switchcolor);
-    transition: 0.4s;
-    border-radius: 3vw;
-    border: 0.2vw solid var(--color3);
-}
-.switch-circle {
-    position: absolute;
-    content: "";
-    height: 4vw;
-    width: 4vw;
-    left: 0;
-    bottom: 0;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 70vh;
+    right: 2vw;
     z-index: 1;
-    transition: transform 0.5s ease;
-    border: 0.2vw solid var(--color3);
-}
-input:checked ~ .slider{
-    background-color: var(--hovercolor);
-    box-shadow: 0 0 1vw var(--hovercolor);
-}
-input:checked ~ .switch-circle{
-    transform: translateX(6vw) rotate(360deg);
-}
-/*rank option*/
-h5{width: fit-content;}
-.custom-sort, .theme-option, h5{
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bolder;
-    position: relative;
-    left: 60%;
-}
-.custom-sort select, .theme-option select{
-    color: var(--color2);
-    display: block;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Cutive Mono', sans-serif;
-    font-weight: bolder;
-    padding: 10px;
-    cursor: pointer;
+    background-color: var(--switchcolor);
     border: 0.2vw solid var(--hovercolor);
-    border-radius: 5px;
-    background-color: var(--color3);
-    outline: none;
-    appearance: none;
-    width: 250px;
+    transition: background 1s ease;
 }
-.arrow {
+#jump-to-top span{
     width: 0;
     height: 0;
     display: inline-block;
-    position: absolute;
-    cursor: pointer;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-top: 7px solid var(--color2);
-    right: 10px;
-    bottom: 20px;
+    border-bottom: 7px solid var(--hovercolor);
 }
-.rotate-arrow-up {
-    animation: rotateUp 0.5s ease forwards;
+#jump-to-top:hover{
+    background: var(--color3);
 }
-.rotate-arrow-down {
-    animation: rotateDown 0.5s ease forwards;
+/*secret*/
+#secret{position: fixed; top: 80vh; right: 2vw; transition: transform 1s; z-index: 1;}
+#secret img{
+    animation: secretmove 1s ease-out both;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px 0 rgba(238, 150, 234, 0.733), 2px 2px 20px 0 var(--color2);
 }
-@keyframes rotateUp {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(180deg);}
+#secret:hover{cursor:pointer; transform: rotate(180deg);}
+@keyframes secretmove{
+    from{opacity: 0.1;}
+    to{opacity: 1; transform: rotate(360deg);}
 }
-@keyframes rotateDown {
-    from {transform: rotate(180deg);}
-    to {transform: rotate(360deg);}
-}
-.dropdown-option{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border-radius: 5px;
-    background-color: var(--color3);
-    z-index: 1;
-    width: 100%;
-    position: absolute;
-}
-.dropdown-option li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    cursor: pointer;
-    transition: background 0.5s ease;
-}
-.open-option{
-    animation: open 1s ease forwards;
-}
-@keyframes open {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-.dropdown-option li:hover{
-    background: var(--hovercolor);
-}
+/*footer*/
 .footer{
     text-align: center;
     background-color: var(--color3);
@@ -398,5 +386,4 @@ h5{width: fit-content;}
     .link{width: 3vw; height: 3vw;}
     h5{display: block; left: 20%;}
     .custom-sort, .theme-option{left: 20%;}
-    #jump-to-top{right: 25vw; top: 70vh;}
 }
