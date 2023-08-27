@@ -32,15 +32,29 @@ body::after {
     position: fixed;
     z-index: 1;
 }
-hr{border: 0.1vw solid var(--color2);}
 a{color: var(--color2);}
 a:active{color: var(--color4);}
 h1{
+    text-transform: capitalize; 
     font-size: 5vw;
     text-align: center;
     color: var(--color2);
     text-shadow: 1px 1px 5px var(--color2), 3px 3px 6px rgba(255, 191, 245, 0.973);
 }
+#changelog{
+    text-decoration: none;
+    color: var(--color2);
+    cursor: pointer;
+    font-size: 2vw; 
+    font-weight: bolder; 
+    background-color: var(--color3);
+    padding: 1vw 1vw;
+    margin-left: -13vw;
+    transition: background 0.5s ease;
+    box-shadow: 0 0 5px 2px var(--hovercolor);
+}
+#changelog:hover{background: var(--hovercolor);}
+/*the top 20*/
 .demonlist{
     text-align: center;
     margin: 10%;
@@ -86,7 +100,7 @@ h1{
     height:50vh;
     display: block;
 }
-button a{text-decoration: none; color: var(--color2);}
+/*demon information*/
 .modal{
     font-weight: bolder;
     display: none;
@@ -121,12 +135,12 @@ button a{text-decoration: none; color: var(--color2);}
     background-color: var(--color1);
     padding: 0.3vw 2vw;
 }
-#close{
+.close{
     cursor: pointer;
     color: var(--color2);
     float: right;
-    font-size: 300%;
-    font-weight: bold;
+    font-size: 4.5vw;
+    font-weight: bolder;
 }
 /*theme option*/
 h5{width: fit-content;}
@@ -135,7 +149,7 @@ h5{width: fit-content;}
     font-size: 20px;
     font-weight: bolder;
     position: relative;
-    left: 70%;
+    left: 65%;
 }
 .theme-option select{
     color: var(--color2);
@@ -165,12 +179,8 @@ h5{width: fit-content;}
     right: 10px;
     bottom: 20px;
 }
-.rotate-arrow-up {
-    animation: rotateUp 0.5s ease forwards;
-}
-.rotate-arrow-down {
-    animation: rotateDown 0.5s ease forwards;
-}
+.rotate-arrow-up {animation: rotateUp 0.5s ease forwards;}
+.rotate-arrow-down {animation: rotateDown 0.5s ease forwards;}
 @keyframes rotateUp {
     from {transform: rotate(0deg);}
     to {transform: rotate(180deg);}
@@ -197,20 +207,12 @@ h5{width: fit-content;}
     cursor: pointer;
     transition: background 0.5s ease;
 }
-.open-option{
-    animation: open 1s ease forwards;
-}
+.open-option{animation: open 1s ease forwards;}
 @keyframes open {
     from {opacity: 0;}
     to {opacity: 1;}
 }
-.dropdown-option li:hover{
-    background: var(--hovercolor);
-}
-@keyframes secretmove{
-    from{opacity: 0.1;}
-    to{opacity: 1; transform: rotate(360deg);}
-}
+.dropdown-option li:hover{background: var(--hovercolor);}
 /*navigation bar*/
 #menu{
     background-color: rgba(129, 126, 126, 0.849);
@@ -250,12 +252,9 @@ h5{width: fit-content;}
 .navbar li a{text-decoration: none; color: var(--color2);}
 #currentPage{max-width: fit-content;}
 .navbar li:hover{max-width: 100%;}
-.open-navbar{
-    animation: nav-open 0.5s ease forwards;
-}
-.close-navbar{
-    animation: nav-close 0.5s ease forwards;
-}
+.navbar .close{margin: 0 1vw 0 2vw;}
+.open-navbar{animation: nav-open 0.5s ease forwards;}
+.close-navbar{animation: nav-close 0.5s ease forwards;}
 @keyframes nav-open {
     from {opacity: 0; left: -30%;}
     to {opacity: 1; left: 0; }
@@ -273,7 +272,7 @@ h5{width: fit-content;}
     font-weight: bold;
     cursor: pointer;
 }
-#close:hover, .closeNav:hover{color: var(--color4);}
+.close:hover{color: var(--color4);}
 /*jump to top*/
 #jump-to-top{
     display: none;
@@ -296,9 +295,8 @@ h5{width: fit-content;}
     border-right: 7px solid transparent;
     border-bottom: 7px solid var(--hovercolor);
 }
-#jump-to-top:hover{
-    background: var(--color3);
-}
+#jump-to-top:hover{background: var(--color3);}
+/*secret*/
 #secret{position: fixed; top: 80vh; right: 3vw; transition: transform 1s; z-index: 1;}
 #secret img{
     animation: secretmove 1s ease-out both;
@@ -308,6 +306,11 @@ h5{width: fit-content;}
     box-shadow: 0 1px 3px 0 rgba(238, 150, 234, 0.733), 2px 2px 20px 0 var(--color2);
 }
 #secret:hover{cursor:pointer; transform: rotate(180deg);}
+@keyframes secretmove{
+    from{opacity: 0.1;}
+    to{opacity: 1; transform: rotate(360deg);}
+}
+/*footer*/
 .footer{
     text-align: center;
     background-color: var(--color3);
@@ -318,6 +321,7 @@ h5{width: fit-content;}
 }
 .socialIcon img{width: 30px; height: 30px;}
 .socialIcon a{border: none;}
+/*grid display for smaller view*/
 @media screen and (min-width: 1800px){
     .demonlist{display: grid; grid-template-columns: auto auto; grid-auto-rows: 18vw;}
     .demonlist li{margin: 1.5% 4%;}
@@ -335,5 +339,7 @@ h5{width: fit-content;}
     h5{left: 10%;}
     .theme-option{left: 10%;}
     .demonlist li img{height: 15vh;}
-    .modal-content{font-size: 3.5vw; margin: 25vw 7vw;}
+    .modal-content{font-size: 3vw; margin: 25vw auto;}
+    .close{font-size: 7vw;}
+    #changelog{font-size: 5vw; margin-left: 11vw;}
 }
