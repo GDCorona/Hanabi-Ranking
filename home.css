@@ -244,6 +244,7 @@ a:hover{color: var(--hovercolor); border-bottom: 0.2vw solid var(--hovercolor);}
 }
 .socialIcon img{width: 30px; height: 30px;}
 .socialIcon a{border: none;}
+/*responsive for mobile screen*/
 @media only screen and (max-width: 600px){ 
     h1{font-size: 7vw;}
     h2{font-size: 6vw;}
