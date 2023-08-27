@@ -130,7 +130,7 @@ a:hover{color: var(--hovercolor); border-bottom: 0.2vw solid var(--hovercolor);}
 /*theme option*/
 .theme-option, p{
     display: inline-block;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bolder;
     position: relative;
     left: 30%;
@@ -138,7 +138,7 @@ a:hover{color: var(--hovercolor); border-bottom: 0.2vw solid var(--hovercolor);}
 .theme-option select{
     color: var(--color2);
     display: block;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     font-family: 'Cutive Mono', sans-serif;
     font-weight: bolder;
