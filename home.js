@@ -1,3 +1,10 @@
+/*individual section (unique by pages)*/
+/*delay link*/
+function delay (URL) {
+  document.getElementById("loadscreen").style.display = "block";
+  setInterval(function(){document.getElementById("wait").innerHTML += '.';}, 300);
+  setTimeout(function() { window.location = URL; document.getElementById("loadscreen").style.display = "none";}, 1000);
+}
 /*shared section (for every pages)*/
 //jump to top
 let mybutton = document.getElementById("jump-to-top");
@@ -57,6 +64,7 @@ function ChangeTheme(value){
       document.documentElement.style.setProperty('--color4', 'aliceblue');
       document.documentElement.style.setProperty('--switchcolor', '#cefaf8');
       document.documentElement.style.setProperty('--hovercolor', 'rgb(70, 157, 228)');
+      localStorage.setItem('background', -1);
   }
   else if (value == 1){
       document.getElementsByTagName("body")[0].style.backgroundImage = "none";
@@ -67,6 +75,7 @@ function ChangeTheme(value){
       document.documentElement.style.setProperty('--color4', 'rgba(135, 167, 172, 0.925)');
       document.documentElement.style.setProperty('--switchcolor', '#8d8d8d');
       document.documentElement.style.setProperty('--hovercolor', 'rgb(220, 221, 243)');
+      localStorage.setItem('background', -1);
   }
   else if (value == 2){
       document.getElementsByTagName("body")[0].style.backgroundImage = "none";
@@ -77,6 +86,7 @@ function ChangeTheme(value){
       document.documentElement.style.setProperty('--color4', 'rgba(255, 232, 253, 0.8)');
       document.documentElement.style.setProperty('--switchcolor', '#fccbf5');
       document.documentElement.style.setProperty('--hovercolor', 'rgb(185, 71, 185)');
+      localStorage.setItem('background', -1);
   }
   if (document.getElementsByClassName("arrow")[0].classList.contains("rotate-arrow-down") == false){
       document.getElementsByClassName("arrow")[0].classList.remove("rotate-arrow-up");
@@ -149,8 +159,60 @@ theme_selector.addEventListener('mousedown', e => {
       document.getElementsByClassName("arrow")[0].classList.add("rotate-arrow-down");
   }
 })
-function delay (URL) {
-  document.getElementById("loadscreen").style.display = "block";
-  setInterval(function(){document.getElementById("wait").innerHTML += '.';}, 300);
-  setTimeout(function() { window.location = URL; document.getElementById("loadscreen").style.display = "none";}, 1000);
+/*secret*/
+var currentbg = -1;
+var currentSounds = -1;
+var check = true;
+var body = document.getElementsByTagName("body")[0];
+var secretsounds = document.getElementById("secretSounds");
+var bg = 
+[
+    "url('https://i.pinimg.com/originals/52/a2/62/52a262d0944bcf487bf6c323c7c64c67.jpg')",
+    "url('https://i.pinimg.com/originals/28/61/fe/2861fe7c95b8124208fecdf63f818572.jpg')",
+    "url('https://i.pinimg.com/originals/5f/32/73/5f32731ab2f9e18ce9509913c05eac4b.jpg')",
+    "url('https://i.pinimg.com/originals/bb/37/a6/bb37a6037cce5fc895a8450914a07458.jpg')",
+    "url('https://i.pinimg.com/originals/b3/a7/99/b3a79923cb5dc7add78054d5d005801a.jpg')",
+    "url('https://i.pinimg.com/originals/26/59/93/2659934c11ee4ca9305de593b8c1e401.jpg')",
+    "url('https://i.pinimg.com/originals/e9/54/d1/e954d16d765536dd99186667953a5f66.jpg')",
+    "url('https://i.pinimg.com/originals/5b/c8/ae/5bc8aeb83131e38bbab8ba96fc4959d8.jpg')",
+    "url('https://i.pinimg.com/originals/7c/26/c8/7c26c8d4fe0b8b6f4ce595a55768488f.jpg')",
+    "url('https://i.pinimg.com/originals/40/6b/5d/406b5d7bcae6ebdfacd5ce20d7c3a823.jpg')"
+];
+var sounds = 
+[
+    "https://feeds.soundcloud.com/stream/1493606947-corona-689894639-kaguya-noise-2.mp3",
+    "https://feeds.soundcloud.com/stream/1493606929-corona-689894639-chika-noise-2.mp3",
+    "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+    "https://feeds.soundcloud.com/stream/1493606914-corona-689894639-rikka-noise-2.mp3",
+    "https://feeds.soundcloud.com/stream/1602173829-corona-689894639-jibril-voice.mp3"
+];
+var background = parseInt(localStorage.getItem('background'));
+if(background == -1) {body.style.backgroundImage = "none";}
+else{body.style.backgroundImage = bg[background];}
+function runSecret(){
+    if(check) {
+        check = false;
+        randombg(); 
+        randomSounds(); 
+        setTimeout(function(){check = true;}, 3000);
+    }
+    else {alert("Too fast!");}
+}
+function randombg(){
+    var random = Math.floor(Math.random() * 10);
+    if(currentbg == random){randombg();}
+    else{
+        currentbg = random;
+        body.style.backgroundImage = bg[currentbg];
+        localStorage.setItem('background', currentbg);
+    }
+}
+function randomSounds(){
+    var random = Math.floor(Math.random() * 5);
+    if(currentSounds == random){randomSounds();}
+    else{
+        currentSounds = random;
+        secretsounds.src = sounds[currentSounds];
+        secretsounds.play();
+    }
 }
