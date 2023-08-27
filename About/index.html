@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
         <title> About - Hanabi Ranking</title>
-        <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/Np3rcv0FqkEfYRbCVI3wg6mlEP5N5zERCapBrakf34ZjVkwNWAgIx6a0V_OygxabyzCLGmf1lsDNDnJYbjj5aOk-7BGKcrwXJsarwFyCAJ5KZ24qGOHDvJD7V20FWavrj4TPflb535sqMhD_K1opKsye12psNXt_MWO1kF3Tk7w6gdQIic-KVBegFjLo3gwvE2MUcSSPUz4xSRgezgsmuZD87B7sauxYV5UBoR5jEN_g9abQF6ln9PwhGIf6MVl4HEpdwcF7OWMpeZslw7EnnnyqM5WIjw3C-iNne4-wPRkMC6do7tW14jb2zEpTv_EtW48OZrL_N8GWGy7MMdNH-EnSn9NevtGsAxIUtO-TNZa7lc3083h8Z0KKe37BRxumjcmw2d_TggYbexbLM_HMoDSfBc3sISY6IwLlJBgqGJ_-qYAb9qrLOn9iz3IdCj23xe_NrC7Gb1WaitNN58OvAgMwX4HukHnEbMTvFsaOWtoWQ7R5yBNLc1xGeFSkJWzLzhSvcFvsDE8HTQbFX47qbVT9YqcBKo-40f1oqcdf1zNvDcfiRdRKDHf_S4UOw6fjybtzY9sVcwteOlgTA1h3XZpDdH-i1GefJBWlJUrq0fIllactSMIEsfle6b4apPQhiKzVka7-IR6NvFnRLgMZkvqf3f_-ppp7bjplLil1rlzLikYdbf1LRQW3rPnA0DVBQoWJ1l7f-oNPACLMS_EC_AdgqySGOEkZRvo_UoVu6oFK8nr_Ouzj3b-3KZ8ErAzVoj4pHM0LHQVj5IjmpSNJa6O0b4IX-ydMLSRixUzOglP2mJ7vngvXBOFkBvQCogd4L_W4aT0-y29r-6cNG4fznUTtGXlu6twwiN6ZbDQJsEE7-3Xqsv-Oblzgv19gUahQFwOgb1SaiaAboii4EXDMSfekdEqMB2Xzn69VQfUOjthi=w560-h560-s-no?authuser=0">
+        <link rel="icon" type="image/x-icon" href="./Photos/WebLogo.png">
         <link rel = "stylesheet" href = "./about.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,15 +13,19 @@
     <body>
         
         <button id = "jump-to-top" onclick="backtoTop()"><span></span></button>
+        <!--secret-->
         <div id = "secret" onclick="runSecret()" >
-            <img src = "https://i.pinimg.com/originals/bb/ec/d5/bbecd51bf71a302e745d2bd2c8a2073e.jpg">
+            <img src = "./Photos/secret.jpg">
         </div>
+        <audio id = "secretSounds"><source src = "" type = "audio/mp3"></audio>
+        <!---->
+        <audio id = "greetingSound"><source src = "https://feeds.soundcloud.com/stream/1493606938-corona-689894639-kaguya-noise-1.mp3" type="audio/mp3"></audio>
         <h1> Meet the lame guy who made this atrocious website</h1>
-        <img id = "menuIcon" onclick = "openNav()" src = "listLight.png">
+        <img id = "menuIcon" onclick = "openNav()" src = "./Photos/listLight.png">
         <div id = "menu">
         <ul class = "navbar">
           <span onclick = "closeNav()" id = "close">&times;</span><br>
-          <img id = "logo" src = "https://i.pinimg.com/originals/c7/11/1e/c7111ed1586b9d054c67b01beea9aac7.png" alt = "logo">
+          <img id = "logo" src = "./Photos/WebLogo.png" alt = "logo">
           <h2>Hanabi Ranking</h2>
           <li><a href = "https://gdcorona.github.io/Hanabi-Ranking/">Home</a></li>
           <li><a href = "https://gdcorona.github.io/Hanabi-Ranking/Demonlist/index.html">Demonlist</a></li>
@@ -74,14 +78,12 @@
         </div>
         <div class = "footer">
             <div class = "socialIcon">
-                <a target = "_blank" href = "https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN"><img src = "facebook.png"></a>
-                <a target = "_blank" href = "https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ"><img src = "youtube.png"></a>
-                <a target = "_blank" href = "http://discord.com/users/785306828661456906"><img src = "discord.png"></a>
+                <a target = "_blank" href = "https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN"><img src = "./Photos/facebook.png"></a>
+                <a target = "_blank" href = "https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ"><img src = "./Photos/youtube.png"></a>
+                <a target = "_blank" href = "http://discord.com/users/785306828661456906"><img src = "./Photos/discord.png"></a>
             </div>
             <h4>Copyright &#169; 2023 __Hanabi__ </h4>
         </div>
-        <audio id = "greetingSound"><source src = "https://feeds.soundcloud.com/stream/1493606938-corona-689894639-kaguya-noise-1.mp3" type="audio/mp3"></audio>
-        <audio id = "secretSounds"><source src = "" type = "audio/mp3"></audio>
         <script>
             var greet = document.getElementById("greetingSound");
             setTimeout(function(){greet.play();}, 1500);
