@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body onload = "loadAudio()">
         
         <button id = "jump-to-top" onclick="backtoTop()"><span></span></button>
         <!--secret-->
@@ -84,9 +84,12 @@
             </div>
             <h4>Copyright &#169; 2023 __Hanabi__ </h4>
         </div>
+    </body>
         <script>
-            var greet = document.getElementById("greetingSound");
-            setTimeout(function(){greet.play();}, 1500);
+            function loadAudio(){
+                var greet = document.getElementById("greetingSound");
+                setTimeout(function(){greet.play();}, 1500);
+            }
             const observer = new IntersectionObserver(entries => {
                 // Loop over the entries
                 entries.forEach(entry => {
@@ -102,5 +105,4 @@
               observer.observe(document.querySelector("#discord"));
         </script> 
         <script src = "./about.js"></script>
-    </body>
 </html>
