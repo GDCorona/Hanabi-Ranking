@@ -13,7 +13,7 @@
     </head>
     <style>
     </style>
-    <body>
+    <body onload = "loadAudio()">
         <button id = "jump-to-top" onclick="backtoTop()"><span></span></button>
         <!--secret-->
         <div id = "secret" onclick="runSecret()" >
@@ -106,19 +106,24 @@
         </div>
     </body>
     <script>
-        const observer = new IntersectionObserver(entries => {
+        function loadAudio(){
+            var meme = document.getElementById("memeSound");
+            var check = false;
+            const observer = new IntersectionObserver(entries => {
             // Loop over the entries
             entries.forEach(entry => {
               // If the element is visible
               if (entry.isIntersecting) {
                 // Add the animation class
                 entry.target.classList.add("rotateImg");
-                document.getElementById("memeSound").play();         
+                if(check == false) {meme.play();}
+                check = true;
               }
             });
           }, {threshold: 0});
         element = document.querySelector(".meme");
         observer.observe(element);
+        }
     </script>
     <script src = "./home.js"></script>
 </html>
