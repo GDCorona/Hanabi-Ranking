@@ -182,7 +182,7 @@ var sounds =
 [
     "https://feeds.soundcloud.com/stream/1493606947-corona-689894639-kaguya-noise-2.mp3",
     "https://feeds.soundcloud.com/stream/1493606929-corona-689894639-chika-noise-2.mp3",
-    "https://feeds.soundcloud.com/stream/1493606920-corona-689894639-chika-noise-1.mp3",
+    "https://feeds.soundcloud.com/stream/1493606932-corona-689894639-chika-noise-3.mp3",
     "https://feeds.soundcloud.com/stream/1493606914-corona-689894639-rikka-noise-2.mp3",
     "https://feeds.soundcloud.com/stream/1602173829-corona-689894639-jibril-voice.mp3"
 ];
