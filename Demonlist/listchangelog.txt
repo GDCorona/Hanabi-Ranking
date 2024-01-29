@@ -13,9 +13,9 @@
 7/11/2023: Halberd placed at #6, Boom Shakalaka out of top 20.
 23/11/2023: Falling Up placed at #2, Mucho Fuego out of top 20.
 16/1/2024: Crimson Clutter placed at #14, Knot out of top 20.
-
+29/1/2024: Night Party placed at #4, Plasma Pulse II out of top 20.
 
 ----------Legacy demons----------
 Featuring levels that fell out of the list (From 2024 onwards)
-- Knot: 7858 attempts, worst fail 96%, enjoyment 9.5/10
-
+- Knot (75hz): 7858 attempts, worst fail 96%, enjoyment 9.5/10
+- Plasma Pulse II (60hz): ~9k attempts, worst fail 91%, enjoyment 1/10
