@@ -15,9 +15,11 @@
 16/1/2024: Crimson Clutter placed at #14, Knot out of top 20.
 29/1/2024: Night Party placed at #4, Plasma Pulse II out of top 20.
 8/2/2024: Coolie Mazie Paloozi placed at #1, Troll Level out of top 20.
+1/4/2024: Triple Six placed at #5, smohcs out of top 20.
 
 ----------Legacy demons----------
 Featuring levels that fell out of the list (From 2024 onwards)
 - Knot (75hz): 7858 attempts, worst fail 96%, enjoyment 9.5/10
 - Plasma Pulse II (60hz): ~9k attempts, worst fail 91%, enjoyment 1/10
-- Troll Level (60hz): ~10k attemps, worst fail 91%, enjoyment 8/10
+- Troll Level (60hz): ~10k attempts, worst fail 91%, enjoyment 8/10
+- smohcs (60hz): 3687 attempts, worst fail 76%, enjoyment 7/10
