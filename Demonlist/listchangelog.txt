@@ -18,6 +18,7 @@
 1/4/2024: Triple Six placed at #5, smohcs out of top 20.
 7/7/2024: HURRICANE placed at #8, in canon out of top 20.
 15/7/2024: Cluttered Confusion placed at #4, Lost Love out of top 20.
+13/9/2024: Moment placed at #1, Beetle out of top 20.
 
 ----------Legacy demons----------
 Featuring levels that fell out of the list (From 2024 onwards)
@@ -27,5 +28,4 @@ Featuring levels that fell out of the list (From 2024 onwards)
 - smohcs (60hz): 3687 attempts, worst fail 76%, enjoyment 7/10
 - in canon (60hz): 7288 attempts, worst fail 96%, enjoyment: 5.5/10
 - Lost Love (60hz): ~5k attempts, worst fail 91%, enjoyment: 8/10
-
-
+- Beetle (144fps): ~5k attempts, worst fail 92%, enjoyment: 9.7/10
