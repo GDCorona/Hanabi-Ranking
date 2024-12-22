@@ -20,6 +20,7 @@
 15/7/2024: Cluttered Confusion placed at #4, Lost Love out of top 20.
 13/9/2024: Moment placed at #1, Beetle out of top 20.
 5/11/2024: The Mainframe placed at #1, Crimson Clutter out of top 20.
+21/12/2024: Retention Rush placed at #1, Duelo Maestro out of top 20.
 
 ----------Legacy demons----------
 Featuring levels that fell out of the list (From 2024 onwards)
@@ -31,3 +32,4 @@ Featuring levels that fell out of the list (From 2024 onwards)
 - Lost Love (60hz): ~5k attempts, worst fail 91%, enjoyment 8/10
 - Beetle (144fps): ~5k attempts, worst fail 92%, enjoyment 9.7/10
 - Crimson Clutter (60hz): ~8k attempts, worst fail 62%x2, enjoyment 7.5/10
+- Duelo Maestro (solo, 75hz): ~10k attempts, worst fail 84%x2, enjoyment 8.3/10
