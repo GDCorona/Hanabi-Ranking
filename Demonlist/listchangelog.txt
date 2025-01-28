@@ -22,6 +22,7 @@
 5/11/2024: The Mainframe placed at #1, Crimson Clutter out of top 20.
 21/12/2024: Retention Rush placed at #1, Duelo Maestro out of top 20.
 30/12/2024: A Bizarre Phantasm placed at #3, Retention out of top 20.
+27/1/2024: Killbot placed at #2, Loop out of top 20.
 
 ----------Legacy demons----------
 Featuring levels that fell out of the list (From 2024 onwards)
@@ -35,3 +36,4 @@ Featuring levels that fell out of the list (From 2024 onwards)
 - Crimson Clutter (60hz): ~8k attempts, worst fail 62%x2, enjoyment 7.5/10
 - Duelo Maestro (solo, 75hz): ~10k attempts, worst fail 84%x2, enjoyment 8.3/10
 - Retention (60hz): ~9.6k attempts, worst fail 87%, enjoyment 9.7/10
+- Loop (75hz): 6428 attempts, worst fail 80%, enjoyment 10/10
