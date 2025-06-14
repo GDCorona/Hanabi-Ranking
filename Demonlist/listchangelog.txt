@@ -26,6 +26,7 @@
 31/3/2025: Super Probably Level placed at #1, Miscellaneous Memory out of top 20.
 6/4/2025: Mazemory placed at #19, Hypersonic out of top 20.
 23/4/2025: Maybe Possibly Thing placed at #8, Endurance out of top 20.
+11/6/2025: RANDOM ACCESS MEMORY placed at #1, Mazemory out of top 20.
 
 ----------Legacy demons----------
 Featuring levels that fell out of the list (From 2024 onwards)
@@ -43,3 +44,4 @@ Featuring levels that fell out of the list (From 2024 onwards)
 - Miscellaneous Memory (75hz): 8434 attempts, worst fail 98%, enjoyment 8.5/10
 - Hypersonic (75hz): ~12k attempts, worst fail 87%, enjoyment 5/10
 - Endurance (75Hz): 8782 attempts, worst fail 92%, enjoyment 9.7/10
+- Mazemory (240fps): 6330 attempts, worst fail 75%, enjoyment 9.5/10
