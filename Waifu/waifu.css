@@ -1,4 +1,5 @@
 :root{
+    /* Color variables */
     --color1: white;
     --color2: black;
     --color3: rgb(147, 224, 255);
@@ -6,17 +7,24 @@
     --switchcolor: #cefaf8;
     --hovercolor: rgba(126, 187, 211, 0.7);
     --cherryblossom: none;
+
+    /* Other variables */
+    --font-size-title: clamp(2rem, 5vw, 5rem);
+    --font-size-base: 1.5625rem;
+    --font-size-sm: 1.25rem;
+    --shadow-default: 0 0.25rem 0.5rem rgba(255, 255, 255, 0.5), 0 0.4375rem 1.375rem rgba(22, 22, 22, 0.8);
+    --shadow-modal: 0 0.0625rem 0.1875rem rgba(238, 150, 234, 0.733), 0.125rem 0.125rem 1.25rem var(--color2);
 }
 *{box-sizing: border-box;}
-body{
+body {
     counter-reset: section;
     font-family: 'Cutive Mono', sans-serif;
+    font-weight: bolder;
     background-color: var(--color1);
     color: var(--color2);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: none;
     margin: 0;
 }
 body::after {
@@ -34,11 +42,56 @@ body::after {
 }
 h1{
     text-transform: capitalize;
-    font-size: 5vw;
+    font-size: 4rem;
     text-align: center;
     color: var(--color2);
     text-shadow: 1px 1px 5px var(--color2), 3px 3px 6px rgba(255, 191, 245, 0.973);
 }
+/* =========================
+   Anchor and Focus Styles
+   ========================= */
+a{
+    color: var(--color2);
+    text-decoration: none;
+}
+a:active { color: var(--color3); }
+a:focus, a:focus-visible,
+.close:focus, .close:focus-visible {
+    outline: 2px solid var(--hovercolor);
+    outline-offset: 2px;
+}
+.hoverable{cursor: pointer;}
+/*jump to top*/
+#jump-to-top {
+    display: none;
+    position: fixed;
+    width: 3.125rem;
+    height: 3.125rem;
+    top: 80vh;
+    right: 3vw;
+    z-index: 1;
+    color: var(--color2);
+    background-color: var(--switchcolor);
+    border: 0.1rem solid var(--hovercolor);
+    box-shadow: 0 0 0.5rem 0.1rem var(--hovercolor);
+    transition: background 1s ease;
+}
+#jump-to-top span {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-left: 0.4375rem solid transparent;
+    border-right: 0.4375rem solid transparent;
+    border-bottom: 0.4375rem solid var(--hovercolor);
+}
+#jump-to-top:hover { background: var(--color3); }
+/*close button*/
+.close {color: var(--color2);}
+.close {
+    float: right;
+    font-size: 3.5rem;
+}
+.close:hover { color: var(--color4); }
 /*main content*/
 .leftMove{animation: leftmove 0.7s ease-out;}
 @keyframes leftmove {
@@ -54,18 +107,18 @@ h1{
     position: relative;
     display: block;
     background-color: var(--color4);
-    margin: 10vw 3vw 20vw 0;
+    margin: 10rem 3rem 15rem 0;
     word-break:break-word;
-    border: 0.3vw ridge moccasin;
+    border: 0.2rem ridge moccasin;
     opacity: 0.9;
     min-width: 90vw;
 }
 .avt{
     border-radius: 50%;
-    border: 0.3vw solid var(--color2);
-    width: 23vw;
-    height: 23vw;
-    margin: 1vw;
+    border: 0.2rem solid var(--color2);
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
     box-shadow: 0 3px 7px 0 rgba(238, 150, 234, 0.733), 2px 2px 20px 0 var(--color2);
     background-size: cover;
     background-position: center;
@@ -86,20 +139,18 @@ h1{
 }
 .left h3, .right h3{
     position: relative;
-    font-size: 4vw;
+    font-size: 3rem;
     background-color: var(--color3);
-    font-weight: bolder;
     margin: 0;
 }
 .honorable h3{padding-left: 1vw;}
 .left h4, .right h4{
     background-color: var(--switchcolor);
-    font-size: 2vw;
-    font-weight: bolder;
+    font-size: 1.75rem;
     border-top: 0.2vw ridge moccasin;
     border-bottom: 0.2vw ridge moccasin;
     margin: 0 0 1vw 0;
-    padding: 0.3vw 1vw;
+    padding: 0.3rem 1rem;
     font-style: italic;
 }
 .left div, .right div{
@@ -107,10 +158,17 @@ h1{
     font-size: 2.5vw;
 }
 .left p, .right p{
-    padding: 0 1vw 0 1vw;
+    font-weight: normal;
+    padding: 0 1rem;
     max-width: 65vw;
 }
-.info{position: absolute; bottom: 4vw; left: 28%; font-weight: bolder; color: var(--color2);} 
+.info{
+    position: absolute; 
+    bottom: 3rem; 
+    left: 30%;
+    color: var(--color2);
+    border-bottom: 0.15rem solid var(--color2);
+} 
 .link{width: 1.5vw; height: 1.5vw;}
 /*toggle switch*/
 .switch {
@@ -135,14 +193,14 @@ h1{
     bottom: 0;
     background-color: var(--switchcolor);
     transition: 0.4s;
-    border-radius: 3vw;
+    border-radius: 3rem;
     border: 0.2vw solid var(--color3);
 }
 .switch-circle {
     position: absolute;
     content: "";
-    height: 4vw;
-    width: 4vw;
+    height: 3.25rem;
+    width: 3.25rem;
     left: 0;
     bottom: 0;
     border-radius: 50%;
@@ -170,7 +228,7 @@ input:checked ~ .switch-circle{transform: translateX(6vw) rotate(360deg);}
     height: 100%;
     opacity: 0.9;
 }
-#wait{position: relative; left: 45%; top: 60%; font-size: 50px; font-weight: bolder;}
+#wait{position: relative; left: 35%; top: 60%; font-size: 2.5rem;}
 #loader{
     border: 16px solid var(--color1);
     border-radius: 50%;
@@ -178,50 +236,49 @@ input:checked ~ .switch-circle{transform: translateX(6vw) rotate(360deg);}
     position: fixed;
     left: 45%;
     top: 40%;
-    width: 120px;
-    height: 120px;
+    width: 8rem;
+    height: 8rem;
     animation: spin 1s linear infinite;
 }
 @keyframes spin {
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
 }
-/*rank & theme option*/
-h5{width: fit-content;}
-.custom-sort, .theme-option, h5{
+/* =========================
+   Theme Option Styles
+   ========================= */
+.theme-option, .custom-sort, h5 {
+    width: fit-content;
     display: inline-block;
-    font-size: 25px;
-    font-weight: bolder;
+    font-size: var(--font-size-base);
     position: relative;
     left: 60%;
 }
-.custom-sort select, .theme-option select{
+.theme-option select, .custom-sort select {
     color: var(--color2);
     display: block;
-    font-size: 25px;
+    font-size: var(--font-size-base);
     text-align: center;
     font-family: 'Cutive Mono', sans-serif;
     font-weight: bolder;
-    padding: 10px;
-    cursor: pointer;
-    border: 0.2vw solid var(--hovercolor);
-    border-radius: 5px;
+    padding: 0.725rem;
+    border: 0.125rem solid var(--hovercolor);
+    border-radius: 0.5rem;
     background-color: var(--color3);
     outline: none;
     appearance: none;
-    width: 250px;
+    width: 14.625rem;
 }
 .arrow {
     width: 0;
     height: 0;
     display: inline-block;
     position: absolute;
-    cursor: pointer;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 7px solid var(--color2);
-    right: 10px;
-    bottom: 20px;
+    border-left: 0.4375rem solid transparent;
+    border-right: 0.4375rem solid transparent;
+    border-top: 0.4375rem solid var(--color2);
+    right: 0.625rem;
+    bottom: 1.5rem;
 }
 .rotate-arrow-up {animation: rotateUp 0.5s ease forwards;}
 .rotate-arrow-down {animation: rotateDown 0.5s ease forwards;}
@@ -233,11 +290,14 @@ h5{width: fit-content;}
     from {transform: rotate(180deg);}
     to {transform: rotate(360deg);}
 }
-.dropdown-option{
+/* =========================
+   DROPDOWN OPTION STYLES
+   ========================= */
+   .dropdown-option{
     list-style: none;
     padding: 0;
     margin: 0;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     background-color: var(--color3);
     z-index: 1;
     width: 100%;
@@ -247,8 +307,8 @@ h5{width: fit-content;}
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    cursor: pointer;
+    height: 3.125rem;
+    border-radius: 0.3125rem;
     transition: background 0.5s ease;
 }
 .open-option{animation: open 1s ease forwards;}
@@ -257,8 +317,10 @@ h5{width: fit-content;}
     to {opacity: 1;}
 }
 .dropdown-option li:hover{background: var(--hovercolor);}
-/*navigation bar*/
-#menu{
+/* =========================
+   Navigation Bar
+   ========================= */
+#menu {
     background-color: rgba(129, 126, 126, 0.849);
     display: none;
     top: 0;
@@ -268,108 +330,72 @@ h5{width: fit-content;}
     position: fixed;
     z-index: 1;
 }
-#logo{width: 10vw; height: 10vw; margin-left: 4.5vw;}
-#menuIcon{cursor:pointer; width: 50px; height: 50px; margin: 1vw; top: 0; position:fixed; z-index:1;}
-.navbar{
+#logo {
+    width: 8.5rem; 
+    height: 8.5rem; 
+    margin-left: 3.5rem;
+}
+#menuIcon {
+    width: 3.125rem; 
+    height: 3.125rem; 
+    margin: 1rem; 
+    top: 0; 
+    position: fixed; 
+    z-index: 1; 
+}
+.navbar {
     list-style-type: none;
-    font-size: 2vw;
-    font-weight: bolder;
+    font-size: 1.75rem;
     background-color: var(--color3);
     top: 0;
     margin: 0;
     left: -30%;
-    opacity: 0; 
+    opacity: 0;
     position: fixed;
-    width: 20vw;
+    width: 16rem;
     height: 100%;
     padding: 0;
 }
-.navbar h2{padding-right:1vw; text-align: center;}
-.navbar li{
-    margin: 1vw 2vw;
-    cursor: pointer;
+.navbar h2 {
+    padding-right: 1rem; 
+    text-align: center;
+}
+.navbar li {
+    margin: 1rem 1.5rem;
     width: fit-content;
     max-width: 0;
     transition: max-width 0.3s ease-in;
-    border-bottom: 0.2vw solid var(--color2);
+    border-bottom: 0.2rem solid var(--color2);
 }
-.navbar li a{text-decoration: none; color: var(--color2);}
-#currentPage{max-width: fit-content;}
-.navbar li:hover{max-width: 100%;}
-.open-navbar{
-    animation: nav-open 0.5s ease forwards;
-}
-.close-navbar{
-    animation: nav-close 0.5s ease forwards;
-}
+#currentPage { max-width: fit-content; }
+.navbar li:hover { max-width: 100%; }
+.navbar .close { margin: 0 1rem 0 1.5rem; }
+.open-navbar { animation: nav-open 0.5s ease forwards; }
+.close-navbar { animation: nav-close 0.5s ease forwards; }
 @keyframes nav-open {
-    from {opacity: 0; left: -30%;}
-    to {opacity: 1; left: 0; }
+    from { opacity: 0; left: -30%; }
+    to { opacity: 1; left: 0; }
 }
 @keyframes nav-close {
-    from {opacity: 1; left: 0;}
-    to{opacity: 0; left: -30%;}
+    from { opacity: 1; left: 0; }
+    to { opacity: 0; left: -30%; }
 }
-#close{
-    color: var(--color2);
-    font-size: 4vw;
-    margin: 1vw;
-    left: 75%;
-    position: relative;
-    font-weight: bold;
-    cursor: pointer;
-}
-#close:hover{color: var(--color4);}
-/*jump to top*/
-#jump-to-top{
-    display: none;
-    cursor: pointer;
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    top: 70vh;
-    right: 2vw;
-    z-index: 1;
-    background-color: var(--switchcolor);
-    border: 0.2vw solid var(--hovercolor);
-    transition: background 1s ease;
-}
-#jump-to-top span{
-    width: 0;
-    height: 0;
-    display: inline-block;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid var(--hovercolor);
-}
-#jump-to-top:hover{
-    background: var(--color3);
-}
-/*secret*/
-#secret{position: fixed; top: 80vh; right: 2vw; transition: transform 1s; z-index: 1;}
-#secret img{
-    animation: secretmove 1s ease-out both;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    box-shadow: 0 1px 3px 0 rgba(238, 150, 234, 0.733), 2px 2px 20px 0 var(--color2);
-}
-#secret:hover{cursor:pointer; transform: rotate(180deg);}
-@keyframes secretmove{
-    from{opacity: 0.1;}
-    to{opacity: 1; transform: rotate(360deg);}
-}
-/*footer*/
-.footer{
+
+/* =========================
+   Footer
+   ========================= */
+.footer {
     text-align: center;
     background-color: var(--color3);
     width: 100%;
-    margin-top: 10vw;
-    padding: 3vw 0 0.5vw 0;
-    font-size: 2vw;
+    margin-top: 4rem;
+    padding: 1.5rem 0 0.5rem;
+    font-size: 1.5rem;
 }
-.social img{width: 30px; height: 30px;}
-.social a{border: none;}
+.socialIcon img { 
+    width: 1.875rem; 
+    height: 1.875rem; 
+}
 /*responsive for mobile screen*/
 @media only screen and (max-width: 600px){ 
     h1{font-size: 7vw;}
