@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+        <title> About - Hanabi Ranking</title>
+        <link rel="icon" type="image/x-icon" href="../Photos/WebLogo.png">
+        <link rel = "stylesheet" href = "./about.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <button class = "hoverable" id = "jump-to-top" onclick="backtoTop()"><span></span></button>
+        <audio id = "greetingSound"><source src = "https://feeds.soundcloud.com/stream/1493606938-corona-689894639-kaguya-noise-1.mp3" type="audio/mp3"></audio>
+        <h1> Meet the lame guy who made this atrocious website</h1>
+        <img class = "hoverable" id = "menuIcon" onclick = "openNav()" src = "./Photos/listLight.png">
+        <div id = "menu">
+            <ul class = "navbar">
+              <span onclick = "closeNav()" class = "close hoverable">&times;</span><br>
+              <img id = "logo" src = "../Photos/WebLogo.png" alt = "logo">
+              <h2>Hanabi Ranking</h2>
+              <li><a href = "../home.html">Home</a></li>
+              <li class = "hoverable" id = "currentPage"><a>Demonlist</a></li>
+              <li><a href = "../Waifu/waifu.html">Waifu</a></li>
+              <li><a href = "../About/about.html">About</a></li>
+            </ul>
+        </div>
+        <hr>
+        <h5>Theme</h5>
+        <label class = "theme-option hoverable">
+            <div class = "arrow"></div>
+            <select class = "hoverable">
+              <option value="0">Light</option>
+              <option value="1">Dark</option>
+              <option value="2">Sakura</option>
+            </select>
+        </label>
+        <img id = "avt" src= "https://i.pinimg.com/originals/99/14/4d/99144d939cef3c03390edef3ffb9e0f6.jpg" alt="pfp">
+        <h3 id = "name">Hanabi</h3>
+        <h3>
+            Love: Games, Animes, Drawing, Learning Languages, Coding
+            <br>
+            <br> 
+            Games I play: Geometry Dash, The Battle Cats, Survivor.io, Chess.
+            <br>
+            <br> 
+            I am currently learning HTML, CSS and JS and I will try my best to further improve this website and release other projects if I have time. 
+            <br>
+            <br>
+            More importantly, I intend to add more features such as my top favorite animes, anime characters and songs as well so stay tuned!
+        </h3>
+        <hr>
+        <h1>Social</h1>
+        <div class = "social">
+            <div>
+                <img id = "facebook" class = "icon" src = https://img.icons8.com/dusk/256/facebook-new--v2.png>
+                <br>
+                <a class = link target = "_blank" href = "https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN">Facebook</a>
+            </div>
+            <div>
+                <img id = "youtube" class = "icon" src = https://img.icons8.com/dusk/256/youtube-play.png>
+                <br>
+                <a class = link target = "_blank" href = "https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ">Youtube</a>
+            </div>
+            <div>
+                <img id = "discord" class = "icon" src = https://img.icons8.com/dusk/256/discord-logo.png>
+                <br>
+                <a class = link target = "_blank" href = "http://discord.com/users/785306828661456906">Discord</a>
+            </div> 
+        </div>
+        <footer class="footer">
+            <div class="socialIcon">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN" aria-label="Facebook"><img src="../Photos/facebook.png" alt="Facebook"></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ" aria-label="YouTube"><img src="../Photos/youtube.png" alt="YouTube"></a>
+              <a target="_blank" rel="noopener noreferrer" href="http://discord.com/users/785306828661456906" aria-label="Discord"><img src="../Photos/discord.png" alt="Discord"></a>
+            </div>
+            <h4>Copyright &#169; 2023 __Hanabi__ </h4>
+        </footer>
+        <script>
+            var greet = document.getElementById("greetingSound");
+            setTimeout(function(){greet.play();}, 1500);
+            const observer = new IntersectionObserver(entries => {
+                // Loop over the entries
+                entries.forEach(entry => {
+                  // If the element is visible
+                  if (entry.isIntersecting) {
+                    // Add the animation class
+                    entry.target.classList.add("icon-animation");
+                  }
+                });
+              });
+              observer.observe(document.querySelector("#youtube"));
+              observer.observe(document.querySelector("#facebook"));
+              observer.observe(document.querySelector("#discord"));
+        </script> 
+        <script src = "./about.js"></script>
+    </body>
+</html>
