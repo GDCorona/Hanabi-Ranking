@@ -96,7 +96,7 @@ const themes = [
     color4: 'aliceblue',
     switchcolor: '#cefaf8',
     hovercolor: 'rgb(70, 157, 228)',
-    menuIcon: './Photos/listLight.png'
+    menuIcon: '../Photos/listLight.png'
   },
   {
     cherryblossom: 'none',
@@ -106,7 +106,7 @@ const themes = [
     color4: 'rgba(135, 167, 172, 0.925)',
     switchcolor: '#8d8d8d',
     hovercolor: 'rgb(220, 221, 243)',
-    menuIcon: './Photos/listDark.png'
+    menuIcon: '../Photos/listDark.png'
   },
   {
     cherryblossom: 'block',
@@ -116,7 +116,7 @@ const themes = [
     color4: 'rgba(255, 232, 253, 0.8)',
     switchcolor: '#fccbf5',
     hovercolor: 'rgb(185, 71, 185)',
-    menuIcon: './Photos/listSakura.png'
+    menuIcon: '../Photos/listSakura.png'
   }
 ];
 function applyTheme(theme) {
