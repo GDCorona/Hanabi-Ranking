@@ -1,133 +1,138 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
-        <meta property="og:image" content="./Photos/secret.jpg">
-        <meta property="og:image:type" content="image/png">
-        <meta property="og:image:width" content="1024">
-        <meta property="og:image:height" content="1024">
-        <title> Hanabi Ranking </title>
-        <link rel = "stylesheet" href = "./home.css">
-        <link rel="icon" type="image/x-icon" href = "./Photos/WebLogo.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
-        <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-    </head>
-    <style>
-    </style>
-    <body onload = "loadAudio()">
-        <button id = "jump-to-top" onclick="backtoTop()"><span></span></button>
-        <!--secret-->
-        <div id = "secret" onclick="runSecret()" >
-            <img src = "./Photos/secret.jpg">
-        </div>
-        <audio id = "secretSounds"><source src = "" type = "audio/mp3"></audio>
-        <!---->
-        <div id = "loadscreen">
-            <div id = "loader"></div>
-            <h3 id = "wait">Wait</h3>
-        </div>
-        <div class = "header">
-            <h1>Welcome to Hanabi's official website!</h1>
-            <br><br><br><br>
-            <hr>
-            <h3>This is where I rank all kind of stuff that I like, including my favorite animes, songs, etc</h3>
-            <hr>
-        </div>
-        <br>
-        <p>Theme</p>
-        <label class = "theme-option">
-            <div class = "arrow"></div>
-            <select>
-              <option value="0">Light</option>
-              <option value="1">Dark</option>
-              <option value="2">Sakura</option>
-            </select>
-        </label>
-        <h2>What I rank</h2>
-        <div class = "category" style = "border-top: 0.2vw solid #cefaf8;">
-            <img src = "./Photos/demonlistBG.png">
-            <h2>Demonlist</h2>
-            <h3>This is my top 20 hardest completions in Geometry Dash. I rank these levels using 60hz standard so be expect wave and ship levels to be ranked very high ;)</h3>
-            <a href="javascript:delay('./Demonlist/index.html')">Check it out! →</a>
-            
-        </div>
-        <div class = "category">
-            <img src = "./Photos/waifuBG.gif">
-            <h2>Waifu</h2>
-            <h3>This is where I rank my top 30 favorite anime girls, based on 3 categories: Personality, Appearance and Voice. A character must be good at all of those categories in order to be in the list. Having beauty alone is not enough!</h3>
-            <a href="javascript:delay('./Waifu/index.html')">Check it out! →</a>
-        </div>
-        <div class = "category">
-            <img src = "./Photos/animeBG.jpg">
-            <h2>Anime</h2>
-            <h3>Coming soon! <br> The place where I list my top 20 favorite animes.</h3>
-        </div>
-        <div class = "category">
-            <img src = "./Photos/songBG.jpg">
-            <h2>Song</h2>
-            <h3>Coming soon! <br> You will find all of my favorite songs here!</h3>
-        </div>
-        <h2>Credits</h2>
-        <div class = "credits">
-            <img class = "creditsImg" src = "./Photos/flaticonLogo.jpg">
-            <h3>All of the icons used in this website are provided by Flaticon. You can find every icons you want there. Huge shout-out to them!</h3>
-            <a target="_blank" href = "https://www.flaticon.com/">Check out Flaticon! →</a>
-        </div>
-        <hr>
-        <div class = "credits">
-            <img class = "creditsImg" src = "./Photos/githubLogo.png">
-            <h3>This website is hosted on Github Pages, huge thanks to them for providing a useful, easy-to-use hosting service!</h3>
-            <a target="_blank" href = "https://github.com/">Check out Github! →</a>
-        </div>
-        <hr>
-        <div class = "credits">
-            <img class = "creditsImg" src = "./Photos/pinterestLogo.jpg">
-            <h3>Pinterest is where I find and and store all of the images used in this website.</h3>
-            <a target="_blank" href = "https://www.pinterest.com/">Check out Pinterest! →</a>
-        </div>
-        <hr>
-        <div class = "credits">
-            <img class = "creditsImg" src = "./Photos/MyAnimeListLogo.png">
-            <h3>MyAnimeList is where I get most of the information about animes and their characters.</h3>
-            <a target="_blank" href = "https://myanimelist.net/">Check out MyAnimeList! →</a>
-        </div>
-        <hr>
-        <h3>This website is developed entirely by me. I own none of the images, icons and audios used in this website. All of them belong to their respective owners!</h3>
-        <a href="javascript:delay('./About/index.html')">More info about me →</a>
-        <h3>That's it. Hope you have a fun visit! 😎🤘</h3>
-        <img class = "meme" src = "./Photos/meme.jpg" style="width: 70%; height:auto;">
-        <audio id = "memeSound"><source src = "https://feeds.soundcloud.com/stream/1602217236-corona-689894639-meme.mp3" type = "audio/mp3"></audio>
-        <div class = "footer">
-            <div class = "socialIcon">
-                <a target = "_blank" href = "https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN"><img src = "./Photos/facebook.png"></a>
-                <a target = "_blank" href = "https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ"><img src = "./Photos/youtube.png"></a>
-                <a target = "_blank" href = "http://discord.com/users/785306828661456906"><img src = "./Photos/discord.png"></a>
-            </div>
-            <h4>Copyright &#169; 2023 __Hanabi__ </h4>
-        </div>
-    </body>
-    <script>
-        function loadAudio(){
-            var meme = document.getElementById("memeSound");
-            var check = false;
-            const observer = new IntersectionObserver(entries => {
-            // Loop over the entries
-            entries.forEach(entry => {
-              // If the element is visible
-              if (entry.isIntersecting) {
-                // Add the animation class
-                entry.target.classList.add("rotateImg");
-                if(check == false) {meme.play();}
-                check = true;
-              }
-            });
-          }, {threshold: 0});
-        element = document.querySelector(".meme");
-        observer.observe(element);
-        }
-    </script>
-    <script src = "./home.js"></script>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanabi Ranking</title>
+  <link rel="stylesheet" href="./home.css">
+  <link rel="icon" type="image/x-icon" href="./Photos/WebLogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+</head>
+<body>
+  <button class="hoverable" id="jump-to-top" onclick="backtoTop()" aria-label="Back to top"><span></span></button>
+  <div id="loadscreen">
+    <div id="loader"></div>
+    <h3 id="wait">Wait</h3>
+  </div>
+  <header class="header">
+    <h1>Welcome to Hanabi's official website!</h1>
+    <div style="height: 4rem;"></div>
+    <hr>
+    <h3>This is where I rank all kind of stuff that I like, including my favorite animes, songs, etc</h3>
+    <hr>
+  </header>
+  <main>
+    <section>
+      <h5>Theme</h5>
+      <label class="theme-option hoverable">
+        <div class="arrow"></div>
+        <select class="hoverable">
+          <option value="0">Light</option>
+          <option value="1">Dark</option>
+          <option value="2">Sakura</option>
+        </select>
+      </label>
+    </section>
+    <section>
+      <h2>What I rank</h2>
+      <div class="category" style="border-top: 0.2vw solid #cefaf8;">
+        <img src="./Photos/demonlistBG.png" alt="Demonlist background">
+        <h2>Demonlist</h2>
+        <h3>
+          This is my top 20 hardest completions in Geometry Dash. I rank these levels using 60hz standard so expect wave and ship levels to be ranked very high ;)
+        </h3>
+        <a href="javascript:delay('Demonlist/demonList.html')">Check it out! →</a>
+      </div>
+      <div class="category">
+        <img src="./Photos/waifuBG.gif" alt="Waifu background">
+        <h2>Waifu</h2>
+        <h3>
+          This is where I rank my top 30 favorite anime girls, based on 3 categories: Personality, Appearance and Voice. A character must be good at all of those categories in order to be in the list. Having beauty alone is not enough!
+        </h3>
+        <a href="javascript:delay('./Waifu/waifu.html')">Check it out! →</a>
+      </div>
+      <div class="category">
+        <img src="./Photos/animeBG.jpg" alt="Anime background">
+        <h2>Anime</h2>
+        <h3>Coming soon! <br> The place where I list my top 20 favorite animes.</h3>
+      </div>
+      <div class="category">
+        <img src="./Photos/songBG.jpg" alt="Song background">
+        <h2>Song</h2>
+        <h3>Coming soon! <br> You will find all of my favorite songs here!</h3>
+      </div>
+    </section>
+    <section>
+      <h2>Credits</h2>
+      <div class="credits">
+        <img class="creditsImg" src="./Photos/flaticonLogo.jpg" alt="Flaticon logo">
+        <h3>
+          All of the icons used in this website are provided by Flaticon. You can find every icon you want there. Huge shout-out to them!
+        </h3>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.flaticon.com/">Check out Flaticon! →</a>
+      </div>
+      <hr>
+      <div class="credits">
+        <img class="creditsImg" src="./Photos/githubLogo.png" alt="Github logo">
+        <h3>
+          This website is hosted on Github Pages, huge thanks to them for providing a useful, easy-to-use hosting service!
+        </h3>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/">Check out Github! →</a>
+      </div>
+      <hr>
+      <div class="credits">
+        <img class="creditsImg" src="./Photos/pinterestLogo.jpg" alt="Pinterest logo">
+        <h3>
+          Pinterest is where I find and store all of the images used in this website.
+        </h3>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.pinterest.com/">Check out Pinterest! →</a>
+      </div>
+      <hr>
+      <div class="credits">
+        <img class="creditsImg" src="./Photos/MyAnimeListLogo.png" alt="MyAnimeList logo">
+        <h3>
+          MyAnimeList is where I get most of the information about animes and their characters.
+        </h3>
+        <a target="_blank" rel="noopener noreferrer" href="https://myanimelist.net/">Check out MyAnimeList! →</a>
+      </div>
+      <hr>
+      <h3>
+        This website is developed entirely by me. I own none of the images, icons and audios used in this website. All of them belong to their respective owners!
+      </h3>
+      <a href="javascript:delay('./About/about.html')">More info about me →</a>
+      <h3>That's it. Hope you have a fun visit! 😎🤘</h3>
+      <img class="meme" src="./Photos/meme.jpg" alt="Meme" style="width:70%;height:auto;">
+      <audio id="memeSound">
+        <source src="https://feeds.soundcloud.com/stream/1602217236-corona-689894639-meme.mp3" type="audio/mp3">
+      </audio>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="socialIcon">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN" aria-label="Facebook"><img src="./Photos/facebook.png" alt="Facebook"></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ" aria-label="YouTube"><img src="./Photos/youtube.png" alt="YouTube"></a>
+      <a target="_blank" rel="noopener noreferrer" href="http://discord.com/users/785306828661456906" aria-label="Discord"><img src="./Photos/discord.png" alt="Discord"></a>
+    </div>
+    <h4>Copyright &#169; 2023 __Hanabi__ </h4>
+  </footer>
+  <script>
+    // Play meme sound and add rotation animation when meme image enters viewport
+    const memeImg = document.querySelector('.meme');
+    if (memeImg) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('rotateImg');
+            document.getElementById('memeSound').play();
+          }
+        });
+      }, { threshold: 0 });
+      observer.observe(memeImg);
+    }
+  </script>
+  <script src="./home.js"></script>
+</body>
 </html>
