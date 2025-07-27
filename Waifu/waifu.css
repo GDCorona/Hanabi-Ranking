@@ -174,8 +174,8 @@ a:focus, a:focus-visible,
 .switch {
     position: relative;
     display: inline-block;
-    width: 10vw;
-    height: 4vw;
+    width: 8.15rem;
+    height: 3.25rem;
     margin: 3vw;
     left: 80%;
 }
