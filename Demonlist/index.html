@@ -5,7 +5,7 @@
         <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">
         <title> Demonlist - Hanabi Ranking </title>
         <link rel= "stylesheet" href = "./demonlist.css">
-        <link rel= "icon" type= "image/x-icon" href= "./Photos/WebLogo.png">
+        <link rel= "icon" type= "image/x-icon" href= "../Photos/WebLogo.png">
         <link rel= "preconnect" href= "https://fonts.googleapis.com">
         <link rel= "preconnect" href= "https://fonts.gstatic.com" crossorigin>
         <link href= "https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel= "stylesheet">
@@ -14,16 +14,16 @@
     <body>
         <button class = "hoverable" id = "jump-to-top" onclick="backtoTop()"><span></span></button>
         <h1>My top 20 hardest demons</h1>
-        <img class = "hoverable" id = "menuIcon" onclick = "openNav()" src = "./Photos/listLight.png">
+        <img class = "hoverable" id = "menuIcon" onclick = "openNav()" src = "../Photos/listLight.png">
         <div id = "menu">
             <ul class = "navbar">
               <span onclick = "closeNav()" class = "close hoverable">&times;</span><br>
-              <img id = "logo" src = "./Photos/WebLogo.png" alt = "logo">
+              <img id = "logo" src = "../Photos/WebLogo.png" alt = "logo">
               <h2>Hanabi Ranking</h2>
-              <li><a href = "https://gdcorona.github.io/Hanabi-Ranking/">Home</a></li>
+              <li><a href = "../index.html">Home</a></li>
               <li class = "hoverable" id = "currentPage"><a>Demonlist</a></li>
-              <li><a href = "https://gdcorona.github.io/Hanabi-Ranking/Waifu/index.html">Waifu</a></li>
-              <li><a href = "https://gdcorona.github.io/Hanabi-Ranking/About/index.html">About</a></li>
+              <li><a href = "../Waifu/index.html">Waifu</a></li>
+              <li><a href = "../About/index.html">About</a></li>
             </ul>
         </div>
         <h5>Theme</h5>
@@ -37,7 +37,6 @@
         </label>
         <a class = "hoverable" id = "changelog" href = "./listchangelog.txt" download = "listchangelog">Download list changelog ⇓</a>
         <ul id="demonList" class="demonlist"></ul>
-
         <div id="modal" class="modal">
             <div class="modal-content">
                 <div class="modal-header">
@@ -47,14 +46,14 @@
                 <div class="modal-body" id="modalBody"></div>
             </div>
         </div>
-        <script type="module" src="./demonlist.js"></script>
-        <div class = "footer">
-            <div class = "socialIcon">
-                <a target = "_blank" href = "https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN"><img src = "./Photos/facebook.png"></a>
-                <a target = "_blank" href = "https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ"><img src = "./Photos/youtube.png"></a>
-                <a target = "_blank" href = "http://discord.com/users/785306828661456906"><img src = "./Photos/discord.png"></a>
+        <footer class="footer">
+            <div class="socialIcon">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN" aria-label="Facebook"><img src="../Photos/facebook.png" alt="Facebook"></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ" aria-label="YouTube"><img src="../Photos/youtube.png" alt="YouTube"></a>
+              <a target="_blank" rel="noopener noreferrer" href="http://discord.com/users/785306828661456906" aria-label="Discord"><img src="../Photos/discord.png" alt="Discord"></a>
             </div>
             <h4>Copyright &#169; 2023 __Hanabi__ </h4>
-        </div>
+        </footer>
+        <script type="module" src="./demonlist.js"></script>
     </body>
 </html>
