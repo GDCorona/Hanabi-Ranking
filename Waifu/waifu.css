@@ -228,7 +228,12 @@ input:checked ~ .switch-circle{transform: translateX(6vw) rotate(360deg);}
     height: 100%;
     opacity: 0.9;
 }
-#wait{position: relative; left: 35%; top: 60%; font-size: 2.5rem;}
+#wait{
+    position: relative; 
+    text-align: center; 
+    top: 60%; 
+    font-size: 2.5rem;
+}
 #loader{
     border: 16px solid var(--color1);
     border-radius: 50%;
