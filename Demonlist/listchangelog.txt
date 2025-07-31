@@ -29,6 +29,7 @@
 11/6/2025: RANDOM ACCESS MEMORY placed at #1, Mazemory out of top 20.
 29/6/2025: EnvY placed at #6, Halberd out of top 20.
 12/7/2025: Down Bass placed at #6, Marathon out of top 20.
+30/7/2025: Auditory Breaker placed at #1, Allegiance out of top 20.
 
 ----------Legacy demons----------
 Featuring levels that fell out of the list (From 2024 onwards)
@@ -49,3 +50,4 @@ Featuring levels that fell out of the list (From 2024 onwards)
 - Mazemory (240fps): 6330 attempts, worst fail 75%, enjoyment 9.5/10
 - Halberd (60hz): 7664 attempts, worst fail 88%, enjoyment 2/10
 - Marathon (60hz): ~18k attempts, worst fail 97%, enjoyment 8.5/10
+- Allegiance (144fps): 5254 attempts, worst fail 94%, enjoyment 7.7/10
