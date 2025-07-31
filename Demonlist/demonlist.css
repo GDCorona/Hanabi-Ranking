@@ -1,7 +1,4 @@
-/* =========================
-   :root - Added/Grouped Variables
-   ========================= */
-   :root {
+:root {
     /* Color variables */
     --color1: white;
     --color2: black;
@@ -10,18 +7,12 @@
     --switchcolor: #cefaf8;
     --hovercolor: rgba(126, 187, 211, 0.7);
     --cherryblossom: none;
-
     /* Other variables */
     --font-size-title: clamp(2rem, 5vw, 5rem);
     --font-size-base: 1.5625rem;
     --font-size-sm: 1.25rem;
     --shadow-default: 0 0.25rem 0.5rem rgba(255, 255, 255, 0.5), 0 0.4375rem 1.375rem rgba(22, 22, 22, 0.8);
     --shadow-modal: 0 0.0625rem 0.1875rem rgba(238, 150, 234, 0.733), 0.125rem 0.125rem 1.25rem var(--color2);
-
-    /* Example of further DRY: could add border, radius, transition variables here if desired */
-    /* --border-default: 0.2vw solid var(--hovercolor); */
-    /* --border-radius-lg: 1.875rem; */
-    /* --transition-bg: background 0.5s ease; */
 }
 
 /* =========================
