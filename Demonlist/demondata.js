@@ -1,5 +1,16 @@
 export const demonList = [
   {
+    name: "Auditory Breaker",
+    image: "./Thumbnails/Auditory Breaker.png",
+    difficulty: "Extreme Demon",
+    fps: "288",
+    attempts: "20139",
+    worstFail: "99%",
+    enjoyment: "1/10",
+    date: "30/7/2025",
+    video: "https://youtu.be/CjM4CqHFDsU"
+  },
+  {
     name: "RANDOM ACCESS MEMORY",
     image: "./Thumbnails/RAM.png",
     difficulty: "Extreme Demon",
@@ -208,15 +219,4 @@ export const demonList = [
     date: "7/7/2024",
     video: "https://youtu.be/e5ByGqvrmQg"
   },
-  {
-    name: "Allegiance",
-    image: "./Thumbnails/Allegiance.jpg",
-    difficulty: "Extreme Demon",
-    fps: "144",
-    attempts: "5254",
-    worstFail: "94%",
-    enjoyment: "7.7/10",
-    date: "11/7/2023",
-    video: "https://youtu.be/Fd7uKTwwZrc"
-  }
 ];
