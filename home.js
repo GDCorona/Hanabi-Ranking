@@ -1,10 +1,17 @@
 /*individual section (unique by pages)*/
 /*delay link*/
+const loadscreen = document.getElementById('loadscreen');
+const waitElem = document.getElementById('wait');
 function delay (URL) {
-  document.getElementById("loadscreen").style.display = "block";
-  setInterval(function(){document.getElementById("wait").innerHTML += '.';}, 300);
-  setTimeout(function() { window.location = URL; document.getElementById("loadscreen").style.display = "none";}, 1000);
-  document.getElementById("wait").innerHTML = 'Please wait';
+  loadscreen.style.display = "block";
+  waitElem.innerHTML = "Please wait"; 
+  let dots = 0;
+  const interval = setInterval(() => { waitElem.innerHTML += '.'; dots++; }, 300);
+  setTimeout(() => {
+      clearInterval(interval);
+      window.location = URL;
+      loadscreen.style.display = "none";
+  }, 1000);
 }
 /*shared section (for every pages)*/
 //jump to top
