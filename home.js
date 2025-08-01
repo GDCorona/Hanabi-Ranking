@@ -4,6 +4,7 @@ function delay (URL) {
   document.getElementById("loadscreen").style.display = "block";
   setInterval(function(){document.getElementById("wait").innerHTML += '.';}, 300);
   setTimeout(function() { window.location = URL; document.getElementById("loadscreen").style.display = "none";}, 1000);
+  document.getElementById("wait").innerHTML = 'Please wait';
 }
 /*shared section (for every pages)*/
 //jump to top
