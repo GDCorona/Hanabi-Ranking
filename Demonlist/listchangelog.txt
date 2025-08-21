@@ -30,7 +30,7 @@
 29/6/2025: EnvY placed at #6, Halberd out of top 20.
 12/7/2025: Down Bass placed at #6, Marathon out of top 20.
 30/7/2025: Auditory Breaker placed at #1, Allegiance out of top 20.
-
+20/8/2025: Sonic Wave placed at #1, HURRICANE out of top 20.
 ----------Legacy demons----------
 Featuring levels that fell out of the list (From 2024 onwards)
 - Knot (75hz): 7858 attempts, worst fail 96%, enjoyment 9.5/10
@@ -51,3 +51,4 @@ Featuring levels that fell out of the list (From 2024 onwards)
 - Halberd (60hz): 7664 attempts, worst fail 88%, enjoyment 2/10
 - Marathon (60hz): ~18k attempts, worst fail 97%, enjoyment 8.5/10
 - Allegiance (144fps): 5254 attempts, worst fail 94%, enjoyment 7.7/10
+- HURRICANE (144fps): 6217 attempts, worst fail 95%, enjoyment 9.5/10
