@@ -1,5 +1,16 @@
 export const demonList = [
   {
+    name: "Sonic Wave",
+    image: "./Thumbnails/SonicWave.png",
+    difficulty: "Extreme Demon",
+    fps: "288",
+    attempts: "12888",
+    worstFail: "87%",
+    enjoyment: "4/10",
+    date: "20/8/2025",
+    video: "https://youtu.be/g-KmVD7QgI8"
+  },
+  {
     name: "Auditory Breaker",
     image: "./Thumbnails/Auditory Breaker.png",
     difficulty: "Extreme Demon",
@@ -208,15 +219,5 @@ export const demonList = [
     date: "10/9/2022",
     video: "https://youtu.be/ejUUtMAdgrY"
   },
-  {
-    name: "HURRICANE",
-    image: "./Thumbnails/HURRICANE.png",
-    difficulty: "Extreme Demon",
-    fps: "144",
-    attempts: "6217",
-    worstFail: "95%",
-    enjoyment: "9.5/10",
-    date: "7/7/2024",
-    video: "https://youtu.be/e5ByGqvrmQg"
-  },
 ];
+
