@@ -218,6 +218,7 @@ export const demonList = [
     enjoyment: "9/10",
     date: "10/9/2022",
     video: "https://youtu.be/ejUUtMAdgrY"
-  },
+  }
 ];
+
 
