@@ -143,6 +143,17 @@ export const demonList = [
     video: "https://youtu.be/9G9Q7jrEgnM"
   },
   {
+    name: "Volume",
+    image: "./Thumbnails/Volume.png",
+    difficulty: "Extreme Demon",
+    fps: "240",
+    attempts: "3211",
+    worstFail: "78%",
+    enjoyment: "5.7/10",
+    date: "3/10/2025",
+    video: "https://youtu.be/HmclUgr_E10"
+  },
+  {
     name: "Deception Dive",
     image: "./Thumbnails/Deception Dive.jpg",
     difficulty: "Extreme Demon",
@@ -207,18 +218,8 @@ export const demonList = [
     enjoyment: "4/10",
     date: "29/1/2024",
     video: "https://youtu.be/YIaHcJRDKRQ"
-  },
-  {
-    name: "Novalis",
-    image: "./Thumbnails/Novalis.jpg",
-    difficulty: "Extreme Demon",
-    fps: "75",
-    attempts: "15078",
-    worstFail: "93%",
-    enjoyment: "9/10",
-    date: "10/9/2022",
-    video: "https://youtu.be/ejUUtMAdgrY"
   }
 ];
+
 
 
