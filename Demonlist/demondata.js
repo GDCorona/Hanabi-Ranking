@@ -110,6 +110,17 @@ export const demonList = [
     video: "https://youtu.be/2H_QSVao7DI"
   },
   {
+    name: "Gravity",
+    image: "./Thumbnails/Gravity.png",
+    difficulty: "Extreme Demon",
+    fps: "240",
+    attempts: "5868",
+    worstFail: "69%",
+    enjoyment: "10/10",
+    date: "9/11/2025",
+    video: "https://youtu.be/_IThdHcRJW4"
+  },
+  {
     name: "Moment",
     image: "./Thumbnails/Moment.png",
     difficulty: "Extreme Demon",
@@ -207,19 +218,9 @@ export const demonList = [
     enjoyment: "7.5/10",
     date: "1/4/2024",
     video: "https://youtu.be/6qLow23R3AE"
-  },
-  {
-    name: "Night Party",
-    image: "./Thumbnails/Night Party.png",
-    difficulty: "Extreme Demon",
-    fps: "144",
-    attempts: "8577",
-    worstFail: "81% x2",
-    enjoyment: "4/10",
-    date: "29/1/2024",
-    video: "https://youtu.be/YIaHcJRDKRQ"
   }
 ];
+
 
 
 
