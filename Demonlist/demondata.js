@@ -1,5 +1,16 @@
 export const demonList = [
   {
+    name: "Nhelv",
+    image: "./Thumbnails/Nhelv.png",
+    difficulty: "Extreme Demon",
+    fps: "240",
+    attempts: "43176",
+    worstFail: "95%",
+    enjoyment: "10/10",
+    date: "22/11/2025",
+    video: "https://youtu.be/_N02ReLOjlU"
+  },
+  {
     name: "Sonic Wave",
     image: "./Thumbnails/SonicWave.png",
     difficulty: "Extreme Demon",
@@ -207,19 +218,9 @@ export const demonList = [
     enjoyment: "8/10",
     date: "26/1/2023",
     video: "https://youtu.be/BbGiPoHRufo"
-  },
-  {
-    name: "Triple Six",
-    image: "./Thumbnails/Triple Six.png",
-    difficulty: "Extreme Demon",
-    fps: "60",
-    attempts: "17218",
-    worstFail: "95% x3",
-    enjoyment: "7.5/10",
-    date: "1/4/2024",
-    video: "https://youtu.be/6qLow23R3AE"
   }
 ];
+
 
 
 
