@@ -33,6 +33,7 @@
 20/8/2025: Sonic Wave placed at #1, HURRICANE out of top 20.
 3/10/2025: Volume placed at #14, Novalis out of top 20.
 9/11/2025: Gravity placed at #11, Night Party out of top 20.
+22/11/2025: Nhelv placed at #1, Triple Six out of top 20.
 ----------Legacy demons----------
 Featuring levels that fell out of the list (From 2024 onwards)
 - Knot (75hz): 7858 attempts, worst fail 96%, enjoyment 9.5/10
@@ -56,3 +57,4 @@ Featuring levels that fell out of the list (From 2024 onwards)
 - HURRICANE (144fps): 6217 attempts, worst fail 95%, enjoyment 9.5/10
 - Novalis (75hz): 15078 attempts, worst fail 93%, enjoyment 9/10
 - Night Party (144fps): 8577 attempts, worst fail 81%x2, enjoyment 4/10
+- Triple Six (60hz): 17218 attempts, worst fail 95%x3, enjoyment 7.5/10
