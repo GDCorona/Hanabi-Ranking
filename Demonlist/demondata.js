@@ -143,6 +143,17 @@ export const demonList = [
     video: "https://youtu.be/sFdpuZMi7QY"
   },
   {
+    name: "Aftermath",
+    image: "./Thumbnails/Aftermath.png",
+    difficulty: "Extreme Demon",
+    fps: "240 (CBF)",
+    attempts: "~4.8k",
+    worstFail: "88%",
+    enjoyment: "8.7/10",
+    date: "28/1/2026",
+    video: "https://youtu.be/kQ-q8bU8VpY"
+  },
+  {
     name: "Coolie Mazie Paloozi",
     image: "./Thumbnails/Coolie Mazie Paloozi.jpg",
     difficulty: "Extreme Demon",
@@ -207,19 +218,9 @@ export const demonList = [
     enjoyment: "8/10",
     date: "15/7/2024",
     video: "https://youtu.be/2UKSeSTGWVM"
-  },
-  {
-    name: "MELTDOWN",
-    image: "./Thumbnails/Meltdown.jpg",
-    difficulty: "Extreme Demon",
-    fps: "144",
-    attempts: "~8k",
-    worstFail: "96%",
-    enjoyment: "8/10",
-    date: "26/1/2023",
-    video: "https://youtu.be/BbGiPoHRufo"
   }
 ];
+
 
 
 
