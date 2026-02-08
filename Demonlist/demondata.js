@@ -44,6 +44,17 @@ export const demonList = [
     video: "https://youtu.be/elq1hwBwEDw"
   },
   {
+    name: "Bloodbath",
+    image: "./Thumbnails/Bloodbath.png",
+    difficulty: "Extreme Demon",
+    fps: "240 (CBF)",
+    attempts: "~20k",
+    worstFail: "98%",
+    enjoyment: "2.3/10",
+    date: "6/2/2026",
+    video: "https://youtu.be/0U49wYPnVD8"
+  },
+  {
     name: "Super Probably Level",
     image: "./Thumbnails/SPL.png",
     difficulty: "Extreme Demon",
@@ -207,19 +218,9 @@ export const demonList = [
     enjoyment: "9/10",
     date: "23/11/2023",
     video: "https://youtu.be/opMqgqghVx8"
-  },
-  {
-    name: "Cluttered Confusion",
-    image: "./Thumbnails/Cluttered Confusion.png",
-    difficulty: "Extreme Demon",
-    fps: "60",
-    attempts: "19880",
-    worstFail: "93%",
-    enjoyment: "8/10",
-    date: "15/7/2024",
-    video: "https://youtu.be/2UKSeSTGWVM"
   }
 ];
+
 
 
 
