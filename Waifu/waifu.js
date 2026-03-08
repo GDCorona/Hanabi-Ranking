@@ -56,7 +56,7 @@ function renderWaifuList(data, containerSelector, { isHonorable = false } = {}) 
     if (e.target.classList.contains('avt')) {
       const idx = e.target.getAttribute('data-index');
       if (isHonorable) {
-        Nah(idx); // Or your own handler for honorable mentions
+        alert('nah no image available :<'); 
       } else {
         changeAvt(Number(idx));
       }
@@ -377,3 +377,4 @@ setupCustomDropdown(
         localStorage.setItem('sort-select-value', value);
     }
 )
+
