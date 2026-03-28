@@ -36,6 +36,7 @@
 22/11/2025: Nhelv placed at #1, Triple Six out of top 20.
 28/1/2026: Aftermath placed at #14, MELTDOWN out of top 20.
 6/2/2026: Bloodbath placed at #5, Cluttered Confusion out of top 20.
+23/3/2026: Lithium placed at #1, Falling Up out of top 20.
 
 ----------Legacy demons----------
 Featuring levels that fell out of the list (From 2024 onwards)
@@ -63,3 +64,4 @@ Featuring levels that fell out of the list (From 2024 onwards)
 - Triple Six (60hz): 17218 attempts, worst fail 95%x3, enjoyment 7.5/10
 - MELTDOWN (144fps): ~8k attempts, worst fail 96%, enjoyment 8/10 
 - Cluttered Confusion (60hz): 19880 attempts, worst fail 93%, enjoyment 8/10
+- Falling Up (120fps): ~13k attempts, worst fail 98%, enjoyment 9/10
