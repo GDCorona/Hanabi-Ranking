@@ -1,5 +1,16 @@
 export const demonList = [
   {
+    name: "Lithium",
+    image: "./Thumbnails/Lithium.png",
+    difficulty: "Extreme Demon",
+    fps: "240",
+    attempts: "51241",
+    worstFail: "91%",
+    enjoyment: "9.3/10",
+    date: "23/3/2026",
+    video: "https://youtu.be/lG7_MKyz7wA"
+  },
+  {
     name: "Nhelv",
     image: "./Thumbnails/Nhelv.png",
     difficulty: "Extreme Demon",
@@ -207,17 +218,6 @@ export const demonList = [
     enjoyment: "7/10",
     date: "20/5/2023",
     video: "https://youtu.be/h_NeAjalj8A"
-  },
-  {
-    name: "Falling Up",
-    image: "./Thumbnails/Falling Up.png",
-    difficulty: "Extreme Demon",
-    fps: "120",
-    attempts: "~13k",
-    worstFail: "98%",
-    enjoyment: "9/10",
-    date: "23/11/2023",
-    video: "https://youtu.be/opMqgqghVx8"
   }
 ];
 
