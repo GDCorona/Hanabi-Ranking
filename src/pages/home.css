@@ -1,0 +1,54 @@
+/* Default (Light) */
+body.Light .icon-anime { content: url("/Photos/animeLight.svg"); }
+body.Light .icon-song  { content: url("/Photos/songLight.svg"); }
+body.Light .icon-more  { content: url("/Photos/moreLight.svg"); }
+
+/* Dark */
+body.Dark .icon-anime { content: url("/Photos/animeDark.svg"); }
+body.Dark .icon-song  { content: url("/Photos/songDark.svg"); }
+body.Dark .icon-more  { content: url("/Photos/moreDark.svg"); }
+
+/* Sakura */
+body.Sakura .icon-anime { content: url("/Photos/animeSakura.svg"); }
+body.Sakura .icon-song  { content: url("/Photos/songSakura.svg"); }
+body.Sakura .icon-more  { content: url("/Photos/moreSakura.svg"); }
+
+/* ====== Main section ====== */
+.text-highlight {
+  text-shadow: 1px 1px 4px var(--shadowColor);
+}
+.animate-grow {
+  animation: grow 2s ease forwards;
+}
+@keyframes grow {
+  from { width: 0; }
+  to { width: 100%; }
+}
+.animate-branch {
+  animation: branch 1s ease forwards;
+}
+.branch {
+  position: absolute;
+  top: 2.5rem;
+  width: 3px;
+  height: 0;
+  border-radius: 2px; 
+}
+@keyframes branch {
+  from { height: 0; }
+  to { height: 50px; }
+}
+.animate-fadeIn {
+  animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.delay-500 { animation-delay: 0.5s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-1000 { animation-delay: 1s; }
+.delay-1200 { animation-delay: 1.2s; }
+.delay-1500 { animation-delay: 1.5s; }
+.delay-1700 { animation-delay: 1.7s; }
+.delay-2000 { animation-delay: 2s; }

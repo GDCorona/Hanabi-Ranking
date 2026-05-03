@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Leckerli+One&family=Orbitron:wght@700;900&family=Outfit:wght@300;500;800&display=swap');
+@import "tailwindcss";
+:root {
+  --navbar-height: 4.5rem;
+  --navbar-bg-width: 100vw;
+  --navbar-bg-min-width: 4.5rem;
+}
+* {
+  /*outline: 1px solid red;*/
+  box-sizing: border-box;
+}
+body.Light {
+  --buttonColor: rgb(192, 246, 253);
+  --bgColor: white;
+  --textColor: black;
+  --hoverColor: rgba(21, 105, 158, 0.736);
+  --shadowColor: #859cc7;
+  --switchColor: rgb(70, 157, 228);
+  --titleColor: rgb(192, 253, 244);
+}
+body.Dark {
+  --buttonColor: #1e2939;
+  --bgColor: black;
+  --textColor: rgb(195, 225, 255);
+  --hoverColor: white;
+  --shadowColor: #85f2fe;
+  --switchColor: rgb(196, 216, 255);
+  --titleColor: rgb(179, 254, 236);
+}
+body.Sakura {
+  --buttonColor: rgb(249, 175, 231);
+  --bgColor: #ee91c1;
+  --textColor: rgb(223, 14, 129);
+  --hoverColor: rgb(176, 5, 206);
+  --shadowColor: #ff31e0;
+  --switchColor: rgb(185, 71, 185);
+  --titleColor: rgb(249, 175, 231);
+}
+body.Sakura::after {
+  opacity: 1;
+}
+body{
+  counter-reset: section;
+  margin: 0;
+  background-color: var(--bgColor);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  font-family: 'Outfit', sans-serif;
+}
+/*cherry blossom effect*/
+body::after {
+  background-image: url('https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwBAS62lleijrhGHB-Tx5_KQ');
+  filter: hue-rotate(0deg);
+  pointer-events: none !important;
+  content: "";
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  position: fixed;
+  z-index: 100;
+  opacity: 0; /* Start hidden */
+  transition: opacity 1s ease; /* Smooth fade */
+}
+
+/* --- SPECIAL FONTS --- */
+.home-font { font-family: 'Leckerli One', cursive; }
+.title-font { font-family: 'Sour Gummy', sans-serif; }
+.tech-font { font-family: 'Orbitron', sans-serif; }
+/* --- GLOWING GRADIENT TEXT --- */
+.text-neon-gradient {
+  background: linear-gradient(0deg, var(--titleColor) 30%, var(--switchColor) 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+  filter: drop-shadow(0 0 15px var(--shadowColor));
+  padding-right: 0.15em; 
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* ====== Page transition ====== */
+.no-scroll {
+  overflow: hidden !important;
+}
+#transition-container{
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  pointer-events: auto;
+}
+/* Show page transition instantly on page load if it's an internal navigation */
+html.internal-nav #transition-container {
+  display: flex;
+}
+/* Class to trigger page transtion */
+#transition-container.active-transition {
+  display: flex;
+}
+.gate-red, .gate-cyan{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.6, 0.05, 0.01, 0.9);
+  transform: translateZ(0);
+  /* CRITICAL GPU HACKS */
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.gate-red{
+  background-color: red;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.gate-cyan{
+  background-color: cyan;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+#transition-lock{
+  position: relative;
+  width: 8vw;
+  height: 8vw;
+  z-index: 100;
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
+.lock-animation {
+  animation: lockFadeOut 0.8s ease-in-out forwards;
+}
+.lock-animation-reverse {
+  animation: lockFadeIn 0.8s ease-in-out forwards;
+}
+@keyframes lockFadeOut {
+  0% {
+    transform: rotate(0deg) scale(1) translateZ(0);
+    opacity: 1;
+  }
+  60% {
+    transform: rotate(360deg) scale(1.1) translateZ(0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(0) translateZ(0);
+    opacity: 0;
+  }
+}
+@keyframes lockFadeIn {
+  0% {
+    transform: rotate(360deg) scale(0) translateZ(0);
+    opacity: 0;
+  }
+  60% {
+    transform: rotate(0deg) scale(1.1) translateZ(0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0deg) scale(1) translateZ(0);
+    opacity: 1;
+  }
+}
+/* Gates Opening */
+.gates-open .gate-red {
+  transform: translate3d(-100%, -100%, 0); /* MUST BE 3D */
+}
+.gates-open .gate-cyan {
+  transform: translate3d(100%, 100%, 0); /* MUST BE 3D */
+}
+/* ====== Main page ====== */
+/* Navbar background and content */
+.navbar-bg {
+    height: var(--navbar-height);
+    width: var(--navbar-bg-width);
+    transition: width 0.7s cubic-bezier(0.7,0,0.3,1), opacity 0.3s;
+}
+/* Navbar links */
+.nav-link {
+  color: var(--textColor);
+  font-weight: 600;
+  position: relative;
+  transition: color 0.4s ease;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--hoverColor);
+  transition: width 0.3s ease;
+}
+.nav-link:hover {
+  color: var(--hoverColor);
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+/* Active (current page) */
+.nav-link.active {
+  color: var(--hoverColor);
+}
+.nav-link.active::after {
+  width: 100%;
+}
+/* Icon rotate */
+.rotate-open{
+  transform: rotate(360deg);
+  transition: transform 1s ease;
+}
+.rotate-close{
+  transform: rotate(-360deg);
+  transition: transform 1s ease;
+}
+/* Navbar animation */
+.navbar-content.fading {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.navbar-content.showing {
+  opacity: 1;
+  transition: opacity 0.3s ease 0.7s;
+}
+.navbar-bg.shrinking {
+  animation: navbar-shrink-horizontal-bg 0.7s cubic-bezier(0.7,0,0.3,1) forwards;
+  animation-delay: 0.3s;
+}
+.navbar-bg.expanding {
+  animation: navbar-expand-horizontal-bg 0.7s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+@keyframes navbar-shrink-horizontal-bg {
+  0% {
+    width: var(--navbar-bg-width);
+    opacity: 1;
+  }
+  80% {
+    width: var(--navbar-bg-min-width);
+    opacity: 0.5;
+  }
+  100% {
+    width: var(--navbar-bg-min-width);
+    opacity: 0;
+  }
+}
+@keyframes navbar-expand-horizontal-bg {
+  0% {
+    width: var(--navbar-bg-min-width);
+    opacity: 0;
+  }
+  20% {
+    width: var(--navbar-bg-min-width);
+    opacity: 0.5;
+  }
+  100% {
+    width: var(--navbar-bg-width);
+    opacity: 1;
+  }
+}
+/* Footer */
+.footer-link{
+  color: var(--textColor);
+  width: fit-content;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+.footer-link:hover{
+  color: var(--hoverColor);
+  transform: translateX(0.5rem);
+}
+.footer-link.active {
+  color: var(--hoverColor);
+}
+.socialIcon img { 
+  width: 1.875rem; 
+  height: 1.875rem; 
+}
+.socialIcon a {
+  position: relative;
+  border: none; 
+}
+/* Mobile menu animation */
+#mobile-menu {
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-20px);
+  overflow-y: auto; 
+  scrollbar-width: none;
+}
+#mobile-menu.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+#mobile-menu a {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+/* Animate links in with staggered delay */
+#mobile-menu.open a:nth-child(1) { transition-delay: 0.2s; }
+#mobile-menu.open a:nth-child(2) { transition-delay: 0.4s; }
+#mobile-menu.open a:nth-child(3) { transition-delay: 0.6s; }
+#mobile-menu.open a:nth-child(4) { transition-delay: 0.8s; }
+#mobile-menu.open a {
+  opacity: 1;
+  transform: translateY(0);
+}
+#message-box button:not(.no-btn){
+  cursor: pointer;
+  background-color: var(--buttonColor);
+  color: var(--textColor);
+  font-weight: bold;
+  padding-inline: 1.5rem;
+  padding-block: 0.5rem; 
+  border-radius: 0.75rem;
+}
+#message-box button:not(.no-btn):hover{
+  background-color: var(--hoverColor);
+  color: var(--shadowColor);
+  box-shadow: 0 0 10px var(--shadowColor);
+}
+/* Responsive for 400%+ zoom */
+@media (max-width: 400px) {
+  #theme-label{
+    font-size: 0.75rem;
+  }
+  #theme-toggle {
+    padding-inline: 1rem;
+    font-size: 0.5rem;
+  }
+  .navbar-bg h1 {
+    font-size: 0.75rem;
+  }
+  h1{
+    font-size: 2rem;
+  }
+}

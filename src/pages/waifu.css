@@ -1,0 +1,48 @@
+/* Waifu card animation */
+.waifu-left, .waifu-right { 
+    opacity: 0; 
+}
+.leftMove { 
+    animation: slideInLeft 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; 
+}
+.rightMove { 
+    animation: slideInRight 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; 
+}
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-80px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(80px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Waifu avatar */
+.changeavt { 
+    pointer-events: none;
+    animation: avtSpin 1.5s cubic-bezier(0.4, 0, 0.2, 1); 
+}
+@keyframes avtSpin {
+    0% { transform: rotate(0deg) scale(1); opacity: 1; filter: blur(0); }
+    50% { transform: rotate(360deg) scale(0.5); opacity: 0; filter: blur(5px); }
+    100% { transform: rotate(720deg) scale(1); opacity: 1; filter: blur(0); }
+}
+
+/* Custom dropdown */
+.open-option { 
+    animation: fadeInDown 1s forwards; 
+}
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.rotate-arrow-up {animation: rotateUp 0.5s ease forwards;}
+.rotate-arrow-down {animation: rotateDown 0.5s ease forwards;}
+@keyframes rotateUp {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+}
+@keyframes rotateDown {
+    from {transform: rotate(180deg);}
+    to {transform: rotate(360deg);}
+}

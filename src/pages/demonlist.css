@@ -1,0 +1,19 @@
+.listElement{
+    transition: all 0.5s ease;
+}
+.listElement:hover {
+    transform: scale(1.05);
+    border-color: var(--shadowColor);
+    box-shadow: 0 0 20px 3px var(--shadowColor);
+}
+.demonlist .demonText::before {
+    counter-increment: section;
+    content: "#" counter(section) " - ";
+}
+
+
+
+
+
+
+
