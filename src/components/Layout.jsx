@@ -8,7 +8,7 @@ export default function Layout() {
     const location = useLocation();
     const [isGatesClosed, setIsGatesClosed] = useState(false);
     const [lockState, setLockState] = useState('idle');
-    // Our custom navigation interceptor
+
     const triggerTransition = (targetPath) => {
         if (targetPath === location.pathname) return;
         setIsGatesClosed(true);

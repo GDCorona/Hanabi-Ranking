@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 
 export default function Navbar({ onNavigate }) {
@@ -27,8 +27,6 @@ export default function Navbar({ onNavigate }) {
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth < 768) {
-                // If resizing down to mobile, force the desktop background open 
-                // so the hamburger menu has a background to sit on!
                 setDesktopOpen((prev) => {
                     if (!prev) {
                         isFirstRender.current = false;
@@ -37,7 +35,6 @@ export default function Navbar({ onNavigate }) {
                     return prev;
                 });
             } else {
-                // If resizing up to desktop, automatically close the mobile dropdown
                 setMobileOpen((prev) => {
                     if (prev) return false;
                     return prev;
@@ -69,7 +66,7 @@ export default function Navbar({ onNavigate }) {
             setTimeout(() => setIsAnimating(false), 800);
         }
     };
-    // 3. THE CLASS CALCULATOR: We let your index.css keyframes take the wheel!
+
     const bgAnimationClass = isFirstRender.current 
         ? 'w-[var(--navbar-bg-width)] opacity-100 pointer-events-auto'
         : (desktopOpen ? 'expanding pointer-events-auto' : 'shrinking pointer-events-none');
@@ -124,7 +121,7 @@ export default function Navbar({ onNavigate }) {
                 </div>
             </div>
         </nav>
-        {/* Mobile Dropdown Menu (Simplified for React) */}
+        {/* Mobile Dropdown Menu */}
         <div id="mobile-menu" className={`fixed bg-(--buttonColor) inset-0 opacity-0 flex flex-col items-center justify-start pt-24 gap-8 text-2xl z-40 ${mobileAnimationClass}`}>
             <a href="/" onClick={(e) => handleLinkClick(e, '/')} className={`nav-link ${location.pathname === '/' ? 'active pointer-events-none' : ''}`}>Home</a>
             <a href="/demonlist" onClick={(e) => handleLinkClick(e, '/demonlist')} className={`nav-link ${location.pathname.includes('/demonlist') ? 'active pointer-events-none' : ''}`}>Demonlist</a>
