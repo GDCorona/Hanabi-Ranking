@@ -62,7 +62,18 @@ export default function Footer({ onNavigate }) {
                 return;
             }
             setVisits(data.visits);
-            localStorage.setItem("supportClicked", "true");     
+            localStorage.setItem("supportClicked", "true"); 
+            // Wait for meme image to be fully loaded
+            const img = new Image();
+            img.src = "/Photos/meme.jpg";
+            await new Promise((resolve) => {
+                if (img.complete) {
+                    resolve();
+                } else {
+                    img.onload = resolve;
+                    img.onerror = resolve;
+                }
+            });    
             if (memeAudioRef.current) {
                 memeAudioRef.current.currentTime = 0;
                 memeAudioRef.current.play().catch(e => console.error("Audio failed to play:", e));
