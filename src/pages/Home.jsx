@@ -32,7 +32,7 @@ const creditsData = [
 const extendedCredits = [creditsData[creditsData.length - 1], ...creditsData, creditsData[0]];
 
 export default function Home() {
-    // ==== Ranking Features Section ====
+    // --- Ranking Features Section ---
     const { triggerTransition } = useOutletContext();
     const demonVideoRef = useRef(null); // Rename your old one so it's clear!
     const waifuVideoRef = useRef(null); // Add this one
@@ -63,7 +63,7 @@ export default function Home() {
         }, 1000);
     };
 
-    // ==== Coming Soon Section ====
+    // --- Coming Soon Section ---
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -84,7 +84,7 @@ export default function Home() {
         return () => observer.disconnect();
     }, []);
 
-    // ====== Credits Section ======
+    // --- Credits Section ---
     const [currentIndex, setCurrentIndex] = useState(1);
     const [transitionEnabled, setTransitionEnabled] = useState(true);
     const isTransitioning = useRef(false);

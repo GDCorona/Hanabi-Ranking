@@ -1,4 +1,3 @@
-//variables
 export const waifuList = [
     {
         personality: 1,

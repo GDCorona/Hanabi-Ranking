@@ -131,26 +131,26 @@ export default function Footer({ onNavigate }) {
                         <div className="space-y-4 flex flex-col items-center md:items-start md:pl-10">
                             <h4 className="text-xl font-bold uppercase tracking-widest opacity-90 border-b-2 border-(--shadowColor) pb-1 inline-block">Links</h4>
                             <div className="flex flex-col items-center md:items-start gap-3 mt-4 text-lg font-semibold">
-                                <a href="/" onClick={(e) => handleLinkClick(e, '/')} className={`footer-link ${location.pathname === '/' ? 'active pointer-events-none' : ''}`}>Home</a>
-                                <a href="/demonlist" onClick={(e) => handleLinkClick(e, '/demonlist')} className={`footer-link ${location.pathname === '/demonlist' || location.pathname.includes('/demoninfo') ? 'active pointer-events-none' : ''}`}>Demonlist</a>
-                                <a href="/waifu" onClick={(e) => handleLinkClick(e, '/waifu')} className={`footer-link ${location.pathname === '/waifu' ? 'active pointer-events-none' : ''}`}>Waifu</a>
-                                <a href="/about" onClick={(e) => handleLinkClick(e, '/about')} className={`footer-link ${location.pathname === '/about' ? 'active pointer-events-none' : ''}`}>About</a>  
+                                <a href="/" onClick={(e) => handleLinkClick(e, '/')} className={`w-fit font-semibold transition-all duration-400 hover:text-(--hoverColor) hover:translate-x-2 ${location.pathname === '/' ? 'text-(--hoverColor) pointer-events-none' : ''}`}>Home</a>
+                                <a href="/demonlist" onClick={(e) => handleLinkClick(e, '/demonlist')} className={`w-fit font-semibold transition-all duration-400 hover:text-(--hoverColor) hover:translate-x-2 ${location.pathname === '/demonlist' || location.pathname.includes('/demoninfo') ? 'text-(--hoverColor) pointer-events-none' : ''}`}>Demonlist</a>
+                                <a href="/waifu" onClick={(e) => handleLinkClick(e, '/waifu')} className={`w-fit font-semibold transition-all duration-400 hover:text-(--hoverColor) hover:translate-x-2 ${location.pathname === '/waifu' ? 'text-(--hoverColor) pointer-events-none' : ''}`}>Waifu</a>
+                                <a href="/about" onClick={(e) => handleLinkClick(e, '/about')} className={`w-fit font-semibold transition-all duration-400 hover:text-(--hoverColor) hover:translate-x-2 ${location.pathname === '/about' ? 'text-(--hoverColor) pointer-events-none' : ''}`}>About</a>  
                             </div>
                         </div>
                         <div className="space-y-4 flex flex-col items-center md:items-start">
                             <h4 className="text-xl font-bold uppercase tracking-widest opacity-90 border-b-2 border-(--shadowColor) pb-1 inline-block">Connect With Me</h4>
-                            <div className="socialIcon flex flex-wrap justify-center md:justify-start gap-5 mt-4">
-                                <a className="cursor-pointer group" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN" aria-label="Facebook">
-                                    <img src="/Photos/facebook.png" alt="Facebook" className="w-10 h-10 drop-shadow-lg group-hover:scale-125 transition-transform duration-300" />
+                            <div className="flex flex-wrap justify-center md:justify-start gap-5 mt-4">
+                                <a className="group cursor-pointer" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN" aria-label="Facebook">
+                                    <img src="/Photos/facebook.png" alt="Facebook" className="w-8 h-8 drop-shadow-lg group-hover:scale-125 transition-transform duration-300" />
                                 </a>
-                                <a className="cursor-pointer group" target="_blank" rel="noopener noreferrer" href="https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ" aria-label="YouTube">
-                                    <img src="/Photos/youtube.png" alt="YouTube" className="w-10 h-10 drop-shadow-lg group-hover:scale-125 transition-transform duration-300" />
+                                <a className="group cursor-pointer" target="_blank" rel="noopener noreferrer" href="https://youtube.com/@Hanabi1801?si=aEir7zWwh9tpcmwZ" aria-label="YouTube">
+                                    <img src="/Photos/youtube.png" alt="YouTube" className="w-8 h-8 drop-shadow-lg group-hover:scale-125 transition-transform duration-300" />
                                 </a>
-                                <a className="cursor-pointer group" target="_blank" rel="noopener noreferrer" href="http://discord.com/users/785306828661456906" aria-label="Discord">
-                                    <img src="/Photos/discord.png" alt="Discord" className="w-10 h-10 drop-shadow-lg group-hover:scale-125 transition-transform duration-300" />
+                                <a className="group cursor-pointer" target="_blank" rel="noopener noreferrer" href="http://discord.com/users/785306828661456906" aria-label="Discord">
+                                    <img src="/Photos/discord.png" alt="Discord" className="w-8 h-8 drop-shadow-lg group-hover:scale-125 transition-transform duration-300" />
                                 </a>
-                                <a className="cursor-pointer group" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/l___hanabi___l/" aria-label="Instagram">
-                                    <img src="/Photos/instagram.png" alt="Instagram" className="w-10 h-10 drop-shadow-lg group-hover:scale-125 transition-transform duration-300" />
+                                <a className="group cursor-pointer" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/l___hanabi___l/" aria-label="Instagram">
+                                    <img src="/Photos/instagram.png" alt="Instagram" className="w-8 h-8 drop-shadow-lg group-hover:scale-125 transition-transform duration-300" />
                                 </a>            
                             </div>
                         </div>

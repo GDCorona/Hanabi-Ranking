@@ -112,7 +112,7 @@ export default function Demoninfo() {
         demonData.peakRank ? { label: "List placement when completed", value: demonData.peakRank } : null,
         { label: "Difficulty", value: demonData.difficulty },
         { label: "My Difficulty", value: getOpinionFromValue(demonData.difficultyValue, demonData.opinion) }
-    ].filter(Boolean); // Removes null entries like peakRank if undefined
+    ].filter(Boolean); // Removes null entries if undefined
 
     return (
         <main className="relative min-h-screen pt-40 pb-20">

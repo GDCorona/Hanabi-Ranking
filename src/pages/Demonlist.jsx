@@ -8,10 +8,10 @@ import Comments from '../components/Comments';
 const opinionChangelogData = [
     { date: "May 3, 2026", desc: "This new demonlist was created!" },
 ]; 
-
 const aredlChangelogData = [
     { date: "May 3, 2026", desc: "This new demonlist was created!" },
 ];
+
 export default function Demonlist() {
     const navigate  = useNavigate();
     const [demons, setDemons] = useState(initialDemonList);
@@ -83,6 +83,7 @@ export default function Demonlist() {
         ? <p>Now you are viewing my top 30 according to the AREDL (All Rated Extreme Demons List) placement. Note that the legacy list below will change too. You can find more info about the AREDL <a href="https://aredl.net/" target="_blank" rel="noreferrer" className="font-extrabold underline text-(--shadowColor) hover:text-(--textColor) transition-colors duration-300 cursor-pointer">here</a>.</p>
         : <p>The demons are ranked solely based on my opinion. Just wanna make clear that I want to rank them in the rawest form, which means I highly prioritize 60hz factor and I dont want things like high refresh rate or CBF to heavily affect the difficulty. Thus skill-based levels with hard wave and ship will be placed really high.</p>;
 
+    // --- Demon Card ---
     const DemonCard = ({ demon, index }) => (
         <li 
             onClick={() => handleDemonClick(demon, index)}
@@ -104,12 +105,12 @@ export default function Demonlist() {
             </div>
         </li>
     );
-
     const handleDemonClick = (demon, index) => {
         const query = encodeURIComponent(demon.name);
         const position = index < 30 ? index + 1 : 'Legacy';
         navigate(`/demoninfo?name=${query}&position=${position}`);
     };
+
     return(
         <main>
             {/* Loading Overlay */}

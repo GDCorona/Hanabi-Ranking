@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import PageTitle from './components/PageTitle';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Demonlist from './pages/Demonlist';
@@ -9,8 +10,8 @@ import About from './pages/About';
 import { demonList } from './data/demondata';
 
 export default function App() {
-    // --- Global Asset Preloader ---
     useEffect(() => {
+        // --- Global Asset Preloader ---
         const preloadImage = (src) => {
             return new Promise((resolve) => {
                 const img = new Image();
@@ -35,23 +36,24 @@ export default function App() {
             ];
             // Load all backgrounds
             await Promise.all(bgImages.map(preloadImage));
-            console.log("Global Backgrounds preloaded successfully!");
             // Load all demon thumbnails
             const demonThumbnails = demonList.map(demon => demon.image);
             await Promise.all(demonThumbnails.map(preloadImage));
-            console.log("Demon thumbnails preloaded successfully!");
         };
         runPreloader();
     }, []);
     return (
-        <Routes>
-            <Route path="/" element={<Layout />}>
-                <Route index element={<Home />} />
-                <Route path="demonlist" element={<Demonlist />} />
-                <Route path="demoninfo" element={<Demoninfo />} />
-                <Route path="waifu" element={<Waifu />} />
-                <Route path="about" element={<About />} />
-            </Route>
-        </Routes>
+        <>
+            <PageTitle />  
+            <Routes>                
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path="demonlist" element={<Demonlist />} />
+                    <Route path="demoninfo" element={<Demoninfo />} />
+                    <Route path="waifu" element={<Waifu />} />
+                    <Route path="about" element={<About />} />
+                </Route>
+            </Routes>
+        </>
     );
 }
