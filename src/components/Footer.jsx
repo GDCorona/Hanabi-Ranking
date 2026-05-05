@@ -125,7 +125,7 @@ export default function Footer({ onNavigate }) {
                         <div className="space-y-4">
                             <h3 className="text-3xl font-extrabold tracking-wider drop-shadow-md">Hanabi Ranking</h3>
                             <p className="text-lg font-medium italic opacity-80 leading-relaxed max-w-sm mx-auto md:mx-0">
-                                A place where all my interests come together.
+                                The place where all my interests come together.
                             </p>
                         </div>
                         <div className="space-y-4 flex flex-col items-center md:items-start md:pl-10">
