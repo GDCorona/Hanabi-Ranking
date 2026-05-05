@@ -53,6 +53,11 @@ export default function Footer({ onNavigate }) {
         try {
             const res = await fetch(`${CONFIG.API_BASE_URL}/api/visits`, { method: "POST" });
             const data = await res.json();
+            if (!res.ok) {
+                localStorage.setItem("supportClicked", "true"); 
+                showDialog(data.error, { showMeme: false }); 
+                return;
+            }
             setVisits(data.visits);
             localStorage.setItem("supportClicked", "true");     
             if (memeAudioRef.current) {
