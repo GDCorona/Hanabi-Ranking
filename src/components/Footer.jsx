@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { CONFIG } from '../config';
 import { useDialog } from '../context/DialogContext';
 
+let globalIsFetching = false;
 export default function Footer({ onNavigate }) {
     const location = useLocation();
     const [visits, setVisits] = useState("...");
@@ -47,17 +48,20 @@ export default function Footer({ onNavigate }) {
     }, [isDemonInfoPage]);
 
     const handleSupportClick = async () => {
-        if (isFetchingRef.current || localStorage.getItem("supportClicked")) return;
-        if (!isFetchingRef.current && localStorage.getItem("supportClicked")) {
+        if (globalIsFetching || localStorage.getItem("supportClicked")) {
             showDialog("You have already clicked!", { showMeme: false});
             return;
         }
-        isFetchingRef.current = true;
+        globalIsFetching = true;
         try {
             const res = await fetch(`${CONFIG.API_BASE_URL}/api/visits`, { method: "POST" });
             const data = await res.json();
             if (!res.ok) {
-                localStorage.setItem("supportClicked", "true"); 
+                if (res.status === 403) {
+                    localStorage.setItem("supportClicked", "true");
+                    setVisits(data.visits);
+                    return; 
+                }
                 showDialog(data.error, { showMeme: false }); 
                 return;
             }
@@ -71,7 +75,7 @@ export default function Footer({ onNavigate }) {
         } catch (err) {
             console.error("Failed to update visits:", err);
         } finally {
-            isFetchingRef.current = false;
+            globalIsFetching = false;
         }
     };
     const handleLinkClick = (e, path) => {
