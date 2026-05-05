@@ -1,30 +1,28 @@
-import { createContext, useState, useContext, useRef } from 'react';
+import { createContext, useContext, useState, useEffect, useRef } from 'react';
 
 const DialogContext = createContext();
 
 export const useDialog = () => useContext(DialogContext);
 
 export const DialogProvider = ({ children }) => {
-    // Look how much simpler the state is! No more isVisible needed.
     const [modal, setModal] = useState({ isOpen: false, message: "", options: {} });
     const [inputValue, setInputValue] = useState("");
     const promiseRef = useRef(null);
-
+    useEffect(() => {
+        const preloadImage = new Image();
+        preloadImage.src = "/Photos/meme.jpg"; 
+    }, []);
+    
     const showDialog = (message, options = {}) => {
         setInputValue(options.defaultValue || "");
-        // Just turn it on. Tailwind handles the smooth fade/scale!
         setModal({ isOpen: true, message, options });
-        
         return new Promise((resolve) => {
             promiseRef.current = resolve;
         });
     };
 
     const handleClose = (result) => {
-        // 1. Turn isOpen false to trigger Tailwind's fade-out & shrink transition
         setModal(prev => ({ ...prev, isOpen: false }));
-        
-        // 2. Wait exactly 300ms for the animation to finish before unlocking the Promise
         setTimeout(() => {
             if (promiseRef.current) promiseRef.current(result);
         }, 300);
@@ -38,10 +36,9 @@ export const DialogProvider = ({ children }) => {
 
     return (
         <DialogContext.Provider value={{ showDialog }}>
-            {/* This renders your whole website */}
+            {/* Render whole website */}
             {children}
-            
-            {/* --- Custom Modal Dialog (Always Rendered Structure) --- */}
+            {/* --- Custom Dialog --- */}
             <div 
                 id="overlay" 
                 className={`fixed inset-0 bg-(--textColor)/80 overflow-y-auto z-100 flex min-h-full items-center justify-center p-4 transition-opacity duration-300 ease-out ${modal.isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}

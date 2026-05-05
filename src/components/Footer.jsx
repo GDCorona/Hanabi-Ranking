@@ -13,7 +13,7 @@ export default function Footer({ onNavigate }) {
     const isFetchingRef = useRef(false);
     useEffect(() => {
         memeAudioRef.current = new Audio("https://feeds.soundcloud.com/stream/1602217236-corona-689894639-meme.mp3");
-        memeAudioRef.current.load();
+        memeAudioRef.current.load();        
     }, []);
     // --- Jump to top listener ---
     useEffect(() => {
