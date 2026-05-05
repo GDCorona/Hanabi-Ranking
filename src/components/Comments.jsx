@@ -14,6 +14,12 @@ export default function Comments({ pageName }) {
         try {
             const res = await fetch(`${CONFIG.API_BASE_URL}/api/comments?page=${pageName}`);
             const data = await res.json();
+            // Pinned comments go first. Then sort by date
+            const sortedComments = data.sort((a, b) => {
+                if (a.isPinned && !b.isPinned) return -1;
+                if (!a.isPinned && b.isPinned) return 1;
+                return new Date(b.timestamp) - new Date(a.timestamp); 
+            });
             setComments(data);
         } catch (err) {
             console.error("Failed to load comments:", err);
@@ -177,10 +183,25 @@ export default function Comments({ pageName }) {
                     <div key={c._id} className="flex flex-col sm:flex-row gap-4 sm:gap-6 group">
                         <img src={c.avatar || "/Photos/defaultAvt.png"} onError={(e) => e.target.src="/Photos/defaultAvt.png"} alt="Avatar"
                             className="w-16 h-16 rounded-full object-cover border-2 border-(--shadowColor)/50 shadow-md mx-auto sm:mx-0" />
-                        
-                        <div className="flex-1 min-w-0 bg-(--bgColor) p-6 rounded-2xl shadow-md border border-(--shadowColor)/20 transition-all duration-300 group-hover:shadow-lg group-hover:border-(--shadowColor)/50"> 
+
+                        <div className={`flex-1 min-w-0 bg-(--bgColor) p-6 rounded-2xl transition-all duration-300
+                            ${c.isPinned 
+                                ? 'border-2 border-(--shadowColor) shadow-[0_0_5px_var(--shadowColor)]' 
+                                : 'border border-(--shadowColor)/30 shadow-md group-hover:shadow-lg group-hover:border-(--shadowColor)/70'
+                            }`}
+                        >
                             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-1 mb-3">
-                                <span className="font-extrabold text-lg text-(--textColor) truncate w-full text-center sm:text-left">{c.name || "unknown user"}</span>
+                                <div className="flex items-center justify-center sm:justify-start gap-4 w-full">
+                                    <span className="font-extrabold text-lg text-(--textColor) truncate text-center sm:text-left">{c.name || "unknown user"}</span>
+                                    {c.isPinned && (
+                                        <svg fill="var(--textColor)" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 shrink-0">
+                                            <path d="M31.714 11.864l-11.505-11.563c-0.248-0.249-0.605-0.35-0.948-0.266-0.341 0.083-0.613 0.339-0.717 0.674-0.692 2.228-0.773 4.245-0.244 6.084-0.049 0.034-0.095 0.070-0.138 0.113l-5.347 5.346c-1.725-0.8-3.579-1.233-5.428-1.233-1.175 0-2.327 0.174-3.424 0.515-0.334 0.104-0.59 0.375-0.674 0.714s0.014 0.698 0.261 0.947l6.843 6.887-9.568 9.72-0.832 2.192 2.011-0.777 9.793-9.72 6.932 6.977c0.189 0.192 0.447 0.295 0.709 0.295 0.079 0 0.159-0.010 0.238-0.029 0.341-0.084 0.613-0.34 0.717-0.675 0.905-2.913 0.64-6.042-0.636-8.848l5.459-5.46c0.020-0.020 0.033-0.041 0.051-0.063 0.824 0.236 1.678 0.361 2.564 0.361 1.101 0 2.268-0.158 3.468-0.531 0.334-0.104 0.59-0.375 0.674-0.714s-0.015-0.697-0.262-0.945zM18.849 25.755l-12.587-12.669c3.23-0.377 6.714 0.925 9.236 3.447 2.51 2.509 3.735 5.978 3.351 9.221zM18.757 17.392c-0.526-0.804-1.14-1.568-1.845-2.274-0.702-0.702-1.469-1.321-2.28-1.854l4.504-4.503c0.459 0.799 1.052 1.563 1.782 2.291 0.745 0.745 1.534 1.348 2.363 1.814zM22.332 9.639c-1.923-1.923-2.664-4.067-2.271-6.653l8.966 9.012c-2.583 0.37-4.738-0.403-6.695-2.36z"
+                                                stroke="var(--textColor)" 
+                                                strokeWidth="1"
+                                            ></path>
+                                        </svg>
+                                    )}
+                                </div>
                                 <span className="text-sm font-medium text-(--textColor)/60 shrink-0">{timeAgo(c.timestamp)}</span>
                             </div>  
                             <p className="text-(--textColor) text-base leading-relaxed whitespace-pre-wrap wrap-break-word text-center sm:text-left opacity-90">{c.text}</p>

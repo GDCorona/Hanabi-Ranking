@@ -34,10 +34,11 @@ const extendedCredits = [creditsData[creditsData.length - 1], ...creditsData, cr
 export default function Home() {
     // ==== Ranking Features Section ====
     const { triggerTransition } = useOutletContext();
-    const videoRef = useRef(null);
+    const demonVideoRef = useRef(null); // Rename your old one so it's clear!
+    const waifuVideoRef = useRef(null); // Add this one
     useEffect(() => {
-        if (videoRef.current) {
-            videoRef.current.playbackRate = 0.7;
+        if (demonVideoRef.current) {
+            demonVideoRef.current.playbackRate = 0.7;
         }
     }, []);
     const handleIconClick = (e, targetUrl) => {
@@ -45,6 +46,8 @@ export default function Home() {
         const wrapper = e.currentTarget;
         const icon = wrapper.querySelector('img');
         wrapper.style.pointerEvents = "none";
+        if (demonVideoRef.current) demonVideoRef.current.pause();
+        if (waifuVideoRef.current) waifuVideoRef.current.pause();
         let duration = 10;
         icon.style.animation = `spin ${duration}s linear infinite`;
         const interval = setInterval(() => {
@@ -144,7 +147,7 @@ export default function Home() {
             <h2 className="text-center font-extrabold text-4xl md:text-6xl text-(--textColor) m-10">What I rank</h2>
             {/* Demonlist Block */}
             <div className="flex flex-col md:flex-row items-center justify-between relative w-full py-40 md:px-24 gap-15">
-                <video ref={videoRef} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover opacity-70 brightness-70 -z-1">
+                <video ref={demonVideoRef} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover opacity-70 brightness-70 -z-1">
                     <source src="/Photos/demonlist.mp4" type="video/mp4" />
                 </video>
                 <div className="flex justify-center flex-col w-full md:w-1/2 gap-10 text-center md:text-left z-10 text-highlight">
@@ -162,7 +165,9 @@ export default function Home() {
             </div>
             {/* Waifu Block */}
             <div className="flex flex-col md:flex-row items-center justify-between relative w-full py-40 md:px-24 gap-15">
-                <img src="/Photos/waifu.gif" className="absolute inset-0 w-full h-full object-cover opacity-70 brightness-70 -z-1" />
+                <video ref={waifuVideoRef} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover opacity-70 brightness-70 -z-1">
+                    <source src="/Photos/waifu.mp4" type="video/mp4" />
+                </video>                
                 <div className="flex justify-center flex-col w-full md:w-1/2 gap-6 md:gap-10 text-highlight text-center md:text-right z-10 order-1 md:order-3">
                     <h2 className="font-extrabold text-5xl md:text-6xl text-(--textColor)">Waifu</h2>
                     <h3 className="text-xl md:text-3xl text-(--textColor)">Here you can view my top favorite waifus, ranked by 3 categories and my in-deep thought about them</h3>
