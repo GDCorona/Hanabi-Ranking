@@ -10,6 +10,7 @@ export default function Footer({ onNavigate }) {
     const isDemonInfoPage = location.pathname.includes('/demoninfo');
     const { showDialog } = useDialog();
     const memeAudioRef = useRef(null);
+    const isFetchingRef = useRef(false);
     useEffect(() => {
         memeAudioRef.current = new Audio("https://feeds.soundcloud.com/stream/1602217236-corona-689894639-meme.mp3");
         memeAudioRef.current.load();
@@ -46,10 +47,12 @@ export default function Footer({ onNavigate }) {
     }, [isDemonInfoPage]);
 
     const handleSupportClick = async () => {
+        if (isFetchingRef.current) return;
         if (localStorage.getItem("supportClicked")) {
             showDialog("You have already clicked!", { showMeme: false});
             return;
         }
+        isFetchingRef.current = true;
         try {
             const res = await fetch(`${CONFIG.API_BASE_URL}/api/visits`, { method: "POST" });
             const data = await res.json();
@@ -67,6 +70,8 @@ export default function Footer({ onNavigate }) {
             showDialog("Thank you for your support! ❤️", { showMeme: true });
         } catch (err) {
             console.error("Failed to update visits:", err);
+        } finally {
+            isFetchingRef.current = false;
         }
     };
     const handleLinkClick = (e, path) => {
