@@ -171,7 +171,7 @@ export default function About() {
 
     // -- Coding Section --
     const [activeTech, setActiveTech] = useState(null);
-    const [orbitSpeed, setOrbitSpeed] = useState(0.1);
+    const [orbitSpeed, setOrbitSpeed] = useState(0.2);
     const [showCLoseBtn, setShowCloseBtn] = useState(false);
     const orbitRef = useRef(null);
     const requestRef = useRef();
