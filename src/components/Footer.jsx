@@ -121,14 +121,14 @@ export default function Footer({ onNavigate }) {
 
                 {/* Footer Bottom Block */}
                 <footer className="footer bg-linear-to-b from-(--buttonColor) to-(--bgColor) text-(--textColor) text-center text-xl mt-32 pt-10 pb-4 w-full">
-                    <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
-                        <div className="space-y-4">
+                    <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-7 gap-12 text-center md:text-left">
+                        <div className="space-y-4 md:col-span-3">
                             <h3 className="text-3xl font-extrabold tracking-wider drop-shadow-md">Hanabi Ranking</h3>
                             <p className="text-lg font-medium italic opacity-80 leading-relaxed max-w-sm mx-auto md:mx-0">
                                 The place where all my interests come together.
                             </p>
                         </div>
-                        <div className="space-y-4 flex flex-col items-center md:items-start md:pl-10">
+                        <div className="space-y-4 md:col-span-2 flex flex-col items-center md:items-start md:pl-10">
                             <h4 className="text-xl font-bold uppercase tracking-widest opacity-90 border-b-2 border-(--shadowColor) pb-1 inline-block">Links</h4>
                             <div className="flex flex-col items-center md:items-start gap-3 mt-4 text-lg font-semibold">
                                 <a href="/" onClick={(e) => handleLinkClick(e, '/')} className={`w-fit font-semibold transition-all duration-400 hover:text-(--hoverColor) hover:translate-x-2 ${location.pathname === '/' ? 'text-(--hoverColor) pointer-events-none' : ''}`}>Home</a>
@@ -137,7 +137,7 @@ export default function Footer({ onNavigate }) {
                                 <a href="/about" onClick={(e) => handleLinkClick(e, '/about')} className={`w-fit font-semibold transition-all duration-400 hover:text-(--hoverColor) hover:translate-x-2 ${location.pathname === '/about' ? 'text-(--hoverColor) pointer-events-none' : ''}`}>About</a>  
                             </div>
                         </div>
-                        <div className="space-y-4 flex flex-col items-center md:items-start">
+                        <div className="space-y-4 md:col-span-2 flex flex-col items-center md:items-start">
                             <h4 className="text-xl font-bold uppercase tracking-widest opacity-90 border-b-2 border-(--shadowColor) pb-1 inline-block">Connect With Me</h4>
                             <div className="flex flex-wrap justify-center md:justify-start gap-5 mt-4">
                                 <a className="group cursor-pointer" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100013302840565&locale=vi_VN" aria-label="Facebook">
