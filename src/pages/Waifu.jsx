@@ -86,7 +86,7 @@ const WaifuCard = ({ waifu, index, isHonorable, sortType, activeWaifu, onToggle,
                     <h4 className="title-font w-fit mx-auto md:mx-0 bg-(--buttonColor) text-xs sm:text-lg italic text-(--textColor) font-semibold px-5 py-1.5 rounded-full border border-(--textColor)/20 mb-6 shadow-sm">
                         {waifu.anime}
                     </h4>
-                    <p className="text-base sm:text-xl text-(--textColor) leading-relaxed opacity-90 font-medium">
+                    <p className="text-base sm:text-xl text-(--textColor) leading-relaxed opacity-90 font-medium whitespace-pre-line">
                         {infoText}
                     </p>
                 </div>
