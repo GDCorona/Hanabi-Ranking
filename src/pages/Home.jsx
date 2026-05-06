@@ -4,8 +4,13 @@ import './home.css';
 
 const creditsData = [
     {
+        imgSrc: "/Photos/render.png", imgAlt: "render",
+        text: "Render is currently where this website is hosted. It allows me to deploy frontend and backend together with ease and efficiency. Would highly recommend.",
+        linkHref: "https://render.com/", linkText: "Check out Render →"
+    },
+    {
         imgSrc: "/Photos/github.png", imgAlt: "github",
-        text: "Github allows me to host this website for free. Huge thanks to them for providing a useful, easy-to-use hosting service!",
+        text: "GitHub was originally the sole host for this website and now still serves as the essential repository for my source code.",
         linkHref: "https://github.com/", linkText: "Check out Github →"
     },
     {
@@ -25,7 +30,7 @@ const creditsData = [
     },
     {
         imgSrc: "/Photos/pinterest.png", imgAlt: "pinterest",
-        text: "Pinterest is where I found and stored most of the beautiful images used in this website.",
+        text: "Pinterest is where I found and stored lots of the beautiful images used in this website.",
         linkHref: "https://www.pinterest.com/", linkText: "Check out Pinterest →"
     }
 ];
@@ -34,8 +39,8 @@ const extendedCredits = [creditsData[creditsData.length - 1], ...creditsData, cr
 export default function Home() {
     // --- Ranking Features Section ---
     const { triggerTransition } = useOutletContext();
-    const demonVideoRef = useRef(null); // Rename your old one so it's clear!
-    const waifuVideoRef = useRef(null); // Add this one
+    const demonVideoRef = useRef(null);
+    const waifuVideoRef = useRef(null);
     useEffect(() => {
         if (demonVideoRef.current) {
             demonVideoRef.current.playbackRate = 0.7;
@@ -132,11 +137,11 @@ export default function Home() {
             <div id="title" className="relative min-h-screen flex flex-col items-center justify-center px-6 py-30 bg-cover bg-center bg-no-repeat">
                 <img src="/Photos/homeBG.gif" alt="titleBG" className="absolute inset-0 w-full h-full object-cover opacity-100 brightness-40 contrast-100 -z-2" />
                 <h1 className="relative text-center font-extrabold text-4xl md:text-6xl text-(--textColor) mb-15 md:mb-30 drop-shadow-xl z-1">
-                    <span className="text-neon-gradient home-font"> Welcome to Hanabi's official website!</span>
+                    <span className="text-neon-gradient home-font tracking-wide"> Welcome to Hanabi's official website!</span>
                 </h1>
                 <div className="w-[90%] md:w-[70%] h-0.5 bg-linear-45 from-(-shadowColor) via-(--titleColor) to-transparent opacity-60 mb-4"></div>
                 <h2 className="relative text-center font-semibold italic text-xl md:text-3xl text-(--textColor) z-1 m-5">
-                    <span className="text-neon-gradient home-font">The place where I rank all kind of stuff that I like</span>
+                    <span className="text-neon-gradient home-font tracking-wide">The place where I rank all kind of stuff that I like</span>
                 </h2>
                 <div className="w-[60%] md:w-[40%] h-0.5 bg-linear-45 from-(-shadowColor) via-(--titleColor) to-transparent opacity-40 mt-4"></div>
             </div>
