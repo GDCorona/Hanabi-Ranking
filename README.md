@@ -1,6 +1,6 @@
 # 🎆 Hanabi Ranking - Where my deepest self unfolds
 ### Visit the site here: https://hanabiranking.work.gd 
-This is my heartfelt project whose first ideas have been established during my high school years. Since then it has gone through two major phases: the first version featured only the demonlist, while the second one introduced the other three pages. Now after a long period of procrastination and months of hard work I can finally present to you this massive new update!
+This is my heartfelt project whose first ideas were established during my high school years. Since then, it has gone through two major phases: the first version featured only the demonlist, while the second one introduced the other three pages. Now after a long period of procrastination and months of hard work I can finally present to you this massive new update!
 
 ## 📃 What's new
 ### ⭐ Features
