@@ -6,10 +6,10 @@ import './demonlist.css';
 import Comments from '../components/Comments';
 
 const opinionChangelogData = [
-    { date: "May 3, 2026", desc: "This new demonlist was created!" },
+    { date: "May 6, 2026", desc: "This new demonlist was created!" },
 ]; 
 const aredlChangelogData = [
-    { date: "May 3, 2026", desc: "This new demonlist was created!" },
+    { date: "May 6, 2026", desc: "This new demonlist was created!" },
 ];
 
 export default function Demonlist() {
