@@ -116,15 +116,15 @@ export default function Comments({ pageName }) {
             const res = await fetch(`${CONFIG.API_BASE_URL}/api/comments/${comment._id}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ text: newText })
+                body: JSON.stringify({ text: newText, email: formData.email })
             });
             if (res.ok) loadComments();
         }
     };
-    const handleDelete = async (id) => {
+    const handleDelete = async (comment) => {
         const proceed = await showDialog("Are you sure you want to delete this comment?", { confirm: true });
         if (proceed) {
-            const res = await fetch(`${CONFIG.API_BASE_URL}/api/comments/${id}`, { method: "DELETE" });
+            const res = await fetch(`${CONFIG.API_BASE_URL}/api/comments/${comment._id}?email=${encodeURIComponent(formData.email)}`, { method: "DELETE" });
             if (res.ok) loadComments();
         }
     };
@@ -205,11 +205,12 @@ export default function Comments({ pageName }) {
                                 <span className="text-sm font-medium text-(--textColor)/60 shrink-0">{timeAgo(c.timestamp)}</span>
                             </div>  
                             <p className="text-(--textColor) text-base leading-relaxed whitespace-pre-wrap wrap-break-word text-center sm:text-left opacity-90">{c.text}</p>
-                            
-                            <div className="mt-4 flex justify-center sm:justify-start gap-5">
-                                <button onClick={() => handleEdit(c)} className="text-blue-400 hover:text-blue-300 font-bold text-sm tracking-wide transition-colors cursor-pointer">Edit</button>
-                                <button onClick={() => handleDelete(c._id)} className="text-red-500 hover:text-red-400 font-bold text-sm tracking-wide transition-colors cursor-pointer">Delete</button>
-                            </div>
+                            {formData.email && formData.email === c.email && (
+                                <div className="mt-4 flex justify-center sm:justify-start gap-5">
+                                    <button onClick={() => handleEdit(c)} className="text-blue-400 hover:text-blue-300 font-bold text-sm tracking-wide transition-colors cursor-pointer">Edit</button>
+                                    <button onClick={() => handleDelete(c._id)} className="text-red-500 hover:text-red-400 font-bold text-sm tracking-wide transition-colors cursor-pointer">Delete</button>
+                                </div>
+                            )}
                         </div>
                     </div>
                 ))}
