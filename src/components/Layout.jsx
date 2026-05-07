@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -9,6 +9,16 @@ export default function Layout() {
     const [isGatesClosed, setIsGatesClosed] = useState(false);
     const [lockState, setLockState] = useState('idle');
 
+    // No scrollbar when gates are closed
+    useEffect(() => {
+        if (isGatesClosed) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+        return () => document.body.classList.remove('no-scroll');
+    }, [isGatesClosed]);
+    // Gates transition logic
     const triggerTransition = (targetPath) => {
         if (targetPath === location.pathname) return;
         setIsGatesClosed(true);
