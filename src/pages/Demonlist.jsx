@@ -7,9 +7,11 @@ import Comments from '../components/Comments';
 
 const opinionChangelogData = [
     { date: "May 5, 2026", desc: "This new demonlist was created!" },
+    { date: "May 14, 2026", desc: "Subsonic placed at #11, HURRICANE out of top 30." }
 ]; 
 const aredlChangelogData = [
     { date: "May 5, 2026", desc: "This new demonlist was created!" },
+    { date: "May 14, 2026", desc: "Subsonic placed at #10, Mazemory out of top 30." }
 ];
 
 export default function Demonlist() {

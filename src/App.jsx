@@ -22,6 +22,8 @@ export default function App() {
         };
         const runPreloader = async () => {
             const bgImages = [
+                '/Photos/loadIcon.png', 
+                '/Photos/lockIcon.png',
                 '/Photos/homeBG.gif',            
                 '/Demonlist/demonlistBG.jpg',    
                 '/Waifu/waifuBG.jpg',            

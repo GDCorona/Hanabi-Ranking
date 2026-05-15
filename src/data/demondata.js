@@ -167,6 +167,20 @@ export const demonList = [
     video: "16SSkm92iQ8?si=nphFatatRrrOxxLE"
   },
   {
+    name: "SubSonic",
+    creator: "ViPriN & more",
+    image: "/Demonlist/Thumbnails/SubSonic.png",
+    difficulty: "Insane tier NLW",
+    opinion: "High Insane/Low Extreme tier NLW",
+    difficultyValue: 6.92,
+    fps: "240 (CBF)",
+    attempts: "8468",
+    worstFail: "88%",
+    enjoyment: "9.7/10",
+    date: "14/5/2026",
+    video: "TVrX33V0iX0?si=FohPuvZXhLEzrzr3"
+  },
+  {
     name: "EnvY",
     creator: "DanZmeN",
     image: "/Demonlist/Thumbnails/Envy.png",
@@ -186,7 +200,7 @@ export const demonList = [
     image: "/Demonlist/Thumbnails/DownBass.png",
     difficulty: "Hard tier NLW",
     opinion: "High Insane tier NLW",
-    difficultyValue: 6.82,
+    difficultyValue: 6.79,
     fps: "240",
     attempts: "4902",
     worstFail: "69%",
@@ -438,6 +452,7 @@ export const demonList = [
     date: "8/1/2022",
     video: "xCQuDfkmPIs?si=rKLCesqzbgO-YEdV"
   },
+  // Not list worthy
   {
     name: "HURRICANE",
     creator: "Bianox & more",
@@ -452,7 +467,6 @@ export const demonList = [
     date: "7/7/2024",
     video: "e5ByGqvrmQg?si=6ZCRhkFmv0GpqSnG"
   },
-  // Not list worthy
   {
     name: "Halberd",
     creator: "Notlsa & th31",
