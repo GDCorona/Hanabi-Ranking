@@ -498,6 +498,21 @@ export const demonList = [
     video: "p-mcqxHz7MI?si=THfc-ACPZvk-hYpb"
   },
   {
+    name: "EXTREME MEMORY MIX",
+    creator: "At424",
+    visibility: "aredl",
+    image: "/Demonlist/Thumbnails/EMM.png",
+    difficulty: "Easy tier NLW",
+    opinion: "Low - Mid Easy tier NLW",
+    difficultyValue: 2.34,
+    fps: "240",
+    attempts: "5908",
+    worstFail: "62%",
+    enjoyment: "5.7/10",
+    date: "21/5/2026",
+    video: "_zxqPabKj68?si=RIXtdKxB115azBVK"
+  },
+  {
     name: "Cerebral Hemorrhage",
     creator: "NateFH",
     visibility: "aredl",
