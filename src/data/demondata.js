@@ -29,7 +29,7 @@ export const demonList = [
     name: "Lithium",
     creator: "L4TeZk & more",
     image: "/Demonlist/Thumbnails/Lithium.png",
-    difficulty: "Top 129 Demon",
+    difficulty: "Excruciating tier NLW",
     opinion: "Mid - High Inexorable tier NLW",
     difficultyValue: 12.66,
     peakRank: 129,
