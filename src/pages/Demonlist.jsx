@@ -12,7 +12,8 @@ const opinionChangelogData = [
 const aredlChangelogData = [
     { date: "May 5, 2026", desc: "This new demonlist was created!" },
     { date: "May 14, 2026", desc: "Subsonic placed at #10, Mazemory out of top 30." },
-    { date: "May 21, 2026", desc: "EXTREME MEMORY MIX placed at #29, Volume out of top 30." }
+    { date: "May 21, 2026", desc: "EXTREME MEMORY MIX placed at #29, Volume out of top 30." },
+    { date: "July 10, 2026", desc: "Brain Power placed at #26, Sky Tech out of top 30." }
 ];
 
 export default function Demonlist() {

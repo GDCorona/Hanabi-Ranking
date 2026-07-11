@@ -454,6 +454,21 @@ export const demonList = [
   },
   // Not list worthy
   {
+    name: "Brain Power",
+    creator: "Zafkiel7 & more",
+    visibility: "aredl",
+    image: "/Demonlist/Thumbnails/BrainPower.png",
+    difficulty: "Easy tier NLW",
+    opinion: "Low Medium tier NLW",
+    difficultyValue: 3.22,
+    fps: "240 (CBS)",
+    attempts: "4380",
+    worstFail: "86%x2",
+    enjoyment: "5/10",
+    date: "10/7/2026",
+    video: "-TTpZAQHicI?si=OSH0QTuE0dqGMQgk"
+  },
+  {
     name: "HURRICANE",
     creator: "Bianox & more",
     image: "/Demonlist/Thumbnails/HURRICANE.png",
