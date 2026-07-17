@@ -293,6 +293,20 @@ export const demonList = [
     video: "2UKSeSTGWVM?si=iqMfPhaCfnfj6qE_"
   },
   {
+    name: "Caution",
+    creator: "Just a GD player & more",
+    image: "/Demonlist/Thumbnails/Caution.png",
+    difficulty: "Medium tier NLW",
+    opinion: "Low - Mid Hard tier NLW",
+    difficultyValue: 4.31,
+    fps: "240 (CBS)",
+    attempts: "5225",
+    worstFail: "96%",
+    enjoyment: "9/10",
+    date: "17/7/2026",
+    video: "D5c732YalPM?si=_Ky-dnqoN6er2ZxG"
+  },
+  {
     name: "Maybe Possibly Thing",
     creator: "iNubble & YakobNugget",
     image: "/Demonlist/Thumbnails/MPT.png",
@@ -437,6 +451,7 @@ export const demonList = [
     date: "29/1/2024",
     video: "YIaHcJRDKRQ?si=-k2_n3nWMU30j8yw"
   },
+  // Not list worthy
   {
     name: "Marathon",
     fallbackName: "Marathon (weoweoteo)",
@@ -452,7 +467,6 @@ export const demonList = [
     date: "8/1/2022",
     video: "xCQuDfkmPIs?si=rKLCesqzbgO-YEdV"
   },
-  // Not list worthy
   {
     name: "Brain Power",
     creator: "Zafkiel7 & more",
